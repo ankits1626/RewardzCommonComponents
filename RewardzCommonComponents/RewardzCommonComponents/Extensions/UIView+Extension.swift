@@ -9,6 +9,7 @@
 import UIKit
 
 public extension UIView {
+
     func roundCorners(corners: UIRectCorner, radius: CGFloat) {
         let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
         let mask = CAShapeLayer()
@@ -79,4 +80,19 @@ public extension UIView {
         self.clipsToBounds = true
         self.layer.cornerRadius = 5.0
     }
+    
+    func drawDottedLine() {
+          let shapeLayer:CAShapeLayer = CAShapeLayer()
+          let frameSize = self.frame.size
+           let shapeRect = CGRect(x: 0, y: 0, width: frameSize.width, height: frameSize.height)
+           shapeLayer.bounds = shapeRect
+           shapeLayer.position = CGPoint(x: frameSize.width/2, y: frameSize.height/2)
+           shapeLayer.fillColor = UIColor.clear.cgColor
+           shapeLayer.strokeColor = #colorLiteral(red: 0.06274509804, green: 0.4705882353, blue: 0.5803921569, alpha: 1)
+           shapeLayer.lineWidth = 1
+           shapeLayer.lineJoin = CAShapeLayerLineJoin.round
+           shapeLayer.lineDashPattern = [12,3]
+           shapeLayer.path = UIBezierPath(roundedRect: shapeRect, cornerRadius: 2).cgPath
+          self.layer.addSublayer(shapeLayer)
+      }
 }

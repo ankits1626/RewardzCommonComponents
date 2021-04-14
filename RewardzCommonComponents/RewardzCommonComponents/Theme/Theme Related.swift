@@ -56,6 +56,14 @@ public extension UIFont{
 
 public extension UIColor{
     
+    static func getControlColor()-> UIColor{
+        return RCCThemeDetailProvider.shared.coordinator.getBackgroundColor()
+    }
+    
+    static func getGreyControlColor()-> UIColor{
+        return .gray
+    }
+    
     static var buttonColor:  UIColor {
         return .black
     }
@@ -100,7 +108,7 @@ public extension UIColor{
         return UIColor(red: 171/255.0, green: 171/255.0, blue: 171/255.0, alpha: 1.0)
     }
     
-    static var stepperMiddleColor : UIColor{
+    static var getBackgroundDarkGreyColor : UIColor{
         return UIColor(red: 245/255.0, green: 245/255.0, blue: 245/255.0, alpha: 1.0)
     }
     
@@ -176,6 +184,37 @@ public extension UIColor{
         return UIColor(red: 223.0/255, green: 223.0/255, blue: 223.0/255, alpha: 1)
     }
     
+    static let selectedOrangeColor = UIColor(red: 243.0/255.0, green: 91/255.0, blue: 45/255.0, alpha: 1.0)
+    static let unSelectedGrayColor = UIColor(red: 222.0/255.0, green: 222/255.0, blue: 222/255.0, alpha: 1.0)
+    static let unSelectedTextColor = UIColor(red: 66/255.0, green: 66/255.0, blue: 66/255.0, alpha: 1.0)
+    
+    static func getBackgroundGreyColor() -> UIColor{
+        return UIColor(red: 247/255.0, green: 247/255.0, blue: 247/255.0, alpha: 1.0)
+    }
+    
+    static func getSelectedBubbleColor() -> UIColor{
+        return UIColor.white
+    }
+    
+    static func getSelectedBubbleTextColor() -> UIColor{
+        return UIColor(red: 62/255.0, green: 62/255.0, blue: 62/255.0, alpha: 1.0)
+    }
+    
+    static func getUnSelectedBubbleColor() -> UIColor{
+        return UIColor.clear
+    }
+    
+    static func getUnSelectedBubbleTextColor() -> UIColor{
+        return UIColor(red: 165/255.0, green: 165/255.0, blue: 165/255.0, alpha: 1.0)
+    }
+    
+    static func getSearchBarPlaceHolderTextColor() -> UIColor{
+        return UIColor(red: 90/255.0, green: 92/255.0, blue: 93/255.0, alpha: 1.0)
+    }
+    
+    static func getHeaderColor() -> UIColor{
+        return .white
+    }
 }
 
 public struct AppliedCornerRadius {

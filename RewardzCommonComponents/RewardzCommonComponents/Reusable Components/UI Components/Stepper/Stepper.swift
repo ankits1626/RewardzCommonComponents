@@ -24,6 +24,7 @@ public protocol StepperDelegate {
             layoutSubviews()
         }
     }
+//    @IBInspectable public var indicatorColor: UIColor = UIColor.white
     @IBInspectable public var borderColor: UIColor = UIColor.white
     @IBInspectable public var textColor: UIColor = UIColor.lightGray
     @IBInspectable public var middleColor: UIColor = UIColor.white
@@ -39,7 +40,7 @@ public protocol StepperDelegate {
     
     private var incrementButton = UIButton(frame: CGRect.zero)
     private var decrementButton = UIButton(frame: CGRect.zero)
-    fileprivate var counterTxt  = UITextView(frame: CGRect.zero)
+    public  var counterTxt  = UITextView(frame: CGRect.zero)
     
     public override var isEnabled: Bool{
         didSet {
@@ -92,7 +93,7 @@ public protocol StepperDelegate {
         self.counterTxt.frame = counterLabelFrame
         counterTxt.isScrollEnabled = false
         counterTxt.isUserInteractionEnabled = false
-        counterTxt.contentOffset = CGPoint(x: 0, y: -5)
+//        counterTxt.contentOffset = CGPoint(x: 0, y: -5)
         counterTxt.layer.borderWidth = borderWidth
         counterTxt.layer.borderColor = borderColor.cgColor
         self.layer.borderWidth = borderWidth

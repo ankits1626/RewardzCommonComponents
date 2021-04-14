@@ -10,4 +10,5 @@ import UIKit
 
 public protocol CFFMediaCoordinatorProtocol : class {
     func fetchImageAndLoad(_ targetView : UIImageView? , imageEndPoint : String)
+    func fetchImageAndLoad(_ targetView : UIImageView? , imageEndPoint : URL?)
 }

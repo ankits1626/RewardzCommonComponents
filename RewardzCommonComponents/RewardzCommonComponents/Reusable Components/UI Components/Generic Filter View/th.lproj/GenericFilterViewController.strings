@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Clear"; ObjectID = "HFE-Go-MqL"; */
+"HFE-Go-MqL.normalTitle" = "ล้าง";
+
+/* Class = "UIButton"; normalTitle = "Apply"; ObjectID = "Hjy-BU-lUl"; */
+"Hjy-BU-lUl.normalTitle" = "นำไปใช้";
+
+/* Class = "UILabel"; text = "Filter by"; ObjectID = "btC-M6-PGa"; */
+"btC-M6-PGa.text" = "กรองตาม";

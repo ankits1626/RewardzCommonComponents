@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GridViewCell" id="goe-nr-Vye" customClass="GridViewCell" customModule="CommonFunctionalityFramework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dTf-fR-yra">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                    </imageView>
+                    <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nae-0a-Oke">
+                        <rect key="frame" x="30" y="30" width="20" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="4F2-9H-ho6"/>
+                            <constraint firstAttribute="width" constant="20" id="fgf-w1-Jpa"/>
+                        </constraints>
+                        <state key="normal" image="playIcon"/>
+                    </button>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Pa-X7-QtO">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectedIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="F1c-Az-YTm">
+                                <rect key="frame" x="55" y="5" width="19" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="Orc-V1-gDA"/>
+                                    <constraint firstAttribute="width" constant="19" id="reb-9p-ElH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.32156862745098036" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="F1c-Az-YTm" secondAttribute="trailing" constant="6" id="W5p-d3-pCR"/>
+                            <constraint firstItem="F1c-Az-YTm" firstAttribute="top" secondItem="0Pa-X7-QtO" secondAttribute="top" constant="5" id="dPK-Fe-92E"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Nae-0a-Oke" firstAttribute="centerY" secondItem="RLd-Nd-i2e" secondAttribute="centerY" id="5rz-Ht-VlX"/>
+                <constraint firstAttribute="trailing" secondItem="0Pa-X7-QtO" secondAttribute="trailing" id="7G7-II-Ipe"/>
+                <constraint firstAttribute="bottom" secondItem="0Pa-X7-QtO" secondAttribute="bottom" id="9n7-OC-5Yl"/>
+                <constraint firstItem="0Pa-X7-QtO" firstAttribute="leading" secondItem="goe-nr-Vye" secondAttribute="leading" id="QdZ-kg-8vY"/>
+                <constraint firstAttribute="bottom" secondItem="dTf-fR-yra" secondAttribute="bottom" id="Urb-U5-NVS"/>
+                <constraint firstItem="dTf-fR-yra" firstAttribute="top" secondItem="goe-nr-Vye" secondAttribute="top" id="ezQ-G7-oDW"/>
+                <constraint firstItem="0Pa-X7-QtO" firstAttribute="top" secondItem="goe-nr-Vye" secondAttribute="top" id="h5i-2R-PBy"/>
+                <constraint firstAttribute="trailing" secondItem="dTf-fR-yra" secondAttribute="trailing" id="j4Y-2R-csJ"/>
+                <constraint firstItem="Nae-0a-Oke" firstAttribute="centerX" secondItem="RLd-Nd-i2e" secondAttribute="centerX" id="sVj-8e-naM"/>
+                <constraint firstItem="dTf-fR-yra" firstAttribute="leading" secondItem="goe-nr-Vye" secondAttribute="leading" id="wWT-71-ER2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="RLd-Nd-i2e"/>
+            <connections>
+                <outlet property="imageView" destination="dTf-fR-yra" id="hYP-1c-qzj"/>
+                <outlet property="playButton" destination="Nae-0a-Oke" id="7ej-Gc-g22"/>
+                <outlet property="selectedIndicatorImageView" destination="F1c-Az-YTm" id="R4a-nr-Etc"/>
+                <outlet property="selectedIndicatorView" destination="0Pa-X7-QtO" id="UTX-Rs-V4E"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="114"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="playIcon" width="22" height="22"/>
+        <image name="selectedIndicator" width="15" height="15"/>
+    </resources>
+</document>

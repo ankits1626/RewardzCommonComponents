@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoEntryFoundViewViewController" customModule="RewardzCommonComponents" customModuleProvider="target">
+            <connections>
+                <outlet property="messageLabel" destination="Ik5-4Z-orG" id="nbV-zv-CDh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXZ-Wr-QHr">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rcc_no data available" translatesAutoresizingMaskIntoConstraints="NO" id="Qi3-xq-rrD">
+                            <rect key="frame" x="193" y="100" width="28.5" height="27"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="27" id="Q1D-yu-zvi"/>
+                                <constraint firstAttribute="width" constant="28.5" id="jU9-Gb-Qjb"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Records Found!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ik5-4Z-orG">
+                            <rect key="frame" x="142.5" y="147" width="129.5" height="20"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Qi3-xq-rrD" firstAttribute="centerX" secondItem="rXZ-Wr-QHr" secondAttribute="centerX" id="14i-sM-18w"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ik5-4Z-orG" secondAttribute="trailing" constant="40" id="2wQ-IZ-kfp"/>
+                        <constraint firstItem="Ik5-4Z-orG" firstAttribute="top" secondItem="Qi3-xq-rrD" secondAttribute="bottom" constant="20" id="JnZ-l4-8hV"/>
+                        <constraint firstItem="Ik5-4Z-orG" firstAttribute="centerX" secondItem="Qi3-xq-rrD" secondAttribute="centerX" id="cD5-Qe-nDm"/>
+                        <constraint firstItem="Qi3-xq-rrD" firstAttribute="top" secondItem="rXZ-Wr-QHr" secondAttribute="top" constant="100" id="jKw-qP-75i"/>
+                        <constraint firstItem="Ik5-4Z-orG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rXZ-Wr-QHr" secondAttribute="leading" constant="40" id="pyG-sq-Ist"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rXZ-Wr-QHr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3T2-LE-fh8"/>
+                <constraint firstAttribute="trailing" secondItem="rXZ-Wr-QHr" secondAttribute="trailing" id="3ql-Zj-cTH"/>
+                <constraint firstItem="rXZ-Wr-QHr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ATj-2m-Rid"/>
+                <constraint firstAttribute="bottom" secondItem="rXZ-Wr-QHr" secondAttribute="bottom" id="skc-50-dpg"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="rcc_no data available" width="28.5" height="27.5"/>
+    </resources>
+</document>

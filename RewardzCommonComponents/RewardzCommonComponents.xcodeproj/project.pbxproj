@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EDFE5608904B8E5868FDAC0 /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97391302DDED74317338C86D /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework */; };
 		19C61C86CA936498E8A3F962 /* Pods_RewardzCommonComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F93C191A78B40E6407CD277 /* Pods_RewardzCommonComponents.framework */; };
 		980D122D261429CE00995F41 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D1225261429CE00995F41 /* UIApplication+Extension.swift */; };
 		980D122E261429CE00995F41 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D1226261429CE00995F41 /* UIDevice+Extension.swift */; };
@@ -129,8 +130,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		081D4BA58E5A02E31397D310 /* Pods-RewardzCommonComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents.release.xcconfig"; path = "Target Support Files/Pods-RewardzCommonComponents/Pods-RewardzCommonComponents.release.xcconfig"; sourceTree = "<group>"; };
+		081D4BA58E5A02E31397D310 /* Pods-RewardzCommonComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents.release.xcconfig"; path = "../../2021MarRewardxComponents/RewardzCommonComponents/Pods/Target Support Files/Pods-RewardzCommonComponents/Pods-RewardzCommonComponents.release.xcconfig"; sourceTree = "<group>"; };
+		220D95156412A38932A86204 /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig"; path = "../../2021MarRewardxComponents/RewardzCommonComponents/Pods/Target Support Files/Pods-RewardzCommonComponents-RewardzCommonComponentsTests/Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
+		7BAEB21253E10E06E709D6DA /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig"; path = "../../2021MarRewardxComponents/RewardzCommonComponents/Pods/Target Support Files/Pods-RewardzCommonComponents-RewardzCommonComponentsTests/Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7F93C191A78B40E6407CD277 /* Pods_RewardzCommonComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RewardzCommonComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97391302DDED74317338C86D /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		980D1225261429CE00995F41 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		980D1226261429CE00995F41 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		980D1227261429CE00995F41 /* UILabel + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
@@ -256,7 +260,7 @@
 		98C094C026142367006D5178 /* RewardzCommonComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RewardzCommonComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C094C526142367006D5178 /* RewardzCommonComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardzCommonComponentsTests.swift; sourceTree = "<group>"; };
 		98C094C726142367006D5178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0215E65443EBF1E3F1F7A98 /* Pods-RewardzCommonComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents.debug.xcconfig"; path = "Target Support Files/Pods-RewardzCommonComponents/Pods-RewardzCommonComponents.debug.xcconfig"; sourceTree = "<group>"; };
+		C0215E65443EBF1E3F1F7A98 /* Pods-RewardzCommonComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents.debug.xcconfig"; path = "../../2021MarRewardxComponents/RewardzCommonComponents/Pods/Target Support Files/Pods-RewardzCommonComponents/Pods-RewardzCommonComponents.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98C094C126142367006D5178 /* RewardzCommonComponents.framework in Frameworks */,
+				0EDFE5608904B8E5868FDAC0 /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				7F93C191A78B40E6407CD277 /* Pods_RewardzCommonComponents.framework */,
+				97391302DDED74317338C86D /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -875,6 +881,8 @@
 			children = (
 				C0215E65443EBF1E3F1F7A98 /* Pods-RewardzCommonComponents.debug.xcconfig */,
 				081D4BA58E5A02E31397D310 /* Pods-RewardzCommonComponents.release.xcconfig */,
+				7BAEB21253E10E06E709D6DA /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig */,
+				220D95156412A38932A86204 /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../../2020Aug6Cerra/Pods;
@@ -918,9 +926,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98C094CE26142367006D5178 /* Build configuration list for PBXNativeTarget "RewardzCommonComponentsTests" */;
 			buildPhases = (
+				BFFF37F35E227F56428E4F0F /* [CP] Check Pods Manifest.lock */,
 				98C094BC26142367006D5178 /* Sources */,
 				98C094BD26142367006D5178 /* Frameworks */,
 				98C094BE26142367006D5178 /* Resources */,
+				BC2905354C375EC7B425C2B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1031,6 +1041,45 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-RewardzCommonComponents-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC2905354C375EC7B425C2B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RewardzCommonComponents-RewardzCommonComponentsTests/Pods-RewardzCommonComponents-RewardzCommonComponentsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RewardzCommonComponents-RewardzCommonComponentsTests/Pods-RewardzCommonComponents-RewardzCommonComponentsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RewardzCommonComponents-RewardzCommonComponentsTests/Pods-RewardzCommonComponents-RewardzCommonComponentsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFFF37F35E227F56428E4F0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RewardzCommonComponents-RewardzCommonComponentsTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1464,6 +1513,7 @@
 		};
 		98C094CF26142367006D5178 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BAEB21253E10E06E709D6DA /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1482,6 +1532,7 @@
 		};
 		98C094D026142367006D5178 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 220D95156412A38932A86204 /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

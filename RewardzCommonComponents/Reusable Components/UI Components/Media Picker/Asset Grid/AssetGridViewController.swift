@@ -174,6 +174,8 @@ public class AssetGridViewController: UIViewController, UICollectionViewDataSour
                 self.setupFetchresult()
                 completion()
             }
+        case .limited:
+            fallthrough
         case .restricted:
             fallthrough
         case .denied:
@@ -264,15 +266,13 @@ public class AssetGridViewController: UIViewController, UICollectionViewDataSour
     private func handleSelectedImages(selectdImages : [UIImage]){
         print("@@@@@@@@@@@@@@@@@@@@@@@ save images")
         var imageURLs = [URL]()
-        var error : Error?
-        
         for anImage in selectdImages{
             let saveImageResult = self.saveImageToDocumentsDirectory(anImage)
             if let unwrappedURL = saveImageResult.imageURL{
                 imageURLs.append(unwrappedURL)
             }
             if let unwrappedError = saveImageResult.error{
-                error = unwrappedError
+                showToast(message: unwrappedError.localizedDescription)
             }
         }
     }

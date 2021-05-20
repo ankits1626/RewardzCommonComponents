@@ -22,10 +22,10 @@ class SlideInPresentationController: UIPresentationController {
     containerView?.insertSubview(dimmingView, at: 0)
     NSLayoutConstraint.activate(
       NSLayoutConstraint.constraints(withVisualFormat: "V:|[dimmingView]|",
-                                     options: [], metrics: nil, views: ["dimmingView": dimmingView]))
+                                     options: [], metrics: nil, views: ["dimmingView": dimmingView!]))
     NSLayoutConstraint.activate(
       NSLayoutConstraint.constraints(withVisualFormat: "H:|[dimmingView]|",
-                                     options: [], metrics: nil, views: ["dimmingView": dimmingView]))
+                                     options: [], metrics: nil, views: ["dimmingView": dimmingView!]))
     guard let coordinator = presentedViewController.transitionCoordinator else {
       dimmingView.alpha = 1.0
       return

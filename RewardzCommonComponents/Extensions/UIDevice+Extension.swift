@@ -42,7 +42,7 @@ public enum DeviceTypes : String {
 }
 
 public extension UIDevice {
-    public var deviceType: DeviceTypes {
+    var deviceType: DeviceTypes {
         
         var systemInfo = utsname()
         uname(&systemInfo)
@@ -57,7 +57,7 @@ public extension UIDevice {
             }
         }
         
-        var modelMap : [ String : DeviceTypes ] = [
+        let modelMap : [ String : DeviceTypes ] = [
             "i386"      : .simulator,
             "x86_64"    : .simulator,
             "iPad2,1"   : .iPad2,          //

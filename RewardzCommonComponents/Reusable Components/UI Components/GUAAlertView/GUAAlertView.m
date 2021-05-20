@@ -325,12 +325,12 @@ static const float alertViewCornerRadius = 8;
           initialSpringVelocity:0.9
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
-                         _backgroundView.alpha = backgroundViewAlpha;
-                         _alertView.transform = CGAffineTransformMakeRotation(0);
-                         _alertView.center = CGPointMake(CGRectGetMidX(self.bounds),
-                                                         CGRectGetMidY(self.bounds));
-                     } completion:^(BOOL finished) {
-                     }];
+        self->_backgroundView.alpha = backgroundViewAlpha;
+        self->_alertView.transform = CGAffineTransformMakeRotation(0);
+        self->_alertView.center = CGPointMake(CGRectGetMidX(self.bounds),
+                                              CGRectGetMidY(self.bounds));
+    } completion:^(BOOL finished) {
+    }];
 }
 
 - (void)dismiss {
@@ -340,23 +340,22 @@ static const float alertViewCornerRadius = 8;
           initialSpringVelocity:0.0f
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
-                         _backgroundView.alpha = 0.0;
-
-                         _alertView.transform = CGAffineTransformMakeRotation(finalAngle);
-                         _alertView.alpha = 0.0;
-
-                         CGRect screenBounds = [UIScreen mainScreen].bounds;
-                         float finalY = screenBounds.size.height / 2 + self.alertView.bounds.size.height;
-                         self.alertConstraintCenterY.constant += finalY;
-
-                         [self layoutIfNeeded];
-                     }
+        self->_backgroundView.alpha = 0.0;
+        self->_alertView.transform = CGAffineTransformMakeRotation(finalAngle);
+        self->_alertView.alpha = 0.0;
+        
+        CGRect screenBounds = [UIScreen mainScreen].bounds;
+        float finalY = screenBounds.size.height / 2 + self.alertView.bounds.size.height;
+        self.alertConstraintCenterY.constant += finalY;
+        
+        [self layoutIfNeeded];
+    }
                      completion:^(BOOL finished) {
-                         [self removeFromSuperview];
-                         if (_dismissBlock != NULL) {
-                             _dismissBlock();
-                         }
-                     }];
+        [self removeFromSuperview];
+        if (self->_dismissBlock != NULL) {
+            self->_dismissBlock();
+        }
+    }];
 }
 
 - (void)resetAlertViewPosition {
@@ -364,12 +363,12 @@ static const float alertViewCornerRadius = 8;
                           delay:0.0f
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
-                         _backgroundView.alpha = backgroundViewAlpha;
-                         _alertView.transform = CGAffineTransformMakeRotation(0);
-                         self.alertConstraintCenterY.constant = 0;
-                         [self layoutIfNeeded];
-                     } completion:^(BOOL finished) {
-                     }];
+        self->_backgroundView.alpha = backgroundViewAlpha;
+        self->_alertView.transform = CGAffineTransformMakeRotation(0);
+        self.alertConstraintCenterY.constant = 0;
+        [self layoutIfNeeded];
+    } completion:^(BOOL finished) {
+    }];
 }
 
 #pragma mark - button action

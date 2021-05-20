@@ -155,7 +155,7 @@ public class GenericCoreDataManager: NSObject {
                 self.pushChangesToUIContext {
                     completion?()
                 }
-            } catch let _ {
+            } catch {
                 print("[DEBUG]: Unable to clear the records")
                 completion?()
             }

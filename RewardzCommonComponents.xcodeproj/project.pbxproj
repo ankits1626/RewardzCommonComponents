@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,37 +21,6 @@
 		980D128326142F8700995F41 /* SlideInPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D123E26142F8600995F41 /* SlideInPresentationAnimator.swift */; };
 		980D128426142F8700995F41 /* SlideInPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D123F26142F8600995F41 /* SlideInPresentationManager.swift */; };
 		980D128526142F8700995F41 /* SlideInPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D124026142F8600995F41 /* SlideInPresentationController.swift */; };
-		980D128626142F8700995F41 /* FAImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D124526142F8600995F41 /* FAImageLoader.swift */; };
-		980D128726142F8700995F41 /* FAGridView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980D124626142F8600995F41 /* FAGridView.xib */; };
-		980D128826142F8700995F41 /* UIImage+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D124826142F8600995F41 /* UIImage+Additions.swift */; };
-		980D128926142F8700995F41 /* FAScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D124926142F8600995F41 /* FAScrollView.swift */; };
-		980D128A26142F8700995F41 /* CFFMainCropperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D124A26142F8600995F41 /* CFFMainCropperViewController.swift */; };
-		980D128B26142F8700995F41 /* CFFMainCropperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980D124B26142F8600995F41 /* CFFMainCropperViewController.xib */; };
-		980D128C26142F8700995F41 /* CFFImageCropperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980D124C26142F8600995F41 /* CFFImageCropperViewController.xib */; };
-		980D128D26142F8700995F41 /* CFFImageCropperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D124D26142F8600995F41 /* CFFImageCropperViewController.swift */; };
-		980D128E26142F8700995F41 /* AssetGridViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = 980D125026142F8600995F41 /* AssetGridViewController.strings */; };
-		980D128F26142F8700995F41 /* GridViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980D125326142F8600995F41 /* GridViewCell.xib */; };
-		980D129026142F8700995F41 /* GridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D125426142F8600995F41 /* GridViewCell.swift */; };
-		980D129126142F8700995F41 /* AssetGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980D125526142F8600995F41 /* AssetGridViewController.xib */; };
-		980D129226142F8700995F41 /* AssetGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D125726142F8600995F41 /* AssetGridViewController.swift */; };
-		980D129326142F8700995F41 /* GroupsViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = 980D125A26142F8600995F41 /* GroupsViewController.strings */; };
-		980D129426142F8700995F41 /* GroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980D125D26142F8600995F41 /* GroupCell.xib */; };
-		980D129526142F8700995F41 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D125E26142F8600995F41 /* GroupCell.swift */; };
-		980D129626142F8700995F41 /* GroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980D125F26142F8600995F41 /* GroupsViewController.xib */; };
-		980D129726142F8700995F41 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D126126142F8600995F41 /* GroupsViewController.swift */; };
-		980D129826142F8700995F41 /* FloatingMenuOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D126426142F8600995F41 /* FloatingMenuOptions.swift */; };
-		980D129926142F8700995F41 /* FloatingMenuOptions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980D126526142F8600995F41 /* FloatingMenuOptions.xib */; };
-		980D129A26142F8700995F41 /* FloatingMenuOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D126726142F8700995F41 /* FloatingMenuOptionTableViewCell.swift */; };
-		980D129B26142F8700995F41 /* FloatingMenuOptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980D126826142F8700995F41 /* FloatingMenuOptionTableViewCell.xib */; };
-		980D129C26142F8700995F41 /* Stepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D126A26142F8700995F41 /* Stepper.swift */; };
-		980D129D26142F8700995F41 /* ASChatBarview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D126C26142F8700995F41 /* ASChatBarview.swift */; };
-		980D129E26142F8700995F41 /* UIView+XibSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D126E26142F8700995F41 /* UIView+XibSetup.swift */; };
-		980D129F26142F8700995F41 /* UITextView+NumberOfLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D126F26142F8700995F41 /* UITextView+NumberOfLines.swift */; };
-		980D12A026142F8700995F41 /* ASChatBarview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980D127026142F8700995F41 /* ASChatBarview.xib */; };
-		980D12A126142F8700995F41 /* BlockButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D127226142F8700995F41 /* BlockButton.swift */; };
-		980D12A226142F8700995F41 /* KMPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D127426142F8700995F41 /* KMPlaceholderTextView.swift */; };
-		980D12A326142F8700995F41 /* CFFMediaBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980D127626142F8700995F41 /* CFFMediaBrowserViewController.xib */; };
-		980D12A426142F8700995F41 /* CFFMediaBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D127726142F8700995F41 /* CFFMediaBrowserViewController.swift */; };
 		980D12A526142F8700995F41 /* LocalMediaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D127926142F8700995F41 /* LocalMediaManager.swift */; };
 		980D12A626142F8700995F41 /* APIRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D127C26142F8700995F41 /* APIRequestModel.swift */; };
 		980D12A726142F8700995F41 /* APIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D127D26142F8700995F41 /* APIWorker.swift */; };
@@ -59,23 +28,12 @@
 		980D12A926142F8700995F41 /* UnauthorizedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D127F26142F8700995F41 /* UnauthorizedHandler.swift */; };
 		980D12AB26142F8700995F41 /* ErrorDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D128226142F8700995F41 /* ErrorDisplayer.swift */; };
 		9854AAB2261740EB005B653B /* RCCUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9854AAB1261740EB005B653B /* RCCUtility.swift */; };
-		9854AAC026174528005B653B /* NoEntryFoundViewViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9854AAB926174528005B653B /* NoEntryFoundViewViewController.strings */; };
-		9854AAC126174528005B653B /* NoEntryFoundViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9854AABC26174528005B653B /* NoEntryFoundViewViewController.xib */; };
-		9854AAC226174528005B653B /* NoEntryFoundViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9854AABF26174528005B653B /* NoEntryFoundViewViewController.swift */; };
 		9854AACA261747C6005B653B /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9854AAC9261747C6005B653B /* UIImageView+Extensions.swift */; };
 		9854AD382617FD07005B653B /* SearchEnabledViewControllerProtcol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9854AD372617FD07005B653B /* SearchEnabledViewControllerProtcol.swift */; };
 		9854ADBB26180BE8005B653B /* ThemeableViewControllerProtcol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9854ADBA26180BE8005B653B /* ThemeableViewControllerProtcol.swift */; };
-		9854ADCB26180D87005B653B /* BubbleOptionCollectionViewCell.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9854ADC226180D86005B653B /* BubbleOptionCollectionViewCell.strings */; };
-		9854ADCC26180D87005B653B /* BubbleOptionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9854ADC526180D86005B653B /* BubbleOptionCollectionViewCell.xib */; };
-		9854ADCD26180D87005B653B /* BubbleOptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9854ADC726180D86005B653B /* BubbleOptionCollectionViewCell.swift */; };
-		9854ADCE26180D87005B653B /* BubbleOptionSelectionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9854ADCA26180D87005B653B /* BubbleOptionSelectionCoordinator.swift */; };
-		9854AEE3261AAA32005B653B /* GUAAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9854AEE1261AAA32005B653B /* GUAAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9854AEE4261AAA32005B653B /* GUAAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9854AEE2261AAA32005B653B /* GUAAlertView.m */; };
 		9854AF5E261AB9B2005B653B /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9854AF5D261AB9B2005B653B /* UIColor+Extensions.swift */; };
 		9854AF85261C2623005B653B /* NSMutableData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9854AF84261C2623005B653B /* NSMutableData+Extension.swift */; };
 		987683262614349900B597B0 /* CFFThemeManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987683252614349900B597B0 /* CFFThemeManagerProtocol.swift */; };
-		9876832C2614351600B597B0 /* MediaItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9876832A2614351600B597B0 /* MediaItemCollectionViewCell.swift */; };
-		9876832D2614351600B597B0 /* MediaItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9876832B2614351600B597B0 /* MediaItemCollectionViewCell.xib */; };
 		98768332261435A000B597B0 /* protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98768331261435A000B597B0 /* protocols.swift */; };
 		98768339261435F400B597B0 /* CFFMediaCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98768338261435F400B597B0 /* CFFMediaCoordinatorProtocol.swift */; };
 		9876834126143D2200B597B0 /* GenericCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9876833D26143D2200B597B0 /* GenericCoreDataManager.swift */; };
@@ -84,35 +42,69 @@
 		98768359261444B200B597B0 /* CommonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98768356261444B100B597B0 /* CommonLoader.swift */; };
 		9876835A261444B200B597B0 /* CommonFrameworkDateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98768357261444B100B597B0 /* CommonFrameworkDateUtility.swift */; };
 		9876835F2614538C00B597B0 /* RawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9876835E2614538C00B597B0 /* RawRepresentable.swift */; };
-		9876836F2615514A00B597B0 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9876836E2615514A00B597B0 /* CustomSegmentedControl.swift */; };
 		98768373261555C100B597B0 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98768372261555C100B597B0 /* String+Extensions.swift */; };
-		98768437261557F700B597B0 /* HorizontolScrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98768436261557F700B597B0 /* HorizontolScrolling.swift */; };
-		9876843D2615586A00B597B0 /* HorizontalScrollAdapterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9876843C2615586A00B597B0 /* HorizontalScrollAdapterProtocol.swift */; };
-		98768442261559BD00B597B0 /* MFLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98768441261559BD00B597B0 /* MFLoader.swift */; };
 		9876844826155A0800B597B0 /* Rgbconverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9876844726155A0800B597B0 /* Rgbconverter.swift */; };
-		9876844D26155AB000B597B0 /* ASCustomDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9876844C26155AB000B597B0 /* ASCustomDrawerViewController.swift */; };
 		9876845426155E7600B597B0 /* BaseCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9876845326155E7600B597B0 /* BaseCellConfigurator.swift */; };
 		9876845B26155F2E00B597B0 /* PagedCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9876845A26155F2E00B597B0 /* PagedCollectionLayout.swift */; };
-		9876846826155FFF00B597B0 /* GenericFilterViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9876846126155FFF00B597B0 /* GenericFilterViewController.strings */; };
-		9876846926155FFF00B597B0 /* GenericFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9876846426155FFF00B597B0 /* GenericFilterViewController.xib */; };
-		9876846A26155FFF00B597B0 /* GenericFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9876846626155FFF00B597B0 /* GenericFilterViewController.swift */; };
-		9876848C261560B300B597B0 /* OptionListViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9876846E261560B200B597B0 /* OptionListViewController.strings */; };
-		9876848F261560B300B597B0 /* OptionListTableViewCell.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98768475261560B300B597B0 /* OptionListTableViewCell.strings */; };
-		98768494261560B300B597B0 /* OptionListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98768481261560B300B597B0 /* OptionListTableViewCell.xib */; };
-		98768495261560B300B597B0 /* OptionListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98768486261560B300B597B0 /* OptionListTableViewCell.swift */; };
-		98768497261560B300B597B0 /* OptionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98768488261560B300B597B0 /* OptionListViewController.swift */; };
-		98768498261560B300B597B0 /* OptionListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98768489261560B300B597B0 /* OptionListViewController.xib */; };
-		9876849D2615611F00B597B0 /* ListItemFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9876849C2615611F00B597B0 /* ListItemFetcher.swift */; };
-		987684A2261561B700B597B0 /* ASCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987684A1261561B700B597B0 /* ASCheckBox.swift */; };
 		987684B0261562D400B597B0 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987684AF261562D400B597B0 /* UIViewController+Extensions.swift */; };
 		987684B42615648E00B597B0 /* CFFNetworkRequestCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987684B32615648E00B597B0 /* CFFNetworkRequestCoordinatorProtocol.swift */; };
 		987684B8261568D700B597B0 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987684B7261568D700B597B0 /* Collection+Extension.swift */; };
-		987684BD26156A4C00B597B0 /* HorizontalScrollingOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987684BC26156A4C00B597B0 /* HorizontalScrollingOptionsView.swift */; };
-		987684CC26156AEF00B597B0 /* HorizontalScrollingOptionCell.strings in Resources */ = {isa = PBXBuildFile; fileRef = 987684C526156AEE00B597B0 /* HorizontalScrollingOptionCell.strings */; };
-		987684CD26156AEF00B597B0 /* HorizontalScrollingOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 987684C826156AEF00B597B0 /* HorizontalScrollingOptionCell.xib */; };
-		987684CE26156AEF00B597B0 /* HorizontalScrollingOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987684CA26156AEF00B597B0 /* HorizontalScrollingOptionCell.swift */; };
-		987684D326156B6800B597B0 /* YearSelectorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987684D226156B6800B597B0 /* YearSelectorHandler.swift */; };
 		987684D92615703600B597B0 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987684D82615703600B597B0 /* Date+Extensions.swift */; };
+		989C40C0265E5131002FF0F7 /* BubbleOptionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C4068265E5131002FF0F7 /* BubbleOptionCollectionViewCell.xib */; };
+		989C40C1265E5131002FF0F7 /* BubbleOptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C4069265E5131002FF0F7 /* BubbleOptionCollectionViewCell.swift */; };
+		989C40C2265E5131002FF0F7 /* BubbleOptionSelectionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C406B265E5131002FF0F7 /* BubbleOptionSelectionCoordinator.swift */; };
+		989C40C3265E5131002FF0F7 /* FAImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C406F265E5131002FF0F7 /* FAImageLoader.swift */; };
+		989C40C4265E5131002FF0F7 /* FAGridView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C4070265E5131002FF0F7 /* FAGridView.xib */; };
+		989C40C5265E5131002FF0F7 /* UIImage+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C4072265E5131002FF0F7 /* UIImage+Additions.swift */; };
+		989C40C6265E5131002FF0F7 /* FAScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C4073265E5131002FF0F7 /* FAScrollView.swift */; };
+		989C40C7265E5131002FF0F7 /* CFFMainCropperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C4074265E5131002FF0F7 /* CFFMainCropperViewController.swift */; };
+		989C40C8265E5131002FF0F7 /* CFFMainCropperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C4075265E5131002FF0F7 /* CFFMainCropperViewController.xib */; };
+		989C40C9265E5131002FF0F7 /* CFFImageCropperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C4076265E5131002FF0F7 /* CFFImageCropperViewController.xib */; };
+		989C40CA265E5131002FF0F7 /* CFFImageCropperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C4077265E5131002FF0F7 /* CFFImageCropperViewController.swift */; };
+		989C40CB265E5131002FF0F7 /* GridViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C407B265E5131002FF0F7 /* GridViewCell.xib */; };
+		989C40CC265E5131002FF0F7 /* GridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C407C265E5131002FF0F7 /* GridViewCell.swift */; };
+		989C40CD265E5131002FF0F7 /* AssetGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C407D265E5131002FF0F7 /* AssetGridViewController.swift */; };
+		989C40CE265E5131002FF0F7 /* AssetGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C407E265E5131002FF0F7 /* AssetGridViewController.xib */; };
+		989C40CF265E5131002FF0F7 /* GroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C4081265E5131002FF0F7 /* GroupCell.xib */; };
+		989C40D0265E5131002FF0F7 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C4082265E5131002FF0F7 /* GroupCell.swift */; };
+		989C40D1265E5131002FF0F7 /* GroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C4083265E5131002FF0F7 /* GroupsViewController.xib */; };
+		989C40D2265E5131002FF0F7 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C4084265E5131002FF0F7 /* GroupsViewController.swift */; };
+		989C40D3265E5131002FF0F7 /* GUAAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 989C4086265E5131002FF0F7 /* GUAAlertView.h */; };
+		989C40D4265E5131002FF0F7 /* GUAAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989C4087265E5131002FF0F7 /* GUAAlertView.m */; };
+		989C40D5265E5131002FF0F7 /* HorizontalScrollingOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C408A265E5131002FF0F7 /* HorizontalScrollingOptionCell.swift */; };
+		989C40D6265E5131002FF0F7 /* HorizontalScrollingOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C408B265E5131002FF0F7 /* HorizontalScrollingOptionCell.xib */; };
+		989C40D7265E5131002FF0F7 /* HorizontalScrollingOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C408C265E5131002FF0F7 /* HorizontalScrollingOptionsView.swift */; };
+		989C40D8265E5131002FF0F7 /* HorizontalScrollAdapterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C408E265E5131002FF0F7 /* HorizontalScrollAdapterProtocol.swift */; };
+		989C40D9265E5131002FF0F7 /* HorizontolScrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C408F265E5131002FF0F7 /* HorizontolScrolling.swift */; };
+		989C40DA265E5131002FF0F7 /* FloatingMenuOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C4091265E5131002FF0F7 /* FloatingMenuOptions.swift */; };
+		989C40DB265E5131002FF0F7 /* FloatingMenuOptions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C4092265E5131002FF0F7 /* FloatingMenuOptions.xib */; };
+		989C40DC265E5131002FF0F7 /* FloatingMenuOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C4094265E5131002FF0F7 /* FloatingMenuOptionTableViewCell.swift */; };
+		989C40DD265E5131002FF0F7 /* FloatingMenuOptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C4095265E5131002FF0F7 /* FloatingMenuOptionTableViewCell.xib */; };
+		989C40DE265E5131002FF0F7 /* YearSelectorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C4097265E5131002FF0F7 /* YearSelectorHandler.swift */; };
+		989C40DF265E5131002FF0F7 /* GenericFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C4099265E5131002FF0F7 /* GenericFilterViewController.swift */; };
+		989C40E0265E5131002FF0F7 /* GenericFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C409A265E5131002FF0F7 /* GenericFilterViewController.xib */; };
+		989C40E1265E5131002FF0F7 /* Stepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C409C265E5131002FF0F7 /* Stepper.swift */; };
+		989C40E2265E5131002FF0F7 /* ASChatBarview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C409E265E5131002FF0F7 /* ASChatBarview.swift */; };
+		989C40E3265E5131002FF0F7 /* UIView+XibSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40A0265E5131002FF0F7 /* UIView+XibSetup.swift */; };
+		989C40E4265E5131002FF0F7 /* UITextView+NumberOfLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40A1265E5131002FF0F7 /* UITextView+NumberOfLines.swift */; };
+		989C40E5265E5131002FF0F7 /* ASChatBarview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C40A2265E5131002FF0F7 /* ASChatBarview.xib */; };
+		989C40E6265E5131002FF0F7 /* NoEntryFoundViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C40A4265E5131002FF0F7 /* NoEntryFoundViewViewController.xib */; };
+		989C40E7265E5131002FF0F7 /* NoEntryFoundViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40A5265E5131002FF0F7 /* NoEntryFoundViewViewController.swift */; };
+		989C40E8265E5131002FF0F7 /* ASCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40A7265E5131002FF0F7 /* ASCheckBox.swift */; };
+		989C40E9265E5131002FF0F7 /* OptionListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C40A9265E5131002FF0F7 /* OptionListViewController.xib */; };
+		989C40EA265E5131002FF0F7 /* OptionListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C40AB265E5131002FF0F7 /* OptionListTableViewCell.xib */; };
+		989C40EB265E5131002FF0F7 /* OptionListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40AC265E5131002FF0F7 /* OptionListTableViewCell.swift */; };
+		989C40EC265E5131002FF0F7 /* OptionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40AD265E5131002FF0F7 /* OptionListViewController.swift */; };
+		989C40ED265E5131002FF0F7 /* ListItemFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40AF265E5131002FF0F7 /* ListItemFetcher.swift */; };
+		989C40EE265E5131002FF0F7 /* BlockButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40B1265E5131002FF0F7 /* BlockButton.swift */; };
+		989C40EF265E5131002FF0F7 /* MFLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40B3265E5131002FF0F7 /* MFLoader.swift */; };
+		989C40F0265E5131002FF0F7 /* KMPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40B5265E5131002FF0F7 /* KMPlaceholderTextView.swift */; };
+		989C40F1265E5131002FF0F7 /* MediaItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40B8265E5131002FF0F7 /* MediaItemCollectionViewCell.swift */; };
+		989C40F2265E5131002FF0F7 /* MediaItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C40B9265E5131002FF0F7 /* MediaItemCollectionViewCell.xib */; };
+		989C40F3265E5131002FF0F7 /* CFFMediaBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C40BA265E5131002FF0F7 /* CFFMediaBrowserViewController.xib */; };
+		989C40F4265E5131002FF0F7 /* CFFMediaBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40BB265E5131002FF0F7 /* CFFMediaBrowserViewController.swift */; };
+		989C40F5265E5131002FF0F7 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40BD265E5131002FF0F7 /* CustomSegmentedControl.swift */; };
+		989C40F6265E5131002FF0F7 /* ASCustomDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40BF265E5131002FF0F7 /* ASCustomDrawerViewController.swift */; };
 		98BA3CA12625199300DCB1C0 /* RCCThemeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BA3CA02625199300DCB1C0 /* RCCThemeCoordinator.swift */; };
 		98C094C126142367006D5178 /* RewardzCommonComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C094B726142367006D5178 /* RewardzCommonComponents.framework */; };
 		98C094C626142367006D5178 /* RewardzCommonComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C094C526142367006D5178 /* RewardzCommonComponentsTests.swift */; };
@@ -147,39 +139,6 @@
 		980D123E26142F8600995F41 /* SlideInPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationAnimator.swift; sourceTree = "<group>"; };
 		980D123F26142F8600995F41 /* SlideInPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationManager.swift; sourceTree = "<group>"; };
 		980D124026142F8600995F41 /* SlideInPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationController.swift; sourceTree = "<group>"; };
-		980D124526142F8600995F41 /* FAImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAImageLoader.swift; sourceTree = "<group>"; };
-		980D124626142F8600995F41 /* FAGridView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FAGridView.xib; sourceTree = "<group>"; };
-		980D124826142F8600995F41 /* UIImage+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Additions.swift"; sourceTree = "<group>"; };
-		980D124926142F8600995F41 /* FAScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAScrollView.swift; sourceTree = "<group>"; };
-		980D124A26142F8600995F41 /* CFFMainCropperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CFFMainCropperViewController.swift; sourceTree = "<group>"; };
-		980D124B26142F8600995F41 /* CFFMainCropperViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFFMainCropperViewController.xib; sourceTree = "<group>"; };
-		980D124C26142F8600995F41 /* CFFImageCropperViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFFImageCropperViewController.xib; sourceTree = "<group>"; };
-		980D124D26142F8600995F41 /* CFFImageCropperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CFFImageCropperViewController.swift; sourceTree = "<group>"; };
-		980D125126142F8600995F41 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/AssetGridViewController.strings"; sourceTree = "<group>"; };
-		980D125326142F8600995F41 /* GridViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GridViewCell.xib; sourceTree = "<group>"; };
-		980D125426142F8600995F41 /* GridViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewCell.swift; sourceTree = "<group>"; };
-		980D125626142F8600995F41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AssetGridViewController.xib; sourceTree = "<group>"; };
-		980D125726142F8600995F41 /* AssetGridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetGridViewController.swift; sourceTree = "<group>"; };
-		980D125826142F8600995F41 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
-		980D125B26142F8600995F41 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/GroupsViewController.strings"; sourceTree = "<group>"; };
-		980D125D26142F8600995F41 /* GroupCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupCell.xib; sourceTree = "<group>"; };
-		980D125E26142F8600995F41 /* GroupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
-		980D126026142F8600995F41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/GroupsViewController.xib; sourceTree = "<group>"; };
-		980D126126142F8600995F41 /* GroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
-		980D126226142F8600995F41 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/GroupsViewController.strings; sourceTree = "<group>"; };
-		980D126426142F8600995F41 /* FloatingMenuOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingMenuOptions.swift; sourceTree = "<group>"; };
-		980D126526142F8600995F41 /* FloatingMenuOptions.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloatingMenuOptions.xib; sourceTree = "<group>"; };
-		980D126726142F8700995F41 /* FloatingMenuOptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingMenuOptionTableViewCell.swift; sourceTree = "<group>"; };
-		980D126826142F8700995F41 /* FloatingMenuOptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloatingMenuOptionTableViewCell.xib; sourceTree = "<group>"; };
-		980D126A26142F8700995F41 /* Stepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stepper.swift; sourceTree = "<group>"; };
-		980D126C26142F8700995F41 /* ASChatBarview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASChatBarview.swift; sourceTree = "<group>"; };
-		980D126E26142F8700995F41 /* UIView+XibSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XibSetup.swift"; sourceTree = "<group>"; };
-		980D126F26142F8700995F41 /* UITextView+NumberOfLines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+NumberOfLines.swift"; sourceTree = "<group>"; };
-		980D127026142F8700995F41 /* ASChatBarview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASChatBarview.xib; sourceTree = "<group>"; };
-		980D127226142F8700995F41 /* BlockButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockButton.swift; sourceTree = "<group>"; };
-		980D127426142F8700995F41 /* KMPlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMPlaceholderTextView.swift; sourceTree = "<group>"; };
-		980D127626142F8700995F41 /* CFFMediaBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFFMediaBrowserViewController.xib; sourceTree = "<group>"; };
-		980D127726142F8700995F41 /* CFFMediaBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CFFMediaBrowserViewController.swift; sourceTree = "<group>"; };
 		980D127926142F8700995F41 /* LocalMediaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalMediaManager.swift; sourceTree = "<group>"; };
 		980D127C26142F8700995F41 /* APIRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestModel.swift; sourceTree = "<group>"; };
 		980D127D26142F8700995F41 /* APIWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIWorker.swift; sourceTree = "<group>"; };
@@ -187,27 +146,12 @@
 		980D127F26142F8700995F41 /* UnauthorizedHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnauthorizedHandler.swift; sourceTree = "<group>"; };
 		980D128226142F8700995F41 /* ErrorDisplayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorDisplayer.swift; sourceTree = "<group>"; };
 		9854AAB1261740EB005B653B /* RCCUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCCUtility.swift; sourceTree = "<group>"; };
-		9854AABA26174528005B653B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/NoEntryFoundViewViewController.strings"; sourceTree = "<group>"; };
-		9854AABB26174528005B653B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/NoEntryFoundViewViewController.strings; sourceTree = "<group>"; };
-		9854AABD26174528005B653B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NoEntryFoundViewViewController.xib; sourceTree = "<group>"; };
-		9854AABE26174528005B653B /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/NoEntryFoundViewViewController.strings; sourceTree = "<group>"; };
-		9854AABF26174528005B653B /* NoEntryFoundViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoEntryFoundViewViewController.swift; sourceTree = "<group>"; };
 		9854AAC9261747C6005B653B /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		9854AD372617FD07005B653B /* SearchEnabledViewControllerProtcol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEnabledViewControllerProtcol.swift; sourceTree = "<group>"; };
 		9854ADBA26180BE8005B653B /* ThemeableViewControllerProtcol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeableViewControllerProtcol.swift; sourceTree = "<group>"; };
-		9854ADC326180D86005B653B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/BubbleOptionCollectionViewCell.strings"; sourceTree = "<group>"; };
-		9854ADC426180D86005B653B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BubbleOptionCollectionViewCell.strings; sourceTree = "<group>"; };
-		9854ADC626180D86005B653B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BubbleOptionCollectionViewCell.xib; sourceTree = "<group>"; };
-		9854ADC726180D86005B653B /* BubbleOptionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleOptionCollectionViewCell.swift; sourceTree = "<group>"; };
-		9854ADC826180D86005B653B /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/BubbleOptionCollectionViewCell.strings; sourceTree = "<group>"; };
-		9854ADCA26180D87005B653B /* BubbleOptionSelectionCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleOptionSelectionCoordinator.swift; sourceTree = "<group>"; };
-		9854AEE1261AAA32005B653B /* GUAAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUAAlertView.h; sourceTree = "<group>"; };
-		9854AEE2261AAA32005B653B /* GUAAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUAAlertView.m; sourceTree = "<group>"; };
 		9854AF5D261AB9B2005B653B /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		9854AF84261C2623005B653B /* NSMutableData+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableData+Extension.swift"; sourceTree = "<group>"; };
 		987683252614349900B597B0 /* CFFThemeManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CFFThemeManagerProtocol.swift; sourceTree = "<group>"; };
-		9876832A2614351600B597B0 /* MediaItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaItemCollectionViewCell.swift; sourceTree = "<group>"; };
-		9876832B2614351600B597B0 /* MediaItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		98768331261435A000B597B0 /* protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocols.swift; sourceTree = "<group>"; };
 		98768338261435F400B597B0 /* CFFMediaCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CFFMediaCoordinatorProtocol.swift; sourceTree = "<group>"; };
 		9876833D26143D2200B597B0 /* GenericCoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericCoreDataManager.swift; sourceTree = "<group>"; };
@@ -216,43 +160,69 @@
 		98768356261444B100B597B0 /* CommonLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonLoader.swift; sourceTree = "<group>"; };
 		98768357261444B100B597B0 /* CommonFrameworkDateUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonFrameworkDateUtility.swift; sourceTree = "<group>"; };
 		9876835E2614538C00B597B0 /* RawRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawRepresentable.swift; sourceTree = "<group>"; };
-		9876836E2615514A00B597B0 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 		98768372261555C100B597B0 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
-		98768436261557F700B597B0 /* HorizontolScrolling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontolScrolling.swift; sourceTree = "<group>"; };
-		9876843C2615586A00B597B0 /* HorizontalScrollAdapterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollAdapterProtocol.swift; sourceTree = "<group>"; };
-		98768441261559BD00B597B0 /* MFLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFLoader.swift; sourceTree = "<group>"; };
 		9876844726155A0800B597B0 /* Rgbconverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rgbconverter.swift; sourceTree = "<group>"; };
-		9876844C26155AB000B597B0 /* ASCustomDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASCustomDrawerViewController.swift; sourceTree = "<group>"; };
 		9876845326155E7600B597B0 /* BaseCellConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCellConfigurator.swift; sourceTree = "<group>"; };
 		9876845A26155F2E00B597B0 /* PagedCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagedCollectionLayout.swift; sourceTree = "<group>"; };
-		9876846226155FFF00B597B0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/GenericFilterViewController.strings"; sourceTree = "<group>"; };
-		9876846326155FFF00B597B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/GenericFilterViewController.strings; sourceTree = "<group>"; };
-		9876846526155FFF00B597B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/GenericFilterViewController.xib; sourceTree = "<group>"; };
-		9876846626155FFF00B597B0 /* GenericFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericFilterViewController.swift; sourceTree = "<group>"; };
-		9876846726155FFF00B597B0 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/GenericFilterViewController.strings; sourceTree = "<group>"; };
-		9876846F261560B200B597B0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/OptionListViewController.strings"; sourceTree = "<group>"; };
-		98768470261560B300B597B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/OptionListViewController.strings; sourceTree = "<group>"; };
-		98768476261560B300B597B0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/OptionListTableViewCell.strings"; sourceTree = "<group>"; };
-		9876847B261560B300B597B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/OptionListTableViewCell.strings; sourceTree = "<group>"; };
-		98768482261560B300B597B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OptionListTableViewCell.xib; sourceTree = "<group>"; };
-		98768484261560B300B597B0 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/OptionListTableViewCell.strings; sourceTree = "<group>"; };
-		98768486261560B300B597B0 /* OptionListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionListTableViewCell.swift; sourceTree = "<group>"; };
-		98768488261560B300B597B0 /* OptionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionListViewController.swift; sourceTree = "<group>"; };
-		9876848A261560B300B597B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OptionListViewController.xib; sourceTree = "<group>"; };
-		9876848B261560B300B597B0 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/OptionListViewController.strings; sourceTree = "<group>"; };
-		9876849C2615611F00B597B0 /* ListItemFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemFetcher.swift; sourceTree = "<group>"; };
-		987684A1261561B700B597B0 /* ASCheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASCheckBox.swift; sourceTree = "<group>"; };
 		987684AF261562D400B597B0 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		987684B32615648E00B597B0 /* CFFNetworkRequestCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFFNetworkRequestCoordinatorProtocol.swift; sourceTree = "<group>"; };
 		987684B7261568D700B597B0 /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
-		987684BC26156A4C00B597B0 /* HorizontalScrollingOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollingOptionsView.swift; sourceTree = "<group>"; };
-		987684C626156AEE00B597B0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/HorizontalScrollingOptionCell.strings"; sourceTree = "<group>"; };
-		987684C726156AEF00B597B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/HorizontalScrollingOptionCell.strings; sourceTree = "<group>"; };
-		987684C926156AEF00B597B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HorizontalScrollingOptionCell.xib; sourceTree = "<group>"; };
-		987684CA26156AEF00B597B0 /* HorizontalScrollingOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalScrollingOptionCell.swift; sourceTree = "<group>"; };
-		987684CB26156AEF00B597B0 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/HorizontalScrollingOptionCell.strings; sourceTree = "<group>"; };
-		987684D226156B6800B597B0 /* YearSelectorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearSelectorHandler.swift; sourceTree = "<group>"; };
 		987684D82615703600B597B0 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		989C4068265E5131002FF0F7 /* BubbleOptionCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BubbleOptionCollectionViewCell.xib; sourceTree = "<group>"; };
+		989C4069265E5131002FF0F7 /* BubbleOptionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleOptionCollectionViewCell.swift; sourceTree = "<group>"; };
+		989C406B265E5131002FF0F7 /* BubbleOptionSelectionCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleOptionSelectionCoordinator.swift; sourceTree = "<group>"; };
+		989C406F265E5131002FF0F7 /* FAImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAImageLoader.swift; sourceTree = "<group>"; };
+		989C4070265E5131002FF0F7 /* FAGridView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FAGridView.xib; sourceTree = "<group>"; };
+		989C4072265E5131002FF0F7 /* UIImage+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Additions.swift"; sourceTree = "<group>"; };
+		989C4073265E5131002FF0F7 /* FAScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAScrollView.swift; sourceTree = "<group>"; };
+		989C4074265E5131002FF0F7 /* CFFMainCropperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CFFMainCropperViewController.swift; sourceTree = "<group>"; };
+		989C4075265E5131002FF0F7 /* CFFMainCropperViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFFMainCropperViewController.xib; sourceTree = "<group>"; };
+		989C4076265E5131002FF0F7 /* CFFImageCropperViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFFImageCropperViewController.xib; sourceTree = "<group>"; };
+		989C4077265E5131002FF0F7 /* CFFImageCropperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CFFImageCropperViewController.swift; sourceTree = "<group>"; };
+		989C407B265E5131002FF0F7 /* GridViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GridViewCell.xib; sourceTree = "<group>"; };
+		989C407C265E5131002FF0F7 /* GridViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewCell.swift; sourceTree = "<group>"; };
+		989C407D265E5131002FF0F7 /* AssetGridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetGridViewController.swift; sourceTree = "<group>"; };
+		989C407E265E5131002FF0F7 /* AssetGridViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AssetGridViewController.xib; sourceTree = "<group>"; };
+		989C4081265E5131002FF0F7 /* GroupCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupCell.xib; sourceTree = "<group>"; };
+		989C4082265E5131002FF0F7 /* GroupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		989C4083265E5131002FF0F7 /* GroupsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupsViewController.xib; sourceTree = "<group>"; };
+		989C4084265E5131002FF0F7 /* GroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		989C4086265E5131002FF0F7 /* GUAAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUAAlertView.h; sourceTree = "<group>"; };
+		989C4087265E5131002FF0F7 /* GUAAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUAAlertView.m; sourceTree = "<group>"; };
+		989C408A265E5131002FF0F7 /* HorizontalScrollingOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalScrollingOptionCell.swift; sourceTree = "<group>"; };
+		989C408B265E5131002FF0F7 /* HorizontalScrollingOptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizontalScrollingOptionCell.xib; sourceTree = "<group>"; };
+		989C408C265E5131002FF0F7 /* HorizontalScrollingOptionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalScrollingOptionsView.swift; sourceTree = "<group>"; };
+		989C408E265E5131002FF0F7 /* HorizontalScrollAdapterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalScrollAdapterProtocol.swift; sourceTree = "<group>"; };
+		989C408F265E5131002FF0F7 /* HorizontolScrolling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontolScrolling.swift; sourceTree = "<group>"; };
+		989C4091265E5131002FF0F7 /* FloatingMenuOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingMenuOptions.swift; sourceTree = "<group>"; };
+		989C4092265E5131002FF0F7 /* FloatingMenuOptions.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloatingMenuOptions.xib; sourceTree = "<group>"; };
+		989C4094265E5131002FF0F7 /* FloatingMenuOptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingMenuOptionTableViewCell.swift; sourceTree = "<group>"; };
+		989C4095265E5131002FF0F7 /* FloatingMenuOptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloatingMenuOptionTableViewCell.xib; sourceTree = "<group>"; };
+		989C4097265E5131002FF0F7 /* YearSelectorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearSelectorHandler.swift; sourceTree = "<group>"; };
+		989C4099265E5131002FF0F7 /* GenericFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericFilterViewController.swift; sourceTree = "<group>"; };
+		989C409A265E5131002FF0F7 /* GenericFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenericFilterViewController.xib; sourceTree = "<group>"; };
+		989C409C265E5131002FF0F7 /* Stepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stepper.swift; sourceTree = "<group>"; };
+		989C409E265E5131002FF0F7 /* ASChatBarview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASChatBarview.swift; sourceTree = "<group>"; };
+		989C40A0265E5131002FF0F7 /* UIView+XibSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XibSetup.swift"; sourceTree = "<group>"; };
+		989C40A1265E5131002FF0F7 /* UITextView+NumberOfLines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+NumberOfLines.swift"; sourceTree = "<group>"; };
+		989C40A2265E5131002FF0F7 /* ASChatBarview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASChatBarview.xib; sourceTree = "<group>"; };
+		989C40A4265E5131002FF0F7 /* NoEntryFoundViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoEntryFoundViewViewController.xib; sourceTree = "<group>"; };
+		989C40A5265E5131002FF0F7 /* NoEntryFoundViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoEntryFoundViewViewController.swift; sourceTree = "<group>"; };
+		989C40A7265E5131002FF0F7 /* ASCheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASCheckBox.swift; sourceTree = "<group>"; };
+		989C40A9265E5131002FF0F7 /* OptionListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionListViewController.xib; sourceTree = "<group>"; };
+		989C40AB265E5131002FF0F7 /* OptionListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionListTableViewCell.xib; sourceTree = "<group>"; };
+		989C40AC265E5131002FF0F7 /* OptionListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionListTableViewCell.swift; sourceTree = "<group>"; };
+		989C40AD265E5131002FF0F7 /* OptionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionListViewController.swift; sourceTree = "<group>"; };
+		989C40AF265E5131002FF0F7 /* ListItemFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemFetcher.swift; sourceTree = "<group>"; };
+		989C40B1265E5131002FF0F7 /* BlockButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockButton.swift; sourceTree = "<group>"; };
+		989C40B3265E5131002FF0F7 /* MFLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFLoader.swift; sourceTree = "<group>"; };
+		989C40B5265E5131002FF0F7 /* KMPlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMPlaceholderTextView.swift; sourceTree = "<group>"; };
+		989C40B8265E5131002FF0F7 /* MediaItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		989C40B9265E5131002FF0F7 /* MediaItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		989C40BA265E5131002FF0F7 /* CFFMediaBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFFMediaBrowserViewController.xib; sourceTree = "<group>"; };
+		989C40BB265E5131002FF0F7 /* CFFMediaBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CFFMediaBrowserViewController.swift; sourceTree = "<group>"; };
+		989C40BD265E5131002FF0F7 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		989C40BF265E5131002FF0F7 /* ASCustomDrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASCustomDrawerViewController.swift; sourceTree = "<group>"; };
 		98BA3CA02625199300DCB1C0 /* RCCThemeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCCThemeCoordinator.swift; sourceTree = "<group>"; };
 		98C094B726142367006D5178 /* RewardzCommonComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RewardzCommonComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C094BA26142367006D5178 /* RewardzCommonComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardzCommonComponents.h; sourceTree = "<group>"; };
@@ -329,9 +299,9 @@
 		980D123C26142F8600995F41 /* Reusable Components */ = {
 			isa = PBXGroup;
 			children = (
+				989C4065265E5131002FF0F7 /* UI Components */,
 				9876845926155F2800B597B0 /* PagedCollectionLayout */,
 				980D123D26142F8600995F41 /* SlideInPresentationManager */,
-				980D124126142F8600995F41 /* UI Components */,
 				980D127826142F8700995F41 /* LocalMediaManager */,
 				980D127A26142F8700995F41 /* Web Access Layer */,
 				980D128126142F8700995F41 /* ErrorDisplayer */,
@@ -347,193 +317,6 @@
 				980D124026142F8600995F41 /* SlideInPresentationController.swift */,
 			);
 			path = SlideInPresentationManager;
-			sourceTree = "<group>";
-		};
-		980D124126142F8600995F41 /* UI Components */ = {
-			isa = PBXGroup;
-			children = (
-				9854AEE0261AAA32005B653B /* GUAAlertView */,
-				9854ADC026180D86005B653B /* BubbleOptionSelection */,
-				9854AAB826174528005B653B /* NoEntryFoundView */,
-				987684D126156B5A00B597B0 /* YearSelectorHandler */,
-				987684BB26156A4700B597B0 /* HorizontalScrollingOptionsView */,
-				987684A0261561B700B597B0 /* ASCheckBox */,
-				9876846026155FFF00B597B0 /* Generic Filter View */,
-				9876846D261560B200B597B0 /* Common List */,
-				9876844B26155AA900B597B0 /* ASCustomDrawerViewController */,
-				98768440261559B200B597B0 /* MFLoader */,
-				98768435261557ED00B597B0 /* HorizontolScrolling */,
-				9876836D2615514A00B597B0 /* CustomSegmentedControl */,
-				980D124226142F8600995F41 /* Media Cropper */,
-				980D124E26142F8600995F41 /* Media Picker */,
-				980D126326142F8600995F41 /* FloatingMenuOptions */,
-				980D126926142F8700995F41 /* Stepper */,
-				980D126B26142F8700995F41 /* ASChatBarview */,
-				980D127326142F8700995F41 /* KMPlaceholderTextView */,
-				980D127526142F8700995F41 /* Media Browser */,
-				980D127126142F8700995F41 /* BlockButton */,
-			);
-			path = "UI Components";
-			sourceTree = "<group>";
-		};
-		980D124226142F8600995F41 /* Media Cropper */ = {
-			isa = PBXGroup;
-			children = (
-				980D124326142F8600995F41 /* CFFMainCropperViewController */,
-				980D124C26142F8600995F41 /* CFFImageCropperViewController.xib */,
-				980D124D26142F8600995F41 /* CFFImageCropperViewController.swift */,
-			);
-			path = "Media Cropper";
-			sourceTree = "<group>";
-		};
-		980D124326142F8600995F41 /* CFFMainCropperViewController */ = {
-			isa = PBXGroup;
-			children = (
-				980D124426142F8600995F41 /* FAUtility */,
-				980D124A26142F8600995F41 /* CFFMainCropperViewController.swift */,
-				980D124B26142F8600995F41 /* CFFMainCropperViewController.xib */,
-			);
-			path = CFFMainCropperViewController;
-			sourceTree = "<group>";
-		};
-		980D124426142F8600995F41 /* FAUtility */ = {
-			isa = PBXGroup;
-			children = (
-				980D124526142F8600995F41 /* FAImageLoader.swift */,
-				980D124626142F8600995F41 /* FAGridView.xib */,
-				980D124726142F8600995F41 /* Extensions */,
-				980D124926142F8600995F41 /* FAScrollView.swift */,
-			);
-			path = FAUtility;
-			sourceTree = "<group>";
-		};
-		980D124726142F8600995F41 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				980D124826142F8600995F41 /* UIImage+Additions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		980D124E26142F8600995F41 /* Media Picker */ = {
-			isa = PBXGroup;
-			children = (
-				980D124F26142F8600995F41 /* Asset Grid */,
-				980D125926142F8600995F41 /* Groups */,
-			);
-			path = "Media Picker";
-			sourceTree = "<group>";
-		};
-		980D124F26142F8600995F41 /* Asset Grid */ = {
-			isa = PBXGroup;
-			children = (
-				980D125026142F8600995F41 /* AssetGridViewController.strings */,
-				980D125226142F8600995F41 /* Custom Cell */,
-				980D125526142F8600995F41 /* AssetGridViewController.xib */,
-				980D125726142F8600995F41 /* AssetGridViewController.swift */,
-			);
-			path = "Asset Grid";
-			sourceTree = "<group>";
-		};
-		980D125226142F8600995F41 /* Custom Cell */ = {
-			isa = PBXGroup;
-			children = (
-				980D125326142F8600995F41 /* GridViewCell.xib */,
-				980D125426142F8600995F41 /* GridViewCell.swift */,
-			);
-			path = "Custom Cell";
-			sourceTree = "<group>";
-		};
-		980D125926142F8600995F41 /* Groups */ = {
-			isa = PBXGroup;
-			children = (
-				980D125A26142F8600995F41 /* GroupsViewController.strings */,
-				980D125C26142F8600995F41 /* Custom Cell */,
-				980D125F26142F8600995F41 /* GroupsViewController.xib */,
-				980D126126142F8600995F41 /* GroupsViewController.swift */,
-			);
-			path = Groups;
-			sourceTree = "<group>";
-		};
-		980D125C26142F8600995F41 /* Custom Cell */ = {
-			isa = PBXGroup;
-			children = (
-				980D125D26142F8600995F41 /* GroupCell.xib */,
-				980D125E26142F8600995F41 /* GroupCell.swift */,
-			);
-			path = "Custom Cell";
-			sourceTree = "<group>";
-		};
-		980D126326142F8600995F41 /* FloatingMenuOptions */ = {
-			isa = PBXGroup;
-			children = (
-				980D126426142F8600995F41 /* FloatingMenuOptions.swift */,
-				980D126526142F8600995F41 /* FloatingMenuOptions.xib */,
-				980D126626142F8600995F41 /* Custom Cell */,
-			);
-			path = FloatingMenuOptions;
-			sourceTree = "<group>";
-		};
-		980D126626142F8600995F41 /* Custom Cell */ = {
-			isa = PBXGroup;
-			children = (
-				980D126726142F8700995F41 /* FloatingMenuOptionTableViewCell.swift */,
-				980D126826142F8700995F41 /* FloatingMenuOptionTableViewCell.xib */,
-			);
-			path = "Custom Cell";
-			sourceTree = "<group>";
-		};
-		980D126926142F8700995F41 /* Stepper */ = {
-			isa = PBXGroup;
-			children = (
-				980D126A26142F8700995F41 /* Stepper.swift */,
-			);
-			path = Stepper;
-			sourceTree = "<group>";
-		};
-		980D126B26142F8700995F41 /* ASChatBarview */ = {
-			isa = PBXGroup;
-			children = (
-				980D126C26142F8700995F41 /* ASChatBarview.swift */,
-				980D126D26142F8700995F41 /* Extensions */,
-				980D127026142F8700995F41 /* ASChatBarview.xib */,
-			);
-			path = ASChatBarview;
-			sourceTree = "<group>";
-		};
-		980D126D26142F8700995F41 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				980D126E26142F8700995F41 /* UIView+XibSetup.swift */,
-				980D126F26142F8700995F41 /* UITextView+NumberOfLines.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		980D127126142F8700995F41 /* BlockButton */ = {
-			isa = PBXGroup;
-			children = (
-				980D127226142F8700995F41 /* BlockButton.swift */,
-			);
-			path = BlockButton;
-			sourceTree = "<group>";
-		};
-		980D127326142F8700995F41 /* KMPlaceholderTextView */ = {
-			isa = PBXGroup;
-			children = (
-				980D127426142F8700995F41 /* KMPlaceholderTextView.swift */,
-			);
-			path = KMPlaceholderTextView;
-			sourceTree = "<group>";
-		};
-		980D127526142F8700995F41 /* Media Browser */ = {
-			isa = PBXGroup;
-			children = (
-				987683292614351600B597B0 /* Custom Cell */,
-				980D127626142F8700995F41 /* CFFMediaBrowserViewController.xib */,
-				980D127726142F8700995F41 /* CFFMediaBrowserViewController.swift */,
-			);
-			path = "Media Browser";
 			sourceTree = "<group>";
 		};
 		980D127826142F8700995F41 /* LocalMediaManager */ = {
@@ -572,16 +355,6 @@
 			path = ErrorDisplayer;
 			sourceTree = "<group>";
 		};
-		9854AAB826174528005B653B /* NoEntryFoundView */ = {
-			isa = PBXGroup;
-			children = (
-				9854AAB926174528005B653B /* NoEntryFoundViewViewController.strings */,
-				9854AABC26174528005B653B /* NoEntryFoundViewViewController.xib */,
-				9854AABF26174528005B653B /* NoEntryFoundViewViewController.swift */,
-			);
-			path = NoEntryFoundView;
-			sourceTree = "<group>";
-		};
 		9854AD362617FCFF005B653B /* SearchEnabledViewControllerProtcol */ = {
 			isa = PBXGroup;
 			children = (
@@ -596,42 +369,6 @@
 				9854ADBA26180BE8005B653B /* ThemeableViewControllerProtcol.swift */,
 			);
 			path = ThemeableViewControllerProtcol;
-			sourceTree = "<group>";
-		};
-		9854ADC026180D86005B653B /* BubbleOptionSelection */ = {
-			isa = PBXGroup;
-			children = (
-				9854ADC126180D86005B653B /* Custom Cell */,
-				9854ADC926180D87005B653B /* BubbleOptionSelectionCoordinator */,
-			);
-			path = BubbleOptionSelection;
-			sourceTree = "<group>";
-		};
-		9854ADC126180D86005B653B /* Custom Cell */ = {
-			isa = PBXGroup;
-			children = (
-				9854ADC226180D86005B653B /* BubbleOptionCollectionViewCell.strings */,
-				9854ADC526180D86005B653B /* BubbleOptionCollectionViewCell.xib */,
-				9854ADC726180D86005B653B /* BubbleOptionCollectionViewCell.swift */,
-			);
-			path = "Custom Cell";
-			sourceTree = "<group>";
-		};
-		9854ADC926180D87005B653B /* BubbleOptionSelectionCoordinator */ = {
-			isa = PBXGroup;
-			children = (
-				9854ADCA26180D87005B653B /* BubbleOptionSelectionCoordinator.swift */,
-			);
-			path = BubbleOptionSelectionCoordinator;
-			sourceTree = "<group>";
-		};
-		9854AEE0261AAA32005B653B /* GUAAlertView */ = {
-			isa = PBXGroup;
-			children = (
-				9854AEE1261AAA32005B653B /* GUAAlertView.h */,
-				9854AEE2261AAA32005B653B /* GUAAlertView.m */,
-			);
-			path = GUAAlertView;
 			sourceTree = "<group>";
 		};
 		987683232614349900B597B0 /* Workers */ = {
@@ -649,15 +386,6 @@
 				987683252614349900B597B0 /* CFFThemeManagerProtocol.swift */,
 			);
 			path = CFFThemeManager;
-			sourceTree = "<group>";
-		};
-		987683292614351600B597B0 /* Custom Cell */ = {
-			isa = PBXGroup;
-			children = (
-				9876832A2614351600B597B0 /* MediaItemCollectionViewCell.swift */,
-				9876832B2614351600B597B0 /* MediaItemCollectionViewCell.xib */,
-			);
-			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
 		987683302614359300B597B0 /* protocols */ = {
@@ -706,39 +434,6 @@
 			path = RawRepresentable;
 			sourceTree = "<group>";
 		};
-		9876836D2615514A00B597B0 /* CustomSegmentedControl */ = {
-			isa = PBXGroup;
-			children = (
-				9876836E2615514A00B597B0 /* CustomSegmentedControl.swift */,
-			);
-			path = CustomSegmentedControl;
-			sourceTree = "<group>";
-		};
-		98768435261557ED00B597B0 /* HorizontolScrolling */ = {
-			isa = PBXGroup;
-			children = (
-				98768436261557F700B597B0 /* HorizontolScrolling.swift */,
-				9876843C2615586A00B597B0 /* HorizontalScrollAdapterProtocol.swift */,
-			);
-			path = HorizontolScrolling;
-			sourceTree = "<group>";
-		};
-		98768440261559B200B597B0 /* MFLoader */ = {
-			isa = PBXGroup;
-			children = (
-				98768441261559BD00B597B0 /* MFLoader.swift */,
-			);
-			path = MFLoader;
-			sourceTree = "<group>";
-		};
-		9876844B26155AA900B597B0 /* ASCustomDrawerViewController */ = {
-			isa = PBXGroup;
-			children = (
-				9876844C26155AB000B597B0 /* ASCustomDrawerViewController.swift */,
-			);
-			path = ASCustomDrawerViewController;
-			sourceTree = "<group>";
-		};
 		9876845226155E7100B597B0 /* BaseCellConfigurator */ = {
 			isa = PBXGroup;
 			children = (
@@ -755,79 +450,346 @@
 			path = PagedCollectionLayout;
 			sourceTree = "<group>";
 		};
-		9876846026155FFF00B597B0 /* Generic Filter View */ = {
+		989C4065265E5131002FF0F7 /* UI Components */ = {
 			isa = PBXGroup;
 			children = (
-				9876846126155FFF00B597B0 /* GenericFilterViewController.strings */,
-				9876846426155FFF00B597B0 /* GenericFilterViewController.xib */,
-				9876846626155FFF00B597B0 /* GenericFilterViewController.swift */,
+				989C4066265E5131002FF0F7 /* BubbleOptionSelection */,
+				989C406C265E5131002FF0F7 /* Media Cropper */,
+				989C4078265E5131002FF0F7 /* Media Picker */,
+				989C4085265E5131002FF0F7 /* GUAAlertView */,
+				989C4088265E5131002FF0F7 /* HorizontalScrollingOptionsView */,
+				989C408D265E5131002FF0F7 /* HorizontolScrolling */,
+				989C4090265E5131002FF0F7 /* FloatingMenuOptions */,
+				989C4096265E5131002FF0F7 /* YearSelectorHandler */,
+				989C4098265E5131002FF0F7 /* Generic Filter View */,
+				989C409B265E5131002FF0F7 /* Stepper */,
+				989C409D265E5131002FF0F7 /* ASChatBarview */,
+				989C40A3265E5131002FF0F7 /* NoEntryFoundView */,
+				989C40A6265E5131002FF0F7 /* ASCheckBox */,
+				989C40A8265E5131002FF0F7 /* Common List */,
+				989C40B0265E5131002FF0F7 /* BlockButton */,
+				989C40B2265E5131002FF0F7 /* MFLoader */,
+				989C40B4265E5131002FF0F7 /* KMPlaceholderTextView */,
+				989C40B6265E5131002FF0F7 /* Media Browser */,
+				989C40BC265E5131002FF0F7 /* CustomSegmentedControl */,
+				989C40BE265E5131002FF0F7 /* ASCustomDrawerViewController */,
 			);
-			path = "Generic Filter View";
+			path = "UI Components";
 			sourceTree = "<group>";
 		};
-		9876846D261560B200B597B0 /* Common List */ = {
+		989C4066265E5131002FF0F7 /* BubbleOptionSelection */ = {
 			isa = PBXGroup;
 			children = (
-				9876849B2615611F00B597B0 /* List Item Fetcher */,
-				9876846E261560B200B597B0 /* OptionListViewController.strings */,
-				98768472261560B300B597B0 /* Custom Cell */,
-				98768488261560B300B597B0 /* OptionListViewController.swift */,
-				98768489261560B300B597B0 /* OptionListViewController.xib */,
+				989C4067265E5131002FF0F7 /* Custom Cell */,
+				989C406A265E5131002FF0F7 /* BubbleOptionSelectionCoordinator */,
 			);
-			path = "Common List";
+			path = BubbleOptionSelection;
 			sourceTree = "<group>";
 		};
-		98768472261560B300B597B0 /* Custom Cell */ = {
+		989C4067265E5131002FF0F7 /* Custom Cell */ = {
 			isa = PBXGroup;
 			children = (
-				98768475261560B300B597B0 /* OptionListTableViewCell.strings */,
-				98768481261560B300B597B0 /* OptionListTableViewCell.xib */,
-				98768486261560B300B597B0 /* OptionListTableViewCell.swift */,
+				989C4068265E5131002FF0F7 /* BubbleOptionCollectionViewCell.xib */,
+				989C4069265E5131002FF0F7 /* BubbleOptionCollectionViewCell.swift */,
 			);
 			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
-		9876849B2615611F00B597B0 /* List Item Fetcher */ = {
+		989C406A265E5131002FF0F7 /* BubbleOptionSelectionCoordinator */ = {
 			isa = PBXGroup;
 			children = (
-				9876849C2615611F00B597B0 /* ListItemFetcher.swift */,
+				989C406B265E5131002FF0F7 /* BubbleOptionSelectionCoordinator.swift */,
 			);
-			path = "List Item Fetcher";
+			path = BubbleOptionSelectionCoordinator;
 			sourceTree = "<group>";
 		};
-		987684A0261561B700B597B0 /* ASCheckBox */ = {
+		989C406C265E5131002FF0F7 /* Media Cropper */ = {
 			isa = PBXGroup;
 			children = (
-				987684A1261561B700B597B0 /* ASCheckBox.swift */,
+				989C406D265E5131002FF0F7 /* CFFMainCropperViewController */,
+				989C4076265E5131002FF0F7 /* CFFImageCropperViewController.xib */,
+				989C4077265E5131002FF0F7 /* CFFImageCropperViewController.swift */,
 			);
-			path = ASCheckBox;
+			path = "Media Cropper";
 			sourceTree = "<group>";
 		};
-		987684BB26156A4700B597B0 /* HorizontalScrollingOptionsView */ = {
+		989C406D265E5131002FF0F7 /* CFFMainCropperViewController */ = {
 			isa = PBXGroup;
 			children = (
-				987684C426156AEE00B597B0 /* Custom Cell */,
-				987684BC26156A4C00B597B0 /* HorizontalScrollingOptionsView.swift */,
+				989C406E265E5131002FF0F7 /* FAUtility */,
+				989C4074265E5131002FF0F7 /* CFFMainCropperViewController.swift */,
+				989C4075265E5131002FF0F7 /* CFFMainCropperViewController.xib */,
+			);
+			path = CFFMainCropperViewController;
+			sourceTree = "<group>";
+		};
+		989C406E265E5131002FF0F7 /* FAUtility */ = {
+			isa = PBXGroup;
+			children = (
+				989C406F265E5131002FF0F7 /* FAImageLoader.swift */,
+				989C4070265E5131002FF0F7 /* FAGridView.xib */,
+				989C4071265E5131002FF0F7 /* Extensions */,
+				989C4073265E5131002FF0F7 /* FAScrollView.swift */,
+			);
+			path = FAUtility;
+			sourceTree = "<group>";
+		};
+		989C4071265E5131002FF0F7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				989C4072265E5131002FF0F7 /* UIImage+Additions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		989C4078265E5131002FF0F7 /* Media Picker */ = {
+			isa = PBXGroup;
+			children = (
+				989C4079265E5131002FF0F7 /* Asset Grid */,
+				989C407F265E5131002FF0F7 /* Groups */,
+			);
+			path = "Media Picker";
+			sourceTree = "<group>";
+		};
+		989C4079265E5131002FF0F7 /* Asset Grid */ = {
+			isa = PBXGroup;
+			children = (
+				989C407A265E5131002FF0F7 /* Custom Cell */,
+				989C407D265E5131002FF0F7 /* AssetGridViewController.swift */,
+				989C407E265E5131002FF0F7 /* AssetGridViewController.xib */,
+			);
+			path = "Asset Grid";
+			sourceTree = "<group>";
+		};
+		989C407A265E5131002FF0F7 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				989C407B265E5131002FF0F7 /* GridViewCell.xib */,
+				989C407C265E5131002FF0F7 /* GridViewCell.swift */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		989C407F265E5131002FF0F7 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				989C4080265E5131002FF0F7 /* Custom Cell */,
+				989C4083265E5131002FF0F7 /* GroupsViewController.xib */,
+				989C4084265E5131002FF0F7 /* GroupsViewController.swift */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		989C4080265E5131002FF0F7 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				989C4081265E5131002FF0F7 /* GroupCell.xib */,
+				989C4082265E5131002FF0F7 /* GroupCell.swift */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		989C4085265E5131002FF0F7 /* GUAAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				989C4086265E5131002FF0F7 /* GUAAlertView.h */,
+				989C4087265E5131002FF0F7 /* GUAAlertView.m */,
+			);
+			path = GUAAlertView;
+			sourceTree = "<group>";
+		};
+		989C4088265E5131002FF0F7 /* HorizontalScrollingOptionsView */ = {
+			isa = PBXGroup;
+			children = (
+				989C4089265E5131002FF0F7 /* Custom Cell */,
+				989C408C265E5131002FF0F7 /* HorizontalScrollingOptionsView.swift */,
 			);
 			path = HorizontalScrollingOptionsView;
 			sourceTree = "<group>";
 		};
-		987684C426156AEE00B597B0 /* Custom Cell */ = {
+		989C4089265E5131002FF0F7 /* Custom Cell */ = {
 			isa = PBXGroup;
 			children = (
-				987684C526156AEE00B597B0 /* HorizontalScrollingOptionCell.strings */,
-				987684C826156AEF00B597B0 /* HorizontalScrollingOptionCell.xib */,
-				987684CA26156AEF00B597B0 /* HorizontalScrollingOptionCell.swift */,
+				989C408A265E5131002FF0F7 /* HorizontalScrollingOptionCell.swift */,
+				989C408B265E5131002FF0F7 /* HorizontalScrollingOptionCell.xib */,
 			);
 			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
-		987684D126156B5A00B597B0 /* YearSelectorHandler */ = {
+		989C408D265E5131002FF0F7 /* HorizontolScrolling */ = {
 			isa = PBXGroup;
 			children = (
-				987684D226156B6800B597B0 /* YearSelectorHandler.swift */,
+				989C408E265E5131002FF0F7 /* HorizontalScrollAdapterProtocol.swift */,
+				989C408F265E5131002FF0F7 /* HorizontolScrolling.swift */,
+			);
+			path = HorizontolScrolling;
+			sourceTree = "<group>";
+		};
+		989C4090265E5131002FF0F7 /* FloatingMenuOptions */ = {
+			isa = PBXGroup;
+			children = (
+				989C4091265E5131002FF0F7 /* FloatingMenuOptions.swift */,
+				989C4092265E5131002FF0F7 /* FloatingMenuOptions.xib */,
+				989C4093265E5131002FF0F7 /* Custom Cell */,
+			);
+			path = FloatingMenuOptions;
+			sourceTree = "<group>";
+		};
+		989C4093265E5131002FF0F7 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				989C4094265E5131002FF0F7 /* FloatingMenuOptionTableViewCell.swift */,
+				989C4095265E5131002FF0F7 /* FloatingMenuOptionTableViewCell.xib */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		989C4096265E5131002FF0F7 /* YearSelectorHandler */ = {
+			isa = PBXGroup;
+			children = (
+				989C4097265E5131002FF0F7 /* YearSelectorHandler.swift */,
 			);
 			path = YearSelectorHandler;
+			sourceTree = "<group>";
+		};
+		989C4098265E5131002FF0F7 /* Generic Filter View */ = {
+			isa = PBXGroup;
+			children = (
+				989C4099265E5131002FF0F7 /* GenericFilterViewController.swift */,
+				989C409A265E5131002FF0F7 /* GenericFilterViewController.xib */,
+			);
+			path = "Generic Filter View";
+			sourceTree = "<group>";
+		};
+		989C409B265E5131002FF0F7 /* Stepper */ = {
+			isa = PBXGroup;
+			children = (
+				989C409C265E5131002FF0F7 /* Stepper.swift */,
+			);
+			path = Stepper;
+			sourceTree = "<group>";
+		};
+		989C409D265E5131002FF0F7 /* ASChatBarview */ = {
+			isa = PBXGroup;
+			children = (
+				989C409E265E5131002FF0F7 /* ASChatBarview.swift */,
+				989C409F265E5131002FF0F7 /* Extensions */,
+				989C40A2265E5131002FF0F7 /* ASChatBarview.xib */,
+			);
+			path = ASChatBarview;
+			sourceTree = "<group>";
+		};
+		989C409F265E5131002FF0F7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				989C40A0265E5131002FF0F7 /* UIView+XibSetup.swift */,
+				989C40A1265E5131002FF0F7 /* UITextView+NumberOfLines.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		989C40A3265E5131002FF0F7 /* NoEntryFoundView */ = {
+			isa = PBXGroup;
+			children = (
+				989C40A4265E5131002FF0F7 /* NoEntryFoundViewViewController.xib */,
+				989C40A5265E5131002FF0F7 /* NoEntryFoundViewViewController.swift */,
+			);
+			path = NoEntryFoundView;
+			sourceTree = "<group>";
+		};
+		989C40A6265E5131002FF0F7 /* ASCheckBox */ = {
+			isa = PBXGroup;
+			children = (
+				989C40A7265E5131002FF0F7 /* ASCheckBox.swift */,
+			);
+			path = ASCheckBox;
+			sourceTree = "<group>";
+		};
+		989C40A8265E5131002FF0F7 /* Common List */ = {
+			isa = PBXGroup;
+			children = (
+				989C40A9265E5131002FF0F7 /* OptionListViewController.xib */,
+				989C40AA265E5131002FF0F7 /* Custom Cell */,
+				989C40AD265E5131002FF0F7 /* OptionListViewController.swift */,
+				989C40AE265E5131002FF0F7 /* List Item Fetcher */,
+			);
+			path = "Common List";
+			sourceTree = "<group>";
+		};
+		989C40AA265E5131002FF0F7 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				989C40AB265E5131002FF0F7 /* OptionListTableViewCell.xib */,
+				989C40AC265E5131002FF0F7 /* OptionListTableViewCell.swift */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		989C40AE265E5131002FF0F7 /* List Item Fetcher */ = {
+			isa = PBXGroup;
+			children = (
+				989C40AF265E5131002FF0F7 /* ListItemFetcher.swift */,
+			);
+			path = "List Item Fetcher";
+			sourceTree = "<group>";
+		};
+		989C40B0265E5131002FF0F7 /* BlockButton */ = {
+			isa = PBXGroup;
+			children = (
+				989C40B1265E5131002FF0F7 /* BlockButton.swift */,
+			);
+			path = BlockButton;
+			sourceTree = "<group>";
+		};
+		989C40B2265E5131002FF0F7 /* MFLoader */ = {
+			isa = PBXGroup;
+			children = (
+				989C40B3265E5131002FF0F7 /* MFLoader.swift */,
+			);
+			path = MFLoader;
+			sourceTree = "<group>";
+		};
+		989C40B4265E5131002FF0F7 /* KMPlaceholderTextView */ = {
+			isa = PBXGroup;
+			children = (
+				989C40B5265E5131002FF0F7 /* KMPlaceholderTextView.swift */,
+			);
+			path = KMPlaceholderTextView;
+			sourceTree = "<group>";
+		};
+		989C40B6265E5131002FF0F7 /* Media Browser */ = {
+			isa = PBXGroup;
+			children = (
+				989C40B7265E5131002FF0F7 /* Custom Cell */,
+				989C40BA265E5131002FF0F7 /* CFFMediaBrowserViewController.xib */,
+				989C40BB265E5131002FF0F7 /* CFFMediaBrowserViewController.swift */,
+			);
+			path = "Media Browser";
+			sourceTree = "<group>";
+		};
+		989C40B7265E5131002FF0F7 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				989C40B8265E5131002FF0F7 /* MediaItemCollectionViewCell.swift */,
+				989C40B9265E5131002FF0F7 /* MediaItemCollectionViewCell.xib */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		989C40BC265E5131002FF0F7 /* CustomSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				989C40BD265E5131002FF0F7 /* CustomSegmentedControl.swift */,
+			);
+			path = CustomSegmentedControl;
+			sourceTree = "<group>";
+		};
+		989C40BE265E5131002FF0F7 /* ASCustomDrawerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				989C40BF265E5131002FF0F7 /* ASCustomDrawerViewController.swift */,
+			);
+			path = ASCustomDrawerViewController;
 			sourceTree = "<group>";
 		};
 		98C094AD26142367006D5178 = {
@@ -895,7 +857,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9854AEE3261AAA32005B653B /* GUAAlertView.h in Headers */,
+				989C40D3265E5131002FF0F7 /* GUAAlertView.h in Headers */,
 				98C094C826142367006D5178 /* RewardzCommonComponents.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -985,33 +947,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9854AAC126174528005B653B /* NoEntryFoundViewViewController.xib in Resources */,
-				9876848C261560B300B597B0 /* OptionListViewController.strings in Resources */,
-				987684CD26156AEF00B597B0 /* HorizontalScrollingOptionCell.xib in Resources */,
-				987684CC26156AEF00B597B0 /* HorizontalScrollingOptionCell.strings in Resources */,
-				980D128E26142F8700995F41 /* AssetGridViewController.strings in Resources */,
-				98768498261560B300B597B0 /* OptionListViewController.xib in Resources */,
-				980D129B26142F8700995F41 /* FloatingMenuOptionTableViewCell.xib in Resources */,
-				980D129926142F8700995F41 /* FloatingMenuOptions.xib in Resources */,
-				98768494261560B300B597B0 /* OptionListTableViewCell.xib in Resources */,
-				980D128F26142F8700995F41 /* GridViewCell.xib in Resources */,
-				980D128B26142F8700995F41 /* CFFMainCropperViewController.xib in Resources */,
-				9876846826155FFF00B597B0 /* GenericFilterViewController.strings in Resources */,
-				9854AAC026174528005B653B /* NoEntryFoundViewViewController.strings in Resources */,
-				980D12A326142F8700995F41 /* CFFMediaBrowserViewController.xib in Resources */,
-				9854ADCB26180D87005B653B /* BubbleOptionCollectionViewCell.strings in Resources */,
-				9876832D2614351600B597B0 /* MediaItemCollectionViewCell.xib in Resources */,
-				980D129426142F8700995F41 /* GroupCell.xib in Resources */,
-				9876846926155FFF00B597B0 /* GenericFilterViewController.xib in Resources */,
-				9854ADCC26180D87005B653B /* BubbleOptionCollectionViewCell.xib in Resources */,
-				980D129626142F8700995F41 /* GroupsViewController.xib in Resources */,
-				980D128C26142F8700995F41 /* CFFImageCropperViewController.xib in Resources */,
+				989C40EA265E5131002FF0F7 /* OptionListTableViewCell.xib in Resources */,
+				989C40C9265E5131002FF0F7 /* CFFImageCropperViewController.xib in Resources */,
+				989C40E9265E5131002FF0F7 /* OptionListViewController.xib in Resources */,
+				989C40CE265E5131002FF0F7 /* AssetGridViewController.xib in Resources */,
+				989C40F2265E5131002FF0F7 /* MediaItemCollectionViewCell.xib in Resources */,
+				989C40E5265E5131002FF0F7 /* ASChatBarview.xib in Resources */,
 				98768351261442A400B597B0 /* Media.xcassets in Resources */,
-				980D129326142F8700995F41 /* GroupsViewController.strings in Resources */,
-				980D128726142F8700995F41 /* FAGridView.xib in Resources */,
-				980D12A026142F8700995F41 /* ASChatBarview.xib in Resources */,
-				980D129126142F8700995F41 /* AssetGridViewController.xib in Resources */,
-				9876848F261560B300B597B0 /* OptionListTableViewCell.strings in Resources */,
+				989C40CF265E5131002FF0F7 /* GroupCell.xib in Resources */,
+				989C40D1265E5131002FF0F7 /* GroupsViewController.xib in Resources */,
+				989C40CB265E5131002FF0F7 /* GridViewCell.xib in Resources */,
+				989C40D6265E5131002FF0F7 /* HorizontalScrollingOptionCell.xib in Resources */,
+				989C40C0265E5131002FF0F7 /* BubbleOptionCollectionViewCell.xib in Resources */,
+				989C40F3265E5131002FF0F7 /* CFFMediaBrowserViewController.xib in Resources */,
+				989C40C8265E5131002FF0F7 /* CFFMainCropperViewController.xib in Resources */,
+				989C40E6265E5131002FF0F7 /* NoEntryFoundViewViewController.xib in Resources */,
+				989C40E0265E5131002FF0F7 /* GenericFilterViewController.xib in Resources */,
+				989C40DD265E5131002FF0F7 /* FloatingMenuOptionTableViewCell.xib in Resources */,
+				989C40DB265E5131002FF0F7 /* FloatingMenuOptions.xib in Resources */,
+				989C40C4265E5131002FF0F7 /* FAGridView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1093,83 +1047,83 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				980D12A426142F8700995F41 /* CFFMediaBrowserViewController.swift in Sources */,
+				989C40F4265E5131002FF0F7 /* CFFMediaBrowserViewController.swift in Sources */,
+				989C40EB265E5131002FF0F7 /* OptionListTableViewCell.swift in Sources */,
 				98768359261444B200B597B0 /* CommonLoader.swift in Sources */,
-				980D129226142F8700995F41 /* AssetGridViewController.swift in Sources */,
+				989C40C1265E5131002FF0F7 /* BubbleOptionCollectionViewCell.swift in Sources */,
 				9854AAB2261740EB005B653B /* RCCUtility.swift in Sources */,
+				989C40D0265E5131002FF0F7 /* GroupCell.swift in Sources */,
+				989C40C3265E5131002FF0F7 /* FAImageLoader.swift in Sources */,
 				980D1233261429CE00995F41 /* UICollectionView+Extension.swift in Sources */,
-				980D128626142F8700995F41 /* FAImageLoader.swift in Sources */,
 				9876845B26155F2E00B597B0 /* PagedCollectionLayout.swift in Sources */,
-				980D128A26142F8700995F41 /* CFFMainCropperViewController.swift in Sources */,
 				980D122E261429CE00995F41 /* UIDevice+Extension.swift in Sources */,
-				9876849D2615611F00B597B0 /* ListItemFetcher.swift in Sources */,
+				989C40E3265E5131002FF0F7 /* UIView+XibSetup.swift in Sources */,
+				989C40D5265E5131002FF0F7 /* HorizontalScrollingOptionCell.swift in Sources */,
+				989C40F6265E5131002FF0F7 /* ASCustomDrawerViewController.swift in Sources */,
 				987683262614349900B597B0 /* CFFThemeManagerProtocol.swift in Sources */,
+				989C40F1265E5131002FF0F7 /* MediaItemCollectionViewCell.swift in Sources */,
+				989C40E4265E5131002FF0F7 /* UITextView+NumberOfLines.swift in Sources */,
+				989C40D4265E5131002FF0F7 /* GUAAlertView.m in Sources */,
+				989C40EE265E5131002FF0F7 /* BlockButton.swift in Sources */,
 				980D1234261429CE00995F41 /* Array+Extension.swift in Sources */,
-				9854AAC226174528005B653B /* NoEntryFoundViewViewController.swift in Sources */,
-				98768495261560B300B597B0 /* OptionListTableViewCell.swift in Sources */,
-				9876836F2615514A00B597B0 /* CustomSegmentedControl.swift in Sources */,
-				987684D326156B6800B597B0 /* YearSelectorHandler.swift in Sources */,
-				980D129826142F8700995F41 /* FloatingMenuOptions.swift in Sources */,
-				980D129E26142F8700995F41 /* UIView+XibSetup.swift in Sources */,
-				980D129026142F8700995F41 /* GridViewCell.swift in Sources */,
-				9854AEE4261AAA32005B653B /* GUAAlertView.m in Sources */,
 				9876835F2614538C00B597B0 /* RawRepresentable.swift in Sources */,
+				989C40CA265E5131002FF0F7 /* CFFImageCropperViewController.swift in Sources */,
 				980D1230261429CE00995F41 /* UIView+Extension.swift in Sources */,
-				980D129A26142F8700995F41 /* FloatingMenuOptionTableViewCell.swift in Sources */,
 				980D12A526142F8700995F41 /* LocalMediaManager.swift in Sources */,
 				980D12A826142F8700995F41 /* URLGenerator.swift in Sources */,
 				9854ADBB26180BE8005B653B /* ThemeableViewControllerProtcol.swift in Sources */,
 				9876844826155A0800B597B0 /* Rgbconverter.swift in Sources */,
+				989C40C2265E5131002FF0F7 /* BubbleOptionSelectionCoordinator.swift in Sources */,
 				987684D92615703600B597B0 /* Date+Extensions.swift in Sources */,
 				980D12A726142F8700995F41 /* APIWorker.swift in Sources */,
-				980D12A226142F8700995F41 /* KMPlaceholderTextView.swift in Sources */,
-				9876846A26155FFF00B597B0 /* GenericFilterViewController.swift in Sources */,
-				980D129D26142F8700995F41 /* ASChatBarview.swift in Sources */,
-				98768497261560B300B597B0 /* OptionListViewController.swift in Sources */,
 				980D128526142F8700995F41 /* SlideInPresentationController.swift in Sources */,
-				980D129F26142F8700995F41 /* UITextView+NumberOfLines.swift in Sources */,
+				989C40E1265E5131002FF0F7 /* Stepper.swift in Sources */,
 				980D122F261429CE00995F41 /* UILabel + Extension.swift in Sources */,
 				98768332261435A000B597B0 /* protocols.swift in Sources */,
-				9854ADCE26180D87005B653B /* BubbleOptionSelectionCoordinator.swift in Sources */,
-				98768442261559BD00B597B0 /* MFLoader.swift in Sources */,
-				98768437261557F700B597B0 /* HorizontolScrolling.swift in Sources */,
+				989C40DA265E5131002FF0F7 /* FloatingMenuOptions.swift in Sources */,
 				98768358261444B200B597B0 /* CommonFrameworkUtility.swift in Sources */,
 				980D128326142F8700995F41 /* SlideInPresentationAnimator.swift in Sources */,
-				980D129C26142F8700995F41 /* Stepper.swift in Sources */,
-				980D12A126142F8700995F41 /* BlockButton.swift in Sources */,
+				989C40DC265E5131002FF0F7 /* FloatingMenuOptionTableViewCell.swift in Sources */,
 				980D12AB26142F8700995F41 /* ErrorDisplayer.swift in Sources */,
 				987684B42615648E00B597B0 /* CFFNetworkRequestCoordinatorProtocol.swift in Sources */,
 				9876835A261444B200B597B0 /* CommonFrameworkDateUtility.swift in Sources */,
+				989C40F5265E5131002FF0F7 /* CustomSegmentedControl.swift in Sources */,
 				980D12A626142F8700995F41 /* APIRequestModel.swift in Sources */,
 				98768373261555C100B597B0 /* String+Extensions.swift in Sources */,
 				98768339261435F400B597B0 /* CFFMediaCoordinatorProtocol.swift in Sources */,
 				980D1232261429CE00995F41 /* Date+ Extension.swift in Sources */,
-				980D129526142F8700995F41 /* GroupCell.swift in Sources */,
 				980D128426142F8700995F41 /* SlideInPresentationManager.swift in Sources */,
 				9854AD382617FD07005B653B /* SearchEnabledViewControllerProtcol.swift in Sources */,
-				9876844D26155AB000B597B0 /* ASCustomDrawerViewController.swift in Sources */,
-				980D128926142F8700995F41 /* FAScrollView.swift in Sources */,
-				9876832C2614351600B597B0 /* MediaItemCollectionViewCell.swift in Sources */,
-				987684A2261561B700B597B0 /* ASCheckBox.swift in Sources */,
+				989C40C7265E5131002FF0F7 /* CFFMainCropperViewController.swift in Sources */,
+				989C40E7265E5131002FF0F7 /* NoEntryFoundViewViewController.swift in Sources */,
+				989C40C6265E5131002FF0F7 /* FAScrollView.swift in Sources */,
+				989C40E8265E5131002FF0F7 /* ASCheckBox.swift in Sources */,
+				989C40ED265E5131002FF0F7 /* ListItemFetcher.swift in Sources */,
+				989C40F0265E5131002FF0F7 /* KMPlaceholderTextView.swift in Sources */,
 				9854AACA261747C6005B653B /* UIImageView+Extensions.swift in Sources */,
 				980D1231261429CE00995F41 /* UIImage+Extensions.swift in Sources */,
 				9876834126143D2200B597B0 /* GenericCoreDataManager.swift in Sources */,
+				989C40EC265E5131002FF0F7 /* OptionListViewController.swift in Sources */,
 				9854AF85261C2623005B653B /* NSMutableData+Extension.swift in Sources */,
 				9854AF5E261AB9B2005B653B /* UIColor+Extensions.swift in Sources */,
-				980D128D26142F8700995F41 /* CFFImageCropperViewController.swift in Sources */,
 				987684B0261562D400B597B0 /* UIViewController+Extensions.swift in Sources */,
-				987684BD26156A4C00B597B0 /* HorizontalScrollingOptionsView.swift in Sources */,
+				989C40D8265E5131002FF0F7 /* HorizontalScrollAdapterProtocol.swift in Sources */,
 				98BA3CA12625199300DCB1C0 /* RCCThemeCoordinator.swift in Sources */,
+				989C40DE265E5131002FF0F7 /* YearSelectorHandler.swift in Sources */,
 				980D12A926142F8700995F41 /* UnauthorizedHandler.swift in Sources */,
+				989C40D2265E5131002FF0F7 /* GroupsViewController.swift in Sources */,
+				989C40DF265E5131002FF0F7 /* GenericFilterViewController.swift in Sources */,
+				989C40CC265E5131002FF0F7 /* GridViewCell.swift in Sources */,
 				987684B8261568D700B597B0 /* Collection+Extension.swift in Sources */,
 				9876845426155E7600B597B0 /* BaseCellConfigurator.swift in Sources */,
-				9876843D2615586A00B597B0 /* HorizontalScrollAdapterProtocol.swift in Sources */,
+				989C40E2265E5131002FF0F7 /* ASChatBarview.swift in Sources */,
 				980D123926142A3F00995F41 /* Theme Related.swift in Sources */,
-				9854ADCD26180D87005B653B /* BubbleOptionCollectionViewCell.swift in Sources */,
+				989C40D9265E5131002FF0F7 /* HorizontolScrolling.swift in Sources */,
+				989C40EF265E5131002FF0F7 /* MFLoader.swift in Sources */,
 				980D122D261429CE00995F41 /* UIApplication+Extension.swift in Sources */,
-				980D128826142F8700995F41 /* UIImage+Additions.swift in Sources */,
-				987684CE26156AEF00B597B0 /* HorizontalScrollingOptionCell.swift in Sources */,
-				980D129726142F8700995F41 /* GroupsViewController.swift in Sources */,
+				989C40D7265E5131002FF0F7 /* HorizontalScrollingOptionsView.swift in Sources */,
+				989C40C5265E5131002FF0F7 /* UIImage+Additions.swift in Sources */,
+				989C40CD265E5131002FF0F7 /* AssetGridViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1190,151 +1144,6 @@
 			targetProxy = 98C094C226142367006D5178 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		980D125026142F8600995F41 /* AssetGridViewController.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				980D125126142F8600995F41 /* zh-Hans */,
-				980D125826142F8600995F41 /* th */,
-			);
-			name = AssetGridViewController.strings;
-			sourceTree = "<group>";
-		};
-		980D125526142F8600995F41 /* AssetGridViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				980D125626142F8600995F41 /* Base */,
-			);
-			name = AssetGridViewController.xib;
-			sourceTree = "<group>";
-		};
-		980D125A26142F8600995F41 /* GroupsViewController.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				980D125B26142F8600995F41 /* zh-Hans */,
-				980D126226142F8600995F41 /* th */,
-			);
-			name = GroupsViewController.strings;
-			sourceTree = "<group>";
-		};
-		980D125F26142F8600995F41 /* GroupsViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				980D126026142F8600995F41 /* Base */,
-			);
-			name = GroupsViewController.xib;
-			sourceTree = "<group>";
-		};
-		9854AAB926174528005B653B /* NoEntryFoundViewViewController.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9854AABA26174528005B653B /* zh-Hans */,
-				9854AABB26174528005B653B /* en */,
-				9854AABE26174528005B653B /* th */,
-			);
-			name = NoEntryFoundViewViewController.strings;
-			sourceTree = "<group>";
-		};
-		9854AABC26174528005B653B /* NoEntryFoundViewViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9854AABD26174528005B653B /* Base */,
-			);
-			name = NoEntryFoundViewViewController.xib;
-			sourceTree = "<group>";
-		};
-		9854ADC226180D86005B653B /* BubbleOptionCollectionViewCell.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9854ADC326180D86005B653B /* zh-Hans */,
-				9854ADC426180D86005B653B /* en */,
-				9854ADC826180D86005B653B /* th */,
-			);
-			name = BubbleOptionCollectionViewCell.strings;
-			sourceTree = "<group>";
-		};
-		9854ADC526180D86005B653B /* BubbleOptionCollectionViewCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9854ADC626180D86005B653B /* Base */,
-			);
-			name = BubbleOptionCollectionViewCell.xib;
-			sourceTree = "<group>";
-		};
-		9876846126155FFF00B597B0 /* GenericFilterViewController.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9876846226155FFF00B597B0 /* zh-Hans */,
-				9876846326155FFF00B597B0 /* en */,
-				9876846726155FFF00B597B0 /* th */,
-			);
-			name = GenericFilterViewController.strings;
-			sourceTree = "<group>";
-		};
-		9876846426155FFF00B597B0 /* GenericFilterViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9876846526155FFF00B597B0 /* Base */,
-			);
-			name = GenericFilterViewController.xib;
-			sourceTree = "<group>";
-		};
-		9876846E261560B200B597B0 /* OptionListViewController.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9876846F261560B200B597B0 /* zh-Hans */,
-				98768470261560B300B597B0 /* en */,
-				9876848B261560B300B597B0 /* th */,
-			);
-			name = OptionListViewController.strings;
-			sourceTree = "<group>";
-		};
-		98768475261560B300B597B0 /* OptionListTableViewCell.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				98768476261560B300B597B0 /* zh-Hans */,
-				9876847B261560B300B597B0 /* en */,
-				98768484261560B300B597B0 /* th */,
-			);
-			name = OptionListTableViewCell.strings;
-			sourceTree = "<group>";
-		};
-		98768481261560B300B597B0 /* OptionListTableViewCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				98768482261560B300B597B0 /* Base */,
-			);
-			name = OptionListTableViewCell.xib;
-			sourceTree = "<group>";
-		};
-		98768489261560B300B597B0 /* OptionListViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9876848A261560B300B597B0 /* Base */,
-			);
-			name = OptionListViewController.xib;
-			sourceTree = "<group>";
-		};
-		987684C526156AEE00B597B0 /* HorizontalScrollingOptionCell.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				987684C626156AEE00B597B0 /* zh-Hans */,
-				987684C726156AEF00B597B0 /* en */,
-				987684CB26156AEF00B597B0 /* th */,
-			);
-			name = HorizontalScrollingOptionCell.strings;
-			sourceTree = "<group>";
-		};
-		987684C826156AEF00B597B0 /* HorizontalScrollingOptionCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				987684C926156AEF00B597B0 /* Base */,
-			);
-			name = HorizontalScrollingOptionCell.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		98C094C926142367006D5178 /* Debug */ = {

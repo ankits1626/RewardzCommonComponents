@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "RewardzCommonComponents"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "Common components"
 
   spec.description  = <<-DESC
@@ -17,7 +17,7 @@ Common components.
 
   spec.source        = { :git => "https://github.com/ankits1626/RewardzCommonComponents.git", :branch => "main", :tag => spec.version.to_s }
   spec.source_files  = "RewardzCommonComponents/**/*.{h,m,swift}"
-spec.resources = "RewardzCommonComponents/**/*.{xib,png,jpg,jpeg }", "RewardzCommonComponents/*.xcassets"
+spec.resources = "RewardzCommonComponents/**/*.{xib,png,jpg,jpeg }", "*.xcassets"
   spec.dependency 'KUIPopOver', '= 1.1.2'
 
 end

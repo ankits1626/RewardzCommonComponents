@@ -8,15 +8,15 @@
 
 import UIKit
 
-class HorizontalScrollingOptionCell: UICollectionViewCell {
+public class HorizontalScrollingOptionCell: UICollectionViewCell {
 
-    @IBOutlet weak var titleLBL : UILabel?
+    @IBOutlet public weak var titleLBL : UILabel?
 
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
     }
 
-    override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
+    public override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
         setNeedsLayout()
         layoutIfNeeded()
         let size = contentView.systemLayoutSizeFitting(layoutAttributes.size)

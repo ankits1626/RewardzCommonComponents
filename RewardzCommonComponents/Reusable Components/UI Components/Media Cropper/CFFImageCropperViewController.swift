@@ -9,6 +9,7 @@
 import UIKit
 
 class CFFImageCropperViewController: UIViewController {
+    @IBOutlet weak var navigationColor: UIImageView!
     @IBOutlet private weak var selectedPhotosCollectionView : UICollectionView?
     @IBOutlet private var proceedButton : UIButton!
     @IBOutlet private var mainCropperContainer : UIView!
@@ -34,9 +35,17 @@ class CFFImageCropperViewController: UIViewController {
     }
     
     private func setup(){
+        setupTopBar()
         configureTitleLabel()
         setupCollectionView()
         setupProceedButton()
+    }
+    
+    private func setupTopBar(){
+        self.navigationColor.image = UIImage(named: "")
+        if let unwrappedThemeManager = themeManager{
+            titleLabel.font = unwrappedThemeManager.getHeaderFont()
+        }
     }
     
     private func configureTitleLabel(){

@@ -15,7 +15,6 @@ public class ASChatBarError {
         userInfo: [NSLocalizedDescriptionKey: "Height constraint is not set for chat bar."]
     )
 }
-
 @objc public protocol ASChatBarViewDelegate : class {
     func finishedPresentingOverKeyboard()
     func addAttachmentButtonPressed()
@@ -27,13 +26,15 @@ public class ASChatBarview : UIView {
     @IBOutlet public weak var container : UIView?
     @IBOutlet public weak var attachImageButton : UIButton?
     @IBOutlet public weak var sendButton : UIButton?
-    @IBOutlet public weak var messageTextView : UITextView?
+    @IBOutlet public weak var messageTextView : KMPlaceholderTextView?
     @IBOutlet private weak var placeholderLabel : UILabel?
     @IBOutlet public weak var delegate : ASChatBarViewDelegate?
+    var tagPicker : ASMentionSelectorViewController?
     @IBOutlet private weak var heightConstraint : NSLayoutConstraint?
     @IBOutlet private weak var leftContainer : UIView?
     @IBOutlet private weak var leftContainerHeightConstraint : NSLayoutConstraint?
     @IBOutlet private weak var leftContainerWidthConstraint : NSLayoutConstraint?
+    var taggedMessaged : String = ""
     public override var backgroundColor: UIColor?{
         didSet{
             container?.backgroundColor = backgroundColor
@@ -94,6 +95,7 @@ public class ASChatBarview : UIView {
     public override func awakeFromNib() {
         super.awakeFromNib()
         commonSetup()
+        setupCoordinator(messageTextView)
     }
 
     private func registerForKeyboardNotifications(){
@@ -125,11 +127,20 @@ public class ASChatBarview : UIView {
         registerForKeyboardNotifications()
         registerForTextChangeNotification()
     }
+    
+    func registerTextView() {
+        if ASMentionCoordinator.shared.targetTextview == nil{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+                self.setupCoordinator(self.messageTextView)
+            })
+        }
+    }
 
     private var previousnumberOfLines : Int!
     private let maxNumberOflines = 4
 
     @objc private func textChanged(){
+        registerTextView()
         if let txtview = messageTextView{
             placeholderLabel?.isHidden = !txtview.text.isEmpty
             attachImageButton?.isEnabled = !txtview.text.isEmpty
@@ -152,9 +163,16 @@ public class ASChatBarview : UIView {
             }
         }
     }
-
+    
+    private func setupCoordinator(_ targetTextView: UITextView?){
+        targetTextView?.delegate = ASMentionCoordinator.shared
+        ASMentionCoordinator.shared.loadInitialText(targetTextView: targetTextView)
+        ASMentionCoordinator.shared.textUpdateListener = self
+    }
+    
+    
     @objc private func handleKeyboardAppearance(notification: NSNotification) {
-        superview?.addGestureRecognizer(tap)
+//        superview?.addGestureRecognizer(tap)
         guard let userInfo = notification.userInfo else {return}
         guard let keyboardSize = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else {return}
         let keyboardFrame = keyboardSize.cgRectValue
@@ -269,5 +287,10 @@ extension ASChatBarview{
 extension ASChatBarview{
     func clearChatBar() {
     
+    }
+}
+extension ASChatBarview : ASMentionCoordinatortextUpdateListener{
+    func textUpdated() {
+        taggedMessaged = ASMentionCoordinator.shared.getPostableTaggedText() ?? ""
     }
 }

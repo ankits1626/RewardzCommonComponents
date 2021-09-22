@@ -93,8 +93,10 @@ class CFFImageCropperViewController: UIViewController {
     
     @IBAction private func doneButtonTapped(){
         dismiss(animated: true) {
-            if let unwrappedCompletion = self.assetSelectionCompletion{
-                unwrappedCompletion(self.selectedAssets)
+            if self.selectedAssets.count > 0 {
+                if let unwrappedCompletion = self.assetSelectionCompletion{
+                    unwrappedCompletion(self.selectedAssets)
+                }
             }
         }
     }

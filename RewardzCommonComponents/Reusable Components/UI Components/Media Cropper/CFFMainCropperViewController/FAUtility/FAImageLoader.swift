@@ -37,8 +37,13 @@ class FAImageLoader: NSObject {
         let options = PHImageRequestOptions()
         options.isSynchronous = false
         options.deliveryMode = .highQualityFormat
+        options.isNetworkAccessAllowed = true
         PHImageManager.default().requestImage(for: asset, targetSize: size, contentMode: .aspectFill, options: options, resultHandler: { (image, attributes) in
-            success(image!)
+            if let unwrappedImage = image{
+                success(unwrappedImage)
+            }else{
+                ErrorDisplayer.showError(errorMsg: "This image cannot be selected".localized) { (_) in}
+            }
         })
     }
 }

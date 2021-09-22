@@ -13,6 +13,7 @@ public protocol APIRequestBuilderProtocol {
     func apiRequestWithNoAuthorizationHeader( url: URL?, method : HTTPMethod , httpBodyDict : NSDictionary?) -> URLRequest?
     func apiRequestWithHttpParamsAggregatedHttpParams( url: URL?, method : HTTPMethod , httpBodyDict : NSDictionary?) -> URLRequest?
     func apiRequestWithnobodydictHttpParamsAggregatedHttpParams( url: URL?, method : HTTPMethod , httpBodyDict : Data) -> URLRequest?
+    func apiRequestWithMultiPartFormHeader( url: URL?, method : HTTPMethod , httpBodyString : String?) -> URLRequest?
 }
 
 public class APIRequestBuilder : APIRequestBuilderProtocol {
@@ -92,6 +93,25 @@ public class APIRequestBuilder : APIRequestBuilderProtocol {
                     apiRequest.httpBody = httpBody
                 }
             }
+            if let authorizationHeaderValue = self.tokenProvider.fetchAccessToken(){
+                apiRequest.addValue(authorizationHeaderValue, forHTTPHeaderField: "Authorization")
+            }
+            return apiRequest
+        }else{
+            return nil
+        }
+    }
+    
+    public func apiRequestWithMultiPartFormHeader( url: URL?, method : HTTPMethod , httpBodyString : String?) -> URLRequest?{
+        if let unwrappedURL = url{
+            var apiRequest = URLRequest(url: unwrappedURL, cachePolicy: NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData, timeoutInterval: TimeInterval(REQUEST_TIME_OUT))
+            apiRequest.httpMethod = method.rawValue
+            let params = httpBodyString!
+            let dataa = params.data(using: .utf8)
+            apiRequest.httpBody = dataa
+            apiRequest.setValue("\(tokenProvider.fetchUserAgent()) \(deviceInfoProvider.getDeviceInfo())", forHTTPHeaderField: "User-Agent")
+            apiRequest.addValue("keep-alive", forHTTPHeaderField: "Connection")
+            apiRequest.addValue(tokenProvider.getDeviceSelectedLanguage(), forHTTPHeaderField: "Accept-Language")
             if let authorizationHeaderValue = self.tokenProvider.fetchAccessToken(){
                 apiRequest.addValue(authorizationHeaderValue, forHTTPHeaderField: "Authorization")
             }

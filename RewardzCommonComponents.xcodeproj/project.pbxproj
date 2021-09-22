@@ -64,7 +64,6 @@
 		989C40CB265E5131002FF0F7 /* GridViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C407B265E5131002FF0F7 /* GridViewCell.xib */; };
 		989C40CC265E5131002FF0F7 /* GridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C407C265E5131002FF0F7 /* GridViewCell.swift */; };
 		989C40CD265E5131002FF0F7 /* AssetGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C407D265E5131002FF0F7 /* AssetGridViewController.swift */; };
-		989C40CE265E5131002FF0F7 /* AssetGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C407E265E5131002FF0F7 /* AssetGridViewController.xib */; };
 		989C40CF265E5131002FF0F7 /* GroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C4081265E5131002FF0F7 /* GroupCell.xib */; };
 		989C40D0265E5131002FF0F7 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C4082265E5131002FF0F7 /* GroupCell.swift */; };
 		989C40D1265E5131002FF0F7 /* GroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C4083265E5131002FF0F7 /* GroupsViewController.xib */; };
@@ -109,6 +108,7 @@
 		98C094C126142367006D5178 /* RewardzCommonComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C094B726142367006D5178 /* RewardzCommonComponents.framework */; };
 		98C094C626142367006D5178 /* RewardzCommonComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C094C526142367006D5178 /* RewardzCommonComponentsTests.swift */; };
 		98C094C826142367006D5178 /* RewardzCommonComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 98C094BA26142367006D5178 /* RewardzCommonComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEAAD51926FB388F0069C5C1 /* AssetGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEAAD51B26FB388F0069C5C1 /* AssetGridViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,7 +182,6 @@
 		989C407B265E5131002FF0F7 /* GridViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GridViewCell.xib; sourceTree = "<group>"; };
 		989C407C265E5131002FF0F7 /* GridViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewCell.swift; sourceTree = "<group>"; };
 		989C407D265E5131002FF0F7 /* AssetGridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetGridViewController.swift; sourceTree = "<group>"; };
-		989C407E265E5131002FF0F7 /* AssetGridViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AssetGridViewController.xib; sourceTree = "<group>"; };
 		989C4081265E5131002FF0F7 /* GroupCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupCell.xib; sourceTree = "<group>"; };
 		989C4082265E5131002FF0F7 /* GroupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		989C4083265E5131002FF0F7 /* GroupsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupsViewController.xib; sourceTree = "<group>"; };
@@ -230,6 +229,17 @@
 		98C094C026142367006D5178 /* RewardzCommonComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RewardzCommonComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C094C526142367006D5178 /* RewardzCommonComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardzCommonComponentsTests.swift; sourceTree = "<group>"; };
 		98C094C726142367006D5178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEAAD51A26FB388F0069C5C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AssetGridViewController.xib; sourceTree = "<group>"; };
+		BEAAD51D26FB38930069C5C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
+		BEAAD51F26FB38940069C5C1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/AssetGridViewController.strings"; sourceTree = "<group>"; };
+		BEAAD52126FB38950069C5C1 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
+		BEAAD52226FB38BD0069C5C1 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
+		BEAAD52326FB38C50069C5C1 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
+		BEAAD52426FB38D10069C5C1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
+		BEAAD52526FB38D80069C5C1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
+		BEAAD52626FB38DF0069C5C1 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
+		BEAAD52726FB38E60069C5C1 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
+		BEAAD52826FB38F60069C5C1 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/AssetGridViewController.strings"; sourceTree = "<group>"; };
 		C0215E65443EBF1E3F1F7A98 /* Pods-RewardzCommonComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents.debug.xcconfig"; path = "../../code/2021MarRewardxComponents/Pods/Target Support Files/Pods-RewardzCommonComponents/Pods-RewardzCommonComponents.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -556,7 +566,7 @@
 			children = (
 				989C407A265E5131002FF0F7 /* Custom Cell */,
 				989C407D265E5131002FF0F7 /* AssetGridViewController.swift */,
-				989C407E265E5131002FF0F7 /* AssetGridViewController.xib */,
+				BEAAD51B26FB388F0069C5C1 /* AssetGridViewController.xib */,
 			);
 			path = "Asset Grid";
 			sourceTree = "<group>";
@@ -930,6 +940,13 @@
 				Base,
 				"zh-Hans",
 				th,
+				hi,
+				id,
+				ja,
+				ko,
+				ms,
+				vi,
+				"zh-Hant",
 			);
 			mainGroup = 98C094AD26142367006D5178;
 			productRefGroup = 98C094B826142367006D5178 /* Products */;
@@ -950,7 +967,7 @@
 				989C40EA265E5131002FF0F7 /* OptionListTableViewCell.xib in Resources */,
 				989C40C9265E5131002FF0F7 /* CFFImageCropperViewController.xib in Resources */,
 				989C40E9265E5131002FF0F7 /* OptionListViewController.xib in Resources */,
-				989C40CE265E5131002FF0F7 /* AssetGridViewController.xib in Resources */,
+				BEAAD51926FB388F0069C5C1 /* AssetGridViewController.xib in Resources */,
 				989C40F2265E5131002FF0F7 /* MediaItemCollectionViewCell.xib in Resources */,
 				989C40E5265E5131002FF0F7 /* ASChatBarview.xib in Resources */,
 				98768351261442A400B597B0 /* Media.xcassets in Resources */,
@@ -1144,6 +1161,27 @@
 			targetProxy = 98C094C226142367006D5178 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEAAD51B26FB388F0069C5C1 /* AssetGridViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEAAD51A26FB388F0069C5C1 /* Base */,
+				BEAAD51D26FB38930069C5C1 /* en */,
+				BEAAD51F26FB38940069C5C1 /* zh-Hans */,
+				BEAAD52126FB38950069C5C1 /* th */,
+				BEAAD52226FB38BD0069C5C1 /* hi */,
+				BEAAD52326FB38C50069C5C1 /* id */,
+				BEAAD52426FB38D10069C5C1 /* ja */,
+				BEAAD52526FB38D80069C5C1 /* ko */,
+				BEAAD52626FB38DF0069C5C1 /* ms */,
+				BEAAD52726FB38E60069C5C1 /* vi */,
+				BEAAD52826FB38F60069C5C1 /* zh-Hant */,
+			);
+			name = AssetGridViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		98C094C926142367006D5178 /* Debug */ = {

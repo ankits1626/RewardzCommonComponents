@@ -139,18 +139,24 @@ class CFFMainCropperViewController: UIViewController {
     
     
     @IBAction func crop(_ sender: Any) {
-        currentlyProcessingMediaItem.croppedImage = captureVisibleRect()
-        cropperDelegate?.finishedCropping(currentlyProcessingMediaItem)
+        if scrollView.imageToDisplay != nil {
+            currentlyProcessingMediaItem.croppedImage = captureVisibleRect()
+            cropperDelegate?.finishedCropping(currentlyProcessingMediaItem)
+        }
     }
     
     @IBAction func reset(_ sender: Any){
-        currentlyProcessingMediaItem.croppedImage = nil
-        loadImage(mediaItem: currentlyProcessingMediaItem)
-        cropperDelegate?.finishedCropping(currentlyProcessingMediaItem)
+        if scrollView.imageToDisplay != nil {
+            currentlyProcessingMediaItem.croppedImage = nil
+            loadImage(mediaItem: currentlyProcessingMediaItem)
+            cropperDelegate?.finishedCropping(currentlyProcessingMediaItem)
+        }
     }
     
     @IBAction func rotate90ClockWise(_ sender: Any){
-        displayImageInScrollView(image: (scrollView.imageToDisplay?.rotate(radians: CGFloat(Double.pi/2)))!)
+        if scrollView.imageToDisplay != nil {
+            displayImageInScrollView(image: (scrollView.imageToDisplay?.rotate(radians: CGFloat(Double.pi/2)))!)
+        }
     }
     
 }

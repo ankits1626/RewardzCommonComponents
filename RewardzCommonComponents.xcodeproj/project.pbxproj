@@ -66,7 +66,6 @@
 		989C40CD265E5131002FF0F7 /* AssetGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C407D265E5131002FF0F7 /* AssetGridViewController.swift */; };
 		989C40CF265E5131002FF0F7 /* GroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C4081265E5131002FF0F7 /* GroupCell.xib */; };
 		989C40D0265E5131002FF0F7 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C4082265E5131002FF0F7 /* GroupCell.swift */; };
-		989C40D1265E5131002FF0F7 /* GroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C4083265E5131002FF0F7 /* GroupsViewController.xib */; };
 		989C40D2265E5131002FF0F7 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C4084265E5131002FF0F7 /* GroupsViewController.swift */; };
 		989C40D3265E5131002FF0F7 /* GUAAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 989C4086265E5131002FF0F7 /* GUAAlertView.h */; };
 		989C40D4265E5131002FF0F7 /* GUAAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989C4087265E5131002FF0F7 /* GUAAlertView.m */; };
@@ -109,6 +108,7 @@
 		98C094C626142367006D5178 /* RewardzCommonComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C094C526142367006D5178 /* RewardzCommonComponentsTests.swift */; };
 		98C094C826142367006D5178 /* RewardzCommonComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 98C094BA26142367006D5178 /* RewardzCommonComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEAAD51926FB388F0069C5C1 /* AssetGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEAAD51B26FB388F0069C5C1 /* AssetGridViewController.xib */; };
+		BEAAD52926FB3BD10069C5C1 /* GroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEAAD52B26FB3BD10069C5C1 /* GroupsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,7 +184,6 @@
 		989C407D265E5131002FF0F7 /* AssetGridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetGridViewController.swift; sourceTree = "<group>"; };
 		989C4081265E5131002FF0F7 /* GroupCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupCell.xib; sourceTree = "<group>"; };
 		989C4082265E5131002FF0F7 /* GroupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
-		989C4083265E5131002FF0F7 /* GroupsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupsViewController.xib; sourceTree = "<group>"; };
 		989C4084265E5131002FF0F7 /* GroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		989C4086265E5131002FF0F7 /* GUAAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUAAlertView.h; sourceTree = "<group>"; };
 		989C4087265E5131002FF0F7 /* GUAAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUAAlertView.m; sourceTree = "<group>"; };
@@ -240,6 +239,17 @@
 		BEAAD52626FB38DF0069C5C1 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
 		BEAAD52726FB38E60069C5C1 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
 		BEAAD52826FB38F60069C5C1 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/AssetGridViewController.strings"; sourceTree = "<group>"; };
+		BEAAD52A26FB3BD10069C5C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/GroupsViewController.xib; sourceTree = "<group>"; };
+		BEAAD52D26FB3BD40069C5C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/GroupsViewController.strings; sourceTree = "<group>"; };
+		BEAAD52F26FB3BD50069C5C1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/GroupsViewController.strings"; sourceTree = "<group>"; };
+		BEAAD53126FB3BD60069C5C1 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/GroupsViewController.strings"; sourceTree = "<group>"; };
+		BEAAD53326FB3BD70069C5C1 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/GroupsViewController.strings; sourceTree = "<group>"; };
+		BEAAD53526FB3BD80069C5C1 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/GroupsViewController.strings; sourceTree = "<group>"; };
+		BEAAD53726FB3BDD0069C5C1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/GroupsViewController.strings; sourceTree = "<group>"; };
+		BEAAD53926FB3BDE0069C5C1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/GroupsViewController.strings; sourceTree = "<group>"; };
+		BEAAD53B26FB3BDF0069C5C1 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/GroupsViewController.strings; sourceTree = "<group>"; };
+		BEAAD53D26FB3BDF0069C5C1 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/GroupsViewController.strings; sourceTree = "<group>"; };
+		BEAAD53F26FB3BE00069C5C1 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/GroupsViewController.strings; sourceTree = "<group>"; };
 		C0215E65443EBF1E3F1F7A98 /* Pods-RewardzCommonComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents.debug.xcconfig"; path = "../../code/2021MarRewardxComponents/Pods/Target Support Files/Pods-RewardzCommonComponents/Pods-RewardzCommonComponents.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -584,7 +594,7 @@
 			isa = PBXGroup;
 			children = (
 				989C4080265E5131002FF0F7 /* Custom Cell */,
-				989C4083265E5131002FF0F7 /* GroupsViewController.xib */,
+				BEAAD52B26FB3BD10069C5C1 /* GroupsViewController.xib */,
 				989C4084265E5131002FF0F7 /* GroupsViewController.swift */,
 			);
 			path = Groups;
@@ -972,7 +982,7 @@
 				989C40E5265E5131002FF0F7 /* ASChatBarview.xib in Resources */,
 				98768351261442A400B597B0 /* Media.xcassets in Resources */,
 				989C40CF265E5131002FF0F7 /* GroupCell.xib in Resources */,
-				989C40D1265E5131002FF0F7 /* GroupsViewController.xib in Resources */,
+				BEAAD52926FB3BD10069C5C1 /* GroupsViewController.xib in Resources */,
 				989C40CB265E5131002FF0F7 /* GridViewCell.xib in Resources */,
 				989C40D6265E5131002FF0F7 /* HorizontalScrollingOptionCell.xib in Resources */,
 				989C40C0265E5131002FF0F7 /* BubbleOptionCollectionViewCell.xib in Resources */,
@@ -1179,6 +1189,24 @@
 				BEAAD52826FB38F60069C5C1 /* zh-Hant */,
 			);
 			name = AssetGridViewController.xib;
+			sourceTree = "<group>";
+		};
+		BEAAD52B26FB3BD10069C5C1 /* GroupsViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEAAD52A26FB3BD10069C5C1 /* Base */,
+				BEAAD52D26FB3BD40069C5C1 /* en */,
+				BEAAD52F26FB3BD50069C5C1 /* zh-Hans */,
+				BEAAD53126FB3BD60069C5C1 /* zh-Hant */,
+				BEAAD53326FB3BD70069C5C1 /* hi */,
+				BEAAD53526FB3BD80069C5C1 /* id */,
+				BEAAD53726FB3BDD0069C5C1 /* ja */,
+				BEAAD53926FB3BDE0069C5C1 /* ko */,
+				BEAAD53B26FB3BDF0069C5C1 /* ms */,
+				BEAAD53D26FB3BDF0069C5C1 /* th */,
+				BEAAD53F26FB3BE00069C5C1 /* vi */,
+			);
+			name = GroupsViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

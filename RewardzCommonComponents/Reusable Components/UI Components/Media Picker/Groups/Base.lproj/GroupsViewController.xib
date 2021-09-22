@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +13,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GroupsViewController" customModule="Cerrapoints_SG" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GroupsViewController" customModule="RewardzCommonComponents" customModuleProvider="target">
             <connections>
                 <outlet property="groupsTableView" destination="BIW-Mm-dgg" id="SbH-TP-PAS"/>
                 <outlet property="view" destination="QWY-WW-6Ol" id="vtL-2C-9PW"/>
@@ -70,6 +68,7 @@
                     </connections>
                 </tableView>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="9Ig-TN-5nu"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="zrQ-BB-0J8" firstAttribute="top" secondItem="9Ig-TN-5nu" secondAttribute="top" priority="750" id="1cY-BN-n3f"/>
@@ -85,7 +84,7 @@
                 <constraint firstItem="aeE-vj-mVS" firstAttribute="baseline" secondItem="zrQ-BB-0J8" secondAttribute="baseline" id="eEy-K6-S42"/>
                 <constraint firstItem="BIW-Mm-dgg" firstAttribute="top" secondItem="aeE-vj-mVS" secondAttribute="bottom" id="qmL-n0-cUx"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="9Ig-TN-5nu"/>
+            <point key="canvasLocation" x="50" y="154"/>
         </view>
     </objects>
     <resources>

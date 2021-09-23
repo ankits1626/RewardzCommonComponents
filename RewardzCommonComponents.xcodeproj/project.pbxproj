@@ -82,10 +82,8 @@
 		989C40DF265E5131002FF0F7 /* GenericFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C4099265E5131002FF0F7 /* GenericFilterViewController.swift */; };
 		989C40E0265E5131002FF0F7 /* GenericFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C409A265E5131002FF0F7 /* GenericFilterViewController.xib */; };
 		989C40E1265E5131002FF0F7 /* Stepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C409C265E5131002FF0F7 /* Stepper.swift */; };
-		989C40E2265E5131002FF0F7 /* ASChatBarview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C409E265E5131002FF0F7 /* ASChatBarview.swift */; };
 		989C40E3265E5131002FF0F7 /* UIView+XibSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40A0265E5131002FF0F7 /* UIView+XibSetup.swift */; };
 		989C40E4265E5131002FF0F7 /* UITextView+NumberOfLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40A1265E5131002FF0F7 /* UITextView+NumberOfLines.swift */; };
-		989C40E5265E5131002FF0F7 /* ASChatBarview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C40A2265E5131002FF0F7 /* ASChatBarview.xib */; };
 		989C40E6265E5131002FF0F7 /* NoEntryFoundViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C40A4265E5131002FF0F7 /* NoEntryFoundViewViewController.xib */; };
 		989C40E7265E5131002FF0F7 /* NoEntryFoundViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40A5265E5131002FF0F7 /* NoEntryFoundViewViewController.swift */; };
 		989C40E8265E5131002FF0F7 /* ASCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40A7265E5131002FF0F7 /* ASCheckBox.swift */; };
@@ -200,10 +198,8 @@
 		989C4099265E5131002FF0F7 /* GenericFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericFilterViewController.swift; sourceTree = "<group>"; };
 		989C409A265E5131002FF0F7 /* GenericFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenericFilterViewController.xib; sourceTree = "<group>"; };
 		989C409C265E5131002FF0F7 /* Stepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stepper.swift; sourceTree = "<group>"; };
-		989C409E265E5131002FF0F7 /* ASChatBarview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASChatBarview.swift; sourceTree = "<group>"; };
 		989C40A0265E5131002FF0F7 /* UIView+XibSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XibSetup.swift"; sourceTree = "<group>"; };
 		989C40A1265E5131002FF0F7 /* UITextView+NumberOfLines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+NumberOfLines.swift"; sourceTree = "<group>"; };
-		989C40A2265E5131002FF0F7 /* ASChatBarview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASChatBarview.xib; sourceTree = "<group>"; };
 		989C40A4265E5131002FF0F7 /* NoEntryFoundViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoEntryFoundViewViewController.xib; sourceTree = "<group>"; };
 		989C40A5265E5131002FF0F7 /* NoEntryFoundViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoEntryFoundViewViewController.swift; sourceTree = "<group>"; };
 		989C40A7265E5131002FF0F7 /* ASCheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASCheckBox.swift; sourceTree = "<group>"; };
@@ -692,9 +688,7 @@
 		989C409D265E5131002FF0F7 /* ASChatBarview */ = {
 			isa = PBXGroup;
 			children = (
-				989C409E265E5131002FF0F7 /* ASChatBarview.swift */,
 				989C409F265E5131002FF0F7 /* Extensions */,
-				989C40A2265E5131002FF0F7 /* ASChatBarview.xib */,
 			);
 			path = ASChatBarview;
 			sourceTree = "<group>";
@@ -979,7 +973,6 @@
 				989C40E9265E5131002FF0F7 /* OptionListViewController.xib in Resources */,
 				BEAAD51926FB388F0069C5C1 /* AssetGridViewController.xib in Resources */,
 				989C40F2265E5131002FF0F7 /* MediaItemCollectionViewCell.xib in Resources */,
-				989C40E5265E5131002FF0F7 /* ASChatBarview.xib in Resources */,
 				98768351261442A400B597B0 /* Media.xcassets in Resources */,
 				989C40CF265E5131002FF0F7 /* GroupCell.xib in Resources */,
 				BEAAD52926FB3BD10069C5C1 /* GroupsViewController.xib in Resources */,
@@ -1143,7 +1136,6 @@
 				989C40CC265E5131002FF0F7 /* GridViewCell.swift in Sources */,
 				987684B8261568D700B597B0 /* Collection+Extension.swift in Sources */,
 				9876845426155E7600B597B0 /* BaseCellConfigurator.swift in Sources */,
-				989C40E2265E5131002FF0F7 /* ASChatBarview.swift in Sources */,
 				980D123926142A3F00995F41 /* Theme Related.swift in Sources */,
 				989C40D9265E5131002FF0F7 /* HorizontolScrolling.swift in Sources */,
 				989C40EF265E5131002FF0F7 /* MFLoader.swift in Sources */,

@@ -82,8 +82,6 @@
 		989C40DF265E5131002FF0F7 /* GenericFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C4099265E5131002FF0F7 /* GenericFilterViewController.swift */; };
 		989C40E0265E5131002FF0F7 /* GenericFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C409A265E5131002FF0F7 /* GenericFilterViewController.xib */; };
 		989C40E1265E5131002FF0F7 /* Stepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C409C265E5131002FF0F7 /* Stepper.swift */; };
-		989C40E3265E5131002FF0F7 /* UIView+XibSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40A0265E5131002FF0F7 /* UIView+XibSetup.swift */; };
-		989C40E4265E5131002FF0F7 /* UITextView+NumberOfLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40A1265E5131002FF0F7 /* UITextView+NumberOfLines.swift */; };
 		989C40E6265E5131002FF0F7 /* NoEntryFoundViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C40A4265E5131002FF0F7 /* NoEntryFoundViewViewController.xib */; };
 		989C40E7265E5131002FF0F7 /* NoEntryFoundViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40A5265E5131002FF0F7 /* NoEntryFoundViewViewController.swift */; };
 		989C40E8265E5131002FF0F7 /* ASCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40A7265E5131002FF0F7 /* ASCheckBox.swift */; };
@@ -198,8 +196,6 @@
 		989C4099265E5131002FF0F7 /* GenericFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericFilterViewController.swift; sourceTree = "<group>"; };
 		989C409A265E5131002FF0F7 /* GenericFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenericFilterViewController.xib; sourceTree = "<group>"; };
 		989C409C265E5131002FF0F7 /* Stepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stepper.swift; sourceTree = "<group>"; };
-		989C40A0265E5131002FF0F7 /* UIView+XibSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XibSetup.swift"; sourceTree = "<group>"; };
-		989C40A1265E5131002FF0F7 /* UITextView+NumberOfLines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+NumberOfLines.swift"; sourceTree = "<group>"; };
 		989C40A4265E5131002FF0F7 /* NoEntryFoundViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoEntryFoundViewViewController.xib; sourceTree = "<group>"; };
 		989C40A5265E5131002FF0F7 /* NoEntryFoundViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoEntryFoundViewViewController.swift; sourceTree = "<group>"; };
 		989C40A7265E5131002FF0F7 /* ASCheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASCheckBox.swift; sourceTree = "<group>"; };
@@ -688,18 +684,8 @@
 		989C409D265E5131002FF0F7 /* ASChatBarview */ = {
 			isa = PBXGroup;
 			children = (
-				989C409F265E5131002FF0F7 /* Extensions */,
 			);
 			path = ASChatBarview;
-			sourceTree = "<group>";
-		};
-		989C409F265E5131002FF0F7 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				989C40A0265E5131002FF0F7 /* UIView+XibSetup.swift */,
-				989C40A1265E5131002FF0F7 /* UITextView+NumberOfLines.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		989C40A3265E5131002FF0F7 /* NoEntryFoundView */ = {
@@ -1077,12 +1063,10 @@
 				980D1233261429CE00995F41 /* UICollectionView+Extension.swift in Sources */,
 				9876845B26155F2E00B597B0 /* PagedCollectionLayout.swift in Sources */,
 				980D122E261429CE00995F41 /* UIDevice+Extension.swift in Sources */,
-				989C40E3265E5131002FF0F7 /* UIView+XibSetup.swift in Sources */,
 				989C40D5265E5131002FF0F7 /* HorizontalScrollingOptionCell.swift in Sources */,
 				989C40F6265E5131002FF0F7 /* ASCustomDrawerViewController.swift in Sources */,
 				987683262614349900B597B0 /* CFFThemeManagerProtocol.swift in Sources */,
 				989C40F1265E5131002FF0F7 /* MediaItemCollectionViewCell.swift in Sources */,
-				989C40E4265E5131002FF0F7 /* UITextView+NumberOfLines.swift in Sources */,
 				989C40D4265E5131002FF0F7 /* GUAAlertView.m in Sources */,
 				989C40EE265E5131002FF0F7 /* BlockButton.swift in Sources */,
 				980D1234261429CE00995F41 /* Array+Extension.swift in Sources */,

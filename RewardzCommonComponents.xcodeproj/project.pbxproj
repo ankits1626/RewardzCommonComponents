@@ -109,6 +109,22 @@
 		98C094C826142367006D5178 /* RewardzCommonComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 98C094BA26142367006D5178 /* RewardzCommonComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEAAD51926FB388F0069C5C1 /* AssetGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEAAD51B26FB388F0069C5C1 /* AssetGridViewController.xib */; };
 		BEAAD52926FB3BD10069C5C1 /* GroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEAAD52B26FB3BD10069C5C1 /* GroupsViewController.xib */; };
+		BEEF542626FC786600327205 /* ASMentionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF53F826FC786600327205 /* ASMentionStore.swift */; };
+		BEEF542726FC786600327205 /* ASMentionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF53F926FC786600327205 /* ASMentionCoordinator.swift */; };
+		BEEF542826FC786600327205 /* ASMention+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF53FB26FC786600327205 /* ASMention+Extensions.swift */; };
+		BEEF542926FC786600327205 /* ASMentionSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF53FD26FC786600327205 /* ASMentionSelectorViewController.swift */; };
+		BEEF542A26FC786600327205 /* ASMentionSelectorViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEEF53FE26FC786600327205 /* ASMentionSelectorViewController.strings */; };
+		BEEF542B26FC786600327205 /* TagUserTableViewCell.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEEF540326FC786600327205 /* TagUserTableViewCell.strings */; };
+		BEEF542C26FC786600327205 /* TagUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEEF540926FC786600327205 /* TagUserTableViewCell.xib */; };
+		BEEF542D26FC786600327205 /* TagUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF540C26FC786600327205 /* TagUserTableViewCell.swift */; };
+		BEEF542E26FC786600327205 /* ASTaggedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF541426FC786600327205 /* ASTaggedUser.swift */; };
+		BEEF542F26FC786600327205 /* ASMentionSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEEF541526FC786600327205 /* ASMentionSelectorViewController.xib */; };
+		BEEF543026FC786600327205 /* KeyboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF541C26FC786600327205 /* KeyboardService.swift */; };
+		BEEF543126FC786600327205 /* MockUserListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF541D26FC786600327205 /* MockUserListProvider.swift */; };
+		BEEF543226FC786600327205 /* TagUserListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF541E26FC786600327205 /* TagUserListProvider.swift */; };
+		BEEF543326FC786600327205 /* ASMentionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF542126FC786600327205 /* ASMentionText.swift */; };
+		BEEF543426FC786600327205 /* ASMentionTextParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF542326FC786600327205 /* ASMentionTextParser.swift */; };
+		BEEF543526FC786600327205 /* ASMentionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF542526FC786600327205 /* ASMentionPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -250,6 +266,40 @@
 		BEAAD53B26FB3BDF0069C5C1 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/GroupsViewController.strings; sourceTree = "<group>"; };
 		BEAAD53D26FB3BDF0069C5C1 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/GroupsViewController.strings; sourceTree = "<group>"; };
 		BEAAD53F26FB3BE00069C5C1 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/GroupsViewController.strings; sourceTree = "<group>"; };
+		BEEF53F826FC786600327205 /* ASMentionStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASMentionStore.swift; sourceTree = "<group>"; };
+		BEEF53F926FC786600327205 /* ASMentionCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASMentionCoordinator.swift; sourceTree = "<group>"; };
+		BEEF53FB26FC786600327205 /* ASMention+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASMention+Extensions.swift"; sourceTree = "<group>"; };
+		BEEF53FD26FC786600327205 /* ASMentionSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASMentionSelectorViewController.swift; sourceTree = "<group>"; };
+		BEEF53FF26FC786600327205 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ASMentionSelectorViewController.strings"; sourceTree = "<group>"; };
+		BEEF540026FC786600327205 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/ASMentionSelectorViewController.strings; sourceTree = "<group>"; };
+		BEEF540126FC786600327205 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ASMentionSelectorViewController.strings; sourceTree = "<group>"; };
+		BEEF540426FC786600327205 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TagUserTableViewCell.strings"; sourceTree = "<group>"; };
+		BEEF540526FC786600327205 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/TagUserTableViewCell.strings; sourceTree = "<group>"; };
+		BEEF540626FC786600327205 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TagUserTableViewCell.strings; sourceTree = "<group>"; };
+		BEEF540726FC786600327205 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/TagUserTableViewCell.strings; sourceTree = "<group>"; };
+		BEEF540826FC786600327205 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/TagUserTableViewCell.strings; sourceTree = "<group>"; };
+		BEEF540A26FC786600327205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TagUserTableViewCell.xib; sourceTree = "<group>"; };
+		BEEF540B26FC786600327205 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/TagUserTableViewCell.strings"; sourceTree = "<group>"; };
+		BEEF540C26FC786600327205 /* TagUserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagUserTableViewCell.swift; sourceTree = "<group>"; };
+		BEEF540D26FC786600327205 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/TagUserTableViewCell.strings; sourceTree = "<group>"; };
+		BEEF540E26FC786600327205 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/TagUserTableViewCell.strings; sourceTree = "<group>"; };
+		BEEF540F26FC786600327205 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/TagUserTableViewCell.strings; sourceTree = "<group>"; };
+		BEEF541026FC786600327205 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/TagUserTableViewCell.strings; sourceTree = "<group>"; };
+		BEEF541126FC786600327205 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/ASMentionSelectorViewController.strings; sourceTree = "<group>"; };
+		BEEF541226FC786600327205 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/ASMentionSelectorViewController.strings; sourceTree = "<group>"; };
+		BEEF541426FC786600327205 /* ASTaggedUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASTaggedUser.swift; sourceTree = "<group>"; };
+		BEEF541626FC786600327205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ASMentionSelectorViewController.xib; sourceTree = "<group>"; };
+		BEEF541726FC786600327205 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/ASMentionSelectorViewController.strings"; sourceTree = "<group>"; };
+		BEEF541826FC786600327205 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/ASMentionSelectorViewController.strings; sourceTree = "<group>"; };
+		BEEF541926FC786600327205 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/ASMentionSelectorViewController.strings; sourceTree = "<group>"; };
+		BEEF541A26FC786600327205 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/ASMentionSelectorViewController.strings; sourceTree = "<group>"; };
+		BEEF541C26FC786600327205 /* KeyboardService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardService.swift; sourceTree = "<group>"; };
+		BEEF541D26FC786600327205 /* MockUserListProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUserListProvider.swift; sourceTree = "<group>"; };
+		BEEF541E26FC786600327205 /* TagUserListProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagUserListProvider.swift; sourceTree = "<group>"; };
+		BEEF541F26FC786600327205 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/ASMentionSelectorViewController.strings; sourceTree = "<group>"; };
+		BEEF542126FC786600327205 /* ASMentionText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASMentionText.swift; sourceTree = "<group>"; };
+		BEEF542326FC786600327205 /* ASMentionTextParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASMentionTextParser.swift; sourceTree = "<group>"; };
+		BEEF542526FC786600327205 /* ASMentionPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASMentionPresenter.swift; sourceTree = "<group>"; };
 		C0215E65443EBF1E3F1F7A98 /* Pods-RewardzCommonComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents.debug.xcconfig"; path = "../../code/2021MarRewardxComponents/Pods/Target Support Files/Pods-RewardzCommonComponents/Pods-RewardzCommonComponents.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -473,6 +523,7 @@
 		989C4065265E5131002FF0F7 /* UI Components */ = {
 			isa = PBXGroup;
 			children = (
+				BEEF53F626FC786600327205 /* ASMentions */,
 				989C4066265E5131002FF0F7 /* BubbleOptionSelection */,
 				989C406C265E5131002FF0F7 /* Media Cropper */,
 				989C4078265E5131002FF0F7 /* Media Picker */,
@@ -858,6 +909,101 @@
 			path = RewardzCommonComponentsTests;
 			sourceTree = "<group>";
 		};
+		BEEF53F626FC786600327205 /* ASMentions */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF53F726FC786600327205 /* ASMentionStore */,
+				BEEF53F926FC786600327205 /* ASMentionCoordinator.swift */,
+				BEEF53FA26FC786600327205 /* Extensions */,
+				BEEF53FC26FC786600327205 /* ASMentionSelectorViewController */,
+				BEEF542026FC786600327205 /* model */,
+				BEEF542226FC786600327205 /* ASMentionTextParser */,
+				BEEF542426FC786600327205 /* ASMentionPresenter */,
+			);
+			path = ASMentions;
+			sourceTree = "<group>";
+		};
+		BEEF53F726FC786600327205 /* ASMentionStore */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF53F826FC786600327205 /* ASMentionStore.swift */,
+			);
+			path = ASMentionStore;
+			sourceTree = "<group>";
+		};
+		BEEF53FA26FC786600327205 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF53FB26FC786600327205 /* ASMention+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BEEF53FC26FC786600327205 /* ASMentionSelectorViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF53FD26FC786600327205 /* ASMentionSelectorViewController.swift */,
+				BEEF53FE26FC786600327205 /* ASMentionSelectorViewController.strings */,
+				BEEF540226FC786600327205 /* custom cell */,
+				BEEF541326FC786600327205 /* models */,
+				BEEF541526FC786600327205 /* ASMentionSelectorViewController.xib */,
+				BEEF541B26FC786600327205 /* worker */,
+			);
+			path = ASMentionSelectorViewController;
+			sourceTree = "<group>";
+		};
+		BEEF540226FC786600327205 /* custom cell */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF540326FC786600327205 /* TagUserTableViewCell.strings */,
+				BEEF540926FC786600327205 /* TagUserTableViewCell.xib */,
+				BEEF540C26FC786600327205 /* TagUserTableViewCell.swift */,
+			);
+			path = "custom cell";
+			sourceTree = "<group>";
+		};
+		BEEF541326FC786600327205 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF541426FC786600327205 /* ASTaggedUser.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		BEEF541B26FC786600327205 /* worker */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF541C26FC786600327205 /* KeyboardService.swift */,
+				BEEF541D26FC786600327205 /* MockUserListProvider.swift */,
+				BEEF541E26FC786600327205 /* TagUserListProvider.swift */,
+			);
+			path = worker;
+			sourceTree = "<group>";
+		};
+		BEEF542026FC786600327205 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF542126FC786600327205 /* ASMentionText.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BEEF542226FC786600327205 /* ASMentionTextParser */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF542326FC786600327205 /* ASMentionTextParser.swift */,
+			);
+			path = ASMentionTextParser;
+			sourceTree = "<group>";
+		};
+		BEEF542426FC786600327205 /* ASMentionPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF542526FC786600327205 /* ASMentionPresenter.swift */,
+			);
+			path = ASMentionPresenter;
+			sourceTree = "<group>";
+		};
 		D354117903DF22B28A52047D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -975,6 +1121,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				989C40EA265E5131002FF0F7 /* OptionListTableViewCell.xib in Resources */,
+				BEEF542A26FC786600327205 /* ASMentionSelectorViewController.strings in Resources */,
 				989C40C9265E5131002FF0F7 /* CFFImageCropperViewController.xib in Resources */,
 				989C40E9265E5131002FF0F7 /* OptionListViewController.xib in Resources */,
 				BEAAD51926FB388F0069C5C1 /* AssetGridViewController.xib in Resources */,
@@ -984,6 +1131,8 @@
 				989C40CF265E5131002FF0F7 /* GroupCell.xib in Resources */,
 				BEAAD52926FB3BD10069C5C1 /* GroupsViewController.xib in Resources */,
 				989C40CB265E5131002FF0F7 /* GridViewCell.xib in Resources */,
+				BEEF542F26FC786600327205 /* ASMentionSelectorViewController.xib in Resources */,
+				BEEF542C26FC786600327205 /* TagUserTableViewCell.xib in Resources */,
 				989C40D6265E5131002FF0F7 /* HorizontalScrollingOptionCell.xib in Resources */,
 				989C40C0265E5131002FF0F7 /* BubbleOptionCollectionViewCell.xib in Resources */,
 				989C40F3265E5131002FF0F7 /* CFFMediaBrowserViewController.xib in Resources */,
@@ -993,6 +1142,7 @@
 				989C40DD265E5131002FF0F7 /* FloatingMenuOptionTableViewCell.xib in Resources */,
 				989C40DB265E5131002FF0F7 /* FloatingMenuOptions.xib in Resources */,
 				989C40C4265E5131002FF0F7 /* FAGridView.xib in Resources */,
+				BEEF542B26FC786600327205 /* TagUserTableViewCell.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1081,6 +1231,7 @@
 				9854AAB2261740EB005B653B /* RCCUtility.swift in Sources */,
 				989C40D0265E5131002FF0F7 /* GroupCell.swift in Sources */,
 				989C40C3265E5131002FF0F7 /* FAImageLoader.swift in Sources */,
+				BEEF543526FC786600327205 /* ASMentionPresenter.swift in Sources */,
 				980D1233261429CE00995F41 /* UICollectionView+Extension.swift in Sources */,
 				9876845B26155F2E00B597B0 /* PagedCollectionLayout.swift in Sources */,
 				980D122E261429CE00995F41 /* UIDevice+Extension.swift in Sources */,
@@ -1088,10 +1239,14 @@
 				989C40D5265E5131002FF0F7 /* HorizontalScrollingOptionCell.swift in Sources */,
 				989C40F6265E5131002FF0F7 /* ASCustomDrawerViewController.swift in Sources */,
 				987683262614349900B597B0 /* CFFThemeManagerProtocol.swift in Sources */,
+				BEEF542826FC786600327205 /* ASMention+Extensions.swift in Sources */,
+				BEEF542D26FC786600327205 /* TagUserTableViewCell.swift in Sources */,
 				989C40F1265E5131002FF0F7 /* MediaItemCollectionViewCell.swift in Sources */,
 				989C40E4265E5131002FF0F7 /* UITextView+NumberOfLines.swift in Sources */,
 				989C40D4265E5131002FF0F7 /* GUAAlertView.m in Sources */,
 				989C40EE265E5131002FF0F7 /* BlockButton.swift in Sources */,
+				BEEF542E26FC786600327205 /* ASTaggedUser.swift in Sources */,
+				BEEF543326FC786600327205 /* ASMentionText.swift in Sources */,
 				980D1234261429CE00995F41 /* Array+Extension.swift in Sources */,
 				9876835F2614538C00B597B0 /* RawRepresentable.swift in Sources */,
 				989C40CA265E5131002FF0F7 /* CFFImageCropperViewController.swift in Sources */,
@@ -1113,7 +1268,9 @@
 				989C40DC265E5131002FF0F7 /* FloatingMenuOptionTableViewCell.swift in Sources */,
 				980D12AB26142F8700995F41 /* ErrorDisplayer.swift in Sources */,
 				987684B42615648E00B597B0 /* CFFNetworkRequestCoordinatorProtocol.swift in Sources */,
+				BEEF543026FC786600327205 /* KeyboardService.swift in Sources */,
 				9876835A261444B200B597B0 /* CommonFrameworkDateUtility.swift in Sources */,
+				BEEF542926FC786600327205 /* ASMentionSelectorViewController.swift in Sources */,
 				989C40F5265E5131002FF0F7 /* CustomSegmentedControl.swift in Sources */,
 				980D12A626142F8700995F41 /* APIRequestModel.swift in Sources */,
 				98768373261555C100B597B0 /* String+Extensions.swift in Sources */,
@@ -1137,17 +1294,22 @@
 				989C40D8265E5131002FF0F7 /* HorizontalScrollAdapterProtocol.swift in Sources */,
 				98BA3CA12625199300DCB1C0 /* RCCThemeCoordinator.swift in Sources */,
 				989C40DE265E5131002FF0F7 /* YearSelectorHandler.swift in Sources */,
+				BEEF543126FC786600327205 /* MockUserListProvider.swift in Sources */,
 				980D12A926142F8700995F41 /* UnauthorizedHandler.swift in Sources */,
 				989C40D2265E5131002FF0F7 /* GroupsViewController.swift in Sources */,
 				989C40DF265E5131002FF0F7 /* GenericFilterViewController.swift in Sources */,
 				989C40CC265E5131002FF0F7 /* GridViewCell.swift in Sources */,
 				987684B8261568D700B597B0 /* Collection+Extension.swift in Sources */,
+				BEEF543226FC786600327205 /* TagUserListProvider.swift in Sources */,
+				BEEF542626FC786600327205 /* ASMentionStore.swift in Sources */,
 				9876845426155E7600B597B0 /* BaseCellConfigurator.swift in Sources */,
 				989C40E2265E5131002FF0F7 /* ASChatBarview.swift in Sources */,
 				980D123926142A3F00995F41 /* Theme Related.swift in Sources */,
+				BEEF542726FC786600327205 /* ASMentionCoordinator.swift in Sources */,
 				989C40D9265E5131002FF0F7 /* HorizontolScrolling.swift in Sources */,
 				989C40EF265E5131002FF0F7 /* MFLoader.swift in Sources */,
 				980D122D261429CE00995F41 /* UIApplication+Extension.swift in Sources */,
+				BEEF543426FC786600327205 /* ASMentionTextParser.swift in Sources */,
 				989C40D7265E5131002FF0F7 /* HorizontalScrollingOptionsView.swift in Sources */,
 				989C40C5265E5131002FF0F7 /* UIImage+Additions.swift in Sources */,
 				989C40CD265E5131002FF0F7 /* AssetGridViewController.swift in Sources */,
@@ -1207,6 +1369,56 @@
 				BEAAD53F26FB3BE00069C5C1 /* vi */,
 			);
 			name = GroupsViewController.xib;
+			sourceTree = "<group>";
+		};
+		BEEF53FE26FC786600327205 /* ASMentionSelectorViewController.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEEF53FF26FC786600327205 /* zh-Hans */,
+				BEEF540026FC786600327205 /* ja */,
+				BEEF540126FC786600327205 /* en */,
+				BEEF541126FC786600327205 /* ms */,
+				BEEF541226FC786600327205 /* ko */,
+				BEEF541726FC786600327205 /* zh-Hant */,
+				BEEF541826FC786600327205 /* vi */,
+				BEEF541926FC786600327205 /* id */,
+				BEEF541A26FC786600327205 /* th */,
+				BEEF541F26FC786600327205 /* hi */,
+			);
+			name = ASMentionSelectorViewController.strings;
+			sourceTree = "<group>";
+		};
+		BEEF540326FC786600327205 /* TagUserTableViewCell.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEEF540426FC786600327205 /* zh-Hans */,
+				BEEF540526FC786600327205 /* ja */,
+				BEEF540626FC786600327205 /* en */,
+				BEEF540726FC786600327205 /* ms */,
+				BEEF540826FC786600327205 /* ko */,
+				BEEF540B26FC786600327205 /* zh-Hant */,
+				BEEF540D26FC786600327205 /* vi */,
+				BEEF540E26FC786600327205 /* id */,
+				BEEF540F26FC786600327205 /* th */,
+				BEEF541026FC786600327205 /* hi */,
+			);
+			name = TagUserTableViewCell.strings;
+			sourceTree = "<group>";
+		};
+		BEEF540926FC786600327205 /* TagUserTableViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEEF540A26FC786600327205 /* Base */,
+			);
+			name = TagUserTableViewCell.xib;
+			sourceTree = "<group>";
+		};
+		BEEF541526FC786600327205 /* ASMentionSelectorViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEEF541626FC786600327205 /* Base */,
+			);
+			name = ASMentionSelectorViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

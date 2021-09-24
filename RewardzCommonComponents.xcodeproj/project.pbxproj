@@ -103,8 +103,8 @@
 		98C094C126142367006D5178 /* RewardzCommonComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C094B726142367006D5178 /* RewardzCommonComponents.framework */; };
 		98C094C626142367006D5178 /* RewardzCommonComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C094C526142367006D5178 /* RewardzCommonComponentsTests.swift */; };
 		98C094C826142367006D5178 /* RewardzCommonComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 98C094BA26142367006D5178 /* RewardzCommonComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEAAD51926FB388F0069C5C1 /* AssetGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEAAD51B26FB388F0069C5C1 /* AssetGridViewController.xib */; };
-		BEAAD52926FB3BD10069C5C1 /* GroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEAAD52B26FB3BD10069C5C1 /* GroupsViewController.xib */; };
+		BEC2B29126FDA4A5008417C3 /* AssetGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC2B29026FDA4A5008417C3 /* AssetGridViewController.xib */; };
+		BEC2B29326FDA4DE008417C3 /* GroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC2B29226FDA4DE008417C3 /* GroupsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -220,28 +220,8 @@
 		98C094C026142367006D5178 /* RewardzCommonComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RewardzCommonComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C094C526142367006D5178 /* RewardzCommonComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardzCommonComponentsTests.swift; sourceTree = "<group>"; };
 		98C094C726142367006D5178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BEAAD51A26FB388F0069C5C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AssetGridViewController.xib; sourceTree = "<group>"; };
-		BEAAD51D26FB38930069C5C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
-		BEAAD51F26FB38940069C5C1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/AssetGridViewController.strings"; sourceTree = "<group>"; };
-		BEAAD52126FB38950069C5C1 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
-		BEAAD52226FB38BD0069C5C1 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
-		BEAAD52326FB38C50069C5C1 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
-		BEAAD52426FB38D10069C5C1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
-		BEAAD52526FB38D80069C5C1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
-		BEAAD52626FB38DF0069C5C1 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
-		BEAAD52726FB38E60069C5C1 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
-		BEAAD52826FB38F60069C5C1 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/AssetGridViewController.strings"; sourceTree = "<group>"; };
-		BEAAD52A26FB3BD10069C5C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/GroupsViewController.xib; sourceTree = "<group>"; };
-		BEAAD52D26FB3BD40069C5C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/GroupsViewController.strings; sourceTree = "<group>"; };
-		BEAAD52F26FB3BD50069C5C1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/GroupsViewController.strings"; sourceTree = "<group>"; };
-		BEAAD53126FB3BD60069C5C1 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/GroupsViewController.strings"; sourceTree = "<group>"; };
-		BEAAD53326FB3BD70069C5C1 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/GroupsViewController.strings; sourceTree = "<group>"; };
-		BEAAD53526FB3BD80069C5C1 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/GroupsViewController.strings; sourceTree = "<group>"; };
-		BEAAD53726FB3BDD0069C5C1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/GroupsViewController.strings; sourceTree = "<group>"; };
-		BEAAD53926FB3BDE0069C5C1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/GroupsViewController.strings; sourceTree = "<group>"; };
-		BEAAD53B26FB3BDF0069C5C1 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/GroupsViewController.strings; sourceTree = "<group>"; };
-		BEAAD53D26FB3BDF0069C5C1 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/GroupsViewController.strings; sourceTree = "<group>"; };
-		BEAAD53F26FB3BE00069C5C1 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/GroupsViewController.strings; sourceTree = "<group>"; };
+		BEC2B29026FDA4A5008417C3 /* AssetGridViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AssetGridViewController.xib; sourceTree = "<group>"; };
+		BEC2B29226FDA4DE008417C3 /* GroupsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupsViewController.xib; sourceTree = "<group>"; };
 		C0215E65443EBF1E3F1F7A98 /* Pods-RewardzCommonComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents.debug.xcconfig"; path = "../../code/2021MarRewardxComponents/Pods/Target Support Files/Pods-RewardzCommonComponents/Pods-RewardzCommonComponents.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -566,9 +546,9 @@
 		989C4079265E5131002FF0F7 /* Asset Grid */ = {
 			isa = PBXGroup;
 			children = (
+				BEC2B29026FDA4A5008417C3 /* AssetGridViewController.xib */,
 				989C407A265E5131002FF0F7 /* Custom Cell */,
 				989C407D265E5131002FF0F7 /* AssetGridViewController.swift */,
-				BEAAD51B26FB388F0069C5C1 /* AssetGridViewController.xib */,
 			);
 			path = "Asset Grid";
 			sourceTree = "<group>";
@@ -585,8 +565,8 @@
 		989C407F265E5131002FF0F7 /* Groups */ = {
 			isa = PBXGroup;
 			children = (
+				BEC2B29226FDA4DE008417C3 /* GroupsViewController.xib */,
 				989C4080265E5131002FF0F7 /* Custom Cell */,
-				BEAAD52B26FB3BD10069C5C1 /* GroupsViewController.xib */,
 				989C4084265E5131002FF0F7 /* GroupsViewController.swift */,
 			);
 			path = Groups;
@@ -957,11 +937,11 @@
 				989C40EA265E5131002FF0F7 /* OptionListTableViewCell.xib in Resources */,
 				989C40C9265E5131002FF0F7 /* CFFImageCropperViewController.xib in Resources */,
 				989C40E9265E5131002FF0F7 /* OptionListViewController.xib in Resources */,
-				BEAAD51926FB388F0069C5C1 /* AssetGridViewController.xib in Resources */,
 				989C40F2265E5131002FF0F7 /* MediaItemCollectionViewCell.xib in Resources */,
+				BEC2B29326FDA4DE008417C3 /* GroupsViewController.xib in Resources */,
 				98768351261442A400B597B0 /* Media.xcassets in Resources */,
+				BEC2B29126FDA4A5008417C3 /* AssetGridViewController.xib in Resources */,
 				989C40CF265E5131002FF0F7 /* GroupCell.xib in Resources */,
-				BEAAD52926FB3BD10069C5C1 /* GroupsViewController.xib in Resources */,
 				989C40CB265E5131002FF0F7 /* GridViewCell.xib in Resources */,
 				989C40D6265E5131002FF0F7 /* HorizontalScrollingOptionCell.xib in Resources */,
 				989C40C0265E5131002FF0F7 /* BubbleOptionCollectionViewCell.xib in Resources */,
@@ -1147,45 +1127,6 @@
 			targetProxy = 98C094C226142367006D5178 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		BEAAD51B26FB388F0069C5C1 /* AssetGridViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BEAAD51A26FB388F0069C5C1 /* Base */,
-				BEAAD51D26FB38930069C5C1 /* en */,
-				BEAAD51F26FB38940069C5C1 /* zh-Hans */,
-				BEAAD52126FB38950069C5C1 /* th */,
-				BEAAD52226FB38BD0069C5C1 /* hi */,
-				BEAAD52326FB38C50069C5C1 /* id */,
-				BEAAD52426FB38D10069C5C1 /* ja */,
-				BEAAD52526FB38D80069C5C1 /* ko */,
-				BEAAD52626FB38DF0069C5C1 /* ms */,
-				BEAAD52726FB38E60069C5C1 /* vi */,
-				BEAAD52826FB38F60069C5C1 /* zh-Hant */,
-			);
-			name = AssetGridViewController.xib;
-			sourceTree = "<group>";
-		};
-		BEAAD52B26FB3BD10069C5C1 /* GroupsViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BEAAD52A26FB3BD10069C5C1 /* Base */,
-				BEAAD52D26FB3BD40069C5C1 /* en */,
-				BEAAD52F26FB3BD50069C5C1 /* zh-Hans */,
-				BEAAD53126FB3BD60069C5C1 /* zh-Hant */,
-				BEAAD53326FB3BD70069C5C1 /* hi */,
-				BEAAD53526FB3BD80069C5C1 /* id */,
-				BEAAD53726FB3BDD0069C5C1 /* ja */,
-				BEAAD53926FB3BDE0069C5C1 /* ko */,
-				BEAAD53B26FB3BDF0069C5C1 /* ms */,
-				BEAAD53D26FB3BDF0069C5C1 /* th */,
-				BEAAD53F26FB3BE00069C5C1 /* vi */,
-			);
-			name = GroupsViewController.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		98C094C926142367006D5178 /* Debug */ = {

@@ -92,7 +92,6 @@
 		989C40ED265E5131002FF0F7 /* ListItemFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40AF265E5131002FF0F7 /* ListItemFetcher.swift */; };
 		989C40EE265E5131002FF0F7 /* BlockButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40B1265E5131002FF0F7 /* BlockButton.swift */; };
 		989C40EF265E5131002FF0F7 /* MFLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40B3265E5131002FF0F7 /* MFLoader.swift */; };
-		989C40F0265E5131002FF0F7 /* KMPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40B5265E5131002FF0F7 /* KMPlaceholderTextView.swift */; };
 		989C40F1265E5131002FF0F7 /* MediaItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40B8265E5131002FF0F7 /* MediaItemCollectionViewCell.swift */; };
 		989C40F2265E5131002FF0F7 /* MediaItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C40B9265E5131002FF0F7 /* MediaItemCollectionViewCell.xib */; };
 		989C40F3265E5131002FF0F7 /* CFFMediaBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C40BA265E5131002FF0F7 /* CFFMediaBrowserViewController.xib */; };
@@ -206,7 +205,6 @@
 		989C40AF265E5131002FF0F7 /* ListItemFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemFetcher.swift; sourceTree = "<group>"; };
 		989C40B1265E5131002FF0F7 /* BlockButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockButton.swift; sourceTree = "<group>"; };
 		989C40B3265E5131002FF0F7 /* MFLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFLoader.swift; sourceTree = "<group>"; };
-		989C40B5265E5131002FF0F7 /* KMPlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMPlaceholderTextView.swift; sourceTree = "<group>"; };
 		989C40B8265E5131002FF0F7 /* MediaItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		989C40B9265E5131002FF0F7 /* MediaItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		989C40BA265E5131002FF0F7 /* CFFMediaBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFFMediaBrowserViewController.xib; sourceTree = "<group>"; };
@@ -461,7 +459,6 @@
 				989C40A8265E5131002FF0F7 /* Common List */,
 				989C40B0265E5131002FF0F7 /* BlockButton */,
 				989C40B2265E5131002FF0F7 /* MFLoader */,
-				989C40B4265E5131002FF0F7 /* KMPlaceholderTextView */,
 				989C40B6265E5131002FF0F7 /* Media Browser */,
 				989C40BC265E5131002FF0F7 /* CustomSegmentedControl */,
 				989C40BE265E5131002FF0F7 /* ASCustomDrawerViewController */,
@@ -727,14 +724,6 @@
 				989C40B3265E5131002FF0F7 /* MFLoader.swift */,
 			);
 			path = MFLoader;
-			sourceTree = "<group>";
-		};
-		989C40B4265E5131002FF0F7 /* KMPlaceholderTextView */ = {
-			isa = PBXGroup;
-			children = (
-				989C40B5265E5131002FF0F7 /* KMPlaceholderTextView.swift */,
-			);
-			path = KMPlaceholderTextView;
 			sourceTree = "<group>";
 		};
 		989C40B6265E5131002FF0F7 /* Media Browser */ = {
@@ -1083,7 +1072,6 @@
 				989C40C6265E5131002FF0F7 /* FAScrollView.swift in Sources */,
 				989C40E8265E5131002FF0F7 /* ASCheckBox.swift in Sources */,
 				989C40ED265E5131002FF0F7 /* ListItemFetcher.swift in Sources */,
-				989C40F0265E5131002FF0F7 /* KMPlaceholderTextView.swift in Sources */,
 				9854AACA261747C6005B653B /* UIImageView+Extensions.swift in Sources */,
 				980D1231261429CE00995F41 /* UIImage+Extensions.swift in Sources */,
 				9876834126143D2200B597B0 /* GenericCoreDataManager.swift in Sources */,

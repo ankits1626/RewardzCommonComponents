@@ -16,8 +16,8 @@ Common components.
   spec.swift_version = "4.2"
 
   spec.source        = { :git => "https://github.com/ankits1626/RewardzCommonComponents.git", :branch => "removedASChatView"}
-  spec.source_files  = "RewardzCommonComponents/**/*.{h,m,swift}"
-spec.resources = "RewardzCommonComponents/**/*.{xib,png,jpg,jpeg }", "*.xcassets"
+  spec.source_files  = "RewardzCommonComponents/**/*.{h,m,swift}","RewardzCommonComponents/**/*.{xib,png,jpg,jpeg,storyboard}",'RewardzCommonComponents/*.lproj/*.strings', 'RewardzCommonComponents/**/*.lproj/*.strings'
+spec.resources = "*.xcassets"
   spec.dependency 'KUIPopOver', '= 1.1.2'
 
 end

@@ -82,7 +82,7 @@ public class ASCustomDrawerViewController: UIViewController {
         self.drawerTopImage?.image = drawerSetupModel.drawerImage
         self.firstLabel?.attributedText = drawerSetupModel.headerTitleText
         self.seconLabel?.text = drawerSetupModel.subHeaderText
-        secondLabelContainer?.backgroundColor = drawerSetupModel.isSubHeaderBackgroundDisplayed ? UIColor.getGreyControlColor() : .clear
+        secondLabelContainer?.backgroundColor = drawerSetupModel.isSubHeaderBackgroundDisplayed ? UIColor.getConfirmationStackColor() : .clear
         secondLabelContainer?.curvedCornerControl()
         secondLabelContainerTopConstraint?.constant = drawerSetupModel.isSubHeaderBackgroundDisplayed ? 19 : 0
         secondLabelTopConstraint?.constant = drawerSetupModel.isSubHeaderBackgroundDisplayed ? 19 : 0

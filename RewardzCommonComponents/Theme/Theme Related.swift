@@ -227,6 +227,10 @@ public extension UIColor{
     static var pinToPostCellBorderColor : UIColor {
         return .red
     }
+    
+    static func getConfirmationStackColor() -> UIColor{
+        return UIColor(red: 228/255.0, green: 228/255.0, blue: 228/255.0, alpha: 1.0)
+    }
 }
 
 public struct AppliedCornerRadius {

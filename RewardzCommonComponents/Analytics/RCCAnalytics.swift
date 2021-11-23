@@ -23,7 +23,7 @@ public protocol RCCAnalyticsItemProtocol : AnyObject{
     var event :RCCAnalyticsEvent { get }
 }
 
-public protocol CFFAnalyticsAggregatorProtocol{
+public protocol RCCAnalyticsAggregatorProtocol{
     
     func logEvent(info : RCCAnalyticsItemProtocol)
     

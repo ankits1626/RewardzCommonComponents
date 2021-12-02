@@ -400,7 +400,7 @@ public class AssetGridViewController: UIViewController, UICollectionViewDataSour
             if selectedAssets.count < maximumItemSelectionAllowed{
                 selectedAssets.append(LocalSelectedMediaItem(identifier: asset.localIdentifier, asset: asset, mediaType: asset.mediaType))
             }else{
-                ErrorDisplayer.showError(errorMsg: "Cannot select more than 10 images") { (_) in
+                ErrorDisplayer.showError(errorMsg: "Cannot select more than 10 images".localized) { (_) in
                 }
             }
             

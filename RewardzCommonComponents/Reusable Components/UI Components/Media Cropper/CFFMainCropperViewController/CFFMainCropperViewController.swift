@@ -77,7 +77,8 @@ class CFFMainCropperViewController: UIViewController {
     private func setupUI(){
         resetButton.titleLabel?.font = .Button
         resetButton.setTitleColor(.buttonColor, for: .normal)
-        
+        resetButton.setTitle("Reset".localized, for: .normal)
+        doneButton.setTitle("DONE".localized, for: .normal)
         doneButton.titleLabel?.font = .Highlighter1
         doneButton.setTitleColor(.buttonColor, for: .normal)
         doneButton.borderedControl(borderColor: .borderColor, borderWidth: 2.0)

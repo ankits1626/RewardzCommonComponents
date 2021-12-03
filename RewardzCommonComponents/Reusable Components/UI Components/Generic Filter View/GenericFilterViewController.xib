@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GenericFilterViewController" customModule="Cerrapoints_SG" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GenericFilterViewController" customModule="RewardzCommonComponents" customModuleProvider="target">
             <connections>
                 <outlet property="applyButton" destination="Hjy-BU-lUl" id="0yj-OV-kMH"/>
                 <outlet property="clearButton" destination="HFE-Go-MqL" id="I0U-DE-tHO"/>
+                <outlet property="filterScreenTitle" destination="btC-M6-PGa" id="zPp-yC-o7Q"/>
                 <outlet property="listContainer" destination="5jU-Ve-c8K" id="PPa-lM-PZt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -46,10 +48,10 @@
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5jU-Ve-c8K">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="731"/>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 </view>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" systemColor="systemTealColor"/>
                             <constraints>
                                 <constraint firstItem="5jU-Ve-c8K" firstAttribute="leading" secondItem="ZSB-lB-iCF" secondAttribute="leading" id="8i8-xr-ACG"/>
                                 <constraint firstAttribute="trailing" secondItem="5jU-Ve-c8K" secondAttribute="trailing" id="D1K-MP-T6W"/>
@@ -66,7 +68,7 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORb-zv-P1Z">
                                             <rect key="frame" x="0.0" y="0.0" width="207" height="47"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFE-Go-MqL">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFE-Go-MqL">
                                                     <rect key="frame" x="69.5" y="8.5" width="68" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="68" id="DV0-r1-Qor"/>
@@ -90,7 +92,7 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iPL-z7-WIz">
                                             <rect key="frame" x="207" y="0.0" width="207" height="47"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hjy-BU-lUl">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hjy-BU-lUl">
                                                     <rect key="frame" x="69.5" y="8.5" width="68" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="QyD-ry-NIh"/>
@@ -114,7 +116,7 @@
                                     </subviews>
                                 </stackView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" systemColor="systemGreenColor"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="9Z7-oB-frR" secondAttribute="trailing" id="1Db-V4-SMu"/>
                                 <constraint firstItem="9Z7-oB-frR" firstAttribute="top" secondItem="qVm-N1-j5a" secondAttribute="top" id="U5A-5U-ZUw"/>
@@ -126,6 +128,7 @@
                     </subviews>
                 </stackView>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="oPN-e4-8mU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="OKY-eo-o3a"/>
@@ -133,8 +136,18 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oPN-e4-8mU" secondAttribute="trailing" id="iMF-Jg-joh"/>
                 <constraint firstItem="oPN-e4-8mU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vsh-Az-RQq"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="139" y="94"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

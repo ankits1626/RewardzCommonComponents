@@ -58,13 +58,16 @@ public class GenericFilterViewController<T : ListItemProtocol>: UIViewController
     }
     
     @IBOutlet private weak var listContainer : UIView?
-    @IBOutlet private weak var clearButton : UIView?
-    @IBOutlet private weak var applyButton : UIView?
+    @IBOutlet private weak var clearButton : UIButton?
+    @IBOutlet private weak var applyButton : UIButton?
     private var listVC : OptionListViewController<T>!
     public var isMultipleSelectionAllowed : Bool = false
-    
+    @IBOutlet private weak var filterScreenTitle : UILabel?
     public override func viewDidLoad() {
         super.viewDidLoad()
+        filterScreenTitle?.text = "Filter by".localized
+        clearButton?.setTitle("Clear".localized, for: .normal)
+        applyButton?.setTitle("Apply".localized, for: .normal)
         setup()
     }
     

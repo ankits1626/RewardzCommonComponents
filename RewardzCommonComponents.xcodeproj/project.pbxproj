@@ -117,9 +117,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		081D4BA58E5A02E31397D310 /* Pods-RewardzCommonComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents.release.xcconfig"; path = "../../code/2021MarRewardxComponents/Pods/Target Support Files/Pods-RewardzCommonComponents/Pods-RewardzCommonComponents.release.xcconfig"; sourceTree = "<group>"; };
-		220D95156412A38932A86204 /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig"; path = "../../code/2021MarRewardxComponents/Pods/Target Support Files/Pods-RewardzCommonComponents-RewardzCommonComponentsTests/Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
-		7BAEB21253E10E06E709D6DA /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig"; path = "../../code/2021MarRewardxComponents/Pods/Target Support Files/Pods-RewardzCommonComponents-RewardzCommonComponentsTests/Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		081D4BA58E5A02E31397D310 /* Pods-RewardzCommonComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents.release.xcconfig"; path = "../../suyeshkandpal/RewardzCommonComponents/Pods/Target Support Files/Pods-RewardzCommonComponents/Pods-RewardzCommonComponents.release.xcconfig"; sourceTree = "<group>"; };
+		220D95156412A38932A86204 /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig"; path = "../../suyeshkandpal/RewardzCommonComponents/Pods/Target Support Files/Pods-RewardzCommonComponents-RewardzCommonComponentsTests/Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
+		7BAEB21253E10E06E709D6DA /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig"; path = "../../suyeshkandpal/RewardzCommonComponents/Pods/Target Support Files/Pods-RewardzCommonComponents-RewardzCommonComponentsTests/Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7F93C191A78B40E6407CD277 /* Pods_RewardzCommonComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RewardzCommonComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97391302DDED74317338C86D /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		980D1225261429CE00995F41 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
@@ -218,6 +218,7 @@
 		98C094C026142367006D5178 /* RewardzCommonComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RewardzCommonComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C094C526142367006D5178 /* RewardzCommonComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardzCommonComponentsTests.swift; sourceTree = "<group>"; };
 		98C094C726142367006D5178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE059F3E27073FB600CD5C05 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
 		BE2C62772706DF6A00C63D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AssetGridViewController.xib; sourceTree = "<group>"; };
 		BE2C627A2706DF6E00C63D1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
 		BE2C627C2706DF6F00C63D1B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/AssetGridViewController.strings"; sourceTree = "<group>"; };
@@ -228,9 +229,8 @@
 		BE2C62862706DF7400C63D1B /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
 		BE2C62882706DF7500C63D1B /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
 		BE2C628A2706DF7600C63D1B /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
-		BE2C628C2706DF7600C63D1B /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
 		BEC2B29226FDA4DE008417C3 /* GroupsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupsViewController.xib; sourceTree = "<group>"; };
-		C0215E65443EBF1E3F1F7A98 /* Pods-RewardzCommonComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents.debug.xcconfig"; path = "../../code/2021MarRewardxComponents/Pods/Target Support Files/Pods-RewardzCommonComponents/Pods-RewardzCommonComponents.debug.xcconfig"; sourceTree = "<group>"; };
+		C0215E65443EBF1E3F1F7A98 /* Pods-RewardzCommonComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents.debug.xcconfig"; path = "../../suyeshkandpal/RewardzCommonComponents/Pods/Target Support Files/Pods-RewardzCommonComponents/Pods-RewardzCommonComponents.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1140,7 +1140,7 @@
 				BE2C62862706DF7400C63D1B /* ko */,
 				BE2C62882706DF7500C63D1B /* ms */,
 				BE2C628A2706DF7600C63D1B /* th */,
-				BE2C628C2706DF7600C63D1B /* vi */,
+				BE059F3E27073FB600CD5C05 /* vi */,
 			);
 			name = AssetGridViewController.xib;
 			sourceTree = "<group>";

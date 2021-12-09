@@ -153,6 +153,8 @@ public class AssetGridViewController: UIViewController, UICollectionViewDataSour
         uploadButton.setTitleColor(.black, for: .normal)
         self.navigationColor.image = UIImage(named: "")
         setupUploadButton()
+        titleLabel.text = "ADD PHOTOS".localized
+        uploadButton.setTitle("SELECT".localized, for: .normal)
         if let unwrappedThemeManager = themeManager{
             titleLabel.font = unwrappedThemeManager.getHeaderFont()
         }

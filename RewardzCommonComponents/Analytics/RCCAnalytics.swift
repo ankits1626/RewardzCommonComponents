@@ -8,9 +8,9 @@
 import Foundation
 
 public enum RCCAnalyticsEvent : String{
-    case Reward = "screen_reward_detail"
-    case Event = "screen_event_detail"
-    case Announcement = "screen_announcement_detail"
+    case Reward = "reward_id"
+    case Event = "event_id"
+    case Announcement = "announc_id"
 }
 
 public enum RCCAnalyticsAttribute : String{

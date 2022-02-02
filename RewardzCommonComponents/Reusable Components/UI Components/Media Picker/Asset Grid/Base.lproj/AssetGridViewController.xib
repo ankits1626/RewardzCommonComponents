@@ -4,8 +4,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -53,6 +53,7 @@
                                 <constraint firstAttribute="height" constant="27" id="wc2-Ys-Ihi"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                            <color key="textColor" name="FeedsScreenTitle"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Omz-Im-v2T">
@@ -62,14 +63,14 @@
                                 <constraint firstAttribute="height" constant="30" id="rmz-QA-6xG"/>
                             </constraints>
                             <state key="normal" title="Done">
-                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="titleColor" name="FeedsScreenTitle"/>
                             </state>
                             <connections>
                                 <action selector="uploadButtonTapped:" destination="-1" eventType="touchUpInside" id="6Qc-Ur-kIZ"/>
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" name="FeedsBGColor"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="Omz-Im-v2T" secondAttribute="trailing" constant="8" id="Bav-Th-YYd"/>
                         <constraint firstAttribute="height" constant="51" id="Dtv-50-R21"/>
@@ -88,7 +89,7 @@
                             <subviews>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="CXb-SK-Qw0">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="528"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" name="FeedsBGColor"/>
                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GDv-aE-rCj">
                                         <size key="itemSize" width="50" height="50"/>
                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -101,7 +102,7 @@
                                     </connections>
                                 </collectionView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" name="FeedsBGColor"/>
                             <constraints>
                                 <constraint firstItem="CXb-SK-Qw0" firstAttribute="top" secondItem="J7b-xN-5gN" secondAttribute="top" id="C2l-re-2G2"/>
                                 <constraint firstAttribute="trailing" secondItem="CXb-SK-Qw0" secondAttribute="trailing" id="LPh-vh-EcJ"/>
@@ -117,13 +118,15 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="45" id="UDP-bc-k9w"/>
                                     </constraints>
-                                    <state key="normal" title="SELECT"/>
+                                    <state key="normal" title="SELECT">
+                                        <color key="titleColor" name="FeedsScreenTitle"/>
+                                    </state>
                                     <connections>
                                         <action selector="uploadButtonTapped:" destination="-1" eventType="touchUpInside" id="EhG-RO-o9m"/>
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" name="FeedsBGColor"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="bJX-w9-Rn7" secondAttribute="trailing" constant="15" id="7ue-jU-Nqi"/>
                                 <constraint firstAttribute="bottom" secondItem="bJX-w9-Rn7" secondAttribute="bottom" constant="16" id="p7d-nT-qWM"/>
@@ -135,7 +138,7 @@
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="dQk-D1-Gqq"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" name="FeedsBGColor"/>
             <constraints>
                 <constraint firstItem="cZP-Si-jAo" firstAttribute="top" secondItem="Nbi-6M-xkB" secondAttribute="bottom" id="2g6-27-Ims"/>
                 <constraint firstItem="MA2-jc-1Y0" firstAttribute="trailing" secondItem="dQk-D1-Gqq" secondAttribute="trailing" id="41d-7g-8aJ"/>
@@ -156,8 +159,11 @@
     <resources>
         <image name="DBWhitePattern" width="320" height="70"/>
         <image name="back" width="19" height="14"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="FeedsBGColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FeedsScreenTitle">
+            <color red="0.25900000333786011" green="0.25900000333786011" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

@@ -69,7 +69,7 @@ public extension UIColor{
     }
     
     static var buttonColor:  UIColor {
-        return .black
+        return UIColor(named: "FeedsScreenTitle")
     }
     
     static var buttonTextColor:  UIColor {

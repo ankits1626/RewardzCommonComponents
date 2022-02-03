@@ -18,7 +18,7 @@ enum SegmentedControlType {
     
     //MARK:- Properties
     @IBInspectable public var markerColor : UIColor = UIColor.blue
-    @IBInspectable public var selectedMarkerColor : UIColor = UIColor.black
+    @IBInspectable public var selectedMarkerColor : UIColor = UIColor(named: "FeedsScreenTitle")
     @IBInspectable public var indicatorColor : UIColor = UIColor(red: 0.012, green: 0.663, blue: 0.957, alpha: 1.000)
     @IBInspectable public var indicatorHeight : CGFloat = 2.0
     @IBInspectable public var numberOfItems : Int = 0 {

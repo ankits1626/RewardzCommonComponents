@@ -103,9 +103,9 @@ public protocol StepperDelegate {
         if isQuantityFieldEnabled {
             counterTxt.contentOffset = CGPoint(x: 0, y: -5)
             self.layer.borderWidth = borderWidth
+            counterTxt.layer.borderWidth = borderWidth
+            counterTxt.layer.borderColor = borderColor.cgColor
         }
-        counterTxt.layer.borderWidth = borderWidth
-        counterTxt.layer.borderColor = borderColor.cgColor
         self.layer.cornerRadius = cornerRadius
         self.layer.borderColor = borderColor.cgColor
         self.clipsToBounds = true

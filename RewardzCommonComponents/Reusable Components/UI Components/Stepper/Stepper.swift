@@ -41,6 +41,7 @@ public protocol StepperDelegate {
     private var incrementButton = UIButton(frame: CGRect.zero)
     private var decrementButton = UIButton(frame: CGRect.zero)
     public  var counterTxt  = UITextView(frame: CGRect.zero)
+    public var isQuantityFieldEnabled : Bool = true
     
     public override var isEnabled: Bool{
         didSet {
@@ -56,13 +57,19 @@ public protocol StepperDelegate {
     
     private func insertControlSubViews() {
         decrementButton.addTarget(self, action: #selector(decrement), for: .touchUpInside)
-        
         incrementButton.addTarget(self, action: #selector(increment), for: .touchUpInside)
         counterTxt.textAlignment = .center
-        
-        self.addSubview(decrementButton)
-        self.addSubview(incrementButton)
-        self.addSubview(counterTxt)
+        addButtonToSubView()
+    }
+    
+    func addButtonToSubView() {
+        if isQuantityFieldEnabled {
+            self.addSubview(decrementButton)
+            self.addSubview(incrementButton)
+            self.addSubview(counterTxt)
+        }else{
+            self.addSubview(counterTxt)
+        }
     }
     
     func setupStepperControl() {
@@ -93,10 +100,12 @@ public protocol StepperDelegate {
         self.counterTxt.frame = counterLabelFrame
         counterTxt.isScrollEnabled = false
         counterTxt.isUserInteractionEnabled = true
-//        counterTxt.contentOffset = CGPoint(x: 0, y: -5)
+        if isQuantityFieldEnabled {
+            counterTxt.contentOffset = CGPoint(x: 0, y: -5)
+            self.layer.borderWidth = borderWidth
+        }
         counterTxt.layer.borderWidth = borderWidth
         counterTxt.layer.borderColor = borderColor.cgColor
-        self.layer.borderWidth = borderWidth
         self.layer.cornerRadius = cornerRadius
         self.layer.borderColor = borderColor.cgColor
         self.clipsToBounds = true

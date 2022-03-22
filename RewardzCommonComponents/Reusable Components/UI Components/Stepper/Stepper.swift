@@ -101,7 +101,7 @@ public protocol StepperDelegate {
         counterTxt.isUserInteractionEnabled = true
         addButtonToSubView()
         if isQuantityFieldEnabled {
-            counterTxt.contentOffset = CGPoint(x: 0, y: -5)
+//            counterTxt.contentOffset = CGPoint(x: 0, y: -5)
             self.layer.borderWidth = borderWidth
             counterTxt.layer.borderWidth = borderWidth
             counterTxt.layer.borderColor = borderColor.cgColor

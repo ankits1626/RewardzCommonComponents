@@ -239,6 +239,7 @@ public class AssetGridViewController: UIViewController, UICollectionViewDataSour
         if fetchResult == nil {
             let allPhotosOptions = PHFetchOptions()
             allPhotosOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
+            allPhotosOptions.includeAssetSourceTypes = .typeUserLibrary
             fetchResult = PHAsset.fetchAssets(with: PHAssetMediaType.image, options: allPhotosOptions)
         }
     }

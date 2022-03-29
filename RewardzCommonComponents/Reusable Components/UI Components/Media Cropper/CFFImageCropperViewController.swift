@@ -90,7 +90,12 @@ class CFFImageCropperViewController: UIViewController {
     }
     
     @IBAction private func backButtonTapped(){
-        navigationController?.popViewController(animated: true)
+        if navigationController == nil {
+            self.dismiss(animated: true, completion: nil)
+        }else{
+            navigationController?.popViewController(animated: true)
+        }
+        
     }
     
     @IBAction private func doneButtonTapped(){

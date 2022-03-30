@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Photos
 
 class CFFImageCropperViewController: UIViewController {
     @IBOutlet weak var navigationColor: UIImageView!
@@ -157,9 +158,20 @@ extension CFFImageCropperViewController  : UICollectionViewDataSource, UICollect
             imageView?.image = croppedImage
         }else{
             if let asset = selectedAssets[index].asset{
-                localMediaManager?.fetchImageForAsset(asset: asset, size: (cell.bounds.size), completion: { (_, fetchedImage) in
-                   imageView?.image = fetchedImage
+                localMediaManager?.fetchImageForAsset(asset: asset, size: (cell.bounds.size), completion: { (info, fetchedImage) in
+                    if let wrappedImage = fetchedImage {
+                        imageView?.image = wrappedImage
+                    }
                 })
+                if imageView?.image == nil {
+                    if let asset = self.selectedAssets[index].asset{
+                        FAImageLoader.imageFrom(asset: asset, size: PHImageManagerMaximumSize) { (image) in
+                            DispatchQueue.main.async {
+                                imageView?.image = image
+                            }
+                        }
+                    }
+                }
             }
         }
     }

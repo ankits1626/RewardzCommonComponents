@@ -13,7 +13,7 @@ Common components.
   spec.author             = { "Ankit Sachan" => "ankit@rewardz.sg" }
 
   spec.ios.deployment_target = "11.0"
-  spec.swift_version = "4.2"
+  spec.swift_version = "5.0"
 
   spec.source        = { :git => "https://github.com/ankits1626/RewardzCommonComponents.git", :branch => "sk/Latest+Localization"}
   spec.source_files  = "RewardzCommonComponents/**/*.{h,m,swift}"

@@ -42,6 +42,7 @@ public protocol StepperDelegate {
     private var decrementButton = UIButton(frame: CGRect.zero)
     public  var counterTxt  = UITextView(frame: CGRect.zero)
     @IBInspectable public var isQuantityFieldEnabled : Bool = true
+    @IBInspectable public var isBorderEnabled : Bool = true
     
     public override var isEnabled: Bool{
         didSet {
@@ -100,7 +101,7 @@ public protocol StepperDelegate {
         counterTxt.isScrollEnabled = false
         counterTxt.isUserInteractionEnabled = true
         addButtonToSubView()
-        if isQuantityFieldEnabled {
+        if isQuantityFieldEnabled && isBorderEnabled{
 //            counterTxt.contentOffset = CGPoint(x: 0, y: -5)
             self.layer.borderWidth = borderWidth
             counterTxt.layer.borderWidth = borderWidth

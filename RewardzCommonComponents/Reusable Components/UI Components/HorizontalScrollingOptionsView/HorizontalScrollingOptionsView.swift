@@ -57,7 +57,7 @@ public protocol HorizontalScrollingOptionsDatasource {
         layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
         if let unwrappedItems = inferSizeForFixedNumberOfItems,
         unwrappedItems > 0{
-            layout.itemSize = CGSize(width: UIScreen.main.bounds.width / CGFloat(unwrappedItems), height:26.7)
+            layout.itemSize = CGSize(width: UIScreen.main.bounds.width / CGFloat(unwrappedItems), height:40.0)
         }else{
             layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
             layout.itemSize = UICollectionViewFlowLayout.automaticSize
@@ -67,7 +67,7 @@ public protocol HorizontalScrollingOptionsDatasource {
         optionCollection.register(UINib(nibName: "HorizontalScrollingOptionCell", bundle: Bundle(for: HorizontalScrollingOptionCell.self)), forCellWithReuseIdentifier: "HorizontalScrollingOptionCell")
         optionCollection.dataSource = self
         optionCollection.delegate = self
-        optionCollection.backgroundColor = UIColor.clear
+        optionCollection.backgroundColor = #colorLiteral(red: 0.9434584975, green: 0.9545181394, blue: 1, alpha: 1)
         optionCollection.showsHorizontalScrollIndicator = false
         optionCollection.reloadData()
     }
@@ -98,7 +98,7 @@ public protocol HorizontalScrollingOptionsDatasource {
             layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
             if let unwrappedItems = inferSizeForFixedNumberOfItems,
             unwrappedItems > 0{
-                layout.itemSize = CGSize(width: (UIScreen.main.bounds.width - 10) / CGFloat(unwrappedItems), height:26.7)
+                layout.itemSize = CGSize(width: (UIScreen.main.bounds.width - 10) / CGFloat(unwrappedItems), height:40.0)
             }else{
                 layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
                 layout.itemSize = UICollectionViewFlowLayout.automaticSize

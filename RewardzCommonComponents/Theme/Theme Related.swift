@@ -189,7 +189,7 @@ public extension UIColor{
     }
     
     static let selectedOrangeColor = UIColor(red: 243.0/255.0, green: 91/255.0, blue: 45/255.0, alpha: 1.0)
-    static let unSelectedGrayColor = UIColor(red: 222.0/255.0, green: 222/255.0, blue: 222/255.0, alpha: 1.0)
+    static let unSelectedGrayColor = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1.0)
     static let unSelectedTextColor = UIColor(red: 66/255.0, green: 66/255.0, blue: 66/255.0, alpha: 1.0)
     
     static func getBackgroundGreyColor() -> UIColor{

@@ -27,16 +27,18 @@ public class YearSelectorHandler {
         self.delegate?.didFinishedSelection(selectedYear: selectedYear)
     }
     public func indexOfDefaultSelectdYear() -> Int {
-        return Array(currentYear-MAX_YEAR...currentYear).firstIndex(of: currentYear) ?? 0
+        return 0
     }
     private func getYears() -> [Int]{
-        return Array(currentYear-MAX_YEAR...currentYear)
+        let years = Array(currentYear-MAX_YEAR...currentYear)
+        return years.reversed()
     }
 }
 
 extension YearSelectorHandler : HorizontalScrollingOptionsDelegate, HorizontalScrollingOptionsDatasource{
     public func didSelectItemAt(_ index: Int) {
-       selectedYear = Array(currentYear-MAX_YEAR...currentYear+MAX_YEAR)[index]
+        let years = Array(currentYear-MAX_YEAR...currentYear)
+        selectedYear = years.reversed()[index]
     }
     
     public func numberOfItems() -> Int {

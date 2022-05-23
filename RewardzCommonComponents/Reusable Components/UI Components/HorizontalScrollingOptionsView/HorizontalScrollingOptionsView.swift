@@ -21,6 +21,7 @@ public protocol HorizontalScrollingOptionsDatasource {
     @IBInspectable public var unSelectedBubbleColor  = UIColor.unSelectedGrayColor
     @IBInspectable public var selectedBubbleTextColor  = UIColor.white
     @IBInspectable public var unSelectedBubbleTextColor  = UIColor.unSelectedTextColor
+    var organisationColor : String = ""
     public var inferSizeForFixedNumberOfItems : Int?
     fileprivate var delegate : HorizontalScrollingOptionsDelegate?
     fileprivate var dataSource : HorizontalScrollingOptionsDatasource?
@@ -28,17 +29,17 @@ public protocol HorizontalScrollingOptionsDatasource {
     private var selectedIndex : Int = 0{
         didSet{
             if let previousCell = optionCollection.cellForItem(at: IndexPath(item: oldValue, section: 0)) as? HorizontalScrollingOptionCell{
-                    previousCell.backgroundColor = unSelectedBubbleColor
-                previousCell.titleLBL?.textColor = unSelectedBubbleTextColor
+                previousCell.backgroundColor = .white
+                previousCell.titleLBL?.textColor = .lightGray
                 }
             if let currentCell = optionCollection.cellForItem(at: IndexPath(item: selectedIndex, section: 0)) as? HorizontalScrollingOptionCell{
-                currentCell.backgroundColor = selectedBubbleColor
-                currentCell.titleLBL?.textColor = selectedBubbleTextColor
+                currentCell.backgroundColor = Rgbconverter.HexToColor(self.organisationColor)
+                currentCell.titleLBL?.textColor = .white
             }
             optionCollection.scrollToItem(at: IndexPath(item: selectedIndex, section: 0), at: UICollectionView.ScrollPosition.centeredHorizontally, animated: true)
         }
     }
-    
+        
     public func loadData(_ selectedIndex :  Int = 0) {
         optionCollection.reloadData()
         self.selectedIndex = selectedIndex
@@ -53,6 +54,9 @@ public protocol HorizontalScrollingOptionsDatasource {
     }
     
     private func setup(){
+        if let orgColor = UserDefaults.standard.value(forKey: "orgBackgroundColor") as? String{
+            self.organisationColor = orgColor
+        }
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
         if let unwrappedItems = inferSizeForFixedNumberOfItems,
@@ -118,8 +122,8 @@ public protocol HorizontalScrollingOptionsDatasource {
                                                             for: indexPath) as? HorizontalScrollingOptionCell
             else { fatalError("unexpected cell in collection view") }
         dataSource?.configureItemCell(cell, index: indexPath.row)
-        cell.titleLBL?.textColor = selectedIndex == indexPath.item ? selectedBubbleTextColor : unSelectedBubbleTextColor
-        cell.backgroundColor = selectedIndex == indexPath.item ? selectedBubbleColor : unSelectedBubbleColor
+        cell.titleLBL?.textColor = selectedIndex == indexPath.item ? .white : .lightGray
+        cell.backgroundColor = selectedIndex == indexPath.item ? Rgbconverter.HexToColor(self.organisationColor) : .white
         return cell
     }
     

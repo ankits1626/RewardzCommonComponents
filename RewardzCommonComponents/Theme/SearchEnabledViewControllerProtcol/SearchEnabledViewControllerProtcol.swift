@@ -22,10 +22,10 @@ extension UITextField{
     func applySearchTheme() {
         self.backgroundColor = UIColor.getBackgroundGreyColor()
         self.background = UIImage(named: "")
-        self.attributedPlaceholder = NSAttributedString(string:"  \(NSLocalizedString("Search", comment: ""))", attributes:[NSAttributedString.Key.foregroundColor: UIColor.getSearchBarPlaceHolderTextColor()])
+        self.attributedPlaceholder = NSAttributedString(string:"  \(NSLocalizedString("Search", comment: ""))", attributes:[NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         //self.searchTextField.backgroundColor = Rgbconverter.HexToColor("#FFFFFF", alpha: 0.4)
         self.borderStyle = .none
-        let imageView = UIImageView(image: UIImage(named: "searchicon"))
+        let imageView = UIImageView(image: UIImage(named: "rc_searchIcon"))
         imageView.contentMode = UIView.ContentMode.center
         imageView.frame = CGRect(x: 0.0, y: 0.0, width: imageView.image!.size.width + 20.0, height: imageView.image!.size.height)
         let leftView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 30.0, height: imageView.image!.size.height))
@@ -33,7 +33,7 @@ extension UITextField{
         leftView.addSubview(imageView)
         self.leftViewMode = UITextField.ViewMode.always
         self.leftView = leftView
-        textColor = .black
+        textColor = .white
         self.curvedCornerControl()
     }
     

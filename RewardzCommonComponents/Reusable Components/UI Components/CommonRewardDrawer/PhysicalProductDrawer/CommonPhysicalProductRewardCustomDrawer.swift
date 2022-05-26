@@ -1,38 +1,38 @@
 //
-//  CommonRewardCustomDrawer.swift
+//  CommonPhysicalProductRewardCustomDrawer.swift
 //  RewardzCommonComponents
 //
-//  Created by Suyesh Kandpal on 18/05/22.
+//  Created by Suyesh Kandpal on 26/05/22.
 //
 
 import UIKit
 
-public typealias RewardActionBlock = () -> Void
-public class CommonRewardCustomDrawerError {
+public typealias CommonPhysicalProductActionBlock = () -> Void
+public class CommonPhysicalProductDrawerError {
     static let UnableToGetTopViewController = NSError(
-        domain: "com.rewardz.CommonRewardCustomDrawerError",
+        domain: "com.rewardz.CommonPhysicalProductDrawerError",
         code: 1,
         userInfo: [NSLocalizedDescriptionKey: "Unable to get top view controller"]
     )
     
     static let MaximumActionCountError = NSError(
-        domain: "com.rewardz.CommonRewardCustomDrawerError",
+        domain: "com.rewardz.CommonPhysicalProductDrawerError",
         code: 1,
         userInfo: [NSLocalizedDescriptionKey: "Maximum operations breached while setting drawer actions."]
     )
 }
 
-public class CommonRewardCustomDrawerAction {
+public class CommonPhysicalProductDrawerAction {
     let title : String
-    let buttonActionBlock: RewardActionBlock
+    let buttonActionBlock: CommonPhysicalProductActionBlock
     
-    public init(title : String, buttonActionBlock:@escaping RewardActionBlock) {
+    public init(title : String, buttonActionBlock:@escaping CommonPhysicalProductActionBlock) {
         self.title = title
         self.buttonActionBlock = buttonActionBlock
     }
 }
 
-public struct CommonRewardCustomDrawerSetupModel {
+public struct CommonPhysicalProductCustomDrawerSetupModel {
     public var drawerImage : UIImage?
     public var headerTitleText : NSAttributedString?
     public var subHeaderText : String?
@@ -42,8 +42,10 @@ public struct CommonRewardCustomDrawerSetupModel {
     public let networkRequestCoordinator: CFFNetworkRequestCoordinatorProtocol
     public let mediaFetcher : CFFMediaCoordinatorProtocol
     public var selectedRewardQuantity : String?
+    public var remainingPoints : Int?
+    public var enteredDeliveryAddress : String
     
-    public init(drawerImage : UIImage?, headerTitleText : NSAttributedString?, subHeaderText : String?, isSubHeaderBackgroundDisplayed : Bool = false, selectedRewardName : String, selectedRewardImage : String, networkRequestCoordinator: CFFNetworkRequestCoordinatorProtocol,mediaFetcher : CFFMediaCoordinatorProtocol,selectedRewardQuantity : String = "1"){
+    public init(drawerImage : UIImage?, headerTitleText : NSAttributedString?, subHeaderText : String?, isSubHeaderBackgroundDisplayed : Bool = false, selectedRewardName : String, selectedRewardImage : String, networkRequestCoordinator: CFFNetworkRequestCoordinatorProtocol,mediaFetcher : CFFMediaCoordinatorProtocol,selectedRewardQuantity : String = "1", _remainingPoints : Int , _enteredDeliveryAddress : String){
         self.drawerImage = drawerImage
         self.headerTitleText = headerTitleText
         self.subHeaderText = subHeaderText
@@ -53,11 +55,13 @@ public struct CommonRewardCustomDrawerSetupModel {
         self.networkRequestCoordinator = networkRequestCoordinator
         self.mediaFetcher = mediaFetcher
         self.selectedRewardQuantity = selectedRewardQuantity
+        self.remainingPoints = _remainingPoints
+        self.enteredDeliveryAddress = _enteredDeliveryAddress
     }
 }
 
-public class CommonRewardCustomDrawer: UIViewController {
-    private var drawerActions : [CommonRewardCustomDrawerAction]!{
+public class CommonPhysicalProductRewardCustomDrawer: UIViewController {
+    private var drawerActions : [CommonPhysicalProductDrawerAction]!{
         didSet{
             if drawerActions != nil{
                 setupActionButtons()
@@ -71,6 +75,7 @@ public class CommonRewardCustomDrawer: UIViewController {
     @IBOutlet private weak var seconLabel : UILabel?
     @IBOutlet private weak var rewardQuantity : UILabel?
     @IBOutlet private weak var rewardName : UILabel?
+    @IBOutlet private weak var deliveryAddress : UILabel?
     @IBOutlet private weak var secondLabelContainer : UIView?
     @IBOutlet private var actionButtons : [BlockButton]!
     @IBOutlet private weak var secondLabelContainerTopConstraint : NSLayoutConstraint?
@@ -79,11 +84,11 @@ public class CommonRewardCustomDrawer: UIViewController {
 //    @IBOutlet private weak var secondActionButton : BlockButton?
 //    @IBOutlet private weak var thirdActionButton : BlockButton?
     
-    private let drawerSetupModel : CommonRewardCustomDrawerSetupModel
+    private let drawerSetupModel : CommonPhysicalProductCustomDrawerSetupModel
     
-    public init(_ setupModel : CommonRewardCustomDrawerSetupModel) {
+    public init(_ setupModel : CommonPhysicalProductCustomDrawerSetupModel) {
         self.drawerSetupModel = setupModel
-        super.init(nibName: "CommonRewardCustomDrawer", bundle: Bundle(for: CommonRewardCustomDrawer.self))
+        super.init(nibName: "CommonPhysicalProductRewardCustomDrawer", bundle: Bundle(for: CommonPhysicalProductRewardCustomDrawer.self))
     }
     
     required init?(coder: NSCoder) {
@@ -114,9 +119,9 @@ public class CommonRewardCustomDrawer: UIViewController {
         }
         
         self.firstLabel?.attributedText = drawerSetupModel.headerTitleText
-        self.seconLabel?.text = "You will still have 30,000 points available"
+        self.pointsLabel?.text = "You will still have \(drawerSetupModel.remainingPoints!) points available"
         self.seconLabel?.text = drawerSetupModel.subHeaderText
-//        secondLabelContainer?.backgroundColor = .clear
+        self.deliveryAddress?.text = drawerSetupModel.enteredDeliveryAddress
         secondLabelContainer?.curvedCornerControl()
         secondLabelContainerTopConstraint?.constant = drawerSetupModel.isSubHeaderBackgroundDisplayed ? 19 : 0
         secondLabelTopConstraint?.constant = drawerSetupModel.isSubHeaderBackgroundDisplayed ? 19 : 0
@@ -153,18 +158,18 @@ public class CommonRewardCustomDrawer: UIViewController {
     
     public func presentDrawer() throws{
         if let topviewController : UIViewController = UIApplication.topViewController(){
-            slideInTransitioningDelegate.direction = .bottom(height: 619.0)
+            slideInTransitioningDelegate.direction = .bottom(height: 662.0)
             transitioningDelegate = slideInTransitioningDelegate
             modalPresentationStyle = .custom
             topviewController.present(self, animated: true, completion: nil)
         }else{
-            throw CommonRewardCustomDrawerError.UnableToGetTopViewController
+            throw CommonPhysicalProductDrawerError.UnableToGetTopViewController
         }
     }
     
-    public func addDrawerActions(_ drawerActions : [CommonRewardCustomDrawerAction]) throws {
+    public func addDrawerActions(_ drawerActions : [CommonPhysicalProductDrawerAction]) throws {
         if drawerActions.count > actionButtons.count{
-            throw CommonRewardCustomDrawerError.MaximumActionCountError
+            throw CommonPhysicalProductDrawerError.MaximumActionCountError
         }else{
             self.drawerActions = drawerActions
         }
@@ -177,14 +182,15 @@ public class CommonRewardCustomDrawer: UIViewController {
     }
     
     deinit {
-        print("<<<<<<<<<<<<<<<<<<<<< CommonRewardCustomDrawerError deinit called")
+        print("<<<<<<<<<<<<<<<<<<<<< CommonPhysicalProductDrawerError deinit called")
     }
     
 }
 
-extension CommonRewardCustomDrawer{
+extension CommonPhysicalProductRewardCustomDrawer{
     @IBAction private func close(){
         dismiss(animated: true, completion: nil)
     }
 }
+
 

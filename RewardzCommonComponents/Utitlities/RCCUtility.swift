@@ -17,5 +17,12 @@ public class RCCUtility {
         let formattedNumber = numberFormatter.string(from: number)!
         return formattedNumber
     }
+    
+    static public func getNumberByComma(number : NSNumber) -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        let formattedNumber = numberFormatter.string(from: number)!
+        return formattedNumber
+    }
 }
 

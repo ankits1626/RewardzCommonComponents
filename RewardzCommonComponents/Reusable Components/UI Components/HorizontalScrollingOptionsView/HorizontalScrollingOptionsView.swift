@@ -33,7 +33,7 @@ public protocol HorizontalScrollingOptionsDatasource {
                 previousCell.titleLBL?.textColor = .lightGray
                 }
             if let currentCell = optionCollection.cellForItem(at: IndexPath(item: selectedIndex, section: 0)) as? HorizontalScrollingOptionCell{
-                currentCell.backgroundColor = Rgbconverter.HexToColor(self.organisationColor)
+                currentCell.backgroundColor = UIColor.getControlColor()
                 currentCell.titleLBL?.textColor = .white
             }
             optionCollection.scrollToItem(at: IndexPath(item: selectedIndex, section: 0), at: UICollectionView.ScrollPosition.centeredHorizontally, animated: true)
@@ -54,9 +54,6 @@ public protocol HorizontalScrollingOptionsDatasource {
     }
     
     private func setup(){
-        if let orgColor = UserDefaults.standard.value(forKey: "orgBackgroundColor") as? String{
-            self.organisationColor = orgColor
-        }
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
         if let unwrappedItems = inferSizeForFixedNumberOfItems,
@@ -123,7 +120,7 @@ public protocol HorizontalScrollingOptionsDatasource {
             else { fatalError("unexpected cell in collection view") }
         dataSource?.configureItemCell(cell, index: indexPath.row)
         cell.titleLBL?.textColor = selectedIndex == indexPath.item ? .white : .lightGray
-        cell.backgroundColor = selectedIndex == indexPath.item ? Rgbconverter.HexToColor(self.organisationColor) : .white
+        cell.backgroundColor = selectedIndex == indexPath.item ? UIColor.getControlColor() : .white
         return cell
     }
     

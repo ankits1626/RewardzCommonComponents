@@ -93,7 +93,7 @@ public class CommonRewardCustomDrawer: UIViewController {
     public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 //        self.drawerTopImage?.roundCorners(corners: .allCorners, radius: 8.0)
-        self.drawerTopImage?.curvedBorderedControl(borderColor: .lightGray, borderWidth: 1.0)
+        self.drawerTopImage?.curvedWithoutBorderedControl(borderColor: .lightGray, borderWidth: 1.0)
         self.drawerTopImage?.curvedCornerControl()
     }
     
@@ -130,7 +130,7 @@ public class CommonRewardCustomDrawer: UIViewController {
             actionButton.isHidden = false
             if index == 0{
                 actionButton.setTitleColor(.white, for: .normal)
-                actionButton.curvedBorderedControl(borderColor: .white, borderWidth: 0.5)
+                actionButton.curvedWithoutBorderedControl(borderColor: .white, borderWidth: 0.5)
                 actionButton.backgroundColor = .getControlColor()
             }else{
                 actionButton.setTitleColor(.getControlColor(), for: .normal)

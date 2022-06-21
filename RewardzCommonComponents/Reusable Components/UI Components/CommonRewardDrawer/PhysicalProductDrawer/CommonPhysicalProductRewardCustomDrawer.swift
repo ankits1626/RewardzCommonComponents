@@ -42,10 +42,10 @@ public struct CommonPhysicalProductCustomDrawerSetupModel {
     public let networkRequestCoordinator: CFFNetworkRequestCoordinatorProtocol
     public let mediaFetcher : CFFMediaCoordinatorProtocol
     public var selectedRewardQuantity : String?
-    public var remainingPoints : Int?
+    public var remainingPoints : String?
     public var enteredDeliveryAddress : String
     
-    public init(drawerImage : UIImage?, headerTitleText : NSAttributedString?, subHeaderText : String?, isSubHeaderBackgroundDisplayed : Bool = false, selectedRewardName : String, selectedRewardImage : String, networkRequestCoordinator: CFFNetworkRequestCoordinatorProtocol,mediaFetcher : CFFMediaCoordinatorProtocol,selectedRewardQuantity : String = "1", _remainingPoints : Int , _enteredDeliveryAddress : String){
+    public init(drawerImage : UIImage?, headerTitleText : NSAttributedString?, subHeaderText : String?, isSubHeaderBackgroundDisplayed : Bool = false, selectedRewardName : String, selectedRewardImage : String, networkRequestCoordinator: CFFNetworkRequestCoordinatorProtocol,mediaFetcher : CFFMediaCoordinatorProtocol,selectedRewardQuantity : String = "1", _remainingPoints : String , _enteredDeliveryAddress : String){
         self.drawerImage = drawerImage
         self.headerTitleText = headerTitleText
         self.subHeaderText = subHeaderText

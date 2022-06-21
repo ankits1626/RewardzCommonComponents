@@ -42,8 +42,9 @@ public struct CommonRewardCustomDrawerSetupModel {
     public let networkRequestCoordinator: CFFNetworkRequestCoordinatorProtocol
     public let mediaFetcher : CFFMediaCoordinatorProtocol
     public var selectedRewardQuantity : String?
+    public var remainingPoints : String
     
-    public init(drawerImage : UIImage?, headerTitleText : NSAttributedString?, subHeaderText : String?, isSubHeaderBackgroundDisplayed : Bool = false, selectedRewardName : String, selectedRewardImage : String, networkRequestCoordinator: CFFNetworkRequestCoordinatorProtocol,mediaFetcher : CFFMediaCoordinatorProtocol,selectedRewardQuantity : String = "1"){
+    public init(drawerImage : UIImage?, headerTitleText : NSAttributedString?, subHeaderText : String?, isSubHeaderBackgroundDisplayed : Bool = false, selectedRewardName : String, selectedRewardImage : String, networkRequestCoordinator: CFFNetworkRequestCoordinatorProtocol,mediaFetcher : CFFMediaCoordinatorProtocol,selectedRewardQuantity : String = "1",remainingPoints : String){
         self.drawerImage = drawerImage
         self.headerTitleText = headerTitleText
         self.subHeaderText = subHeaderText
@@ -53,6 +54,7 @@ public struct CommonRewardCustomDrawerSetupModel {
         self.networkRequestCoordinator = networkRequestCoordinator
         self.mediaFetcher = mediaFetcher
         self.selectedRewardQuantity = selectedRewardQuantity
+        self.remainingPoints = remainingPoints
     }
 }
 
@@ -69,6 +71,7 @@ public class CommonRewardCustomDrawer: UIViewController {
     @IBOutlet private weak var firstLabel : UILabel?
     @IBOutlet private weak var pointsLabel : UILabel?
     @IBOutlet private weak var seconLabel : UILabel?
+    @IBOutlet private weak var remainingPointsLabel : UILabel?
     @IBOutlet private weak var rewardQuantity : UILabel?
     @IBOutlet private weak var rewardName : UILabel?
     @IBOutlet private weak var secondLabelContainer : UIView?
@@ -114,7 +117,7 @@ public class CommonRewardCustomDrawer: UIViewController {
         }
         
         self.firstLabel?.attributedText = drawerSetupModel.headerTitleText
-        self.seconLabel?.text = "You will still have 30,000 points available"
+        self.remainingPointsLabel?.text = "You will still have \(drawerSetupModel.remainingPoints) points available"
         self.seconLabel?.text = drawerSetupModel.subHeaderText
 //        secondLabelContainer?.backgroundColor = .clear
         secondLabelContainer?.curvedCornerControl()

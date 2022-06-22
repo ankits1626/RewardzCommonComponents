@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="drawerTopImage" destination="oNw-lu-Zao" id="Lix-Ei-qVG"/>
                 <outlet property="firstLabel" destination="LMZ-Mi-SLC" id="veZ-da-j4J"/>
+                <outlet property="remainingPointsLabel" destination="SJY-bo-9aL" id="5vP-uL-lr4"/>
                 <outlet property="rewardName" destination="3Ri-yS-UZA" id="52q-hq-qOS"/>
                 <outlet property="rewardQuantity" destination="ype-YT-SWm" id="Pds-f9-mhg"/>
                 <outlet property="seconLabel" destination="Nmf-jV-Vc1" id="UzO-Lm-d1H"/>

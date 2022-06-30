@@ -106,6 +106,7 @@
 		BE38B1D1283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE38B1CF283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.xib */; };
 		BE671EC22834C89B00383204 /* CommonRewardCustomDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE671EC02834C89B00383204 /* CommonRewardCustomDrawer.swift */; };
 		BE671EC32834C89B00383204 /* CommonRewardCustomDrawer.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE671EC12834C89B00383204 /* CommonRewardCustomDrawer.xib */; };
+		BE9B6B47286C875000D3BD37 /* SKORCheckBOX.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9B6B46286C875000D3BD37 /* SKORCheckBOX.swift */; };
 		BEC2B29326FDA4DE008417C3 /* GroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC2B29226FDA4DE008417C3 /* GroupsViewController.xib */; };
 /* End PBXBuildFile section */
 
@@ -237,6 +238,7 @@
 		BE38B1CF283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonPhysicalProductRewardCustomDrawer.xib; sourceTree = "<group>"; };
 		BE671EC02834C89B00383204 /* CommonRewardCustomDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonRewardCustomDrawer.swift; sourceTree = "<group>"; };
 		BE671EC12834C89B00383204 /* CommonRewardCustomDrawer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonRewardCustomDrawer.xib; sourceTree = "<group>"; };
+		BE9B6B46286C875000D3BD37 /* SKORCheckBOX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKORCheckBOX.swift; sourceTree = "<group>"; };
 		BEC2B29226FDA4DE008417C3 /* GroupsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupsViewController.xib; sourceTree = "<group>"; };
 		D1D7DF37034DF16C06ACDF36 /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig"; path = "Target Support Files/Pods-RewardzCommonComponents-RewardzCommonComponentsTests/Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -707,6 +709,7 @@
 			isa = PBXGroup;
 			children = (
 				989C40A7265E5131002FF0F7 /* ASCheckBox.swift */,
+				BE9B6B46286C875000D3BD37 /* SKORCheckBOX.swift */,
 			);
 			path = ASCheckBox;
 			sourceTree = "<group>";
@@ -1064,6 +1067,7 @@
 				989C40F4265E5131002FF0F7 /* CFFMediaBrowserViewController.swift in Sources */,
 				989C40EB265E5131002FF0F7 /* OptionListTableViewCell.swift in Sources */,
 				98768359261444B200B597B0 /* CommonLoader.swift in Sources */,
+				BE9B6B47286C875000D3BD37 /* SKORCheckBOX.swift in Sources */,
 				989C40C1265E5131002FF0F7 /* BubbleOptionCollectionViewCell.swift in Sources */,
 				9854AAB2261740EB005B653B /* RCCUtility.swift in Sources */,
 				989C40D0265E5131002FF0F7 /* GroupCell.swift in Sources */,

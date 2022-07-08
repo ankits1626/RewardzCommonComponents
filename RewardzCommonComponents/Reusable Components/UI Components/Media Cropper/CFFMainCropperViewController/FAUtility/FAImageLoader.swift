@@ -11,7 +11,7 @@ import Photos
 
 typealias Success = (_ photos:[PHAsset])->Void
 
-class FAImageLoader: NSObject {
+public class FAImageLoader: NSObject {
     
     private var assets = [PHAsset]()
     private var success:Success? = nil
@@ -21,7 +21,7 @@ class FAImageLoader: NSObject {
         loadAllPhotos()
     }
     
-    private func loadAllPhotos() {
+    public func loadAllPhotos() {
         
         let fetchOptions: PHFetchOptions = PHFetchOptions()
         fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
@@ -32,13 +32,18 @@ class FAImageLoader: NSObject {
         })
     }
     
-    static func imageFrom(asset:PHAsset, size:CGSize, success:@escaping (_ photo:UIImage)->Void){
+    public static func imageFrom(asset:PHAsset, size:CGSize, success:@escaping (_ photo:UIImage)->Void){
 
         let options = PHImageRequestOptions()
         options.isSynchronous = false
         options.deliveryMode = .highQualityFormat
+        options.isNetworkAccessAllowed = true
         PHImageManager.default().requestImage(for: asset, targetSize: size, contentMode: .aspectFill, options: options, resultHandler: { (image, attributes) in
-            success(image!)
+            if let unwrappedImage = image{
+                success(unwrappedImage)
+            }else{
+                ErrorDisplayer.showError(errorMsg: "This image cannot be selected".localized) { (_) in}
+            }
         })
     }
 }

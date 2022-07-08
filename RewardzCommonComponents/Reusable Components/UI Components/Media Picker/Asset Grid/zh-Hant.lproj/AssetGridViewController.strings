@@ -3,7 +3,7 @@
 "Omz-Im-v2T.normalTitle" = "完成";
 
 /* Class = "UIButton"; normalTitle = "SELECT"; ObjectID = "bJX-w9-Rn7"; */
-"bJX-w9-Rn7.normalTitle" = "选择";
+"bJX-w9-Rn7.normalTitle" = "選擇";
 
 /* Class = "UILabel"; text = "ADD PHOTOS"; ObjectID = "i0M-zb-a1y"; */
-"i0M-zb-a1y.text" = "上传图片";
+"i0M-zb-a1y.text" = "添加照片";

@@ -77,7 +77,8 @@ class CFFMainCropperViewController: UIViewController {
     private func setupUI(){
         resetButton.titleLabel?.font = .Button
         resetButton.setTitleColor(.buttonColor, for: .normal)
-        
+        resetButton.setTitle("Reset".localized, for: .normal)
+        doneButton.setTitle("DONE".localized, for: .normal)
         doneButton.titleLabel?.font = .Highlighter1
         doneButton.setTitleColor(.buttonColor, for: .normal)
         doneButton.borderedControl(borderColor: .borderColor, borderWidth: 2.0)
@@ -139,18 +140,24 @@ class CFFMainCropperViewController: UIViewController {
     
     
     @IBAction func crop(_ sender: Any) {
-        currentlyProcessingMediaItem.croppedImage = captureVisibleRect()
-        cropperDelegate?.finishedCropping(currentlyProcessingMediaItem)
+        if scrollView.imageToDisplay != nil {
+            currentlyProcessingMediaItem.croppedImage = captureVisibleRect()
+            cropperDelegate?.finishedCropping(currentlyProcessingMediaItem)
+        }
     }
     
     @IBAction func reset(_ sender: Any){
-        currentlyProcessingMediaItem.croppedImage = nil
-        loadImage(mediaItem: currentlyProcessingMediaItem)
-        cropperDelegate?.finishedCropping(currentlyProcessingMediaItem)
+        if scrollView.imageToDisplay != nil {
+            currentlyProcessingMediaItem.croppedImage = nil
+            loadImage(mediaItem: currentlyProcessingMediaItem)
+            cropperDelegate?.finishedCropping(currentlyProcessingMediaItem)
+        }
     }
     
     @IBAction func rotate90ClockWise(_ sender: Any){
-        displayImageInScrollView(image: (scrollView.imageToDisplay?.rotate(radians: CGFloat(Double.pi/2)))!)
+        if scrollView.imageToDisplay != nil {
+            displayImageInScrollView(image: (scrollView.imageToDisplay?.rotate(radians: CGFloat(Double.pi/2)))!)
+        }
     }
     
 }

@@ -113,6 +113,33 @@ public struct MediaPickerPresentationModel {
     }
 }
 
+public struct CameraPickerPresentationModel {
+    var localMediaManager : LocalMediaManager
+    var selectedAssets : [LocalSelectedMediaItem]?
+    var assetSelectionCompletion : ((_ assets : [LocalSelectedMediaItem]?) -> Void)?
+    var maximumItemSelectionAllowed = 10
+    weak var presentingViewController : UIViewController?
+    weak var themeManager: CFFThemeManagerProtocol?
+    var identifier : String
+    public var mediaType : PHAssetMediaType
+    public var asset: PHAsset?
+    
+    public init (
+        localMediaManager: LocalMediaManager,
+        selectedAssets: [LocalSelectedMediaItem]?,
+        assetSelectionCompletion:((_ assets : [LocalSelectedMediaItem]?) -> Void)?, maximumItemSelectionAllowed : Int, presentingViewController: UIViewController?, themeManager: CFFThemeManagerProtocol?, _identifier : String, _mediaType : PHAssetMediaType, _asset : PHAsset){
+        self.localMediaManager = localMediaManager
+        self.selectedAssets = selectedAssets
+        self.assetSelectionCompletion = assetSelectionCompletion
+        self.maximumItemSelectionAllowed = maximumItemSelectionAllowed
+        self.presentingViewController = presentingViewController
+        self.themeManager = themeManager
+        self.identifier = _identifier
+        self.mediaType = _mediaType
+        self.asset = _asset
+    }
+}
+
 public class AssetGridViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     @IBOutlet weak var navigationColor: UIImageView!
     @IBOutlet private weak var titleLabel: UILabel!
@@ -142,6 +169,29 @@ public class AssetGridViewController: UIViewController, UICollectionViewDataSour
         presentationModel.presentingViewController?.present(navVC, animated: true, completion: nil)
     }
     
+    public static func presentCameraPickerStack(presentationModel : CameraPickerPresentationModel){
+        let assetGridVC = AssetGridViewController(nibName: "AssetGridViewController", bundle: Bundle(for: AssetGridViewController.self))
+        assetGridVC.localMediaManager = presentationModel.localMediaManager
+        assetGridVC.assetSelectionCompletion = presentationModel.assetSelectionCompletion
+        assetGridVC.maximumItemSelectionAllowed = presentationModel.maximumItemSelectionAllowed
+        if let assets = presentationModel.selectedAssets {
+            for items in assets {
+                assetGridVC.selectedAssets.append(LocalSelectedMediaItem(identifier: items.identifier, asset: items.asset, mediaType: items.mediaType))
+            }
+        }
+        assetGridVC.selectedAssets.append(LocalSelectedMediaItem(identifier: presentationModel.identifier, asset: presentationModel.asset, mediaType: presentationModel.mediaType))
+        let cropperVc = CFFImageCropperViewController(nibName: "CFFImageCropperViewController", bundle: Bundle(for: CFFImageCropperViewController.self))
+        cropperVc.localMediaManager = assetGridVC.localMediaManager
+        cropperVc.selectedAssets = assetGridVC.selectedAssets
+        cropperVc.assetSelectionCompletion = assetGridVC.assetSelectionCompletion
+        cropperVc.themeManager = presentationModel.themeManager
+        let navVC = UINavigationController(rootViewController: assetGridVC)
+        navVC.setNavigationBarHidden(true, animated: false)
+        navVC.modalPresentationStyle = .fullScreen
+        assetGridVC.themeManager = presentationModel.themeManager
+        presentationModel.presentingViewController?.present(cropperVc, animated: true, completion: nil)
+    }
+    
     // MARK: UIViewController / Lifecycle
     
     public override func viewDidLoad() {
@@ -153,6 +203,8 @@ public class AssetGridViewController: UIViewController, UICollectionViewDataSour
         uploadButton.setTitleColor(.black, for: .normal)
         self.navigationColor.image = UIImage(named: "")
         setupUploadButton()
+        titleLabel.text = "ADD PHOTOS".localized
+        uploadButton.setTitle("SELECT".localized, for: .normal)
         if let unwrappedThemeManager = themeManager{
             titleLabel.font = unwrappedThemeManager.getHeaderFont()
         }
@@ -237,6 +289,7 @@ public class AssetGridViewController: UIViewController, UICollectionViewDataSour
         if fetchResult == nil {
             let allPhotosOptions = PHFetchOptions()
             allPhotosOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
+            allPhotosOptions.includeAssetSourceTypes = .typeUserLibrary
             fetchResult = PHAsset.fetchAssets(with: PHAssetMediaType.image, options: allPhotosOptions)
         }
     }
@@ -400,7 +453,7 @@ public class AssetGridViewController: UIViewController, UICollectionViewDataSour
             if selectedAssets.count < maximumItemSelectionAllowed{
                 selectedAssets.append(LocalSelectedMediaItem(identifier: asset.localIdentifier, asset: asset, mediaType: asset.mediaType))
             }else{
-                ErrorDisplayer.showError(errorMsg: "Cannot select more than 10 images") { (_) in
+                ErrorDisplayer.showError(errorMsg: "Cannot select more than 10 images".localized) { (_) in
                 }
             }
             

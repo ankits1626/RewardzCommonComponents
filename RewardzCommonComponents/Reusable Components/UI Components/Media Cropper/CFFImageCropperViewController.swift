@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Photos
 
 class CFFImageCropperViewController: UIViewController {
+    @IBOutlet weak var navigationColor: UIImageView!
     @IBOutlet private weak var selectedPhotosCollectionView : UICollectionView?
     @IBOutlet private var proceedButton : UIButton!
     @IBOutlet private var mainCropperContainer : UIView!
@@ -34,9 +36,19 @@ class CFFImageCropperViewController: UIViewController {
     }
     
     private func setup(){
+        setupTopBar()
         configureTitleLabel()
         setupCollectionView()
         setupProceedButton()
+    }
+    
+    private func setupTopBar(){
+        self.navigationColor.image = UIImage(named: "")
+        if let unwrappedThemeManager = themeManager{
+            titleLabel.font = unwrappedThemeManager.getHeaderFont()
+            titleLabel.text = "CROP IMAGE".localized
+            proceedButton.setTitle("PROCEED".localized, for: .normal)
+        }
     }
     
     private func configureTitleLabel(){
@@ -79,13 +91,20 @@ class CFFImageCropperViewController: UIViewController {
     }
     
     @IBAction private func backButtonTapped(){
-        navigationController?.popViewController(animated: true)
+        if navigationController == nil {
+            self.dismiss(animated: true, completion: nil)
+        }else{
+            navigationController?.popViewController(animated: true)
+        }
+        
     }
     
     @IBAction private func doneButtonTapped(){
         dismiss(animated: true) {
-            if let unwrappedCompletion = self.assetSelectionCompletion{
-                unwrappedCompletion(self.selectedAssets)
+            if self.selectedAssets.count > 0 {
+                if let unwrappedCompletion = self.assetSelectionCompletion{
+                    unwrappedCompletion(self.selectedAssets)
+                }
             }
         }
     }
@@ -139,9 +158,20 @@ extension CFFImageCropperViewController  : UICollectionViewDataSource, UICollect
             imageView?.image = croppedImage
         }else{
             if let asset = selectedAssets[index].asset{
-                localMediaManager?.fetchImageForAsset(asset: asset, size: (cell.bounds.size), completion: { (_, fetchedImage) in
-                   imageView?.image = fetchedImage
+                localMediaManager?.fetchImageForAsset(asset: asset, size: (cell.bounds.size), completion: { (info, fetchedImage) in
+                    if let wrappedImage = fetchedImage {
+                        imageView?.image = wrappedImage
+                    }
                 })
+                if imageView?.image == nil {
+                    if let asset = self.selectedAssets[index].asset{
+                        FAImageLoader.imageFrom(asset: asset, size: PHImageManagerMaximumSize) { (image) in
+                            DispatchQueue.main.async {
+                                imageView?.image = image
+                            }
+                        }
+                    }
+                }
             }
         }
     }

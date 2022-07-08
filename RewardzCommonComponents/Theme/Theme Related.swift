@@ -52,6 +52,10 @@ public extension UIFont{
     static var SemiBold12 : UIFont{
         return UIFont.systemFont(ofSize: 12, weight: .semibold)
     }
+    
+    static var FloatingButton : UIFont{
+        return UIFont.systemFont(ofSize: 12, weight: .medium)
+    }
 }
 
 public extension UIColor{
@@ -214,6 +218,18 @@ public extension UIColor{
     
     static func getHeaderColor() -> UIColor{
         return .white
+    }
+    
+    static var stepperMiddleColor : UIColor{
+        return UIColor(red: 245/255.0, green: 245/255.0, blue: 245/255.0, alpha: 1.0)
+    }
+    
+    static var pinToPostCellBorderColor : UIColor {
+        return .red
+    }
+    
+    static func getConfirmationStackColor() -> UIColor{
+        return UIColor(red: 228/255.0, green: 228/255.0, blue: 228/255.0, alpha: 1.0)
     }
 }
 

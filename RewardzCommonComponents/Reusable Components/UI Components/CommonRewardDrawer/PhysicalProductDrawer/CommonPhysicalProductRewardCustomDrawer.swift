@@ -98,7 +98,7 @@ public class CommonPhysicalProductRewardCustomDrawer: UIViewController {
     public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 //        self.drawerTopImage?.roundCorners(corners: .allCorners, radius: 8.0)
-        self.drawerTopImage?.curvedWithoutBorderedControl(borderColor: .lightGray, borderWidth: 1.0)
+        self.drawerTopImage?.curvedWithoutBorderedControl(borderColor: Rgbconverter.HexToColor("EDF0FF"), borderWidth: 1.0, cornerRadius: 8.0)
         self.drawerTopImage?.curvedCornerControl()
     }
     

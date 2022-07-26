@@ -11,7 +11,7 @@ public class SKORCheckBOX: UIView {
     @IBInspectable public var isChecked : Bool = false{
         didSet{
             self.backgroundColor = isChecked ? checkedColor : uncheckedColor
-            checkLabel.isHidden = !isChecked
+            checkImageView.isHidden = !isChecked
         }
     }
     @IBInspectable public var uncheckedColor: UIColor! = .clear
@@ -25,26 +25,18 @@ public class SKORCheckBOX: UIView {
             return .white
         }
     }
-    @IBInspectable public var tickSize : CGFloat = 10.0{
-        didSet{
-            checkLabel.font = UIFont.systemFont(ofSize: tickSize)
-        }
-    }
-    private var checkLabel : UILabel!
+    private var checkImageView : UIImageView!
     private func insertControlSubViews() {
         //add check box here
-        if checkLabel == nil{
-            checkLabel = UILabel(frame: CGRect(x: 0, y: 0, width: frame.width/2.0, height: frame.height/2.0))
-            //checkLabel.backgroundColor = .yellow
-            checkLabel.textAlignment = .center
-            addSubview(checkLabel)
-            bringSubviewToFront(checkLabel)
-            checkLabel.text = "✓"
+        if checkImageView == nil{
+            checkImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: frame.width/2.0, height: frame.height/2.0))
+            addSubview(checkImageView)
+            bringSubviewToFront(checkImageView)
+            checkImageView.image = UIImage(named: "transparentTick")
+            checkImageView.contentMode = .scaleAspectFit
         }
-        
-        checkLabel.isHidden = !isChecked
-        checkLabel.textColor = tickColor
-        checkLabel.center = CGPoint(x: frame.width/2.0, y: frame.height/2.0)
+        checkImageView.isHidden = !isChecked
+        checkImageView.center  = CGPoint(x: frame.width/2.0, y: frame.height/2.0)
     }
     
     private func setupCheckBoxControl() {

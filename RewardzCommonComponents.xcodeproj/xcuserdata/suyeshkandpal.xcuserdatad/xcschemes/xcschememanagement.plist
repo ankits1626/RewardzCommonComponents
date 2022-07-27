@@ -3,11 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>SchemeUserState</key>
+	<dict/>
+	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>RewardzCommonComponents.xcscheme_^#shared#^_</key>
+		<key>98C094B626142367006D5178</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>139</integer>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>98C094BF26142367006D5178</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

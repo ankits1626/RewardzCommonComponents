@@ -97,7 +97,7 @@ public extension UIColor{
     }
     
     static func grayBackGroundColor() -> UIColor{
-        return UIColor(red: 237/255.0, green: 237/255.0, blue: 237/255.0, alpha: 1.0)
+        return UIColor(red: 245/255.0, green: 248/255.0, blue: 255/255.0, alpha: 1.0)
     }
     
     static var stepperActiveColor : UIColor{

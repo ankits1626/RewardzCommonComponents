@@ -16,5 +16,6 @@ public protocol MediaItemProtocol {
     func getMediaType() -> FeedMediaItemType
     func getCoverImageUrl() -> String?
     func getRemoteId() -> Int
+    func getGiphy() -> String?
 }
 

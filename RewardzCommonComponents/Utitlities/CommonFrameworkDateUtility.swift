@@ -31,6 +31,16 @@ public class CommonFrameworkDateUtility {
         return dateFormatter.string(from: calendar.date(from:components)!)
     }
     
+    public static func getDisplayedDateInFormatMMMYYYY(input: String, dateFormat : String) -> String?{
+        let dateFormatter = getDateFormatter(dateFormat: dateFormat)
+        let date = dateFormatter.date(from:input)!
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.year, .month, .day], from: date)
+        dateFormatter.dateFormat = "MMM yyyy"
+        dateFormatter.timeZone = TimeZone.current
+        return dateFormatter.string(from: calendar.date(from:components)!)
+    }
+    
     public static func getDateFormatter (dateFormat : String) -> DateFormatter{
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "en_US_POSIX")

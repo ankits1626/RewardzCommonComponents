@@ -30,21 +30,14 @@
                     </button>
                     <view hidden="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0q-Vq-SMU">
                         <rect key="frame" x="0.0" y="0.0" width="141" height="103"/>
-                        <subviews>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gU5-7f-lD6">
-                                <rect key="frame" x="12" y="69" width="116" height="26"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="26" id="yLQ-tn-4uT"/>
-                                </constraints>
-                            </pageControl>
-                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="gU5-7f-lD6" secondAttribute="bottom" constant="8" id="LMG-r4-GwQ"/>
-                            <constraint firstAttribute="trailing" secondItem="gU5-7f-lD6" secondAttribute="trailing" constant="13" id="cqy-8O-s2Q"/>
-                            <constraint firstItem="gU5-7f-lD6" firstAttribute="leading" secondItem="a0q-Vq-SMU" secondAttribute="leading" constant="12" id="rht-JR-IVt"/>
-                        </constraints>
                     </view>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gU5-7f-lD6">
+                        <rect key="frame" x="12" y="68" width="116" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="yLQ-tn-4uT"/>
+                        </constraints>
+                    </pageControl>
                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqU-wg-i9e" customClass="BlockButton" customModule="RewardzCommonComponents" customModuleProvider="target">
                         <rect key="frame" x="116" y="5" width="20" height="20"/>
                         <constraints>
@@ -59,12 +52,15 @@
             <constraints>
                 <constraint firstItem="IqL-qd-OfY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2kz-x6-Oxa"/>
                 <constraint firstAttribute="bottom" secondItem="IqL-qd-OfY" secondAttribute="bottom" id="FnZ-QV-Rk2"/>
+                <constraint firstItem="gU5-7f-lD6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="Jl3-CH-Hve"/>
                 <constraint firstAttribute="trailing" secondItem="a0q-Vq-SMU" secondAttribute="trailing" id="NLE-Rb-0MI"/>
                 <constraint firstItem="IqL-qd-OfY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UjA-ew-LGC"/>
                 <constraint firstItem="L1G-eS-MZD" firstAttribute="centerX" secondItem="IqL-qd-OfY" secondAttribute="centerX" id="Wm7-NF-bUX"/>
                 <constraint firstAttribute="trailing" secondItem="IqL-qd-OfY" secondAttribute="trailing" id="XpU-PO-Njp"/>
+                <constraint firstAttribute="trailing" secondItem="gU5-7f-lD6" secondAttribute="trailing" constant="13" id="bNc-px-ugI"/>
                 <constraint firstItem="yqU-wg-i9e" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="bT0-8p-Ygb"/>
                 <constraint firstAttribute="trailing" secondItem="yqU-wg-i9e" secondAttribute="trailing" constant="5" id="gZd-SA-dZs"/>
+                <constraint firstAttribute="bottom" secondItem="gU5-7f-lD6" secondAttribute="bottom" constant="9" id="iiB-rZ-0HZ"/>
                 <constraint firstItem="a0q-Vq-SMU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="nNd-27-NLu"/>
                 <constraint firstItem="L1G-eS-MZD" firstAttribute="centerY" secondItem="IqL-qd-OfY" secondAttribute="centerY" id="rl7-SP-Gkf"/>
                 <constraint firstItem="a0q-Vq-SMU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="weE-Fi-9HA"/>

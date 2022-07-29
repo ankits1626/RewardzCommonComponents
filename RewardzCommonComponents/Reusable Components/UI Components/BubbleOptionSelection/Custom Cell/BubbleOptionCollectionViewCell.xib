@@ -50,7 +50,7 @@
                 <outlet property="selectionIndicator" destination="BYl-eA-AJB" id="aFy-Br-QUp"/>
                 <outlet property="titleLabel" destination="pIh-U5-cij" id="KNF-FC-xH6"/>
             </connections>
-            <point key="canvasLocation" x="187.68115942028987" y="128.57142857142856"/>
+            <point key="canvasLocation" x="187.68115942028987" y="127.90178571428571"/>
         </collectionViewCell>
     </objects>
     <resources>

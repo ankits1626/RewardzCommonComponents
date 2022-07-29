@@ -68,7 +68,7 @@ public protocol HorizontalScrollingOptionsDatasource {
         optionCollection.register(UINib(nibName: "HorizontalScrollingOptionCell", bundle: Bundle(for: HorizontalScrollingOptionCell.self)), forCellWithReuseIdentifier: "HorizontalScrollingOptionCell")
         optionCollection.dataSource = self
         optionCollection.delegate = self
-        optionCollection.backgroundColor = #colorLiteral(red: 0.1263153851, green: 0.1618461013, blue: 0.4399832487, alpha: 1)
+        optionCollection.backgroundColor = #colorLiteral(red: 0.9434584975, green: 0.9545181394, blue: 1, alpha: 1)
         optionCollection.showsHorizontalScrollIndicator = false
         optionCollection.reloadData()
     }

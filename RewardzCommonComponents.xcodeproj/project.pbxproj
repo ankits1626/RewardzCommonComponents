@@ -104,6 +104,7 @@
 		BE2C62762706DF6A00C63D1B /* AssetGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE2C62782706DF6A00C63D1B /* AssetGridViewController.xib */; };
 		BE38B1D0283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE38B1CE283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.swift */; };
 		BE38B1D1283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE38B1CF283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.xib */; };
+		BE3E63F82898E71A00271518 /* ImageInitials.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3E63F72898E71A00271518 /* ImageInitials.swift */; };
 		BE671EC22834C89B00383204 /* CommonRewardCustomDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE671EC02834C89B00383204 /* CommonRewardCustomDrawer.swift */; };
 		BE671EC32834C89B00383204 /* CommonRewardCustomDrawer.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE671EC12834C89B00383204 /* CommonRewardCustomDrawer.xib */; };
 		BE9B6B47286C875000D3BD37 /* SKORCheckBOX.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9B6B46286C875000D3BD37 /* SKORCheckBOX.swift */; };
@@ -236,6 +237,7 @@
 		BE2C628A2706DF7600C63D1B /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
 		BE38B1CE283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonPhysicalProductRewardCustomDrawer.swift; sourceTree = "<group>"; };
 		BE38B1CF283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonPhysicalProductRewardCustomDrawer.xib; sourceTree = "<group>"; };
+		BE3E63F72898E71A00271518 /* ImageInitials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInitials.swift; sourceTree = "<group>"; };
 		BE671EC02834C89B00383204 /* CommonRewardCustomDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonRewardCustomDrawer.swift; sourceTree = "<group>"; };
 		BE671EC12834C89B00383204 /* CommonRewardCustomDrawer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonRewardCustomDrawer.xib; sourceTree = "<group>"; };
 		BE9B6B46286C875000D3BD37 /* SKORCheckBOX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKORCheckBOX.swift; sourceTree = "<group>"; };
@@ -442,6 +444,7 @@
 				98768357261444B100B597B0 /* CommonFrameworkDateUtility.swift */,
 				9876844726155A0800B597B0 /* Rgbconverter.swift */,
 				9854AAB1261740EB005B653B /* RCCUtility.swift */,
+				BE3E63F72898E71A00271518 /* ImageInitials.swift */,
 			);
 			path = Utitlities;
 			sourceTree = "<group>";
@@ -1130,6 +1133,7 @@
 				980D12A926142F8700995F41 /* UnauthorizedHandler.swift in Sources */,
 				989C40D2265E5131002FF0F7 /* GroupsViewController.swift in Sources */,
 				989C40DF265E5131002FF0F7 /* GenericFilterViewController.swift in Sources */,
+				BE3E63F82898E71A00271518 /* ImageInitials.swift in Sources */,
 				989C40CC265E5131002FF0F7 /* GridViewCell.swift in Sources */,
 				987684B8261568D700B597B0 /* Collection+Extension.swift in Sources */,
 				9876845426155E7600B597B0 /* BaseCellConfigurator.swift in Sources */,

@@ -13,4 +13,6 @@ public protocol CFFThemeManagerProtocol : class {
     func getControlActiveColor() -> UIColor
     func getStepperActiveColor() -> UIColor
     func getHeaderFont() -> UIFont
+    func getLoggedInUserImage() -> String
+    func getLoggedInUserFullName() -> String 
 }

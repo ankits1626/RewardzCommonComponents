@@ -118,13 +118,6 @@
 			remoteGlobalIDString = 98C094B626142367006D5178;
 			remoteInfo = RewardzCommonComponents;
 		};
-		BE2EB7722885556F00E4B444 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BE2EB76E2885556F00E4B444 /* CommonPaymentGateway.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 84768C202701A08F00537275;
-			remoteInfo = CommonPaymentGateway;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -241,7 +234,6 @@
 		BE2C62862706DF7400C63D1B /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
 		BE2C62882706DF7500C63D1B /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
 		BE2C628A2706DF7600C63D1B /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
-		BE2EB76E2885556F00E4B444 /* CommonPaymentGateway.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CommonPaymentGateway.xcodeproj; path = ../CommonPayment/CommonPaymentGateway.xcodeproj; sourceTree = "<group>"; };
 		BE38B1CE283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonPhysicalProductRewardCustomDrawer.swift; sourceTree = "<group>"; };
 		BE38B1CF283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonPhysicalProductRewardCustomDrawer.xib; sourceTree = "<group>"; };
 		BE671EC02834C89B00383204 /* CommonRewardCustomDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonRewardCustomDrawer.swift; sourceTree = "<group>"; };
@@ -804,7 +796,6 @@
 		98C094AD26142367006D5178 = {
 			isa = PBXGroup;
 			children = (
-				BE2EB76E2885556F00E4B444 /* CommonPaymentGateway.xcodeproj */,
 				BC3BFAA7282A85BB0019E237 /* RewardzCommonComponents-Swift.h */,
 				98768350261442A300B597B0 /* Media.xcassets */,
 				98C094B926142367006D5178 /* RewardzCommonComponents */,
@@ -847,14 +838,6 @@
 				98C094C726142367006D5178 /* Info.plist */,
 			);
 			path = RewardzCommonComponentsTests;
-			sourceTree = "<group>";
-		};
-		BE2EB76F2885556F00E4B444 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BE2EB7732885556F00E4B444 /* CommonPaymentGateway.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		BE38B1CD283F8D46002A5671 /* PhysicalProductDrawer */ = {
@@ -967,12 +950,6 @@
 			mainGroup = 98C094AD26142367006D5178;
 			productRefGroup = 98C094B826142367006D5178 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = BE2EB76F2885556F00E4B444 /* Products */;
-					ProjectRef = BE2EB76E2885556F00E4B444 /* CommonPaymentGateway.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				98C094B626142367006D5178 /* RewardzCommonComponents */,
@@ -980,16 +957,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		BE2EB7732885556F00E4B444 /* CommonPaymentGateway.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CommonPaymentGateway.framework;
-			remoteRef = BE2EB7722885556F00E4B444 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		98C094B526142367006D5178 /* Resources */ = {

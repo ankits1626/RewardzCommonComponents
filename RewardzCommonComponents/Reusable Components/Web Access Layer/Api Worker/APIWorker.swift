@@ -37,6 +37,7 @@ public protocol BaseURLProviderProtocol {
 }
 public protocol TokenProviderProtocol {
     func fetchAccessToken() -> String?
+    func fetchToken() -> String?
     func getDeviceSelectedLanguage() -> String
     func fetchUserAgent() -> String
 }

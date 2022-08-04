@@ -31,6 +31,7 @@ public class ASCheckBox: UIView {
             checkLabel.font = UIFont.systemFont(ofSize: tickSize)
         }
     }
+    public var toggleCheckBoxSelectionCompletion : (()-> Void)?
     private var checkLabel : UILabel!
     private func insertControlSubViews() {
         //add check box here
@@ -48,9 +49,18 @@ public class ASCheckBox: UIView {
         checkLabel.center = CGPoint(x: frame.width/2.0, y: frame.height/2.0)
     }
     
+    private var tapGestureRecognizer : UITapGestureRecognizer!
+    private func addTapGesture(){
+        if tapGestureRecognizer == nil{
+            tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+            addGestureRecognizer(tapGestureRecognizer)
+        }
+    }
+    
     private func setupCheckBoxControl() {
         self.layer.cornerRadius = frame.size.height/2.0
         insertControlSubViews()
+        addTapGesture()
         self.backgroundColor = isChecked ? checkedColor : uncheckedColor
     }
     
@@ -67,5 +77,12 @@ public class ASCheckBox: UIView {
     public override func layoutSubviews() {
         super.layoutSubviews()
         setNeedsDisplay()
+    }
+    
+    @objc private func handleTap(){
+        print("$$$$$ call completion")
+        if let unwrappedCompletion = toggleCheckBoxSelectionCompletion{
+            unwrappedCompletion()
+        }
     }
 }

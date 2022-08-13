@@ -22,6 +22,7 @@ public protocol HorizontalScrollingOptionsDatasource {
     @IBInspectable public var selectedBubbleTextColor  = UIColor.white
     @IBInspectable public var unSelectedBubbleTextColor  = UIColor.unSelectedTextColor
     var organisationColor : String = ""
+    public var isFromPoll = false
     public var inferSizeForFixedNumberOfItems : Int?
     fileprivate var delegate : HorizontalScrollingOptionsDelegate?
     fileprivate var dataSource : HorizontalScrollingOptionsDatasource?
@@ -68,6 +69,11 @@ public protocol HorizontalScrollingOptionsDatasource {
         optionCollection.register(UINib(nibName: "HorizontalScrollingOptionCell", bundle: Bundle(for: HorizontalScrollingOptionCell.self)), forCellWithReuseIdentifier: "HorizontalScrollingOptionCell")
         optionCollection.dataSource = self
         optionCollection.delegate = self
+//        if isFromPoll {
+//            optionCollection.backgroundColor = .clear
+//        }else {
+//            optionCollection.backgroundColor = #colorLiteral(red: 0.9434584975, green: 0.9545181394, blue: 1, alpha: 1)
+//        }
         optionCollection.backgroundColor = #colorLiteral(red: 0.9434584975, green: 0.9545181394, blue: 1, alpha: 1)
         optionCollection.showsHorizontalScrollIndicator = false
         optionCollection.reloadData()
@@ -99,7 +105,14 @@ public protocol HorizontalScrollingOptionsDatasource {
             layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
             if let unwrappedItems = inferSizeForFixedNumberOfItems,
             unwrappedItems > 0{
-                layout.itemSize = CGSize(width: (UIScreen.main.bounds.width - 10) / CGFloat(unwrappedItems), height:40.0)
+                if isFromPoll {
+                    optionCollection.backgroundColor = .clear
+                    layout.itemSize = CGSize(width: CGFloat(unwrappedItems) + 10, height:40.0)
+                }else {
+                    layout.itemSize = CGSize(width: (UIScreen.main.bounds.width - 10) / CGFloat(unwrappedItems), height:40.0)
+                }
+                
+                //layout.itemSize = CGSize(width: (UIScreen.main.bounds.width - 10) / CGFloat(unwrappedItems), height:40.0)
             }else{
                 layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
                 layout.itemSize = UICollectionViewFlowLayout.automaticSize

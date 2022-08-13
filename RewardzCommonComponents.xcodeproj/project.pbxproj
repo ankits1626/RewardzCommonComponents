@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0EDFE5608904B8E5868FDAC0 /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97391302DDED74317338C86D /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework */; };
+		0F4041AE28A7839200E67C88 /* DaySelectorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4041AD28A7839200E67C88 /* DaySelectorHandler.swift */; };
 		980D122D261429CE00995F41 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D1225261429CE00995F41 /* UIApplication+Extension.swift */; };
 		980D122E261429CE00995F41 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D1226261429CE00995F41 /* UIDevice+Extension.swift */; };
 		980D122F261429CE00995F41 /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D1227261429CE00995F41 /* UILabel + Extension.swift */; };
@@ -122,6 +123,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F4041AD28A7839200E67C88 /* DaySelectorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySelectorHandler.swift; sourceTree = "<group>"; };
 		3B5589375866B235AA4F3EE2 /* Pods-RewardzCommonComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents.debug.xcconfig"; path = "Target Support Files/Pods-RewardzCommonComponents/Pods-RewardzCommonComponents.debug.xcconfig"; sourceTree = "<group>"; };
 		532F59D986957FF3ADC49DE2 /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-RewardzCommonComponents-RewardzCommonComponentsTests/Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
 		7F93C191A78B40E6407CD277 /* Pods_RewardzCommonComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RewardzCommonComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -265,6 +267,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F4041AC28A7832F00E67C88 /* DaysSelectorHandler */ = {
+			isa = PBXGroup;
+			children = (
+				0F4041AD28A7839200E67C88 /* DaySelectorHandler.swift */,
+			);
+			path = DaysSelectorHandler;
+			sourceTree = "<group>";
+		};
 		666ADD3EB02DCC4120C381C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -476,6 +486,7 @@
 		989C4065265E5131002FF0F7 /* UI Components */ = {
 			isa = PBXGroup;
 			children = (
+				0F4041AC28A7832F00E67C88 /* DaysSelectorHandler */,
 				BE671EBF2834C87800383204 /* CommonRewardDrawer */,
 				989C4066265E5131002FF0F7 /* BubbleOptionSelection */,
 				989C406C265E5131002FF0F7 /* Media Cropper */,
@@ -1141,6 +1152,7 @@
 				989C40D9265E5131002FF0F7 /* HorizontolScrolling.swift in Sources */,
 				989C40EF265E5131002FF0F7 /* MFLoader.swift in Sources */,
 				980D122D261429CE00995F41 /* UIApplication+Extension.swift in Sources */,
+				0F4041AE28A7839200E67C88 /* DaySelectorHandler.swift in Sources */,
 				989C40D7265E5131002FF0F7 /* HorizontalScrollingOptionsView.swift in Sources */,
 				989C40C5265E5131002FF0F7 /* UIImage+Additions.swift in Sources */,
 				989C40CD265E5131002FF0F7 /* AssetGridViewController.swift in Sources */,

@@ -15,21 +15,21 @@ public class DaySelectorHandler {
     private var MAX_YEAR = 3
     weak var yearHorizontalScrollingOptionsView : HorizontalScrollingOptions? = nil
     private let currentYear : Int = Calendar(identifier: .gregorian).component(.year, from: Date())
-    private var selectedYear : Int {
+    private var selectedDay : Int {
         didSet{
-            delegate?.didFinishedSelection(selectedDay: selectedYear)
+            delegate?.didFinishedSelection(selectedDay: selectedDay)
         }
     }
     weak var delegate : DaySelectorHandlerDelegate?
     public init(_ delegate : DaySelectorHandlerDelegate) {
         self.delegate = delegate
-        selectedYear = currentYear
-        self.delegate?.didFinishedSelection(selectedDay: selectedYear)
+        selectedDay = 1
+        self.delegate?.didFinishedSelection(selectedDay: selectedDay)
     }
     public func indexOfDefaultSelectdYear() -> Int {
         return 0
     }
-    private func getYears() -> [Int]{
+    private func getDays() -> [Int]{
         let years =  Array(1...30)
         return years
     }
@@ -38,15 +38,15 @@ public class DaySelectorHandler {
 extension DaySelectorHandler : HorizontalScrollingOptionsDelegate, HorizontalScrollingOptionsDatasource{
     public func didSelectItemAt(_ index: Int) {
         let years =  Array(1...30)
-        selectedYear = years[index]
+        selectedDay = years[index]
     }
     
     public func numberOfItems() -> Int {
-        return getYears().count
+        return getDays().count
     }
     
     public func configureItemCell(_ cell: UICollectionViewCell, index: Int) {
-        (cell as? HorizontalScrollingOptionCell)?.titleLBL?.text = "\(getYears()[index])"
+        (cell as? HorizontalScrollingOptionCell)?.titleLBL?.text = "\(getDays()[index])"
     }
 }
 

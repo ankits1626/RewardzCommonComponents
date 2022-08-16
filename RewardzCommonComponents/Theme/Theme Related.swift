@@ -77,7 +77,7 @@ public extension UIColor{
     }
     
     static var optionContainerBackGroundColor:  UIColor {
-        return UIColor(red: 241/255.0, green: 251/255.0, blue: 255/255.0, alpha: 0.55)
+        return UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 0.55)
     }
     
     static func getTitleTextColor() -> UIColor {
@@ -169,11 +169,11 @@ public extension UIColor{
     }
     
     static var progressTrackLightColor:  UIColor {
-        return UIColor(red: 234/255.0, green: 239/255.0, blue: 242/255.0, alpha: 1.0)
+        return UIColor(red: 237/255.0, green: 240/255.0, blue: 255/255.0, alpha: 1.0)
     }
     
     static var progressTrackMaxColor:  UIColor {
-        return UIColor(red: 156/255.0, green: 176/255.0, blue: 188/255.0, alpha: 1.0)
+        return RCCThemeDetailProvider.shared.coordinator.getBackgroundColor()
     }
     
     static var urlColor : UIColor {
@@ -238,6 +238,6 @@ public struct AppliedCornerRadius {
 }
 
 public struct BorderWidths {
-    public static let standardBorderWidth : CGFloat = 1.0
+    public static let standardBorderWidth : CGFloat = 0.5
     public static let votedOptionBorderWidth : CGFloat = 1.5
 }

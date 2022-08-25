@@ -145,7 +145,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vkE-wb-8Pf">
-                                            <rect key="frame" x="0.0" y="57" width="493" height="122"/>
+                                            <rect key="frame" x="0.0" y="57" width="493" height="68"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rO0-rj-BrQ">
                                                     <rect key="frame" x="16" y="0.0" width="461" height="1"/>
@@ -158,7 +158,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acs-uK-aps">
-                                                    <rect key="frame" x="16" y="15" width="461" height="16"/>
+                                                    <rect key="frame" x="16" y="9" width="461" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="d51-vZ-eKA"/>
                                                     </constraints>
@@ -167,9 +167,9 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vd-4X-YS0">
-                                                    <rect key="frame" x="26" y="39" width="441" height="76"/>
+                                                    <rect key="frame" x="26" y="33" width="441" height="34"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="76" id="uY9-RF-Ejk"/>
+                                                        <constraint firstAttribute="height" constant="34" id="uY9-RF-Ejk"/>
                                                     </constraints>
                                                     <string key="text">63 Market St, Bank of Singapore, Singapore
 +65 6559 8000</string>
@@ -183,23 +183,23 @@
                                                 <constraint firstAttribute="trailing" secondItem="7Vd-4X-YS0" secondAttribute="trailing" constant="26" id="KtG-4p-wK6"/>
                                                 <constraint firstItem="Acs-uK-aps" firstAttribute="leading" secondItem="vkE-wb-8Pf" secondAttribute="leading" constant="16" id="MVW-h6-Pa4"/>
                                                 <constraint firstAttribute="trailing" secondItem="rO0-rj-BrQ" secondAttribute="trailing" constant="16" id="Mgu-Sg-RCM"/>
-                                                <constraint firstItem="Acs-uK-aps" firstAttribute="top" secondItem="rO0-rj-BrQ" secondAttribute="bottom" constant="14" id="NyO-57-hSg"/>
+                                                <constraint firstItem="Acs-uK-aps" firstAttribute="top" secondItem="rO0-rj-BrQ" secondAttribute="bottom" constant="8" id="NyO-57-hSg"/>
                                                 <constraint firstItem="rO0-rj-BrQ" firstAttribute="top" secondItem="vkE-wb-8Pf" secondAttribute="top" id="OXR-qv-RNG"/>
                                                 <constraint firstItem="7Vd-4X-YS0" firstAttribute="leading" secondItem="vkE-wb-8Pf" secondAttribute="leading" constant="26" id="e9A-MX-2mM"/>
-                                                <constraint firstAttribute="height" constant="122" id="gnG-Vu-z5f"/>
+                                                <constraint firstAttribute="height" constant="68" id="gnG-Vu-z5f"/>
                                                 <constraint firstAttribute="trailing" secondItem="Acs-uK-aps" secondAttribute="trailing" constant="16" id="iE9-Sp-B4a"/>
                                                 <constraint firstItem="rO0-rj-BrQ" firstAttribute="leading" secondItem="vkE-wb-8Pf" secondAttribute="leading" constant="16" id="lxi-7x-rOC"/>
                                                 <constraint firstItem="7Vd-4X-YS0" firstAttribute="top" secondItem="Acs-uK-aps" secondAttribute="bottom" constant="8" id="vwA-Uk-TM4"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0mQ-Qo-blG">
-                                            <rect key="frame" x="0.0" y="179" width="493" height="143"/>
+                                            <rect key="frame" x="0.0" y="125" width="493" height="197"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Qh-EY-npt">
-                                                    <rect key="frame" x="16" y="10" width="461" height="133"/>
+                                                    <rect key="frame" x="16" y="10" width="461" height="187"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nmf-jV-Vc1">
-                                                            <rect key="frame" x="14" y="12" width="433" height="109"/>
+                                                            <rect key="frame" x="14" y="12" width="433" height="163"/>
                                                             <color key="backgroundColor" red="0.92941176470588238" green="0.94117647058823528" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <string key="text">We hope you enjoy your
 vouchers. Have a nice day ahead.</string>

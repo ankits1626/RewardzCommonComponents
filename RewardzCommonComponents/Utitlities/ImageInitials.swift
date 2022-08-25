@@ -110,7 +110,7 @@ extension UIImageView {
 }
 
 private func initialsFromString(string: String) -> String {
-    var nameComponents = string.uppercased().components(separatedBy: CharacterSet.letters.inverted)
+    var nameComponents = string.uppercased().components(separatedBy: CharacterSet.alphanumerics.inverted)
     nameComponents.removeAll(where: {$0.isEmpty})
     
     let firstInitial = nameComponents.first?.first

@@ -158,7 +158,7 @@ public class CommonPhysicalProductRewardCustomDrawer: UIViewController {
     
     public func presentDrawer() throws{
         if let topviewController : UIViewController = UIApplication.topViewController(){
-            slideInTransitioningDelegate.direction = .bottom(height: 622.0)
+            slideInTransitioningDelegate.direction = .bottom(height: 568.0)
             transitioningDelegate = slideInTransitioningDelegate
             modalPresentationStyle = .custom
             topviewController.present(self, animated: true, completion: nil)

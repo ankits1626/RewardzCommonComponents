@@ -43,8 +43,11 @@ public struct CommonRewardCustomDrawerSetupModel {
     public let mediaFetcher : CFFMediaCoordinatorProtocol
     public var selectedRewardQuantity : String?
     public var remainingPoints : String
+    public var redeemingPointsStr : String
+    public var availablePointsStr : String
+    public var deductFromAccountStr : String
     
-    public init(drawerImage : UIImage?, headerTitleText : NSAttributedString?, subHeaderText : String?, isSubHeaderBackgroundDisplayed : Bool = false, selectedRewardName : String, selectedRewardImage : String, networkRequestCoordinator: CFFNetworkRequestCoordinatorProtocol,mediaFetcher : CFFMediaCoordinatorProtocol,selectedRewardQuantity : String = "1",remainingPoints : String){
+    public init(drawerImage : UIImage?, headerTitleText : NSAttributedString?, subHeaderText : String?, isSubHeaderBackgroundDisplayed : Bool = false, selectedRewardName : String, selectedRewardImage : String, networkRequestCoordinator: CFFNetworkRequestCoordinatorProtocol,mediaFetcher : CFFMediaCoordinatorProtocol,selectedRewardQuantity : String = "1",remainingPoints : String, _redeemingPointsStr : String, _availablePointsStr : String, _deductFromAccountStr : String){
         self.drawerImage = drawerImage
         self.headerTitleText = headerTitleText
         self.subHeaderText = subHeaderText
@@ -55,6 +58,9 @@ public struct CommonRewardCustomDrawerSetupModel {
         self.mediaFetcher = mediaFetcher
         self.selectedRewardQuantity = selectedRewardQuantity
         self.remainingPoints = remainingPoints
+        self.redeemingPointsStr = _redeemingPointsStr
+        self.availablePointsStr = _availablePointsStr
+        self.deductFromAccountStr = _deductFromAccountStr
     }
 }
 
@@ -78,6 +84,10 @@ public class CommonRewardCustomDrawer: UIViewController {
     @IBOutlet private var actionButtons : [BlockButton]!
     @IBOutlet private weak var secondLabelContainerTopConstraint : NSLayoutConstraint?
     @IBOutlet private weak var secondLabelTopConstraint : NSLayoutConstraint?
+    
+    @IBOutlet private weak var availablepointsLabel : UILabel?
+    
+    @IBOutlet private weak var acountsLabel : UILabel?
 //    @IBOutlet private weak var firstActionButton : BlockButton?
 //    @IBOutlet private weak var secondActionButton : BlockButton?
 //    @IBOutlet private weak var thirdActionButton : BlockButton?
@@ -116,11 +126,12 @@ public class CommonRewardCustomDrawer: UIViewController {
             self.rewardQuantity?.text = "Quantity : \(drawerSetupModel.selectedRewardQuantity ?? "")"
         }
         
-        self.firstLabel?.attributedText = drawerSetupModel.headerTitleText
+        self.firstLabel?.text = drawerSetupModel.redeemingPointsStr
+        self.availablepointsLabel?.text = drawerSetupModel.availablePointsStr
+        self.acountsLabel?.text = drawerSetupModel.deductFromAccountStr
         self.remainingPointsLabel?.text = "You will still have \(drawerSetupModel.remainingPoints) points available"
         self.seconLabel?.text = drawerSetupModel.subHeaderText
-//        secondLabelContainer?.backgroundColor = .clear
-        secondLabelContainer?.curvedCornerControl()
+        secondLabelContainer?.curvedUIBorderedControl(borderColor: Rgbconverter.HexToColor("EDF0FF"), borderWidth: 1.0, cornerRadius: 8.0)
         secondLabelContainerTopConstraint?.constant = drawerSetupModel.isSubHeaderBackgroundDisplayed ? 19 : 0
         secondLabelTopConstraint?.constant = drawerSetupModel.isSubHeaderBackgroundDisplayed ? 19 : 0
     }
@@ -156,7 +167,7 @@ public class CommonRewardCustomDrawer: UIViewController {
     
     public func presentDrawer() throws{
         if let topviewController : UIViewController = UIApplication.topViewController(){
-            slideInTransitioningDelegate.direction = .bottom(height: 619.0)
+            slideInTransitioningDelegate.direction = .bottom(height: 579.0)
             transitioningDelegate = slideInTransitioningDelegate
             modalPresentationStyle = .custom
             topviewController.present(self, animated: true, completion: nil)

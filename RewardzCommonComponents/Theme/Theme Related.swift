@@ -25,8 +25,21 @@ public extension UIFont{
         return UIFont.systemFont(ofSize: 10, weight: .bold)
     }
     
+    static var Highlighter5 : UIFont{
+        return UIFont.systemFont(ofSize: 12, weight: .bold)
+    }
+    
     static var Highlighter2 : UIFont{
         return UIFont.systemFont(ofSize: 13, weight: .bold)
+    }
+    
+    static var Highlighter3 : UIFont{
+        return UIFont.systemFont(ofSize: 14, weight: .bold)
+    }
+    
+    
+    static var Highlighter4 : UIFont{
+        return UIFont.systemFont(ofSize: 16, weight: .bold)
     }
     
     static var Caption1 : UIFont{

@@ -21,6 +21,10 @@ public extension UIFont{
         return UIFont.systemFont(ofSize: 12, weight: .regular)
     }
     
+    static var Highlighter6 : UIFont{
+        return UIFont.systemFont(ofSize: 9, weight: .bold)
+    }
+    
     static var Highlighter1 : UIFont{
         return UIFont.systemFont(ofSize: 10, weight: .bold)
     }
@@ -243,6 +247,14 @@ public extension UIColor{
     
     static func getConfirmationStackColor() -> UIColor{
         return UIColor(red: 228/255.0, green: 228/255.0, blue: 228/255.0, alpha: 1.0)
+    }
+    
+    static var gray1 : UIColor {
+        return UIColor(red: 161.0/255, green: 161.0/255, blue: 161.0/255, alpha: 1)
+    }
+    
+    static var gray2 : UIColor {
+        return UIColor(red: 151.0/255, green: 151.0/255, blue: 151.0/255, alpha: 1)
     }
 }
 

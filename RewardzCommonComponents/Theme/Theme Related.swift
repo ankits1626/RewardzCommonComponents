@@ -70,6 +70,10 @@ public extension UIFont{
         return UIFont.systemFont(ofSize: 12, weight: .semibold)
     }
     
+    static var Medium11 : UIFont{
+        return UIFont.systemFont(ofSize: 11, weight: .medium)
+    }
+    
     static var FloatingButton : UIFont{
         return UIFont.systemFont(ofSize: 12, weight: .medium)
     }
@@ -255,6 +259,14 @@ public extension UIColor{
     
     static var gray2 : UIColor {
         return UIColor(red: 151.0/255, green: 151.0/255, blue: 151.0/255, alpha: 1)
+    }
+    
+    static var gray176 : UIColor {
+        return UIColor(red: 176/255, green: 176/255, blue: 176/255, alpha: 1)
+    }
+    
+    static var black35 : UIColor {
+        return UIColor(red: 35/255, green: 35/255, blue: 35/255, alpha: 1)
     }
 }
 

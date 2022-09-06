@@ -22,10 +22,10 @@ extension UITextField{
     func applySearchTheme() {
         self.backgroundColor = UIColor.getBackgroundGreyColor()
         self.background = UIImage(named: "")
-        self.attributedPlaceholder = NSAttributedString(string:"  \(NSLocalizedString("Search", comment: ""))", attributes:[NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        self.attributedPlaceholder = NSAttributedString(string:"  \(NSLocalizedString("Search", comment: ""))", attributes:[NSAttributedString.Key.foregroundColor: UIColor.white])
         //self.searchTextField.backgroundColor = Rgbconverter.HexToColor("#FFFFFF", alpha: 0.4)
         self.borderStyle = .none
-        let imageView = UIImageView(image: UIImage(named: "rc_searchIcon"))
+        let imageView = UIImageView(image: UIImage(named: "searchnewicon"))
         imageView.contentMode = UIView.ContentMode.center
         imageView.frame = CGRect(x: 0.0, y: 0.0, width: imageView.image!.size.width + 20.0, height: imageView.image!.size.height)
         let leftView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 30.0, height: imageView.image!.size.height))

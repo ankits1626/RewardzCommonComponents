@@ -19,6 +19,13 @@
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IqL-qd-OfY">
                         <rect key="frame" x="0.0" y="0.0" width="141" height="103"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1G-eS-MZD" customClass="BlockButton" customModule="RewardzCommonComponents" customModuleProvider="target">
                         <rect key="frame" x="59.5" y="40.5" width="22" height="22"/>
@@ -49,6 +56,7 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="IqL-qd-OfY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2kz-x6-Oxa"/>
                 <constraint firstAttribute="bottom" secondItem="IqL-qd-OfY" secondAttribute="bottom" id="FnZ-QV-Rk2"/>

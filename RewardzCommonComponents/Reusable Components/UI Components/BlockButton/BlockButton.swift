@@ -10,7 +10,11 @@ import UIKit
 
 
 public class BlockButton: UIButton {
-    private var _actionBlock : (() -> Void)?
+    private var _actionBlock : (() -> Void)?{
+        didSet{
+            print("here")
+        }
+    }
     public func handleControlEvent(event:UIControl.Event, buttonActionBlock:(() -> Void)?)  {
         _actionBlock = buttonActionBlock
         self.removeTarget(nil, action: nil, for: event)

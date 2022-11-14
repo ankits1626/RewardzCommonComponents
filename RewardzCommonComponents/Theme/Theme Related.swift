@@ -54,6 +54,10 @@ public extension UIFont{
         return UIFont.systemFont(ofSize: 14, weight: .regular)
     }
     
+    static var Caption3 : UIFont{
+        return UIFont.systemFont(ofSize: 13, weight: .regular)
+    }
+    
     static var Body2 : UIFont{
         return UIFont.systemFont(ofSize: 13, weight: .medium)
     }

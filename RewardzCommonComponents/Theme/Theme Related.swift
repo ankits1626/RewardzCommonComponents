@@ -272,6 +272,10 @@ public extension UIColor{
     static var black35 : UIColor {
         return UIColor(red: 35/255, green: 35/255, blue: 35/255, alpha: 1)
     }
+    
+    static var black44 : UIColor {
+        return UIColor(red: 44/255, green: 44/255, blue: 44/255, alpha: 1)
+    }
 }
 
 public struct AppliedCornerRadius {

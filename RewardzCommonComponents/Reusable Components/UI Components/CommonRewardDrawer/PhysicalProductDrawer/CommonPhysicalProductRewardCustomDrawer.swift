@@ -44,8 +44,9 @@ public struct CommonPhysicalProductCustomDrawerSetupModel {
     public var selectedRewardQuantity : String?
     public var remainingPoints : String?
     public var enteredDeliveryAddress : String
-    
-    public init(drawerImage : UIImage?, headerTitleText : NSAttributedString?, subHeaderText : String?, isSubHeaderBackgroundDisplayed : Bool = false, selectedRewardName : String, selectedRewardImage : String, networkRequestCoordinator: CFFNetworkRequestCoordinatorProtocol,mediaFetcher : CFFMediaCoordinatorProtocol,selectedRewardQuantity : String = "1", _remainingPoints : String , _enteredDeliveryAddress : String){
+    public var rewardPoint : String
+
+    public init(drawerImage : UIImage?, headerTitleText : NSAttributedString?, subHeaderText : String?, isSubHeaderBackgroundDisplayed : Bool = false, selectedRewardName : String, selectedRewardImage : String, networkRequestCoordinator: CFFNetworkRequestCoordinatorProtocol,mediaFetcher : CFFMediaCoordinatorProtocol,selectedRewardQuantity : String = "1", _remainingPoints : String , _enteredDeliveryAddress : String, _rewardPoint: String){
         self.drawerImage = drawerImage
         self.headerTitleText = headerTitleText
         self.subHeaderText = subHeaderText
@@ -57,6 +58,7 @@ public struct CommonPhysicalProductCustomDrawerSetupModel {
         self.selectedRewardQuantity = selectedRewardQuantity
         self.remainingPoints = _remainingPoints
         self.enteredDeliveryAddress = _enteredDeliveryAddress
+        self.rewardPoint = _rewardPoint
     }
 }
 
@@ -119,7 +121,18 @@ public class CommonPhysicalProductRewardCustomDrawer: UIViewController {
         }
         
         self.firstLabel?.attributedText = drawerSetupModel.headerTitleText
-        self.pointsLabel?.text = "You will still have \(drawerSetupModel.remainingPoints!) points available"
+        
+        if let remainingPoints = drawerSetupModel.remainingPoints, let rewardPoint = drawerSetupModel.rewardPoint as? String {
+            let finalValue = Int(remainingPoints)! - Int(rewardPoint)!
+            if finalValue > 0 {
+                self.pointsLabel?.text = "You will still have \(finalValue) points available"
+            }else if finalValue == 0 {
+                self.pointsLabel?.text = "Your points will be 0 after redemption"
+            } else {
+                self.pointsLabel?.text = "You don't have enough points to complete this redemption"
+            }
+        }
+
         self.seconLabel?.text = drawerSetupModel.subHeaderText
         self.deliveryAddress?.text = drawerSetupModel.enteredDeliveryAddress
         secondLabelContainer?.curvedCornerControl()

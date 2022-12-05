@@ -122,15 +122,21 @@ public class CommonPhysicalProductRewardCustomDrawer: UIViewController {
         
         self.firstLabel?.attributedText = drawerSetupModel.headerTitleText
         
-        if let remainingPoints = drawerSetupModel.remainingPoints, let rewardPoint = drawerSetupModel.rewardPoint as? String {
-            let finalValue = Int(remainingPoints)! - Int(rewardPoint)!
-            if finalValue > 0 {
-                self.pointsLabel?.text = "You will still have \(finalValue) points available"
-            }else if finalValue == 0 {
-                self.pointsLabel?.text = "Your points will be 0 after redemption"
-            } else {
-                self.pointsLabel?.text = "You don't have enough points to complete this redemption"
-            }
+//        if let remainingPoints = drawerSetupModel.remainingPoints, let rewardPoint = drawerSetupModel.rewardPoint as? String {
+//            if let remaingPts = Int(remainingPoints.replacingOccurrences(of: ",", with: "")), let rewardPts =  Int(rewardPoint.replacingOccurrences(of: ",", with: "")) {
+//                let finalValue = remaingPts - rewardPts
+//                if finalValue > 0 {
+//                    self.pointsLabel?.text = "You will still have \(finalValue) points available"
+//                }else if finalValue == 0 {
+//                    self.pointsLabel?.text = "Your points will be 0 after redemption"
+//                } else {
+//                    self.pointsLabel?.text = "You don't have enough points to complete this redemption"
+//                }
+//            }
+//        }
+        
+        if let remainingPoints = drawerSetupModel.remainingPoints {
+            self.pointsLabel?.text = "Your available points for redemption is \(remainingPoints)"
         }
 
         self.seconLabel?.text = drawerSetupModel.subHeaderText

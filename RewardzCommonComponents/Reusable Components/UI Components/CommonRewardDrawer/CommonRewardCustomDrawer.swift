@@ -129,7 +129,8 @@ public class CommonRewardCustomDrawer: UIViewController {
         self.firstLabel?.text = drawerSetupModel.redeemingPointsStr
         self.availablepointsLabel?.text = drawerSetupModel.availablePointsStr
         self.acountsLabel?.text = drawerSetupModel.deductFromAccountStr
-        self.remainingPointsLabel?.text = "You will still have \(drawerSetupModel.remainingPoints) points available"
+       // self.remainingPointsLabel?.text = "You will still have \(drawerSetupModel.remainingPoints) points available"
+        self.remainingPointsLabel?.text = "Your available points for redemption is \(drawerSetupModel.remainingPoints)"
         self.seconLabel?.text = drawerSetupModel.subHeaderText
         secondLabelContainer?.curvedUIBorderedControl(borderColor: Rgbconverter.HexToColor("EDF0FF"), borderWidth: 1.0, cornerRadius: 8.0)
         secondLabelContainerTopConstraint?.constant = drawerSetupModel.isSubHeaderBackgroundDisplayed ? 19 : 0

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EDFE5608904B8E5868FDAC0 /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97391302DDED74317338C86D /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework */; };
 		980D122D261429CE00995F41 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D1225261429CE00995F41 /* UIApplication+Extension.swift */; };
 		980D122E261429CE00995F41 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D1226261429CE00995F41 /* UIDevice+Extension.swift */; };
 		980D122F261429CE00995F41 /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D1227261429CE00995F41 /* UILabel + Extension.swift */; };
@@ -119,8 +118,6 @@
 /* Begin PBXFileReference section */
 		3B5589375866B235AA4F3EE2 /* Pods-RewardzCommonComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents.debug.xcconfig"; path = "Target Support Files/Pods-RewardzCommonComponents/Pods-RewardzCommonComponents.debug.xcconfig"; sourceTree = "<group>"; };
 		532F59D986957FF3ADC49DE2 /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-RewardzCommonComponents-RewardzCommonComponentsTests/Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
-		7F93C191A78B40E6407CD277 /* Pods_RewardzCommonComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RewardzCommonComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		97391302DDED74317338C86D /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		980D1225261429CE00995F41 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		980D1226261429CE00995F41 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		980D1227261429CE00995F41 /* UILabel + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
@@ -248,7 +245,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				98C094C126142367006D5178 /* RewardzCommonComponents.framework in Frameworks */,
-				0EDFE5608904B8E5868FDAC0 /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +254,6 @@
 		666ADD3EB02DCC4120C381C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7F93C191A78B40E6407CD277 /* Pods_RewardzCommonComponents.framework */,
-				97391302DDED74317338C86D /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

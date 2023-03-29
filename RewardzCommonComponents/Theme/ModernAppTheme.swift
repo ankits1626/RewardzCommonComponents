@@ -12,6 +12,10 @@ public extension UIFont{
         return UIFont.systemFont(ofSize: 32, weight: .bold)
     }
     
+    static var sf18Bold : UIFont{
+        return UIFont.systemFont(ofSize: 18, weight: .bold)
+    }
+    
     static var sf16Regular : UIFont{
         return UIFont.systemFont(ofSize: 16, weight: .regular)
     }
@@ -26,6 +30,14 @@ public extension UIFont{
     
     static var sf14Regular : UIFont{
         return UIFont.systemFont(ofSize: 14, weight: .regular)
+    }
+    
+    static var sf14Bold : UIFont{
+        return UIFont.systemFont(ofSize: 14, weight: .bold)
+    }
+    
+    static var sf12Medium : UIFont{
+        return UIFont.systemFont(ofSize: 12, weight: .medium)
     }
 }
 

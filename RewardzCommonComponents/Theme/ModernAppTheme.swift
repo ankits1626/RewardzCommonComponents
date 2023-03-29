@@ -54,4 +54,16 @@ public extension UIColor{
     static var controlTextColor : UIColor{
         return .white
     }
+    
+    static var seperatorLightGrayColor : UIColor{
+        return UIColor(red: 237, green: 240, blue: 255)
+    }
+    
+    static var lighBlueColor : UIColor{
+        return UIColor(red: 245, green: 248, blue: 255)
+    }
+    
+    static var lighBlueBordeColor : UIColor{
+        return UIColor(red: 237, green: 240, blue: 255)
+    }
 }

@@ -44,6 +44,8 @@ public protocol StepperDelegate {
     @IBInspectable public var isQuantityFieldEnabled : Bool = true
     @IBInspectable public var isBorderEnabled : Bool = true
     
+    public var didUpdateStepperValue : ((_ updatedvalue: Int)->Void)?
+    
     public override var isEnabled: Bool{
         didSet {
             isUserInteractionEnabled = isEnabled
@@ -128,10 +130,12 @@ public protocol StepperDelegate {
                 let compReading = reading + delta
                 if compReading <= maxVal{
                     reading = compReading
+                    didUpdateStepperValue?(reading)
                     self.delegate?.stepperDidChanged(sender: self)
                 }
             }else{
                 reading = reading + delta
+                didUpdateStepperValue?(reading)
                 self.delegate?.stepperDidChanged(sender: self)
             }
         }
@@ -143,10 +147,12 @@ public protocol StepperDelegate {
                 let compReading = reading - delta
                 if compReading >= minVal{
                     reading = compReading
+                    didUpdateStepperValue?(reading)
                     self.delegate?.stepperDidChanged(sender: self)
                 }
             } else {
                 reading = reading - delta
+                didUpdateStepperValue?(reading)
                 self.delegate?.stepperDidChanged(sender: self)
             }
         }
@@ -160,6 +166,7 @@ extension Stepper: UITextFieldDelegate {
         }else{
             reading = checkMaxLimitForStepper(enteredLimit: Int(self.counterTxt.text)!)
         }
+        didUpdateStepperValue?(reading)
         self.delegate?.stepperDidChanged(sender: self)
     }
     

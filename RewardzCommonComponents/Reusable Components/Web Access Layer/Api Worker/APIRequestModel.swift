@@ -118,7 +118,7 @@ public class APIRequestBuilder : APIRequestBuilderProtocol {
                 }
             }
             
-            apiRequest.addValue("Basic b2b_599795252e592c4473cb8f9b8691bee1a71ffc77ed2a1098a14c3fbb3e0be16d", forHTTPHeaderField: "Authorization")
+            apiRequest.addValue("Basic b2b_3fd519b770be7fabf1aec1439e79a2503235e2655a6965a5e6b5c52bedd64b10", forHTTPHeaderField: "Authorization")
             return apiRequest
         }else{
             return nil

@@ -39,6 +39,14 @@ public extension UIFont{
     static var sf12Medium : UIFont{
         return UIFont.systemFont(ofSize: 12, weight: .medium)
     }
+    
+    static var sf12Regular : UIFont{
+        return UIFont.systemFont(ofSize: 12, weight: .regular)
+    }
+    
+    static var sf22Bold : UIFont{
+        return UIFont.systemFont(ofSize: 22, weight: .bold)
+    }
 }
 
 
@@ -49,6 +57,10 @@ public extension UIColor{
     
     static var subHeaderColor : UIColor{
         return UIColor(red: 171, green: 173, blue: 192)
+    }
+    
+    static var subHeaderColor2 : UIColor{
+        return UIColor(red: 21, green: 21, blue: 21)
     }
     
     static var controlTextColor : UIColor{
@@ -65,5 +77,13 @@ public extension UIColor{
     
     static var lighBlueBordeColor : UIColor{
         return UIColor(red: 237, green: 240, blue: 255)
+    }
+    
+    static var orangeColor : UIColor{
+        return UIColor(red: 255, green: 164, blue: 18)
+    }
+    
+    static var lighGreenColor : UIColor{
+        return UIColor(red: 64, green: 203, blue: 87, calpha: 0.16)
     }
 }

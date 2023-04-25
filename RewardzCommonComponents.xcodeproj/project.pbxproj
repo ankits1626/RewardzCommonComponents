@@ -104,6 +104,7 @@
 		98C094C826142367006D5178 /* RewardzCommonComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 98C094BA26142367006D5178 /* RewardzCommonComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC51927B29BEF98E00E67D58 /* ModernAppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC51927A29BEF98E00E67D58 /* ModernAppTheme.swift */; };
 		BC7D1B6D29BF35570069DAF0 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7D1B6C29BF35570069DAF0 /* UITextField+Extension.swift */; };
+		BCA3B99F29D92E2A00EA74EF /* MuliCastCompletionBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA3B99E29D92E2A00EA74EF /* MuliCastCompletionBlock.swift */; };
 		BE2C62762706DF6A00C63D1B /* AssetGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE2C62782706DF6A00C63D1B /* AssetGridViewController.xib */; };
 		BE38B1D0283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE38B1CE283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.swift */; };
 		BE38B1D1283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE38B1CF283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.xib */; };
@@ -230,6 +231,7 @@
 		BC3BFAA7282A85BB0019E237 /* RewardzCommonComponents-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RewardzCommonComponents-Swift.h"; sourceTree = "<group>"; };
 		BC51927A29BEF98E00E67D58 /* ModernAppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernAppTheme.swift; sourceTree = "<group>"; };
 		BC7D1B6C29BF35570069DAF0 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		BCA3B99E29D92E2A00EA74EF /* MuliCastCompletionBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuliCastCompletionBlock.swift; sourceTree = "<group>"; };
 		BE059F3E27073FB600CD5C05 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
 		BE2C62772706DF6A00C63D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AssetGridViewController.xib; sourceTree = "<group>"; };
 		BE2C627A2706DF6E00C63D1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
@@ -337,6 +339,7 @@
 		980D123C26142F8600995F41 /* Reusable Components */ = {
 			isa = PBXGroup;
 			children = (
+				BCA3B99D29D92E1800EA74EF /* MuliCastCompletionBlock */,
 				989C4065265E5131002FF0F7 /* UI Components */,
 				9876845926155F2800B597B0 /* PagedCollectionLayout */,
 				980D123D26142F8600995F41 /* SlideInPresentationManager */,
@@ -860,6 +863,14 @@
 			path = RewardzCommonComponentsTests;
 			sourceTree = "<group>";
 		};
+		BCA3B99D29D92E1800EA74EF /* MuliCastCompletionBlock */ = {
+			isa = PBXGroup;
+			children = (
+				BCA3B99E29D92E2A00EA74EF /* MuliCastCompletionBlock.swift */,
+			);
+			path = MuliCastCompletionBlock;
+			sourceTree = "<group>";
+		};
 		BE38B1CD283F8D46002A5671 /* PhysicalProductDrawer */ = {
 			isa = PBXGroup;
 			children = (
@@ -1093,6 +1104,7 @@
 				989C40C1265E5131002FF0F7 /* BubbleOptionCollectionViewCell.swift in Sources */,
 				9854AAB2261740EB005B653B /* RCCUtility.swift in Sources */,
 				989C40D0265E5131002FF0F7 /* GroupCell.swift in Sources */,
+				BCA3B99F29D92E2A00EA74EF /* MuliCastCompletionBlock.swift in Sources */,
 				989C40C3265E5131002FF0F7 /* FAImageLoader.swift in Sources */,
 				980D1233261429CE00995F41 /* UICollectionView+Extension.swift in Sources */,
 				9876845B26155F2E00B597B0 /* PagedCollectionLayout.swift in Sources */,

@@ -25,7 +25,7 @@ public protocol HorizontalScrollingOptionsDatasource {
     public var isFromPoll = false
     public var inferSizeForFixedNumberOfItems : Int?
     fileprivate var delegate : HorizontalScrollingOptionsDelegate?
-    fileprivate var dataSource : HorizontalScrollingOptionsDatasource?
+    var dataSource : HorizontalScrollingOptionsDatasource?
     private var optionCollection : UICollectionView!
     private var selectedIndex : Int = 0{
         didSet{

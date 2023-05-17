@@ -109,6 +109,8 @@ public protocol StepperDelegate {
         }
         self.incrementButton.roundCorners(corners: [.topRight,.bottomRight,.topLeft, .bottomLeft], radius: 8.0)
         self.decrementButton.roundCorners(corners: [.topRight,.bottomRight,.topLeft, .bottomLeft], radius: 8.0)
+        self.layer.cornerRadius = cornerRadius
+        self.layer.borderColor = borderColor.cgColor
         self.clipsToBounds = true
         counterTxt.backgroundColor = middleColor
         counterTxt.textColor = textColor

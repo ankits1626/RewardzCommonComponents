@@ -81,9 +81,9 @@ public extension UIView {
         self.layer.borderWidth = borderWidth
     }
     
-    func curvedCornerControl() {
+    func curvedCornerControl(_ radius : CGFloat = 5.0) {
         self.clipsToBounds = true
-        self.layer.cornerRadius = 5.0
+        self.layer.cornerRadius = radius
     }
     
     func drawDottedLine() {

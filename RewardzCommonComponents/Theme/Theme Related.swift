@@ -21,12 +21,29 @@ public extension UIFont{
         return UIFont.systemFont(ofSize: 12, weight: .regular)
     }
     
+    static var Highlighter6 : UIFont{
+        return UIFont.systemFont(ofSize: 9, weight: .bold)
+    }
+    
     static var Highlighter1 : UIFont{
         return UIFont.systemFont(ofSize: 10, weight: .bold)
     }
     
+    static var Highlighter5 : UIFont{
+        return UIFont.systemFont(ofSize: 12, weight: .bold)
+    }
+    
     static var Highlighter2 : UIFont{
         return UIFont.systemFont(ofSize: 13, weight: .bold)
+    }
+    
+    static var Highlighter3 : UIFont{
+        return UIFont.systemFont(ofSize: 14, weight: .bold)
+    }
+    
+    
+    static var Highlighter4 : UIFont{
+        return UIFont.systemFont(ofSize: 16, weight: .bold)
     }
     
     static var Caption1 : UIFont{
@@ -35,6 +52,10 @@ public extension UIFont{
     
     static var Caption2 : UIFont{
         return UIFont.systemFont(ofSize: 14, weight: .regular)
+    }
+    
+    static var Caption3 : UIFont{
+        return UIFont.systemFont(ofSize: 13, weight: .regular)
     }
     
     static var Body2 : UIFont{
@@ -51,6 +72,10 @@ public extension UIFont{
     
     static var SemiBold12 : UIFont{
         return UIFont.systemFont(ofSize: 12, weight: .semibold)
+    }
+    
+    static var Medium11 : UIFont{
+        return UIFont.systemFont(ofSize: 11, weight: .medium)
     }
     
     static var FloatingButton : UIFont{
@@ -230,6 +255,38 @@ public extension UIColor{
     
     static func getConfirmationStackColor() -> UIColor{
         return UIColor(red: 228/255.0, green: 228/255.0, blue: 228/255.0, alpha: 1.0)
+    }
+    
+    static var gray245 : UIColor{
+        return UIColor(red: 245/255.0, green: 245/255.0, blue: 245/255.0, alpha: 1.0)
+    }
+    
+    static var pinToPostCellBorderColor : UIColor {
+        return .red
+    }
+    
+    static func getConfirmationStackColor() -> UIColor{
+        return UIColor(red: 228/255.0, green: 228/255.0, blue: 228/255.0, alpha: 1.0)
+    }
+    
+    static var gray1 : UIColor {
+        return UIColor(red: 161.0/255, green: 161.0/255, blue: 161.0/255, alpha: 1)
+    }
+    
+    static var gray2 : UIColor {
+        return UIColor(red: 151.0/255, green: 151.0/255, blue: 151.0/255, alpha: 1)
+    }
+    
+    static var gray176 : UIColor {
+        return UIColor(red: 176/255, green: 176/255, blue: 176/255, alpha: 1)
+    }
+    
+    static var black35 : UIColor {
+        return UIColor(red: 35/255, green: 35/255, blue: 35/255, alpha: 1)
+    }
+    
+    static var black44 : UIColor {
+        return UIColor(red: 44/255, green: 44/255, blue: 44/255, alpha: 1)
     }
 }
 

@@ -110,6 +110,7 @@
 		BE671EC32834C89B00383204 /* CommonRewardCustomDrawer.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE671EC12834C89B00383204 /* CommonRewardCustomDrawer.xib */; };
 		BE9B6B47286C875000D3BD37 /* SKORCheckBOX.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9B6B46286C875000D3BD37 /* SKORCheckBOX.swift */; };
 		BEC2B29326FDA4DE008417C3 /* GroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC2B29226FDA4DE008417C3 /* GroupsViewController.xib */; };
+		BCE14D3E290FE134008806EA /* Sting+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE14D3D290FE134008806EA /* Sting+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -245,6 +246,7 @@
 		BE9B6B46286C875000D3BD37 /* SKORCheckBOX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKORCheckBOX.swift; sourceTree = "<group>"; };
 		BEC2B29226FDA4DE008417C3 /* GroupsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupsViewController.xib; sourceTree = "<group>"; };
 		D1D7DF37034DF16C06ACDF36 /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig"; path = "Target Support Files/Pods-RewardzCommonComponents-RewardzCommonComponentsTests/Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BCE14D3D290FE134008806EA /* Sting+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sting+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,7 +262,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				98C094C126142367006D5178 /* RewardzCommonComponents.framework in Frameworks */,
-				0EDFE5608904B8E5868FDAC0 /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +279,6 @@
 		666ADD3EB02DCC4120C381C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7F93C191A78B40E6407CD277 /* Pods_RewardzCommonComponents.framework */,
-				97391302DDED74317338C86D /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -313,6 +312,7 @@
 				9854AAC9261747C6005B653B /* UIImageView+Extensions.swift */,
 				9854AF5D261AB9B2005B653B /* UIColor+Extensions.swift */,
 				9854AF84261C2623005B653B /* NSMutableData+Extension.swift */,
+				BCE14D3D290FE134008806EA /* Sting+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1091,6 +1091,7 @@
 				980D122E261429CE00995F41 /* UIDevice+Extension.swift in Sources */,
 				989C40D5265E5131002FF0F7 /* HorizontalScrollingOptionCell.swift in Sources */,
 				989C40F6265E5131002FF0F7 /* ASCustomDrawerViewController.swift in Sources */,
+				BCE14D3E290FE134008806EA /* Sting+Extension.swift in Sources */,
 				987683262614349900B597B0 /* CFFThemeManagerProtocol.swift in Sources */,
 				989C40F1265E5131002FF0F7 /* MediaItemCollectionViewCell.swift in Sources */,
 				989C40D4265E5131002FF0F7 /* GUAAlertView.m in Sources */,

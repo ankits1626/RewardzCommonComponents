@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,6 +16,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AssetGridViewController" customModule="RewardzCommonComponents" customModuleProvider="target">
             <connections>
+                <outlet property="addImageBtn" destination="4a0-Tm-beb" id="e1D-EK-w3K"/>
                 <outlet property="collectionView" destination="CXb-SK-Qw0" id="uB1-W9-M7g"/>
                 <outlet property="navigationColor" destination="Nbi-6M-xkB" id="h4q-Yj-dOj"/>
                 <outlet property="titleLabel" destination="i0M-zb-a1y" id="IAe-br-4pZ"/>
@@ -68,6 +69,19 @@
                                 <action selector="uploadButtonTapped:" destination="-1" eventType="touchUpInside" id="6Qc-Ur-kIZ"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4a0-Tm-beb">
+                            <rect key="frame" x="304" y="10" width="67" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="67" id="BTk-XJ-yDz"/>
+                                <constraint firstAttribute="height" constant="31" id="K4V-5k-v9S"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                            <connections>
+                                <action selector="addImageBtn:" destination="-1" eventType="touchUpInside" id="qfa-uG-VnR"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -75,6 +89,8 @@
                         <constraint firstAttribute="height" constant="51" id="Dtv-50-R21"/>
                         <constraint firstItem="i0M-zb-a1y" firstAttribute="centerY" secondItem="MA2-jc-1Y0" secondAttribute="centerY" id="JUW-7E-bxg"/>
                         <constraint firstItem="Omz-Im-v2T" firstAttribute="centerY" secondItem="i0M-zb-a1y" secondAttribute="centerY" id="Jlr-RY-jlZ"/>
+                        <constraint firstAttribute="trailing" secondItem="4a0-Tm-beb" secondAttribute="trailing" constant="4" id="ROI-Hx-18N"/>
+                        <constraint firstItem="4a0-Tm-beb" firstAttribute="top" secondItem="MA2-jc-1Y0" secondAttribute="top" constant="10" id="XPu-13-UVg"/>
                         <constraint firstItem="BVf-XB-T6M" firstAttribute="top" secondItem="MA2-jc-1Y0" secondAttribute="top" id="Y9n-ZT-N8Z"/>
                         <constraint firstItem="i0M-zb-a1y" firstAttribute="centerX" secondItem="MA2-jc-1Y0" secondAttribute="centerX" id="uGU-xL-T7m"/>
                         <constraint firstItem="BVf-XB-T6M" firstAttribute="leading" secondItem="MA2-jc-1Y0" secondAttribute="leading" id="zP9-M3-MCj"/>
@@ -156,6 +172,7 @@
     <resources>
         <image name="DBWhitePattern" width="320" height="70"/>
         <image name="back" width="19" height="14"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

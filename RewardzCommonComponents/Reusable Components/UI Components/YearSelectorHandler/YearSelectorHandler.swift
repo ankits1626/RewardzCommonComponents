@@ -13,6 +13,7 @@ public protocol YearSelectorHandlerDelegate : class {
 
 public class YearSelectorHandler {
     private var MAX_YEAR = 3
+    public var redeemptionYears : [Int] = []
     weak var yearHorizontalScrollingOptionsView : HorizontalScrollingOptions? = nil
     private let currentYear : Int = Calendar(identifier: .gregorian).component(.year, from: Date())
     private var selectedYear : Int {
@@ -27,16 +28,27 @@ public class YearSelectorHandler {
         self.delegate?.didFinishedSelection(selectedYear: selectedYear)
     }
     public func indexOfDefaultSelectdYear() -> Int {
-        return Array(currentYear-MAX_YEAR...currentYear).firstIndex(of: currentYear) ?? 0
+        return 0
     }
+    
     private func getYears() -> [Int]{
-        return Array(currentYear-MAX_YEAR...currentYear)
+        if redeemptionYears.count > 0 {
+            return redeemptionYears
+        }else {
+            let years = Array(currentYear-MAX_YEAR...currentYear)
+            return years.reversed()
+        }
     }
 }
 
 extension YearSelectorHandler : HorizontalScrollingOptionsDelegate, HorizontalScrollingOptionsDatasource{
     public func didSelectItemAt(_ index: Int) {
-       selectedYear = Array(currentYear-MAX_YEAR...currentYear+MAX_YEAR)[index]
+        if redeemptionYears.count > 0 {
+            selectedYear = redeemptionYears[index]
+        }else {
+            let years = Array(currentYear-MAX_YEAR...currentYear)
+            selectedYear = years.reversed()[index]
+        }
     }
     
     public func numberOfItems() -> Int {

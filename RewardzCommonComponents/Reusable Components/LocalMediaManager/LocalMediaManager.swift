@@ -15,7 +15,7 @@ public class LocalMediaManager {
     public init(){}
     
     public func fetchImageForAsset(asset: PHAsset, size: CGSize, completion: @escaping((_ assetIdentidfier: String, _ fetchedImage : UIImage?)-> Void)) {
-        imageManager.requestImage(for: asset, targetSize: size, contentMode: .aspectFill, options: nil, resultHandler: { image, _ in
+        imageManager.requestImage(for: asset, targetSize: size, contentMode: .aspectFit, options: nil, resultHandler: { image, _ in
             completion(asset.localIdentifier, image)
         })
     }

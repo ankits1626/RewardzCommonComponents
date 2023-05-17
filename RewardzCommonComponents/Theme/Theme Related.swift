@@ -102,7 +102,7 @@ public extension UIColor{
     }
     
     static var optionContainerBackGroundColor:  UIColor {
-        return UIColor(red: 241/255.0, green: 251/255.0, blue: 255/255.0, alpha: 0.55)
+        return UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 0.55)
     }
     
     static func getTitleTextColor() -> UIColor {
@@ -122,7 +122,7 @@ public extension UIColor{
     }
     
     static func grayBackGroundColor() -> UIColor{
-        return UIColor(red: 237/255.0, green: 237/255.0, blue: 237/255.0, alpha: 1.0)
+        return UIColor(red: 245/255.0, green: 248/255.0, blue: 255/255.0, alpha: 1.0)
     }
     
     static var stepperActiveColor : UIColor{
@@ -194,11 +194,11 @@ public extension UIColor{
     }
     
     static var progressTrackLightColor:  UIColor {
-        return UIColor(red: 234/255.0, green: 239/255.0, blue: 242/255.0, alpha: 1.0)
+        return UIColor(red: 237/255.0, green: 240/255.0, blue: 255/255.0, alpha: 1.0)
     }
     
     static var progressTrackMaxColor:  UIColor {
-        return UIColor(red: 156/255.0, green: 176/255.0, blue: 188/255.0, alpha: 1.0)
+        return RCCThemeDetailProvider.shared.coordinator.getBackgroundColor()
     }
     
     static var urlColor : UIColor {
@@ -214,7 +214,7 @@ public extension UIColor{
     }
     
     static let selectedOrangeColor = UIColor(red: 243.0/255.0, green: 91/255.0, blue: 45/255.0, alpha: 1.0)
-    static let unSelectedGrayColor = UIColor(red: 222.0/255.0, green: 222/255.0, blue: 222/255.0, alpha: 1.0)
+    static let unSelectedGrayColor = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1.0)
     static let unSelectedTextColor = UIColor(red: 66/255.0, green: 66/255.0, blue: 66/255.0, alpha: 1.0)
     
     static func getBackgroundGreyColor() -> UIColor{
@@ -276,6 +276,10 @@ public extension UIColor{
     static var black44 : UIColor {
         return UIColor(red: 44/255, green: 44/255, blue: 44/255, alpha: 1)
     }
+    static var stepperMiddleColor : UIColor{
+        return UIColor(red: 245/255.0, green: 245/255.0, blue: 245/255.0, alpha: 1.0)
+    }
+    
 }
 
 public struct AppliedCornerRadius {
@@ -283,6 +287,6 @@ public struct AppliedCornerRadius {
 }
 
 public struct BorderWidths {
-    public static let standardBorderWidth : CGFloat = 1.0
+    public static let standardBorderWidth : CGFloat = 0.5
     public static let votedOptionBorderWidth : CGFloat = 1.5
 }

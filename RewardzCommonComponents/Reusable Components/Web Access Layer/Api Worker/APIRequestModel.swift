@@ -14,6 +14,7 @@ public protocol APIRequestBuilderProtocol {
     func apiRequestWithHttpParamsAggregatedHttpParams( url: URL?, method : HTTPMethod , httpBodyDict : NSDictionary?) -> URLRequest?
     func apiRequestWithnobodydictHttpParamsAggregatedHttpParams( url: URL?, method : HTTPMethod , httpBodyDict : Data) -> URLRequest?
     func apiRequestWithMultiPartFormHeader( url: URL?, method : HTTPMethod , httpBodyString : String?) -> URLRequest?
+    func apiRequestWithHttpParamsAggregatedHttpParamsForInspireMe( url: URL?, method : HTTPMethod , httpBodyDict : NSDictionary?) -> URLRequest?
 }
 
 public class APIRequestBuilder : APIRequestBuilderProtocol {
@@ -96,6 +97,28 @@ public class APIRequestBuilder : APIRequestBuilderProtocol {
             if let authorizationHeaderValue = self.tokenProvider.fetchAccessToken(){
                 apiRequest.addValue(authorizationHeaderValue, forHTTPHeaderField: "Authorization")
             }
+            return apiRequest
+        }else{
+            return nil
+        }
+    }
+    
+    public func apiRequestWithHttpParamsAggregatedHttpParamsForInspireMe( url: URL?, method : HTTPMethod , httpBodyDict : NSDictionary?) -> URLRequest?{
+        if let unwrappedURL = url{
+            var apiRequest = URLRequest(url: unwrappedURL, cachePolicy: NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData, timeoutInterval: TimeInterval(REQUEST_TIME_OUT))
+            apiRequest.httpMethod = method.rawValue
+            apiRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            apiRequest.addValue("keep-alive", forHTTPHeaderField: "Connection")
+//            apiRequest.setValue("\(appName()) \(deviceInfoProvider.getDeviceInfo())", forHTTPHeaderField: "User-Agent")
+            apiRequest.setValue("\(tokenProvider.fetchUserAgent()) \(deviceInfoProvider.getDeviceInfo())", forHTTPHeaderField: "User-Agent")
+            apiRequest.addValue(tokenProvider.getDeviceSelectedLanguage(), forHTTPHeaderField: "Accept-Language")
+            if let unwrappedHttpBody = httpBodyDict{
+                if let httpBody  = (try? JSONSerialization.data(withJSONObject: unwrappedHttpBody, options: [])){
+                    apiRequest.httpBody = httpBody
+                }
+            }
+            
+            apiRequest.addValue("Basic b2b_3fd519b770be7fabf1aec1439e79a2503235e2655a6965a5e6b5c52bedd64b10", forHTTPHeaderField: "Authorization")
             return apiRequest
         }else{
             return nil

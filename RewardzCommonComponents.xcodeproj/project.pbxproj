@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EDFE5608904B8E5868FDAC0 /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97391302DDED74317338C86D /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework */; };
+		0F4041AE28A7839200E67C88 /* DaySelectorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4041AD28A7839200E67C88 /* DaySelectorHandler.swift */; };
 		980D122D261429CE00995F41 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D1225261429CE00995F41 /* UIApplication+Extension.swift */; };
 		980D122E261429CE00995F41 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D1226261429CE00995F41 /* UIDevice+Extension.swift */; };
 		980D122F261429CE00995F41 /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D1227261429CE00995F41 /* UILabel + Extension.swift */; };
@@ -100,9 +102,15 @@
 		98C094C126142367006D5178 /* RewardzCommonComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C094B726142367006D5178 /* RewardzCommonComponents.framework */; };
 		98C094C626142367006D5178 /* RewardzCommonComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C094C526142367006D5178 /* RewardzCommonComponentsTests.swift */; };
 		98C094C826142367006D5178 /* RewardzCommonComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 98C094BA26142367006D5178 /* RewardzCommonComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BCE14D3E290FE134008806EA /* Sting+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE14D3D290FE134008806EA /* Sting+Extension.swift */; };
 		BE2C62762706DF6A00C63D1B /* AssetGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE2C62782706DF6A00C63D1B /* AssetGridViewController.xib */; };
+		BE38B1D0283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE38B1CE283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.swift */; };
+		BE38B1D1283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE38B1CF283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.xib */; };
+		BE3E63F82898E71A00271518 /* ImageInitials.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3E63F72898E71A00271518 /* ImageInitials.swift */; };
+		BE671EC22834C89B00383204 /* CommonRewardCustomDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE671EC02834C89B00383204 /* CommonRewardCustomDrawer.swift */; };
+		BE671EC32834C89B00383204 /* CommonRewardCustomDrawer.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE671EC12834C89B00383204 /* CommonRewardCustomDrawer.xib */; };
+		BE9B6B47286C875000D3BD37 /* SKORCheckBOX.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9B6B46286C875000D3BD37 /* SKORCheckBOX.swift */; };
 		BEC2B29326FDA4DE008417C3 /* GroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC2B29226FDA4DE008417C3 /* GroupsViewController.xib */; };
+		BCE14D3E290FE134008806EA /* Sting+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE14D3D290FE134008806EA /* Sting+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,8 +124,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F4041AD28A7839200E67C88 /* DaySelectorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySelectorHandler.swift; sourceTree = "<group>"; };
 		3B5589375866B235AA4F3EE2 /* Pods-RewardzCommonComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents.debug.xcconfig"; path = "Target Support Files/Pods-RewardzCommonComponents/Pods-RewardzCommonComponents.debug.xcconfig"; sourceTree = "<group>"; };
 		532F59D986957FF3ADC49DE2 /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-RewardzCommonComponents-RewardzCommonComponentsTests/Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
+		7F93C191A78B40E6407CD277 /* Pods_RewardzCommonComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RewardzCommonComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97391302DDED74317338C86D /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		980D1225261429CE00995F41 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		980D1226261429CE00995F41 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		980D1227261429CE00995F41 /* UILabel + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
@@ -216,7 +227,6 @@
 		98C094C726142367006D5178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9110BF016AA810CCC6E868E /* Pods-RewardzCommonComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents.release.xcconfig"; path = "Target Support Files/Pods-RewardzCommonComponents/Pods-RewardzCommonComponents.release.xcconfig"; sourceTree = "<group>"; };
 		BC3BFAA7282A85BB0019E237 /* RewardzCommonComponents-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RewardzCommonComponents-Swift.h"; sourceTree = "<group>"; };
-		BCE14D3D290FE134008806EA /* Sting+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sting+Extension.swift"; sourceTree = "<group>"; };
 		BE059F3E27073FB600CD5C05 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
 		BE2C62772706DF6A00C63D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AssetGridViewController.xib; sourceTree = "<group>"; };
 		BE2C627A2706DF6E00C63D1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
@@ -228,8 +238,15 @@
 		BE2C62862706DF7400C63D1B /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
 		BE2C62882706DF7500C63D1B /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
 		BE2C628A2706DF7600C63D1B /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
+		BE38B1CE283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonPhysicalProductRewardCustomDrawer.swift; sourceTree = "<group>"; };
+		BE38B1CF283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonPhysicalProductRewardCustomDrawer.xib; sourceTree = "<group>"; };
+		BE3E63F72898E71A00271518 /* ImageInitials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInitials.swift; sourceTree = "<group>"; };
+		BE671EC02834C89B00383204 /* CommonRewardCustomDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonRewardCustomDrawer.swift; sourceTree = "<group>"; };
+		BE671EC12834C89B00383204 /* CommonRewardCustomDrawer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonRewardCustomDrawer.xib; sourceTree = "<group>"; };
+		BE9B6B46286C875000D3BD37 /* SKORCheckBOX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKORCheckBOX.swift; sourceTree = "<group>"; };
 		BEC2B29226FDA4DE008417C3 /* GroupsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupsViewController.xib; sourceTree = "<group>"; };
 		D1D7DF37034DF16C06ACDF36 /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig"; path = "Target Support Files/Pods-RewardzCommonComponents-RewardzCommonComponentsTests/Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BCE14D3D290FE134008806EA /* Sting+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sting+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +268,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F4041AC28A7832F00E67C88 /* DaysSelectorHandler */ = {
+			isa = PBXGroup;
+			children = (
+				0F4041AD28A7839200E67C88 /* DaySelectorHandler.swift */,
+			);
+			path = DaysSelectorHandler;
+			sourceTree = "<group>";
+		};
 		666ADD3EB02DCC4120C381C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,6 +454,7 @@
 				98768357261444B100B597B0 /* CommonFrameworkDateUtility.swift */,
 				9876844726155A0800B597B0 /* Rgbconverter.swift */,
 				9854AAB1261740EB005B653B /* RCCUtility.swift */,
+				BE3E63F72898E71A00271518 /* ImageInitials.swift */,
 			);
 			path = Utitlities;
 			sourceTree = "<group>";
@@ -460,6 +486,8 @@
 		989C4065265E5131002FF0F7 /* UI Components */ = {
 			isa = PBXGroup;
 			children = (
+				0F4041AC28A7832F00E67C88 /* DaysSelectorHandler */,
+				BE671EBF2834C87800383204 /* CommonRewardDrawer */,
 				989C4066265E5131002FF0F7 /* BubbleOptionSelection */,
 				989C406C265E5131002FF0F7 /* Media Cropper */,
 				989C4078265E5131002FF0F7 /* Media Picker */,
@@ -695,6 +723,7 @@
 			isa = PBXGroup;
 			children = (
 				989C40A7265E5131002FF0F7 /* ASCheckBox.swift */,
+				BE9B6B46286C875000D3BD37 /* SKORCheckBOX.swift */,
 			);
 			path = ASCheckBox;
 			sourceTree = "<group>";
@@ -825,6 +854,25 @@
 			path = RewardzCommonComponentsTests;
 			sourceTree = "<group>";
 		};
+		BE38B1CD283F8D46002A5671 /* PhysicalProductDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				BE38B1CE283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.swift */,
+				BE38B1CF283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.xib */,
+			);
+			path = PhysicalProductDrawer;
+			sourceTree = "<group>";
+		};
+		BE671EBF2834C87800383204 /* CommonRewardDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				BE38B1CD283F8D46002A5671 /* PhysicalProductDrawer */,
+				BE671EC02834C89B00383204 /* CommonRewardCustomDrawer.swift */,
+				BE671EC12834C89B00383204 /* CommonRewardCustomDrawer.xib */,
+			);
+			path = CommonRewardDrawer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -942,8 +990,10 @@
 				989C40C0265E5131002FF0F7 /* BubbleOptionCollectionViewCell.xib in Resources */,
 				989C40F3265E5131002FF0F7 /* CFFMediaBrowserViewController.xib in Resources */,
 				989C40C8265E5131002FF0F7 /* CFFMainCropperViewController.xib in Resources */,
+				BE671EC32834C89B00383204 /* CommonRewardCustomDrawer.xib in Resources */,
 				989C40E6265E5131002FF0F7 /* NoEntryFoundViewViewController.xib in Resources */,
 				989C40E0265E5131002FF0F7 /* GenericFilterViewController.xib in Resources */,
+				BE38B1D1283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.xib in Resources */,
 				989C40DD265E5131002FF0F7 /* FloatingMenuOptionTableViewCell.xib in Resources */,
 				989C40DB265E5131002FF0F7 /* FloatingMenuOptions.xib in Resources */,
 				989C40C4265E5131002FF0F7 /* FAGridView.xib in Resources */,
@@ -1031,6 +1081,7 @@
 				989C40F4265E5131002FF0F7 /* CFFMediaBrowserViewController.swift in Sources */,
 				989C40EB265E5131002FF0F7 /* OptionListTableViewCell.swift in Sources */,
 				98768359261444B200B597B0 /* CommonLoader.swift in Sources */,
+				BE9B6B47286C875000D3BD37 /* SKORCheckBOX.swift in Sources */,
 				989C40C1265E5131002FF0F7 /* BubbleOptionCollectionViewCell.swift in Sources */,
 				9854AAB2261740EB005B653B /* RCCUtility.swift in Sources */,
 				989C40D0265E5131002FF0F7 /* GroupCell.swift in Sources */,
@@ -1039,8 +1090,8 @@
 				9876845B26155F2E00B597B0 /* PagedCollectionLayout.swift in Sources */,
 				980D122E261429CE00995F41 /* UIDevice+Extension.swift in Sources */,
 				989C40D5265E5131002FF0F7 /* HorizontalScrollingOptionCell.swift in Sources */,
-				BCE14D3E290FE134008806EA /* Sting+Extension.swift in Sources */,
 				989C40F6265E5131002FF0F7 /* ASCustomDrawerViewController.swift in Sources */,
+				BCE14D3E290FE134008806EA /* Sting+Extension.swift in Sources */,
 				987683262614349900B597B0 /* CFFThemeManagerProtocol.swift in Sources */,
 				989C40F1265E5131002FF0F7 /* MediaItemCollectionViewCell.swift in Sources */,
 				989C40D4265E5131002FF0F7 /* GUAAlertView.m in Sources */,
@@ -1085,13 +1136,16 @@
 				989C40EC265E5131002FF0F7 /* OptionListViewController.swift in Sources */,
 				9854AF85261C2623005B653B /* NSMutableData+Extension.swift in Sources */,
 				9854AF5E261AB9B2005B653B /* UIColor+Extensions.swift in Sources */,
+				BE38B1D0283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.swift in Sources */,
 				987684B0261562D400B597B0 /* UIViewController+Extensions.swift in Sources */,
+				BE671EC22834C89B00383204 /* CommonRewardCustomDrawer.swift in Sources */,
 				989C40D8265E5131002FF0F7 /* HorizontalScrollAdapterProtocol.swift in Sources */,
 				98BA3CA12625199300DCB1C0 /* RCCThemeCoordinator.swift in Sources */,
 				989C40DE265E5131002FF0F7 /* YearSelectorHandler.swift in Sources */,
 				980D12A926142F8700995F41 /* UnauthorizedHandler.swift in Sources */,
 				989C40D2265E5131002FF0F7 /* GroupsViewController.swift in Sources */,
 				989C40DF265E5131002FF0F7 /* GenericFilterViewController.swift in Sources */,
+				BE3E63F82898E71A00271518 /* ImageInitials.swift in Sources */,
 				989C40CC265E5131002FF0F7 /* GridViewCell.swift in Sources */,
 				987684B8261568D700B597B0 /* Collection+Extension.swift in Sources */,
 				9876845426155E7600B597B0 /* BaseCellConfigurator.swift in Sources */,
@@ -1099,6 +1153,7 @@
 				989C40D9265E5131002FF0F7 /* HorizontolScrolling.swift in Sources */,
 				989C40EF265E5131002FF0F7 /* MFLoader.swift in Sources */,
 				980D122D261429CE00995F41 /* UIApplication+Extension.swift in Sources */,
+				0F4041AE28A7839200E67C88 /* DaySelectorHandler.swift in Sources */,
 				989C40D7265E5131002FF0F7 /* HorizontalScrollingOptionsView.swift in Sources */,
 				989C40C5265E5131002FF0F7 /* UIImage+Additions.swift in Sources */,
 				989C40CD265E5131002FF0F7 /* AssetGridViewController.swift in Sources */,

@@ -70,6 +70,11 @@ public extension UIView {
         borderedControl(borderColor: borderColor, borderWidth: borderWidth)
     }
     
+    func curvedWithoutBorderedControl(borderColor : UIColor = UIColor.getGeneralBorderColor(),borderWidth : CGFloat  = 1.0, cornerRadius : CGFloat = 8.0) {
+        self.layer.cornerRadius = cornerRadius
+        borderedControl(borderColor: borderColor, borderWidth: borderWidth)
+    }
+    
     func borderedControl(borderColor : UIColor = UIColor.getGeneralBorderColor(), borderWidth : CGFloat  = 1.0 ) {
         self.clipsToBounds = true
         self.layer.borderColor = borderColor.cgColor
@@ -95,4 +100,21 @@ public extension UIView {
            shapeLayer.path = UIBezierPath(roundedRect: shapeRect, cornerRadius: 2).cgPath
           self.layer.addSublayer(shapeLayer)
       }
+}
+public extension UIView {
+    func curvedUIBorderedControl(borderColor : UIColor = UIColor.getGeneralBorderColor(),borderWidth : CGFloat  = 1.0, cornerRadius : CGFloat = 8.0) {
+        self.layer.cornerRadius = cornerRadius
+        borderedUIControl(borderColor: borderColor, borderWidth: borderWidth)
+    }
+    
+    func borderedUIControl(borderColor : UIColor = UIColor.getGeneralBorderColor(), borderWidth : CGFloat  = 1.0 ) {
+        self.clipsToBounds = true
+        self.layer.borderColor = borderColor.cgColor
+        self.layer.borderWidth = borderWidth
+    }
+    func addShadowToView() {
+        self.layer.shadowColor = Rgbconverter.HexToColor("#202970", alpha: 0.04).cgColor
+      self.layer.shadowOffset = CGSize(width: 1, height: 1)
+      self.layer.shadowOpacity = 1
+    }
 }

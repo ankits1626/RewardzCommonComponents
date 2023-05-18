@@ -108,6 +108,7 @@
 		BE3E63F82898E71A00271518 /* ImageInitials.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3E63F72898E71A00271518 /* ImageInitials.swift */; };
 		BE671EC22834C89B00383204 /* CommonRewardCustomDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE671EC02834C89B00383204 /* CommonRewardCustomDrawer.swift */; };
 		BE671EC32834C89B00383204 /* CommonRewardCustomDrawer.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE671EC12834C89B00383204 /* CommonRewardCustomDrawer.xib */; };
+		BE7AC09429B61E0E00DDFC9C /* CartStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7AC09329B61E0E00DDFC9C /* CartStepper.swift */; };
 		BE9B6B47286C875000D3BD37 /* SKORCheckBOX.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9B6B46286C875000D3BD37 /* SKORCheckBOX.swift */; };
 		BEC2B29326FDA4DE008417C3 /* GroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC2B29226FDA4DE008417C3 /* GroupsViewController.xib */; };
 /* End PBXBuildFile section */
@@ -242,6 +243,7 @@
 		BE3E63F72898E71A00271518 /* ImageInitials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInitials.swift; sourceTree = "<group>"; };
 		BE671EC02834C89B00383204 /* CommonRewardCustomDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonRewardCustomDrawer.swift; sourceTree = "<group>"; };
 		BE671EC12834C89B00383204 /* CommonRewardCustomDrawer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonRewardCustomDrawer.xib; sourceTree = "<group>"; };
+		BE7AC09329B61E0E00DDFC9C /* CartStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartStepper.swift; sourceTree = "<group>"; };
 		BE9B6B46286C875000D3BD37 /* SKORCheckBOX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKORCheckBOX.swift; sourceTree = "<group>"; };
 		BEC2B29226FDA4DE008417C3 /* GroupsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupsViewController.xib; sourceTree = "<group>"; };
 		D1D7DF37034DF16C06ACDF36 /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig"; path = "Target Support Files/Pods-RewardzCommonComponents-RewardzCommonComponentsTests/Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -699,6 +701,7 @@
 			isa = PBXGroup;
 			children = (
 				989C409C265E5131002FF0F7 /* Stepper.swift */,
+				BE7AC09329B61E0E00DDFC9C /* CartStepper.swift */,
 			);
 			path = Stepper;
 			sourceTree = "<group>";
@@ -1155,6 +1158,7 @@
 				0F4041AE28A7839200E67C88 /* DaySelectorHandler.swift in Sources */,
 				989C40D7265E5131002FF0F7 /* HorizontalScrollingOptionsView.swift in Sources */,
 				989C40C5265E5131002FF0F7 /* UIImage+Additions.swift in Sources */,
+				BE7AC09429B61E0E00DDFC9C /* CartStepper.swift in Sources */,
 				989C40CD265E5131002FF0F7 /* AssetGridViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

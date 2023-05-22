@@ -12,6 +12,7 @@ public class MediaItemCollectionViewCell: UICollectionViewCell {
     @IBOutlet public weak var mediaCoverImageView : UIImageView?
     @IBOutlet public weak var removeButton : BlockButton?
     @IBOutlet public weak var playButton : BlockButton?
+    @IBOutlet public var pageControl: UIPageControl!
     @IBOutlet public weak var editTransparentView : UIView?
     public override func awakeFromNib() {
         super.awakeFromNib()

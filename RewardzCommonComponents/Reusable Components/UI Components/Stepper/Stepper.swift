@@ -107,13 +107,14 @@ public protocol StepperDelegate {
             counterTxt.layer.borderWidth = borderWidth
             counterTxt.layer.borderColor = borderColor.cgColor
         }
-        self.layer.cornerRadius = cornerRadius
-        self.layer.borderColor = borderColor.cgColor
+        self.incrementButton.roundCorners(corners: [.topRight,.bottomRight,.topLeft, .bottomLeft], radius: 8.0)
+        self.decrementButton.roundCorners(corners: [.topRight,.bottomRight,.topLeft, .bottomLeft], radius: 8.0)
         self.clipsToBounds = true
         counterTxt.backgroundColor = middleColor
         counterTxt.textColor = textColor
         counterTxt.keyboardType = .numberPad
-        decrementButton.backgroundColor = decrementIndicatorColor
+        decrementButton.backgroundColor = UIColor(red: 245, green: 248, blue: 255)
+        decrementButton.setTitleColor(UIColor(red: 171, green: 173, blue: 192), for: .normal)
         incrementButton.backgroundColor = incrementIndicatorColor
         decrementButton.setTitle("-", for: UIControl.State.normal)
         incrementButton.setTitle("+", for: UIControl.State.normal)

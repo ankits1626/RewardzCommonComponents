@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "so-find.png",
+      "filename" : "icon_handle_small.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "so-find@2x.png",
+      "filename" : "icon_handle_small@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "so-find@3x.png",
+      "filename" : "icon_handle_small@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

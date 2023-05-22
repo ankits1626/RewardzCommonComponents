@@ -94,7 +94,7 @@ public class GenericFilterViewController<T : ListItemProtocol>: UIViewController
     }
     
     private func setupFilterAppearance(){
-        clearButton?.curvedBorderedControl()
+        clearButton?.curvedWithoutBorderedControl()
         applyButton?.curvedCornerControl()
         applyButton?.backgroundColor = .getControlColor()
     }

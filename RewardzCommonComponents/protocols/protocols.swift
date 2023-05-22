@@ -19,6 +19,8 @@ public protocol MediaItemProtocol {
     func getRemoteId() -> Int
     func getFileName() -> String?
     func getFileUrl() -> URL?
+    func getGiphy() -> String?
+    func getImagePK() -> Int?
 }
 
 public extension MediaItemProtocol{

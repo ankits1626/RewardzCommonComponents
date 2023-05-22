@@ -23,18 +23,22 @@ public class MFLoader {
     
     public init(){}
     
-    public func showActivityIndicator(_ uiView: UIView,loaderText: String? = "") {
+    public func showActivityIndicator(_ uiView: UIView,loaderText: String? = "",backgroundColor : UIColor? = nil) {
         DispatchQueue.main.async {
-            self.show(uiView, loaderText: loaderText)
+            self.show(uiView, loaderText: loaderText,backgroundColor: backgroundColor)
         }
     }
-    private func show(_ uiView: UIView, loaderText: String? = "")  {
+    private func show(_ uiView: UIView, loaderText: String? = "", backgroundColor : UIColor? = nil)  {
         uiView.frame = UIScreen.main.bounds
         self.container.frame = uiView.frame
         self.container.center = uiView.center
         self.container.backgroundColor = UIColor.white
         
-        self.container.backgroundColor = Rgbconverter.HexToColor("#434343", alpha: 0.7)
+        if let backColor = backgroundColor {
+            self.container.backgroundColor = backColor
+        }else{
+            self.container.backgroundColor = Rgbconverter.HexToColor("#434343", alpha: 0.7)
+        }
         self.loadingView.frame = CGRect(x: 0, y: 0, width: 80, height: 80)
         self.loadingView.center = uiView.center
         self.loadingView.backgroundColor = UIColorFromHex(0x444444, alpha: 0.7)
@@ -77,6 +81,57 @@ public class MFLoader {
     @param rgbValue - hex color value
     @param alpha - transparency level
     */
+    func UIColorFromHex(_ rgbValue:UInt32, alpha:Double=1.0)->UIColor {
+        let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
+        let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
+        let blue = CGFloat(rgbValue & 0xFF)/256.0
+        return UIColor(red:red, green:green, blue:blue, alpha:CGFloat(alpha))
+    }
+}
+extension UIView {
+    public func showBlurLoader() {
+        let blurLoader = BlurLoader(frame: frame)
+        self.addSubview(blurLoader)
+    }
+
+    public func removeBluerLoader() {
+        if let blurLoader = subviews.first(where: { $0 is BlurLoader }) {
+            blurLoader.removeFromSuperview()
+        }
+    }
+}
+
+
+class BlurLoader: UIView {
+
+    var blurEffectView: UIVisualEffectView?
+
+    override init(frame: CGRect) {
+        let blurEffectView = UIVisualEffectView(frame: frame)
+        blurEffectView.frame = frame
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        blurEffectView.backgroundColor = .clear
+        self.blurEffectView = blurEffectView
+        super.init(frame: frame)
+        addSubview(blurEffectView)
+        addLoader()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    private func addLoader() {
+        guard let blurEffectView = blurEffectView else { return }
+        let activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
+        activityIndicator.frame = CGRect(x: 0, y: 0, width: 80, height: 80)
+        activityIndicator.backgroundColor = UIColorFromHex(0x444444, alpha: 0.7)
+        activityIndicator.curvedBorderedControl(borderColor: .lightGray, borderWidth: 0.5)
+        blurEffectView.contentView.addSubview(activityIndicator)
+        activityIndicator.center = blurEffectView.contentView.center
+        activityIndicator.startAnimating()
+    }
+    
     func UIColorFromHex(_ rgbValue:UInt32, alpha:Double=1.0)->UIColor {
         let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
         let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0

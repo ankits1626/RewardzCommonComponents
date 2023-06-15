@@ -44,6 +44,9 @@ public protocol StepperDelegate {
     @IBInspectable public var isQuantityFieldEnabled : Bool = true
     @IBInspectable public var isBorderEnabled : Bool = true
     
+    public var didUpdateStepperValue : ((_ updatedvalue: Int)->Void)?
+    public var disableIncrementCounter : Bool = false
+    
     public override var isEnabled: Bool{
         didSet {
             isUserInteractionEnabled = isEnabled
@@ -113,8 +116,9 @@ public protocol StepperDelegate {
         counterTxt.backgroundColor = middleColor
         counterTxt.textColor = textColor
         counterTxt.keyboardType = .numberPad
-        decrementButton.backgroundColor = UIColor(red: 245, green: 248, blue: 255)
-        decrementButton.setTitleColor(UIColor(red: 171, green: 173, blue: 192), for: .normal)
+//        decrementButton.backgroundColor = UIColor(red: 245, green: 248, blue: 255)
+//        decrementButton.setTitleColor(UIColor(red: 171, green: 173, blue: 192), for: .normal)
+        decrementButton.backgroundColor = decrementIndicatorColor
         incrementButton.backgroundColor = incrementIndicatorColor
         decrementButton.setTitle("-", for: UIControl.State.normal)
         incrementButton.setTitle("+", for: UIControl.State.normal)
@@ -123,15 +127,17 @@ public protocol StepperDelegate {
     }
     
     @objc func increment() {
-        if self.isEnabled == true{
+        if self.isEnabled == true && !disableIncrementCounter{
             if let maxVal = self.maxVal?.intValue {
                 let compReading = reading + delta
                 if compReading <= maxVal{
                     reading = compReading
+                    didUpdateStepperValue?(reading)
                     self.delegate?.stepperDidChanged(sender: self)
                 }
             }else{
                 reading = reading + delta
+                didUpdateStepperValue?(reading)
                 self.delegate?.stepperDidChanged(sender: self)
             }
         }
@@ -143,10 +149,12 @@ public protocol StepperDelegate {
                 let compReading = reading - delta
                 if compReading >= minVal{
                     reading = compReading
+                    didUpdateStepperValue?(reading)
                     self.delegate?.stepperDidChanged(sender: self)
                 }
             } else {
                 reading = reading - delta
+                didUpdateStepperValue?(reading)
                 self.delegate?.stepperDidChanged(sender: self)
             }
         }
@@ -160,6 +168,7 @@ extension Stepper: UITextFieldDelegate {
         }else{
             reading = checkMaxLimitForStepper(enteredLimit: Int(self.counterTxt.text)!)
         }
+        didUpdateStepperValue?(reading)
         self.delegate?.stepperDidChanged(sender: self)
     }
     

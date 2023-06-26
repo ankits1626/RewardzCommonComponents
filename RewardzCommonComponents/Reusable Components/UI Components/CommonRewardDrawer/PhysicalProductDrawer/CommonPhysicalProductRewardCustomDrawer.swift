@@ -79,6 +79,8 @@ public class CommonPhysicalProductRewardCustomDrawer: UIViewController {
     @IBOutlet private weak var rewardName : UILabel?
     @IBOutlet private weak var deliveryAddress : UILabel?
     @IBOutlet private weak var secondLabelContainer : UIView?
+    @IBOutlet private weak var orderConfiramtionLabel : UILabel?
+    @IBOutlet private weak var deliveryAddressLabel : UILabel?
     @IBOutlet private var actionButtons : [BlockButton]!
     @IBOutlet private weak var secondLabelContainerTopConstraint : NSLayoutConstraint?
     @IBOutlet private weak var secondLabelTopConstraint : NSLayoutConstraint?
@@ -105,6 +107,8 @@ public class CommonPhysicalProductRewardCustomDrawer: UIViewController {
     }
     
     private func setupUI(){
+        orderConfiramtionLabel?.text = "Order Confirmation".localized
+        deliveryAddressLabel?.text = "Delivery Address".localized
         self.rewardName?.text = drawerSetupModel.selectedRewardName
         if let unwrappedDisplayImage = drawerSetupModel.selectedRewardImage,
            let baseUrl = self.drawerSetupModel.networkRequestCoordinator.getBaseUrlProvider().baseURLString() {
@@ -115,9 +119,9 @@ public class CommonPhysicalProductRewardCustomDrawer: UIViewController {
             self.drawerTopImage?.image = drawerSetupModel.drawerImage
         }
         if drawerSetupModel.selectedRewardQuantity == "0" {
-            self.rewardQuantity?.text = "Quantity : 1"
+            self.rewardQuantity?.text = "\("Quantity:".localized) 1"
         }else{
-            self.rewardQuantity?.text = "Quantity : \(drawerSetupModel.selectedRewardQuantity ?? "")"
+            self.rewardQuantity?.text = "\("Quantity:".localized) \(drawerSetupModel.selectedRewardQuantity ?? "")"
         }
         
         self.firstLabel?.attributedText = drawerSetupModel.headerTitleText
@@ -136,7 +140,7 @@ public class CommonPhysicalProductRewardCustomDrawer: UIViewController {
 //        }
         
         if let remainingPoints = drawerSetupModel.remainingPoints {
-            self.pointsLabel?.text = "Your available points for redemption is \(remainingPoints)"
+            self.pointsLabel?.text = "\("Your available points for redemption is".localized) \(remainingPoints)"
         }
 
         self.seconLabel?.text = drawerSetupModel.subHeaderText

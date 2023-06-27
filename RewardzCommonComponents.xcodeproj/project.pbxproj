@@ -101,7 +101,6 @@
 		98C094C126142367006D5178 /* RewardzCommonComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C094B726142367006D5178 /* RewardzCommonComponents.framework */; };
 		98C094C626142367006D5178 /* RewardzCommonComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C094C526142367006D5178 /* RewardzCommonComponentsTests.swift */; };
 		98C094C826142367006D5178 /* RewardzCommonComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 98C094BA26142367006D5178 /* RewardzCommonComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B46CCD9CA9EAA240DCB09D2D /* Pods_RewardzCommonComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8DBF48DB7C5EA6BB6798A3 /* Pods_RewardzCommonComponents.framework */; };
 		BCE14D3E290FE134008806EA /* Sting+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE14D3D290FE134008806EA /* Sting+Extension.swift */; };
 		BE2C62762706DF6A00C63D1B /* AssetGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE2C62782706DF6A00C63D1B /* AssetGridViewController.xib */; };
 		BEC2B29326FDA4DE008417C3 /* GroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC2B29226FDA4DE008417C3 /* GroupsViewController.xib */; };
@@ -241,7 +240,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B46CCD9CA9EAA240DCB09D2D /* Pods_RewardzCommonComponents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,7 @@ public class ErrorDisplayer: NSObject {
             }
             let alertVC = UIAlertController(title: "", message: errorMsg, preferredStyle: .alert)
             
-            let okAction = UIAlertAction(title: "OK", style: .default, handler: okActionHandler)
+            let okAction = UIAlertAction(title: "OK".localized, style: .default, handler: okActionHandler)
             alertVC.addAction(okAction)
             topController.present(alertVC, animated: true, completion: nil)
             // topController should now be your topmost view controller

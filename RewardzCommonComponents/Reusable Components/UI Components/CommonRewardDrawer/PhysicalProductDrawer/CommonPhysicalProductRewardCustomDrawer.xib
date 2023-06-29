@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,8 +12,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommonPhysicalProductRewardCustomDrawer" customModule="RewardzCommonComponents" customModuleProvider="target">
             <connections>
                 <outlet property="deliveryAddress" destination="7Vd-4X-YS0" id="GRN-5l-rO4"/>
+                <outlet property="deliveryAddressLabel" destination="Acs-uK-aps" id="Oh3-yh-qXw"/>
                 <outlet property="drawerTopImage" destination="oNw-lu-Zao" id="Lix-Ei-qVG"/>
                 <outlet property="firstLabel" destination="LMZ-Mi-SLC" id="veZ-da-j4J"/>
+                <outlet property="orderConfiramtionLabel" destination="KvK-hh-Rkt" id="FBd-hS-Xwf"/>
                 <outlet property="pointsLabel" destination="SJY-bo-9aL" id="pAR-p7-ha5"/>
                 <outlet property="rewardName" destination="3Ri-yS-UZA" id="52q-hq-qOS"/>
                 <outlet property="rewardQuantity" destination="ype-YT-SWm" id="Pds-f9-mhg"/>

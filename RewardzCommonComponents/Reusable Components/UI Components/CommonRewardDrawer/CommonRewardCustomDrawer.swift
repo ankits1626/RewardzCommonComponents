@@ -75,6 +75,7 @@ public class CommonRewardCustomDrawer: UIViewController {
     private lazy var slideInTransitioningDelegate = SlideInPresentationManager()
     @IBOutlet private weak var drawerTopImage : UIImageView?
     @IBOutlet private weak var firstLabel : UILabel?
+    @IBOutlet private weak var rewardConfirmationLabel : UILabel?
     @IBOutlet private weak var pointsLabel : UILabel?
     @IBOutlet private weak var seconLabel : UILabel?
     @IBOutlet private weak var remainingPointsLabel : UILabel?
@@ -111,6 +112,7 @@ public class CommonRewardCustomDrawer: UIViewController {
     }
     
     private func setupUI(){
+        rewardConfirmationLabel?.text = "Redeem Confirmation".localized
         self.rewardName?.text = drawerSetupModel.selectedRewardName
         if let unwrappedDisplayImage = drawerSetupModel.selectedRewardImage,
            let baseUrl = self.drawerSetupModel.networkRequestCoordinator.getBaseUrlProvider().baseURLString() {
@@ -121,16 +123,16 @@ public class CommonRewardCustomDrawer: UIViewController {
             self.drawerTopImage?.image = drawerSetupModel.drawerImage
         }
         if drawerSetupModel.selectedRewardQuantity == "0" {
-            self.rewardQuantity?.text = "Quantity : 1"
+            self.rewardQuantity?.text = "\("Quantity".localized) : 1"
         }else{
-            self.rewardQuantity?.text = "Quantity : \(drawerSetupModel.selectedRewardQuantity ?? "")"
+            self.rewardQuantity?.text = "\("Quantity".localized) : \(drawerSetupModel.selectedRewardQuantity ?? "")"
         }
         
         self.firstLabel?.text = drawerSetupModel.redeemingPointsStr
         self.availablepointsLabel?.text = drawerSetupModel.availablePointsStr
         self.acountsLabel?.text = drawerSetupModel.deductFromAccountStr
        // self.remainingPointsLabel?.text = "You will still have \(drawerSetupModel.remainingPoints) points available"
-        self.remainingPointsLabel?.text = "Your available points for redemption is \(drawerSetupModel.remainingPoints)"
+        self.remainingPointsLabel?.text = "\("Your available points for redemption is".localized) \(drawerSetupModel.remainingPoints)"
         self.seconLabel?.text = drawerSetupModel.subHeaderText
         secondLabelContainer?.curvedUIBorderedControl(borderColor: Rgbconverter.HexToColor("EDF0FF"), borderWidth: 1.0, cornerRadius: 8.0)
         secondLabelContainerTopConstraint?.constant = drawerSetupModel.isSubHeaderBackgroundDisplayed ? 19 : 0

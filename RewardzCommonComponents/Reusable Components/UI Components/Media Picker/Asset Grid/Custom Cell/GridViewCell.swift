@@ -7,7 +7,7 @@ Collection view cell for displaying an asset.
 
 import UIKit
 
-class GridViewCell: UICollectionViewCell {
+public class GridViewCell: UICollectionViewCell {
 
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var selectedIndicatorView: UIView!
@@ -23,7 +23,7 @@ class GridViewCell: UICollectionViewCell {
     }
     
 
-    override func prepareForReuse() {
+    public override func prepareForReuse() {
         super.prepareForReuse()
         thumbnailImage = nil
         selectedIndicatorView.isHidden = true

@@ -24,6 +24,10 @@ public extension UIFont{
         return UIFont.systemFont(ofSize: 16, weight: .medium)
     }
     
+    static var sf16Bold : UIFont{
+        return UIFont.systemFont(ofSize: 16, weight: .bold)
+    }
+    
     static var sf14Medium : UIFont{
         return UIFont.systemFont(ofSize: 14, weight: .medium)
     }

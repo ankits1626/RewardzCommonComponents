@@ -46,9 +46,9 @@ class CFFImageCropperViewController: UIViewController {
         self.navigationColor.image = UIImage(named: "")
         if let unwrappedThemeManager = themeManager{
             titleLabel.font = unwrappedThemeManager.getHeaderFont()
-            titleLabel.text = "CROP IMAGE".localized
-            proceedButton.setTitle("PROCEED".localized, for: .normal)
         }
+        titleLabel.text = "CROP IMAGE".localized
+        proceedButton.setTitle("PROCEED".localized, for: .normal)
     }
     
     private func configureTitleLabel(){

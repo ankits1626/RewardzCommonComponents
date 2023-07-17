@@ -11,5 +11,4 @@ target 'RewardzCommonComponents' do
   target 'RewardzCommonComponentsTests' do
     # Pods for testing
   end
-
 end

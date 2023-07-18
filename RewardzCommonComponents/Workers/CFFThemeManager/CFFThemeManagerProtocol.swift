@@ -8,11 +8,12 @@
 
 import UIKit
 
-public protocol CFFThemeManagerProtocol : class {
+public protocol CFFThemeManagerProtocol : AnyObject {
     func getThemeSpecificImage(_ imageName : String) -> UIImage?
     func getControlActiveColor() -> UIColor
     func getStepperActiveColor() -> UIColor
     func getHeaderFont() -> UIFont
     func getLoggedInUserImage() -> String
-    func getLoggedInUserFullName() -> String 
+    func getLoggedInUserFullName() -> String
+    func getOrganisationBackgroundColor() -> String
 }

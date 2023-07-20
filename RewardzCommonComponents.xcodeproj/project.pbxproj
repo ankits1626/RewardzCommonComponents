@@ -114,6 +114,7 @@
 		BE671EC32834C89B00383204 /* CommonRewardCustomDrawer.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE671EC12834C89B00383204 /* CommonRewardCustomDrawer.xib */; };
 		BE9B6B47286C875000D3BD37 /* SKORCheckBOX.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9B6B46286C875000D3BD37 /* SKORCheckBOX.swift */; };
 		BEC2B29326FDA4DE008417C3 /* GroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC2B29226FDA4DE008417C3 /* GroupsViewController.xib */; };
+		BEC74DDE2A5D4E4B0074324B /* LeftCustomFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC74DDD2A5D4E4B0074324B /* LeftCustomFlowLayout.swift */; };
 		E79465FA8F8660A0F38541E6 /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4456F5A56FD750FF104953E2 /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -253,6 +254,7 @@
 		BE671EC12834C89B00383204 /* CommonRewardCustomDrawer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonRewardCustomDrawer.xib; sourceTree = "<group>"; };
 		BE9B6B46286C875000D3BD37 /* SKORCheckBOX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKORCheckBOX.swift; sourceTree = "<group>"; };
 		BEC2B29226FDA4DE008417C3 /* GroupsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupsViewController.xib; sourceTree = "<group>"; };
+		BEC74DDD2A5D4E4B0074324B /* LeftCustomFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftCustomFlowLayout.swift; sourceTree = "<group>"; };
 		D1D7DF37034DF16C06ACDF36 /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig"; path = "Target Support Files/Pods-RewardzCommonComponents-RewardzCommonComponentsTests/Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E34CCC9381351B00F255E0F9 /* Pods_RewardzCommonComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RewardzCommonComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -470,6 +472,7 @@
 				9876844726155A0800B597B0 /* Rgbconverter.swift */,
 				9854AAB1261740EB005B653B /* RCCUtility.swift */,
 				BE3E63F72898E71A00271518 /* ImageInitials.swift */,
+				BEC74DDD2A5D4E4B0074324B /* LeftCustomFlowLayout.swift */,
 			);
 			path = Utitlities;
 			sourceTree = "<group>";
@@ -1156,6 +1159,7 @@
 				989C40ED265E5131002FF0F7 /* ListItemFetcher.swift in Sources */,
 				9854AACA261747C6005B653B /* UIImageView+Extensions.swift in Sources */,
 				980D1231261429CE00995F41 /* UIImage+Extensions.swift in Sources */,
+				BEC74DDE2A5D4E4B0074324B /* LeftCustomFlowLayout.swift in Sources */,
 				9876834126143D2200B597B0 /* GenericCoreDataManager.swift in Sources */,
 				989C40EC265E5131002FF0F7 /* OptionListViewController.swift in Sources */,
 				BCC705322A626089000413E3 /* CALayer+XibConfiguration.swift in Sources */,

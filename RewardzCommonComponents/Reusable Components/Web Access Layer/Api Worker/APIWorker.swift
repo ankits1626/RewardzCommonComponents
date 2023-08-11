@@ -238,6 +238,10 @@ extension Int {
         return false
     }
 }
+
+//reference - https://stackoverflow.com/questions/34223291/ios-certificate-pinning-with-swift-and-nsurlsession
+//https://medium.com/@anuj.rai2489/ssl-pinning-254fa8ca2109
+
 public class SessionSecurityManager : NSObject, URLSessionDelegate {
      private let rsa2048Asn1Header:[UInt8] = [
          0x30, 0x82, 0x01, 0x22, 0x30, 0x0d, 0x06, 0x09, 0x2a, 0x86, 0x48, 0x86,

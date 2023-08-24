@@ -109,7 +109,7 @@ public protocol HorizontalScrollingOptionsDatasource {
                     optionCollection.backgroundColor = .clear
                     layout.itemSize = CGSize(width: CGFloat(unwrappedItems) + 10, height:40.0)
                 }else {
-                    layout.itemSize = CGSize(width: (UIScreen.main.bounds.width - 10) / CGFloat(unwrappedItems), height:40.0)
+                    layout.itemSize = CGSize(width: (UIScreen.main.bounds.width - 32.0) / CGFloat(unwrappedItems), height:40.0)
                 }
                 
                 //layout.itemSize = CGSize(width: (UIScreen.main.bounds.width - 10) / CGFloat(unwrappedItems), height:40.0)

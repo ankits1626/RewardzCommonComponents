@@ -111,7 +111,6 @@ public class APIRequestBuilder : APIRequestBuilderProtocol {
             apiRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
             apiRequest.addValue("799d4ac2b74e4fb799af1da6bcea2d0a", forHTTPHeaderField: "Ocp-Apim-Subscription-Key")
             apiRequest.addValue("keep-alive", forHTTPHeaderField: "Connection")
-            apiRequest.setValue("\(tokenProvider.fetchUserAgent()) \(deviceInfoProvider.getDeviceInfo())", forHTTPHeaderField: "User-Agent")
             
             if let unwrappedHttpBody = httpBodyDict{
                 if let httpBody  = (try? JSONSerialization.data(withJSONObject: unwrappedHttpBody, options: .prettyPrinted)){
@@ -131,7 +130,6 @@ public class APIRequestBuilder : APIRequestBuilderProtocol {
             apiRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
             apiRequest.addValue("keep-alive", forHTTPHeaderField: "Connection")
 //            apiRequest.setValue("\(appName()) \(deviceInfoProvider.getDeviceInfo())", forHTTPHeaderField: "User-Agent")
-            apiRequest.setValue("\(tokenProvider.fetchUserAgent()) \(deviceInfoProvider.getDeviceInfo())", forHTTPHeaderField: "User-Agent")
             apiRequest.addValue(tokenProvider.getDeviceSelectedLanguage(), forHTTPHeaderField: "Accept-Language")
             if let unwrappedHttpBody = httpBodyDict{
                 if let httpBody  = (try? JSONSerialization.data(withJSONObject: unwrappedHttpBody, options: [])){

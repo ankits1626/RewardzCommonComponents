@@ -140,9 +140,21 @@ public class CommonAPICall<P: DataParserProtocol> : CommonAPIProtocol {
     private func logoutAppforAuthondicationError () {
         logouthandler.handleLogoutResponse()
     }
+    
+    func checkifSSLPinningRequired() -> Bool {
+        if let userAgent =  apiRequestProvider.apiRequest?.allHTTPHeaderFields?.keys.contains("User-Agent"),
+           userAgent == true{
+            return true
+        }
+        return false
+    }
 
     public func callAPI(completionHandler: @escaping (APICallResult<P.ResultType>) -> Void)  {
-        let session = URLSession(configuration: .ephemeral, delegate: sessionSecurityManager, delegateQueue: nil)
+        var session = URLSession(configuration: .default)
+        if checkifSSLPinningRequired() {
+            session = URLSession(configuration: .ephemeral, delegate: sessionSecurityManager, delegateQueue: nil)
+        }
+        
         if let urlRequest = apiRequestProvider.apiRequest{
             let apiTask = session.dataTask(with: urlRequest) { (data, response, error) in
 //            let apiTask = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in

@@ -142,10 +142,16 @@ public class CommonAPICall<P: DataParserProtocol> : CommonAPIProtocol {
     }
     
     func checkifSSLPinningRequired() -> Bool {
+        if let devServer = apiRequestProvider.apiRequest?.url?.absoluteString.contains("skordev.com"),
+            devServer == true{
+            return false
+        }
+        
         if let userAgent =  apiRequestProvider.apiRequest?.allHTTPHeaderFields?.keys.contains("User-Agent"),
            userAgent == true{
             return true
         }
+        
         return false
     }
 
@@ -307,7 +313,7 @@ public class SessionSecurityManager : NSObject, URLSessionDelegate {
                           "NbgCEaRyzcOO5MVuqtnQitf+HZjXhSp3awrfXnqspYw=", //govind server
                           "NIe25q4jQJaGXU3R02aSdpMtJzjxI48v5398lnuCQVE=",//jack server
                           "oPuLkDR4fH7o2P/hGxis/o6qAzPKE9Y2EEEFJepIL10=", //jerry server
-                          "bVodg+ILPzscTni4vg3aEbHhx0THJAOOIUz/7ED/hFw=", // prashant server
+                          "pQxuW6smpF4SBN7hLsZM4yjd8Sh4AA4QiZqEMNQHcm4=", // prashant server
                           "eZQBsuP+Gp+Nr9bzd/aqjciw91lbqcZJV37JZhky9wA=", // prateek server
                           "i2wlO7Mgk2MLPu7OIewfwENNIpZ9JDGGpo75aRYTm+o=", //raghvendra server
                           "HzTNMZBLPk7qFmuHsP+SNWJ7pFZmSHKWm/DNP5osPZM=", //rishi server

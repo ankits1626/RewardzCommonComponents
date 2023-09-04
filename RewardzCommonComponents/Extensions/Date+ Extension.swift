@@ -8,6 +8,17 @@
 
 import Foundation
 
+public extension Calendar{
+    init(identifier:Calendar.Identifier, timeZone: String = "UTC") {
+        self.init(identifier: identifier)
+        if let timezone = TimeZone(identifier: timeZone){
+            self.timeZone = timezone
+        }else{
+            self.timeZone = TimeZone(identifier: "UTC")!
+        }
+    }
+}
+
 public extension Date
 {
     func hour() -> Int

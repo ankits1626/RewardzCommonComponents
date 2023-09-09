@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -45,14 +46,39 @@
                             <constraint firstAttribute="height" constant="26" id="yLQ-tn-4uT"/>
                         </constraints>
                     </pageControl>
-                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqU-wg-i9e" customClass="BlockButton" customModule="RewardzCommonComponents" customModuleProvider="target">
-                        <rect key="frame" x="116" y="5" width="20" height="20"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oyo-4Y-AtL">
+                        <rect key="frame" x="112" y="0.0" width="29" height="29"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rxv-8e-kL0">
+                                <rect key="frame" x="2" y="2" width="25" height="25"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ac-8d-Ykr" customClass="BlockButton" customModule="RewardzCommonComponents" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="receiptCancel"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="8Ac-8d-Ykr" secondAttribute="trailing" id="1ah-01-Wew"/>
+                                    <constraint firstItem="8Ac-8d-Ykr" firstAttribute="top" secondItem="Rxv-8e-kL0" secondAttribute="top" id="DJT-uz-RKS"/>
+                                    <constraint firstAttribute="bottom" secondItem="8Ac-8d-Ykr" secondAttribute="bottom" id="Y8l-BD-ldZ"/>
+                                    <constraint firstAttribute="width" constant="25" id="YqZ-1E-q2X"/>
+                                    <constraint firstItem="8Ac-8d-Ykr" firstAttribute="leading" secondItem="Rxv-8e-kL0" secondAttribute="leading" id="ZHd-73-PZm"/>
+                                    <constraint firstAttribute="height" constant="25" id="c0P-xY-F7N"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="20" id="FSf-eh-3Jp"/>
-                            <constraint firstAttribute="height" constant="20" id="yNa-Xs-ntj"/>
+                            <constraint firstAttribute="bottom" secondItem="Rxv-8e-kL0" secondAttribute="bottom" constant="2" id="7xL-ld-rBc"/>
+                            <constraint firstItem="Rxv-8e-kL0" firstAttribute="leading" secondItem="Oyo-4Y-AtL" secondAttribute="leading" constant="2" id="Lr3-8l-4RJ"/>
+                            <constraint firstItem="Rxv-8e-kL0" firstAttribute="top" secondItem="Oyo-4Y-AtL" secondAttribute="top" constant="2" id="O0Q-W8-h68"/>
+                            <constraint firstAttribute="height" constant="29" id="O1L-Vi-tbw"/>
+                            <constraint firstAttribute="trailing" secondItem="Rxv-8e-kL0" secondAttribute="trailing" constant="2" id="ZdV-HL-4dQ"/>
+                            <constraint firstAttribute="width" constant="29" id="sgJ-Ac-SOX"/>
                         </constraints>
-                        <state key="normal" image="closeIcon"/>
-                    </button>
+                    </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
@@ -66,27 +92,32 @@
                 <constraint firstItem="L1G-eS-MZD" firstAttribute="centerX" secondItem="IqL-qd-OfY" secondAttribute="centerX" id="Wm7-NF-bUX"/>
                 <constraint firstAttribute="trailing" secondItem="IqL-qd-OfY" secondAttribute="trailing" id="XpU-PO-Njp"/>
                 <constraint firstAttribute="trailing" secondItem="gU5-7f-lD6" secondAttribute="trailing" constant="13" id="bNc-px-ugI"/>
-                <constraint firstItem="yqU-wg-i9e" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="bT0-8p-Ygb"/>
-                <constraint firstAttribute="trailing" secondItem="yqU-wg-i9e" secondAttribute="trailing" constant="5" id="gZd-SA-dZs"/>
+                <constraint firstAttribute="trailing" secondItem="Oyo-4Y-AtL" secondAttribute="trailing" id="ex9-9l-klf"/>
                 <constraint firstAttribute="bottom" secondItem="gU5-7f-lD6" secondAttribute="bottom" constant="9" id="iiB-rZ-0HZ"/>
                 <constraint firstItem="a0q-Vq-SMU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="nNd-27-NLu"/>
                 <constraint firstItem="L1G-eS-MZD" firstAttribute="centerY" secondItem="IqL-qd-OfY" secondAttribute="centerY" id="rl7-SP-Gkf"/>
+                <constraint firstItem="Oyo-4Y-AtL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="u3y-Ur-Tit"/>
                 <constraint firstItem="a0q-Vq-SMU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="weE-Fi-9HA"/>
                 <constraint firstAttribute="bottom" secondItem="a0q-Vq-SMU" secondAttribute="bottom" id="wzX-8e-TeH"/>
             </constraints>
             <size key="customSize" width="141" height="103"/>
             <connections>
+                <outlet property="cancelContainer" destination="Rxv-8e-kL0" id="JIT-OC-iFP"/>
+                <outlet property="cancelParentContainer" destination="Oyo-4Y-AtL" id="Ddw-Oc-K0K"/>
                 <outlet property="editTransparentView" destination="a0q-Vq-SMU" id="Mzs-W8-KrB"/>
                 <outlet property="mediaCoverImageView" destination="IqL-qd-OfY" id="Jy2-8R-ciz"/>
                 <outlet property="pageControl" destination="gU5-7f-lD6" id="WTa-K0-Ffy"/>
                 <outlet property="playButton" destination="L1G-eS-MZD" id="R73-Xr-2HN"/>
-                <outlet property="removeButton" destination="yqU-wg-i9e" id="DQe-Pq-JA2"/>
+                <outlet property="removeButton" destination="8Ac-8d-Ykr" id="UTT-CL-LQ8"/>
             </connections>
             <point key="canvasLocation" x="71.739130434782609" y="100.11160714285714"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="closeIcon" width="16" height="16"/>
         <image name="playIcon" width="22" height="22"/>
+        <image name="receiptCancel" width="11" height="11"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

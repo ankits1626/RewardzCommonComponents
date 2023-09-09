@@ -211,6 +211,7 @@ public class AssetGridViewController: UIViewController, UICollectionViewDataSour
     }
     
     private func setupAfterViewDidLoad(){
+        self.setupCollectionView()
         uploadButton.setTitleColor(.black, for: .normal)
         addImageBtn.setTitle(" ", for: .normal)
         self.navigationColor.image = UIImage(named: "")

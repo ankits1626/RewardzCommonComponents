@@ -9,14 +9,14 @@ import UIKit
 
 public class GridViewCell: UICollectionViewCell {
 
-    @IBOutlet var imageView: UIImageView!
-    @IBOutlet var selectedIndicatorView: UIView!
-    @IBOutlet var selectedIndicatorImageView: UIImageView!
-    @IBOutlet var playButton: UIButton!
+    @IBOutlet public var imageView: UIImageView!
+    @IBOutlet public var selectedIndicatorView: UIView!
+    @IBOutlet public var selectedIndicatorImageView: UIImageView!
+    @IBOutlet public var playButton: UIButton!
 
-    var representedAssetIdentifier: String!
+    public var representedAssetIdentifier: String!
 
-    var thumbnailImage: UIImage! {
+    public var thumbnailImage: UIImage! {
         didSet {
             imageView.image = thumbnailImage
         }

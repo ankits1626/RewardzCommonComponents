@@ -128,6 +128,8 @@ extension CFFImageCropperViewController  : UICollectionViewDataSource, UICollect
             mediaItemCell.editTransparentView?.isHidden = true
             mediaItemCell.curvedCornerControl()
             mediaItemCell.removeButton?.isHidden = true
+            mediaItemCell.cancelContainer?.isHidden = true
+            mediaItemCell.cancelParentContainer?.isHidden = true
             mediaItemCell.mediaCoverImageView?.curvedCornerControl()
             mediaItemCell.mediaCoverImageView?.contentMode = .scaleAspectFit
             if indexPath.row == currentlySelectedIndex{

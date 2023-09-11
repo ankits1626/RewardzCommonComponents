@@ -15,8 +15,8 @@ public class MediaItemCollectionViewCell: UICollectionViewCell {
     @IBOutlet public var pageControl: UIPageControl!
     @IBOutlet public weak var editTransparentView : UIView?
     
-    @IBOutlet weak var cancelContainer : UIView?
-    @IBOutlet weak var cancelParentContainer : UIView?
+    @IBOutlet public weak var cancelContainer : UIView?
+    @IBOutlet public weak var cancelParentContainer : UIView?
     
     
     public override func awakeFromNib() {

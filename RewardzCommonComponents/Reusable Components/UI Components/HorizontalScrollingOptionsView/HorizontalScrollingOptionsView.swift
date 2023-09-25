@@ -137,14 +137,8 @@ public protocol HorizontalScrollingOptionsDatasource {
         cell.titleLBL?.textColor = selectedIndex == indexPath.item ? .white : .lightGray
         cell.backgroundColor = selectedIndex == indexPath.item ? UIColor.getControlColor() : .white
         
-        if selectedIndex == indexPath.item{
-            if let unwrappedSelectedBorderColor = selectedBubbleBorderColor{
-                cell.borderedControl(borderColor: unwrappedSelectedBorderColor, borderWidth: 1.0)
-            }
-        }else{
-            if let unwrappedUnselectedBorderColor = unSelectedBubbleBorderColor{
-                cell.borderedControl(borderColor: unwrappedUnselectedBorderColor, borderWidth: 1.0)
-            }
+        if let unwrappedUnselectedBorderColor = unSelectedBubbleBorderColor{
+            cell.borderedControl(borderColor: unwrappedUnselectedBorderColor, borderWidth: 1.0)
         }
         return cell
     }

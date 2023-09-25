@@ -18,15 +18,17 @@ public protocol HorizontalScrollingOptionsDatasource {
 
 @IBDesignable public class HorizontalScrollingOptions: UIView, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     @IBInspectable public var selectedBubbleColor  = UIColor.selectedOrangeColor
+    @IBInspectable public var selectedBubbleBorderColor : UIColor?
     @IBInspectable public var unSelectedBubbleColor  = UIColor.unSelectedGrayColor
     @IBInspectable public var selectedBubbleTextColor  = UIColor.white
     @IBInspectable public var unSelectedBubbleTextColor  = UIColor.unSelectedTextColor
+    @IBInspectable public var unSelectedBubbleBorderColor : UIColor?
     var organisationColor : String = ""
     public var isFromPoll = false
     public var inferSizeForFixedNumberOfItems : Int?
     fileprivate var delegate : HorizontalScrollingOptionsDelegate?
     var dataSource : HorizontalScrollingOptionsDatasource?
-    private var optionCollection : UICollectionView!
+    public var optionCollection : UICollectionView!
     private var selectedIndex : Int = 0{
         didSet{
             if let previousCell = optionCollection.cellForItem(at: IndexPath(item: oldValue, section: 0)) as? HorizontalScrollingOptionCell{
@@ -134,6 +136,16 @@ public protocol HorizontalScrollingOptionsDatasource {
         dataSource?.configureItemCell(cell, index: indexPath.row)
         cell.titleLBL?.textColor = selectedIndex == indexPath.item ? .white : .lightGray
         cell.backgroundColor = selectedIndex == indexPath.item ? UIColor.getControlColor() : .white
+        
+        if selectedIndex == indexPath.item{
+            if let unwrappedSelectedBorderColor = selectedBubbleBorderColor{
+                cell.borderedControl(borderColor: unwrappedSelectedBorderColor, borderWidth: 1.0)
+            }
+        }else{
+            if let unwrappedUnselectedBorderColor = unSelectedBubbleBorderColor{
+                cell.borderedControl(borderColor: unwrappedUnselectedBorderColor, borderWidth: 1.0)
+            }
+        }
         return cell
     }
     

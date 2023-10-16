@@ -13,6 +13,7 @@ public protocol YearSelectorHandlerDelegate : class {
 
 public class YearSelectorHandler {
     private var MAX_YEAR = 3
+    public var shouldShowFinancialYear:  Bool = false
     public var redeemptionYears : [Int] = []
     weak var yearHorizontalScrollingOptionsView : HorizontalScrollingOptions? = nil
     private let currentYear : Int = Calendar(identifier: .gregorian).component(.year, from: Date())
@@ -56,6 +57,14 @@ extension YearSelectorHandler : HorizontalScrollingOptionsDelegate, HorizontalSc
     }
     
     public func configureItemCell(_ cell: UICollectionViewCell, index: Int) {
-        (cell as? HorizontalScrollingOptionCell)?.titleLBL?.text = "\(getYears()[index])"
+        (cell as? HorizontalScrollingOptionCell)?.titleLBL?.text = getDisplayableYear(index)
+    }
+    
+    private func getDisplayableYear(_ index: Int) -> String{
+        if shouldShowFinancialYear{
+            return "FY\(getYears()[index] % 100)"
+        }else{
+            return "\(getYears()[index])"
+        }
     }
 }

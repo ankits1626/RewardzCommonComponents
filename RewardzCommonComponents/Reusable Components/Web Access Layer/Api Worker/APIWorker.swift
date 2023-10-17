@@ -200,6 +200,8 @@ public class CommonAPICall<P: DataParserProtocol> : CommonAPIProtocol {
                                             let errorkey = dictionary.allKeys.first as? String ?? ""
                                             let value = errorvalues[0]as? String ?? ""
                                             errorMessage = "\(errorkey): \(value)"
+                                        }else if let  unwrappedError = dictionary.object(forKey: "error") {
+                                            errorMessage = "\("Error"): \(unwrappedError)"
                                         }
                                     }
                                 }
@@ -238,7 +240,11 @@ public class DeviceInfoProvider: DeviceInfoProviderProtocol {
         
         //iOS Model and Make
         let deviceType = UIDevice.current.deviceType.rawValue
-        return "iOS | " + deviceType + " | " + OSVersion + " | " + appVersion + " | " + buildVersion 
+        //appname
+        if let unwrappedBundleName = Bundle.main.infoDictionary?[kCFBundleNameKey as String] as? String {
+            return "iOS | " + deviceType + " | " + OSVersion + " | " + appVersion + " | " + buildVersion + " | " + unwrappedBundleName
+        }
+        return "iOS | " + deviceType + " | " + OSVersion + " | " + appVersion + " | " + buildVersion
     }
 }
 

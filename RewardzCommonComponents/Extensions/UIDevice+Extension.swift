@@ -38,6 +38,25 @@ public enum DeviceTypes : String {
     iPhone11       = "iPhone 11",
     iPhone11Pro    = "iPhone 11 Pro",
     iPhone11ProMax = "iPhone 11 Pro Max",
+    iPhone12Mini   = "iPhone 12 Mini",
+    iPhone12       = "iPhone 12",
+    iPhone12Pro    = "iPhone 12 Pro",
+    iPhone12ProMax = "iPhone 12 Pro Max",
+    iPhone13Mini   = "iPhone 13 Mini",
+    iPhone13       = "iPhone 13",
+    iPhone13Pro    = "iPhone 13 Pro",
+    iPhone13ProMax = "iPhone 13 Pro Max",
+    iPhone14       = "iPhone 14",
+    iPhone14Plus   = "iPhone 14 Plus",
+    iPhone14Pro    = "iPhone 14 Pro",
+    iPhone14ProMax = "iPhone 14 Pro Max",
+    iPhone15       = "iPhone 15",
+    iPhone15Plus   = "iPhone 15 Plus",
+    iPhone15Pro    = "iPhone 15 Pro",
+    iPhone15ProMax = "iPhone 15 Pro Max",
+    iPhoneSE2ndgeneration = "iPhone SE (2nd generation)",
+    iPhoneSE3rdgeneration = "iPhone SE (3rd generation)",
+         
     unrecognized   = "?unrecognized?"
 }
 
@@ -60,6 +79,7 @@ public extension UIDevice {
         let modelMap : [ String : DeviceTypes ] = [
             "i386"      : .simulator,
             "x86_64"    : .simulator,
+            "arm64"    : .simulator,
             "iPad2,1"   : .iPad2,          //
             "iPad3,1"   : .iPad3,          // (3rd Generation)
             "iPhone3,1" : .iPhone4,        //
@@ -94,10 +114,28 @@ public extension UIDevice {
             "iPhone10,6" : .iPhoneX,
             "iPhone11,2":   .iPhoneXS,
             "iPhone11,4" : .iPhoneXSMax,
-           "iPhone11,8":   .iPhoneXR,
-           "iPhone12,1":    .iPhone11,
-           "iPhone12,3": .iPhone11Pro,
-           "iPhone12,5":  .iPhone11ProMax
+            "iPhone11,8":   .iPhoneXR,
+            "iPhone12,1":    .iPhone11,
+            "iPhone12,3": .iPhone11Pro,
+            "iPhone12,5":  .iPhone11ProMax,
+            "iPhone13,1" : .iPhone12Mini,
+            "iPhone13,2" : .iPhone12,
+            "iPhone13,3" :  .iPhone12Pro,
+            "iPhone13,4"  :  .iPhone12ProMax,
+            "iPhone14,4"  :  .iPhone13Mini,
+            "iPhone14,5"  :  .iPhone13,
+            "iPhone14,2"  :  .iPhone13Pro,
+            "iPhone14,3"   : .iPhone13ProMax,
+            "iPhone14,7"   :  .iPhone14,
+            "iPhone14,8"   :  .iPhone14Plus,
+            "iPhone15,2"   :   .iPhone14Pro,
+            "iPhone15,3"   :   .iPhone14ProMax,
+            "iPhone15,4"   : .iPhone15,
+            "iPhone15,5"   :  .iPhone15Plus,
+            "iPhone16,1"   :  .iPhone15Pro,
+            "iPhone16,2"   :   .iPhone15ProMax,
+            "iPhone12,8"   :   .iPhoneSE2ndgeneration,
+            "iPhone14,6"   :   .iPhoneSE3rdgeneration
         ]
         if let model = modelMap[identifier] {
             return model

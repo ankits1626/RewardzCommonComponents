@@ -1,0 +1,16 @@
+PODS:
+  - KUIPopOver (1.1.2)
+
+DEPENDENCIES:
+  - KUIPopOver (= 1.1.2)
+
+SPEC REPOS:
+  trunk:
+    - KUIPopOver
+
+SPEC CHECKSUMS:
+  KUIPopOver: fc7ccb3c1c1ada51f5251477a7993ec452e3eefb
+
+PODFILE CHECKSUM: 5c480bb5233b9e799ec60368ae40dc6d887211a0
+
+COCOAPODS: 1.11.3

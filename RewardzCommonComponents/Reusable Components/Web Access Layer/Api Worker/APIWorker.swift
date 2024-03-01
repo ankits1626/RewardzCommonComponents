@@ -242,6 +242,9 @@ public class DeviceInfoProvider: DeviceInfoProviderProtocol {
         let deviceType = UIDevice.current.deviceType.rawValue
         //appname
         if let unwrappedBundleName = Bundle.main.infoDictionary?[kCFBundleNameKey as String] as? String {
+            if unwrappedBundleName == "Küdos2U" {
+                return "iOS | " + deviceType + " | " + OSVersion + " | " + appVersion + " | " + buildVersion + " | " + "Kudos"
+            }
             return "iOS | " + deviceType + " | " + OSVersion + " | " + appVersion + " | " + buildVersion + " | " + unwrappedBundleName
         }
         return "iOS | " + deviceType + " | " + OSVersion + " | " + appVersion + " | " + buildVersion

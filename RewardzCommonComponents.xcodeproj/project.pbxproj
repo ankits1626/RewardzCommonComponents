@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EDFE5608904B8E5868FDAC0 /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97391302DDED74317338C86D /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework */; };
-		19C61C86CA936498E8A3F962 /* Pods_RewardzCommonComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F93C191A78B40E6407CD277 /* Pods_RewardzCommonComponents.framework */; };
+		0F4041AE28A7839200E67C88 /* DaySelectorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4041AD28A7839200E67C88 /* DaySelectorHandler.swift */; };
 		980D122D261429CE00995F41 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D1225261429CE00995F41 /* UIApplication+Extension.swift */; };
 		980D122E261429CE00995F41 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D1226261429CE00995F41 /* UIDevice+Extension.swift */; };
 		980D122F261429CE00995F41 /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D1227261429CE00995F41 /* UILabel + Extension.swift */; };
@@ -64,12 +63,10 @@
 		989C40CB265E5131002FF0F7 /* GridViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C407B265E5131002FF0F7 /* GridViewCell.xib */; };
 		989C40CC265E5131002FF0F7 /* GridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C407C265E5131002FF0F7 /* GridViewCell.swift */; };
 		989C40CD265E5131002FF0F7 /* AssetGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C407D265E5131002FF0F7 /* AssetGridViewController.swift */; };
-		989C40CE265E5131002FF0F7 /* AssetGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C407E265E5131002FF0F7 /* AssetGridViewController.xib */; };
 		989C40CF265E5131002FF0F7 /* GroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C4081265E5131002FF0F7 /* GroupCell.xib */; };
 		989C40D0265E5131002FF0F7 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C4082265E5131002FF0F7 /* GroupCell.swift */; };
-		989C40D1265E5131002FF0F7 /* GroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C4083265E5131002FF0F7 /* GroupsViewController.xib */; };
 		989C40D2265E5131002FF0F7 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C4084265E5131002FF0F7 /* GroupsViewController.swift */; };
-		989C40D3265E5131002FF0F7 /* GUAAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 989C4086265E5131002FF0F7 /* GUAAlertView.h */; };
+		989C40D3265E5131002FF0F7 /* GUAAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 989C4086265E5131002FF0F7 /* GUAAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		989C40D4265E5131002FF0F7 /* GUAAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989C4087265E5131002FF0F7 /* GUAAlertView.m */; };
 		989C40D5265E5131002FF0F7 /* HorizontalScrollingOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C408A265E5131002FF0F7 /* HorizontalScrollingOptionCell.swift */; };
 		989C40D6265E5131002FF0F7 /* HorizontalScrollingOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C408B265E5131002FF0F7 /* HorizontalScrollingOptionCell.xib */; };
@@ -84,10 +81,6 @@
 		989C40DF265E5131002FF0F7 /* GenericFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C4099265E5131002FF0F7 /* GenericFilterViewController.swift */; };
 		989C40E0265E5131002FF0F7 /* GenericFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C409A265E5131002FF0F7 /* GenericFilterViewController.xib */; };
 		989C40E1265E5131002FF0F7 /* Stepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C409C265E5131002FF0F7 /* Stepper.swift */; };
-		989C40E2265E5131002FF0F7 /* ASChatBarview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C409E265E5131002FF0F7 /* ASChatBarview.swift */; };
-		989C40E3265E5131002FF0F7 /* UIView+XibSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40A0265E5131002FF0F7 /* UIView+XibSetup.swift */; };
-		989C40E4265E5131002FF0F7 /* UITextView+NumberOfLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40A1265E5131002FF0F7 /* UITextView+NumberOfLines.swift */; };
-		989C40E5265E5131002FF0F7 /* ASChatBarview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C40A2265E5131002FF0F7 /* ASChatBarview.xib */; };
 		989C40E6265E5131002FF0F7 /* NoEntryFoundViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C40A4265E5131002FF0F7 /* NoEntryFoundViewViewController.xib */; };
 		989C40E7265E5131002FF0F7 /* NoEntryFoundViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40A5265E5131002FF0F7 /* NoEntryFoundViewViewController.swift */; };
 		989C40E8265E5131002FF0F7 /* ASCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40A7265E5131002FF0F7 /* ASCheckBox.swift */; };
@@ -98,7 +91,6 @@
 		989C40ED265E5131002FF0F7 /* ListItemFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40AF265E5131002FF0F7 /* ListItemFetcher.swift */; };
 		989C40EE265E5131002FF0F7 /* BlockButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40B1265E5131002FF0F7 /* BlockButton.swift */; };
 		989C40EF265E5131002FF0F7 /* MFLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40B3265E5131002FF0F7 /* MFLoader.swift */; };
-		989C40F0265E5131002FF0F7 /* KMPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40B5265E5131002FF0F7 /* KMPlaceholderTextView.swift */; };
 		989C40F1265E5131002FF0F7 /* MediaItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C40B8265E5131002FF0F7 /* MediaItemCollectionViewCell.swift */; };
 		989C40F2265E5131002FF0F7 /* MediaItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C40B9265E5131002FF0F7 /* MediaItemCollectionViewCell.xib */; };
 		989C40F3265E5131002FF0F7 /* CFFMediaBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989C40BA265E5131002FF0F7 /* CFFMediaBrowserViewController.xib */; };
@@ -109,6 +101,21 @@
 		98C094C126142367006D5178 /* RewardzCommonComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C094B726142367006D5178 /* RewardzCommonComponents.framework */; };
 		98C094C626142367006D5178 /* RewardzCommonComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C094C526142367006D5178 /* RewardzCommonComponentsTests.swift */; };
 		98C094C826142367006D5178 /* RewardzCommonComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 98C094BA26142367006D5178 /* RewardzCommonComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC53B53E2A1F7B8A007558FC /* MuliCastCompletionBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC53B53D2A1F7B8A007558FC /* MuliCastCompletionBlock.swift */; };
+		BC53B5402A1F7C11007558FC /* ModernAppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC53B53F2A1F7C11007558FC /* ModernAppTheme.swift */; };
+		BCC7052C2A6257CF000413E3 /* ToolTip+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC7052B2A6257CF000413E3 /* ToolTip+UILabel.swift */; };
+		BCC705322A626089000413E3 /* CALayer+XibConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC705312A626089000413E3 /* CALayer+XibConfiguration.swift */; };
+		BCE14D3E290FE134008806EA /* Sting+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE14D3D290FE134008806EA /* Sting+Extension.swift */; };
+		BE2C62762706DF6A00C63D1B /* AssetGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE2C62782706DF6A00C63D1B /* AssetGridViewController.xib */; };
+		BE38B1D0283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE38B1CE283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.swift */; };
+		BE38B1D1283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE38B1CF283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.xib */; };
+		BE3E63F82898E71A00271518 /* ImageInitials.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3E63F72898E71A00271518 /* ImageInitials.swift */; };
+		BE671EC22834C89B00383204 /* CommonRewardCustomDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE671EC02834C89B00383204 /* CommonRewardCustomDrawer.swift */; };
+		BE671EC32834C89B00383204 /* CommonRewardCustomDrawer.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE671EC12834C89B00383204 /* CommonRewardCustomDrawer.xib */; };
+		BE9B6B47286C875000D3BD37 /* SKORCheckBOX.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9B6B46286C875000D3BD37 /* SKORCheckBOX.swift */; };
+		BEC2B29326FDA4DE008417C3 /* GroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC2B29226FDA4DE008417C3 /* GroupsViewController.xib */; };
+		BEC74DDE2A5D4E4B0074324B /* LeftCustomFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC74DDD2A5D4E4B0074324B /* LeftCustomFlowLayout.swift */; };
+		E79465FA8F8660A0F38541E6 /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4456F5A56FD750FF104953E2 /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,11 +129,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		081D4BA58E5A02E31397D310 /* Pods-RewardzCommonComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents.release.xcconfig"; path = "../../code/2021MarRewardxComponents/Pods/Target Support Files/Pods-RewardzCommonComponents/Pods-RewardzCommonComponents.release.xcconfig"; sourceTree = "<group>"; };
-		220D95156412A38932A86204 /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig"; path = "../../code/2021MarRewardxComponents/Pods/Target Support Files/Pods-RewardzCommonComponents-RewardzCommonComponentsTests/Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
-		7BAEB21253E10E06E709D6DA /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig"; path = "../../code/2021MarRewardxComponents/Pods/Target Support Files/Pods-RewardzCommonComponents-RewardzCommonComponentsTests/Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7F93C191A78B40E6407CD277 /* Pods_RewardzCommonComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RewardzCommonComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		97391302DDED74317338C86D /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F4041AD28A7839200E67C88 /* DaySelectorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySelectorHandler.swift; sourceTree = "<group>"; };
+		3B5589375866B235AA4F3EE2 /* Pods-RewardzCommonComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents.debug.xcconfig"; path = "Target Support Files/Pods-RewardzCommonComponents/Pods-RewardzCommonComponents.debug.xcconfig"; sourceTree = "<group>"; };
+		4456F5A56FD750FF104953E2 /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		532F59D986957FF3ADC49DE2 /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-RewardzCommonComponents-RewardzCommonComponentsTests/Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
 		980D1225261429CE00995F41 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		980D1226261429CE00995F41 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		980D1227261429CE00995F41 /* UILabel + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
@@ -182,10 +188,8 @@
 		989C407B265E5131002FF0F7 /* GridViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GridViewCell.xib; sourceTree = "<group>"; };
 		989C407C265E5131002FF0F7 /* GridViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewCell.swift; sourceTree = "<group>"; };
 		989C407D265E5131002FF0F7 /* AssetGridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetGridViewController.swift; sourceTree = "<group>"; };
-		989C407E265E5131002FF0F7 /* AssetGridViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AssetGridViewController.xib; sourceTree = "<group>"; };
 		989C4081265E5131002FF0F7 /* GroupCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupCell.xib; sourceTree = "<group>"; };
 		989C4082265E5131002FF0F7 /* GroupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
-		989C4083265E5131002FF0F7 /* GroupsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupsViewController.xib; sourceTree = "<group>"; };
 		989C4084265E5131002FF0F7 /* GroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		989C4086265E5131002FF0F7 /* GUAAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUAAlertView.h; sourceTree = "<group>"; };
 		989C4087265E5131002FF0F7 /* GUAAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUAAlertView.m; sourceTree = "<group>"; };
@@ -202,10 +206,6 @@
 		989C4099265E5131002FF0F7 /* GenericFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericFilterViewController.swift; sourceTree = "<group>"; };
 		989C409A265E5131002FF0F7 /* GenericFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenericFilterViewController.xib; sourceTree = "<group>"; };
 		989C409C265E5131002FF0F7 /* Stepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stepper.swift; sourceTree = "<group>"; };
-		989C409E265E5131002FF0F7 /* ASChatBarview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASChatBarview.swift; sourceTree = "<group>"; };
-		989C40A0265E5131002FF0F7 /* UIView+XibSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XibSetup.swift"; sourceTree = "<group>"; };
-		989C40A1265E5131002FF0F7 /* UITextView+NumberOfLines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+NumberOfLines.swift"; sourceTree = "<group>"; };
-		989C40A2265E5131002FF0F7 /* ASChatBarview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASChatBarview.xib; sourceTree = "<group>"; };
 		989C40A4265E5131002FF0F7 /* NoEntryFoundViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoEntryFoundViewViewController.xib; sourceTree = "<group>"; };
 		989C40A5265E5131002FF0F7 /* NoEntryFoundViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoEntryFoundViewViewController.swift; sourceTree = "<group>"; };
 		989C40A7265E5131002FF0F7 /* ASCheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASCheckBox.swift; sourceTree = "<group>"; };
@@ -216,7 +216,6 @@
 		989C40AF265E5131002FF0F7 /* ListItemFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemFetcher.swift; sourceTree = "<group>"; };
 		989C40B1265E5131002FF0F7 /* BlockButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockButton.swift; sourceTree = "<group>"; };
 		989C40B3265E5131002FF0F7 /* MFLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFLoader.swift; sourceTree = "<group>"; };
-		989C40B5265E5131002FF0F7 /* KMPlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMPlaceholderTextView.swift; sourceTree = "<group>"; };
 		989C40B8265E5131002FF0F7 /* MediaItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		989C40B9265E5131002FF0F7 /* MediaItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		989C40BA265E5131002FF0F7 /* CFFMediaBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFFMediaBrowserViewController.xib; sourceTree = "<group>"; };
@@ -230,7 +229,34 @@
 		98C094C026142367006D5178 /* RewardzCommonComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RewardzCommonComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C094C526142367006D5178 /* RewardzCommonComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardzCommonComponentsTests.swift; sourceTree = "<group>"; };
 		98C094C726142367006D5178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0215E65443EBF1E3F1F7A98 /* Pods-RewardzCommonComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents.debug.xcconfig"; path = "../../code/2021MarRewardxComponents/Pods/Target Support Files/Pods-RewardzCommonComponents/Pods-RewardzCommonComponents.debug.xcconfig"; sourceTree = "<group>"; };
+		A9110BF016AA810CCC6E868E /* Pods-RewardzCommonComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents.release.xcconfig"; path = "Target Support Files/Pods-RewardzCommonComponents/Pods-RewardzCommonComponents.release.xcconfig"; sourceTree = "<group>"; };
+		BC3BFAA7282A85BB0019E237 /* RewardzCommonComponents-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RewardzCommonComponents-Swift.h"; sourceTree = "<group>"; };
+		BC53B53D2A1F7B8A007558FC /* MuliCastCompletionBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuliCastCompletionBlock.swift; sourceTree = "<group>"; };
+		BC53B53F2A1F7C11007558FC /* ModernAppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernAppTheme.swift; sourceTree = "<group>"; };
+		BCC7052B2A6257CF000413E3 /* ToolTip+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToolTip+UILabel.swift"; sourceTree = "<group>"; };
+		BCC705312A626089000413E3 /* CALayer+XibConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+XibConfiguration.swift"; sourceTree = "<group>"; };
+		BCE14D3D290FE134008806EA /* Sting+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sting+Extension.swift"; sourceTree = "<group>"; };
+		BE059F3E27073FB600CD5C05 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
+		BE2C62772706DF6A00C63D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AssetGridViewController.xib; sourceTree = "<group>"; };
+		BE2C627A2706DF6E00C63D1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
+		BE2C627C2706DF6F00C63D1B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/AssetGridViewController.strings"; sourceTree = "<group>"; };
+		BE2C627E2706DF7000C63D1B /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/AssetGridViewController.strings"; sourceTree = "<group>"; };
+		BE2C62802706DF7100C63D1B /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
+		BE2C62822706DF7200C63D1B /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
+		BE2C62842706DF7300C63D1B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
+		BE2C62862706DF7400C63D1B /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
+		BE2C62882706DF7500C63D1B /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
+		BE2C628A2706DF7600C63D1B /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/AssetGridViewController.strings; sourceTree = "<group>"; };
+		BE38B1CE283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonPhysicalProductRewardCustomDrawer.swift; sourceTree = "<group>"; };
+		BE38B1CF283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonPhysicalProductRewardCustomDrawer.xib; sourceTree = "<group>"; };
+		BE3E63F72898E71A00271518 /* ImageInitials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInitials.swift; sourceTree = "<group>"; };
+		BE671EC02834C89B00383204 /* CommonRewardCustomDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonRewardCustomDrawer.swift; sourceTree = "<group>"; };
+		BE671EC12834C89B00383204 /* CommonRewardCustomDrawer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonRewardCustomDrawer.xib; sourceTree = "<group>"; };
+		BE9B6B46286C875000D3BD37 /* SKORCheckBOX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKORCheckBOX.swift; sourceTree = "<group>"; };
+		BEC2B29226FDA4DE008417C3 /* GroupsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupsViewController.xib; sourceTree = "<group>"; };
+		BEC74DDD2A5D4E4B0074324B /* LeftCustomFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftCustomFlowLayout.swift; sourceTree = "<group>"; };
+		D1D7DF37034DF16C06ACDF36 /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig"; path = "Target Support Files/Pods-RewardzCommonComponents-RewardzCommonComponentsTests/Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E34CCC9381351B00F255E0F9 /* Pods_RewardzCommonComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RewardzCommonComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,7 +264,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19C61C86CA936498E8A3F962 /* Pods_RewardzCommonComponents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,20 +272,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				98C094C126142367006D5178 /* RewardzCommonComponents.framework in Frameworks */,
-				0EDFE5608904B8E5868FDAC0 /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework in Frameworks */,
+				E79465FA8F8660A0F38541E6 /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F4041AC28A7832F00E67C88 /* DaysSelectorHandler */ = {
+			isa = PBXGroup;
+			children = (
+				0F4041AD28A7839200E67C88 /* DaySelectorHandler.swift */,
+			);
+			path = DaysSelectorHandler;
+			sourceTree = "<group>";
+		};
 		666ADD3EB02DCC4120C381C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7F93C191A78B40E6407CD277 /* Pods_RewardzCommonComponents.framework */,
-				97391302DDED74317338C86D /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework */,
+				E34CCC9381351B00F255E0F9 /* Pods_RewardzCommonComponents.framework */,
+				4456F5A56FD750FF104953E2 /* Pods_RewardzCommonComponents_RewardzCommonComponentsTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9275F32D386F9AEF8F5364F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B5589375866B235AA4F3EE2 /* Pods-RewardzCommonComponents.debug.xcconfig */,
+				A9110BF016AA810CCC6E868E /* Pods-RewardzCommonComponents.release.xcconfig */,
+				D1D7DF37034DF16C06ACDF36 /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig */,
+				532F59D986957FF3ADC49DE2 /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		980D1224261429CE00995F41 /* Extensions */ = {
@@ -274,6 +318,7 @@
 				980D122A261429CE00995F41 /* Date+ Extension.swift */,
 				980D122B261429CE00995F41 /* UICollectionView+Extension.swift */,
 				980D122C261429CE00995F41 /* Array+Extension.swift */,
+				BCC705312A626089000413E3 /* CALayer+XibConfiguration.swift */,
 				98768372261555C100B597B0 /* String+Extensions.swift */,
 				987684AF261562D400B597B0 /* UIViewController+Extensions.swift */,
 				987684B7261568D700B597B0 /* Collection+Extension.swift */,
@@ -281,6 +326,8 @@
 				9854AAC9261747C6005B653B /* UIImageView+Extensions.swift */,
 				9854AF5D261AB9B2005B653B /* UIColor+Extensions.swift */,
 				9854AF84261C2623005B653B /* NSMutableData+Extension.swift */,
+				BCE14D3D290FE134008806EA /* Sting+Extension.swift */,
+				BCC7052B2A6257CF000413E3 /* ToolTip+UILabel.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -292,6 +339,7 @@
 				9854AD362617FCFF005B653B /* SearchEnabledViewControllerProtcol */,
 				980D123826142A3F00995F41 /* Theme Related.swift */,
 				98BA3CA02625199300DCB1C0 /* RCCThemeCoordinator.swift */,
+				BC53B53F2A1F7C11007558FC /* ModernAppTheme.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -299,6 +347,7 @@
 		980D123C26142F8600995F41 /* Reusable Components */ = {
 			isa = PBXGroup;
 			children = (
+				BC53B53C2A1F7AD5007558FC /* MuliCastCompletionBlock */,
 				989C4065265E5131002FF0F7 /* UI Components */,
 				9876845926155F2800B597B0 /* PagedCollectionLayout */,
 				980D123D26142F8600995F41 /* SlideInPresentationManager */,
@@ -422,6 +471,8 @@
 				98768357261444B100B597B0 /* CommonFrameworkDateUtility.swift */,
 				9876844726155A0800B597B0 /* Rgbconverter.swift */,
 				9854AAB1261740EB005B653B /* RCCUtility.swift */,
+				BE3E63F72898E71A00271518 /* ImageInitials.swift */,
+				BEC74DDD2A5D4E4B0074324B /* LeftCustomFlowLayout.swift */,
 			);
 			path = Utitlities;
 			sourceTree = "<group>";
@@ -453,6 +504,8 @@
 		989C4065265E5131002FF0F7 /* UI Components */ = {
 			isa = PBXGroup;
 			children = (
+				0F4041AC28A7832F00E67C88 /* DaysSelectorHandler */,
+				BE671EBF2834C87800383204 /* CommonRewardDrawer */,
 				989C4066265E5131002FF0F7 /* BubbleOptionSelection */,
 				989C406C265E5131002FF0F7 /* Media Cropper */,
 				989C4078265E5131002FF0F7 /* Media Picker */,
@@ -469,7 +522,6 @@
 				989C40A8265E5131002FF0F7 /* Common List */,
 				989C40B0265E5131002FF0F7 /* BlockButton */,
 				989C40B2265E5131002FF0F7 /* MFLoader */,
-				989C40B4265E5131002FF0F7 /* KMPlaceholderTextView */,
 				989C40B6265E5131002FF0F7 /* Media Browser */,
 				989C40BC265E5131002FF0F7 /* CustomSegmentedControl */,
 				989C40BE265E5131002FF0F7 /* ASCustomDrawerViewController */,
@@ -554,9 +606,9 @@
 		989C4079265E5131002FF0F7 /* Asset Grid */ = {
 			isa = PBXGroup;
 			children = (
+				BE2C62782706DF6A00C63D1B /* AssetGridViewController.xib */,
 				989C407A265E5131002FF0F7 /* Custom Cell */,
 				989C407D265E5131002FF0F7 /* AssetGridViewController.swift */,
-				989C407E265E5131002FF0F7 /* AssetGridViewController.xib */,
 			);
 			path = "Asset Grid";
 			sourceTree = "<group>";
@@ -573,8 +625,8 @@
 		989C407F265E5131002FF0F7 /* Groups */ = {
 			isa = PBXGroup;
 			children = (
+				BEC2B29226FDA4DE008417C3 /* GroupsViewController.xib */,
 				989C4080265E5131002FF0F7 /* Custom Cell */,
-				989C4083265E5131002FF0F7 /* GroupsViewController.xib */,
 				989C4084265E5131002FF0F7 /* GroupsViewController.swift */,
 			);
 			path = Groups;
@@ -672,20 +724,8 @@
 		989C409D265E5131002FF0F7 /* ASChatBarview */ = {
 			isa = PBXGroup;
 			children = (
-				989C409E265E5131002FF0F7 /* ASChatBarview.swift */,
-				989C409F265E5131002FF0F7 /* Extensions */,
-				989C40A2265E5131002FF0F7 /* ASChatBarview.xib */,
 			);
 			path = ASChatBarview;
-			sourceTree = "<group>";
-		};
-		989C409F265E5131002FF0F7 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				989C40A0265E5131002FF0F7 /* UIView+XibSetup.swift */,
-				989C40A1265E5131002FF0F7 /* UITextView+NumberOfLines.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		989C40A3265E5131002FF0F7 /* NoEntryFoundView */ = {
@@ -701,6 +741,7 @@
 			isa = PBXGroup;
 			children = (
 				989C40A7265E5131002FF0F7 /* ASCheckBox.swift */,
+				BE9B6B46286C875000D3BD37 /* SKORCheckBOX.swift */,
 			);
 			path = ASCheckBox;
 			sourceTree = "<group>";
@@ -749,14 +790,6 @@
 			path = MFLoader;
 			sourceTree = "<group>";
 		};
-		989C40B4265E5131002FF0F7 /* KMPlaceholderTextView */ = {
-			isa = PBXGroup;
-			children = (
-				989C40B5265E5131002FF0F7 /* KMPlaceholderTextView.swift */,
-			);
-			path = KMPlaceholderTextView;
-			sourceTree = "<group>";
-		};
 		989C40B6265E5131002FF0F7 /* Media Browser */ = {
 			isa = PBXGroup;
 			children = (
@@ -795,12 +828,13 @@
 		98C094AD26142367006D5178 = {
 			isa = PBXGroup;
 			children = (
+				BC3BFAA7282A85BB0019E237 /* RewardzCommonComponents-Swift.h */,
 				98768350261442A300B597B0 /* Media.xcassets */,
 				98C094B926142367006D5178 /* RewardzCommonComponents */,
 				98C094C426142367006D5178 /* RewardzCommonComponentsTests */,
 				98C094B826142367006D5178 /* Products */,
-				D354117903DF22B28A52047D /* Pods */,
 				666ADD3EB02DCC4120C381C7 /* Frameworks */,
+				9275F32D386F9AEF8F5364F1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -838,16 +872,31 @@
 			path = RewardzCommonComponentsTests;
 			sourceTree = "<group>";
 		};
-		D354117903DF22B28A52047D /* Pods */ = {
+		BC53B53C2A1F7AD5007558FC /* MuliCastCompletionBlock */ = {
 			isa = PBXGroup;
 			children = (
-				C0215E65443EBF1E3F1F7A98 /* Pods-RewardzCommonComponents.debug.xcconfig */,
-				081D4BA58E5A02E31397D310 /* Pods-RewardzCommonComponents.release.xcconfig */,
-				7BAEB21253E10E06E709D6DA /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig */,
-				220D95156412A38932A86204 /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig */,
+				BC53B53D2A1F7B8A007558FC /* MuliCastCompletionBlock.swift */,
 			);
-			name = Pods;
-			path = ../../2020Aug6Cerra/Pods;
+			path = MuliCastCompletionBlock;
+			sourceTree = "<group>";
+		};
+		BE38B1CD283F8D46002A5671 /* PhysicalProductDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				BE38B1CE283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.swift */,
+				BE38B1CF283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.xib */,
+			);
+			path = PhysicalProductDrawer;
+			sourceTree = "<group>";
+		};
+		BE671EBF2834C87800383204 /* CommonRewardDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				BE38B1CD283F8D46002A5671 /* PhysicalProductDrawer */,
+				BE671EC02834C89B00383204 /* CommonRewardCustomDrawer.swift */,
+				BE671EC12834C89B00383204 /* CommonRewardCustomDrawer.xib */,
+			);
+			path = CommonRewardDrawer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -930,6 +979,13 @@
 				Base,
 				"zh-Hans",
 				th,
+				hi,
+				id,
+				ja,
+				ko,
+				ms,
+				vi,
+				"zh-Hant",
 			);
 			mainGroup = 98C094AD26142367006D5178;
 			productRefGroup = 98C094B826142367006D5178 /* Products */;
@@ -950,19 +1006,20 @@
 				989C40EA265E5131002FF0F7 /* OptionListTableViewCell.xib in Resources */,
 				989C40C9265E5131002FF0F7 /* CFFImageCropperViewController.xib in Resources */,
 				989C40E9265E5131002FF0F7 /* OptionListViewController.xib in Resources */,
-				989C40CE265E5131002FF0F7 /* AssetGridViewController.xib in Resources */,
 				989C40F2265E5131002FF0F7 /* MediaItemCollectionViewCell.xib in Resources */,
-				989C40E5265E5131002FF0F7 /* ASChatBarview.xib in Resources */,
+				BEC2B29326FDA4DE008417C3 /* GroupsViewController.xib in Resources */,
 				98768351261442A400B597B0 /* Media.xcassets in Resources */,
+				BE2C62762706DF6A00C63D1B /* AssetGridViewController.xib in Resources */,
 				989C40CF265E5131002FF0F7 /* GroupCell.xib in Resources */,
-				989C40D1265E5131002FF0F7 /* GroupsViewController.xib in Resources */,
 				989C40CB265E5131002FF0F7 /* GridViewCell.xib in Resources */,
 				989C40D6265E5131002FF0F7 /* HorizontalScrollingOptionCell.xib in Resources */,
 				989C40C0265E5131002FF0F7 /* BubbleOptionCollectionViewCell.xib in Resources */,
 				989C40F3265E5131002FF0F7 /* CFFMediaBrowserViewController.xib in Resources */,
 				989C40C8265E5131002FF0F7 /* CFFMainCropperViewController.xib in Resources */,
+				BE671EC32834C89B00383204 /* CommonRewardCustomDrawer.xib in Resources */,
 				989C40E6265E5131002FF0F7 /* NoEntryFoundViewViewController.xib in Resources */,
 				989C40E0265E5131002FF0F7 /* GenericFilterViewController.xib in Resources */,
+				BE38B1D1283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.xib in Resources */,
 				989C40DD265E5131002FF0F7 /* FloatingMenuOptionTableViewCell.xib in Resources */,
 				989C40DB265E5131002FF0F7 /* FloatingMenuOptions.xib in Resources */,
 				989C40C4265E5131002FF0F7 /* FAGridView.xib in Resources */,
@@ -1050,6 +1107,7 @@
 				989C40F4265E5131002FF0F7 /* CFFMediaBrowserViewController.swift in Sources */,
 				989C40EB265E5131002FF0F7 /* OptionListTableViewCell.swift in Sources */,
 				98768359261444B200B597B0 /* CommonLoader.swift in Sources */,
+				BE9B6B47286C875000D3BD37 /* SKORCheckBOX.swift in Sources */,
 				989C40C1265E5131002FF0F7 /* BubbleOptionCollectionViewCell.swift in Sources */,
 				9854AAB2261740EB005B653B /* RCCUtility.swift in Sources */,
 				989C40D0265E5131002FF0F7 /* GroupCell.swift in Sources */,
@@ -1057,12 +1115,12 @@
 				980D1233261429CE00995F41 /* UICollectionView+Extension.swift in Sources */,
 				9876845B26155F2E00B597B0 /* PagedCollectionLayout.swift in Sources */,
 				980D122E261429CE00995F41 /* UIDevice+Extension.swift in Sources */,
-				989C40E3265E5131002FF0F7 /* UIView+XibSetup.swift in Sources */,
 				989C40D5265E5131002FF0F7 /* HorizontalScrollingOptionCell.swift in Sources */,
 				989C40F6265E5131002FF0F7 /* ASCustomDrawerViewController.swift in Sources */,
+				BCE14D3E290FE134008806EA /* Sting+Extension.swift in Sources */,
 				987683262614349900B597B0 /* CFFThemeManagerProtocol.swift in Sources */,
+				BC53B53E2A1F7B8A007558FC /* MuliCastCompletionBlock.swift in Sources */,
 				989C40F1265E5131002FF0F7 /* MediaItemCollectionViewCell.swift in Sources */,
-				989C40E4265E5131002FF0F7 /* UITextView+NumberOfLines.swift in Sources */,
 				989C40D4265E5131002FF0F7 /* GUAAlertView.m in Sources */,
 				989C40EE265E5131002FF0F7 /* BlockButton.swift in Sources */,
 				980D1234261429CE00995F41 /* Array+Extension.swift in Sources */,
@@ -1099,28 +1157,34 @@
 				989C40C6265E5131002FF0F7 /* FAScrollView.swift in Sources */,
 				989C40E8265E5131002FF0F7 /* ASCheckBox.swift in Sources */,
 				989C40ED265E5131002FF0F7 /* ListItemFetcher.swift in Sources */,
-				989C40F0265E5131002FF0F7 /* KMPlaceholderTextView.swift in Sources */,
 				9854AACA261747C6005B653B /* UIImageView+Extensions.swift in Sources */,
 				980D1231261429CE00995F41 /* UIImage+Extensions.swift in Sources */,
+				BEC74DDE2A5D4E4B0074324B /* LeftCustomFlowLayout.swift in Sources */,
 				9876834126143D2200B597B0 /* GenericCoreDataManager.swift in Sources */,
 				989C40EC265E5131002FF0F7 /* OptionListViewController.swift in Sources */,
+				BCC705322A626089000413E3 /* CALayer+XibConfiguration.swift in Sources */,
 				9854AF85261C2623005B653B /* NSMutableData+Extension.swift in Sources */,
 				9854AF5E261AB9B2005B653B /* UIColor+Extensions.swift in Sources */,
+				BE38B1D0283F8D76002A5671 /* CommonPhysicalProductRewardCustomDrawer.swift in Sources */,
 				987684B0261562D400B597B0 /* UIViewController+Extensions.swift in Sources */,
+				BE671EC22834C89B00383204 /* CommonRewardCustomDrawer.swift in Sources */,
 				989C40D8265E5131002FF0F7 /* HorizontalScrollAdapterProtocol.swift in Sources */,
 				98BA3CA12625199300DCB1C0 /* RCCThemeCoordinator.swift in Sources */,
 				989C40DE265E5131002FF0F7 /* YearSelectorHandler.swift in Sources */,
 				980D12A926142F8700995F41 /* UnauthorizedHandler.swift in Sources */,
+				BCC7052C2A6257CF000413E3 /* ToolTip+UILabel.swift in Sources */,
 				989C40D2265E5131002FF0F7 /* GroupsViewController.swift in Sources */,
 				989C40DF265E5131002FF0F7 /* GenericFilterViewController.swift in Sources */,
+				BE3E63F82898E71A00271518 /* ImageInitials.swift in Sources */,
 				989C40CC265E5131002FF0F7 /* GridViewCell.swift in Sources */,
 				987684B8261568D700B597B0 /* Collection+Extension.swift in Sources */,
+				BC53B5402A1F7C11007558FC /* ModernAppTheme.swift in Sources */,
 				9876845426155E7600B597B0 /* BaseCellConfigurator.swift in Sources */,
-				989C40E2265E5131002FF0F7 /* ASChatBarview.swift in Sources */,
 				980D123926142A3F00995F41 /* Theme Related.swift in Sources */,
 				989C40D9265E5131002FF0F7 /* HorizontolScrolling.swift in Sources */,
 				989C40EF265E5131002FF0F7 /* MFLoader.swift in Sources */,
 				980D122D261429CE00995F41 /* UIApplication+Extension.swift in Sources */,
+				0F4041AE28A7839200E67C88 /* DaySelectorHandler.swift in Sources */,
 				989C40D7265E5131002FF0F7 /* HorizontalScrollingOptionsView.swift in Sources */,
 				989C40C5265E5131002FF0F7 /* UIImage+Additions.swift in Sources */,
 				989C40CD265E5131002FF0F7 /* AssetGridViewController.swift in Sources */,
@@ -1144,6 +1208,27 @@
 			targetProxy = 98C094C226142367006D5178 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE2C62782706DF6A00C63D1B /* AssetGridViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE2C62772706DF6A00C63D1B /* Base */,
+				BE2C627A2706DF6E00C63D1B /* en */,
+				BE2C627C2706DF6F00C63D1B /* zh-Hans */,
+				BE2C627E2706DF7000C63D1B /* zh-Hant */,
+				BE2C62802706DF7100C63D1B /* hi */,
+				BE2C62822706DF7200C63D1B /* id */,
+				BE2C62842706DF7300C63D1B /* ja */,
+				BE2C62862706DF7400C63D1B /* ko */,
+				BE2C62882706DF7500C63D1B /* ms */,
+				BE2C628A2706DF7600C63D1B /* th */,
+				BE059F3E27073FB600CD5C05 /* vi */,
+			);
+			name = AssetGridViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		98C094C926142367006D5178 /* Debug */ = {
@@ -1182,6 +1267,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1246,6 +1332,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1270,7 +1357,7 @@
 		};
 		98C094CC26142367006D5178 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0215E65443EBF1E3F1F7A98 /* Pods-RewardzCommonComponents.debug.xcconfig */;
+			baseConfigurationReference = 3B5589375866B235AA4F3EE2 /* Pods-RewardzCommonComponents.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1280,7 +1367,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RewardzCommonComponents/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1296,7 +1383,7 @@
 		};
 		98C094CD26142367006D5178 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 081D4BA58E5A02E31397D310 /* Pods-RewardzCommonComponents.release.xcconfig */;
+			baseConfigurationReference = A9110BF016AA810CCC6E868E /* Pods-RewardzCommonComponents.release.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1306,7 +1393,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RewardzCommonComponents/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1322,7 +1409,7 @@
 		};
 		98C094CF26142367006D5178 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BAEB21253E10E06E709D6DA /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig */;
+			baseConfigurationReference = D1D7DF37034DF16C06ACDF36 /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1341,7 +1428,7 @@
 		};
 		98C094D026142367006D5178 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 220D95156412A38932A86204 /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig */;
+			baseConfigurationReference = 532F59D986957FF3ADC49DE2 /* Pods-RewardzCommonComponents-RewardzCommonComponentsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

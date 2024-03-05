@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -13,8 +14,9 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AssetGridViewController" customModule="CommonFunctionalityFramework" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AssetGridViewController" customModule="RewardzCommonComponents" customModuleProvider="target">
             <connections>
+                <outlet property="addImageBtn" destination="4a0-Tm-beb" id="e1D-EK-w3K"/>
                 <outlet property="collectionView" destination="CXb-SK-Qw0" id="uB1-W9-M7g"/>
                 <outlet property="navigationColor" destination="Nbi-6M-xkB" id="h4q-Yj-dOj"/>
                 <outlet property="titleLabel" destination="i0M-zb-a1y" id="IAe-br-4pZ"/>
@@ -47,14 +49,14 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD PHOTOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0M-zb-a1y">
-                            <rect key="frame" x="126.5" y="12" width="122.5" height="27"/>
+                            <rect key="frame" x="123" y="12" width="129" height="27"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="27" id="wc2-Ys-Ihi"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Omz-Im-v2T">
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Omz-Im-v2T">
                             <rect key="frame" x="308" y="10.5" width="59" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="59" id="fLN-Ty-YlP"/>
@@ -67,6 +69,19 @@
                                 <action selector="uploadButtonTapped:" destination="-1" eventType="touchUpInside" id="6Qc-Ur-kIZ"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4a0-Tm-beb">
+                            <rect key="frame" x="304" y="10" width="67" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="67" id="BTk-XJ-yDz"/>
+                                <constraint firstAttribute="height" constant="31" id="K4V-5k-v9S"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                            <connections>
+                                <action selector="addImageBtn:" destination="-1" eventType="touchUpInside" id="qfa-uG-VnR"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -74,6 +89,8 @@
                         <constraint firstAttribute="height" constant="51" id="Dtv-50-R21"/>
                         <constraint firstItem="i0M-zb-a1y" firstAttribute="centerY" secondItem="MA2-jc-1Y0" secondAttribute="centerY" id="JUW-7E-bxg"/>
                         <constraint firstItem="Omz-Im-v2T" firstAttribute="centerY" secondItem="i0M-zb-a1y" secondAttribute="centerY" id="Jlr-RY-jlZ"/>
+                        <constraint firstAttribute="trailing" secondItem="4a0-Tm-beb" secondAttribute="trailing" constant="4" id="ROI-Hx-18N"/>
+                        <constraint firstItem="4a0-Tm-beb" firstAttribute="top" secondItem="MA2-jc-1Y0" secondAttribute="top" constant="10" id="XPu-13-UVg"/>
                         <constraint firstItem="BVf-XB-T6M" firstAttribute="top" secondItem="MA2-jc-1Y0" secondAttribute="top" id="Y9n-ZT-N8Z"/>
                         <constraint firstItem="i0M-zb-a1y" firstAttribute="centerX" secondItem="MA2-jc-1Y0" secondAttribute="centerX" id="uGU-xL-T7m"/>
                         <constraint firstItem="BVf-XB-T6M" firstAttribute="leading" secondItem="MA2-jc-1Y0" secondAttribute="leading" id="zP9-M3-MCj"/>
@@ -100,7 +117,7 @@
                                     </connections>
                                 </collectionView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="CXb-SK-Qw0" firstAttribute="top" secondItem="J7b-xN-5gN" secondAttribute="top" id="C2l-re-2G2"/>
                                 <constraint firstAttribute="trailing" secondItem="CXb-SK-Qw0" secondAttribute="trailing" id="LPh-vh-EcJ"/>
@@ -111,7 +128,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Lt-Ff-CdO">
                             <rect key="frame" x="0.0" y="528" width="375" height="68"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJX-w9-Rn7">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJX-w9-Rn7">
                                     <rect key="frame" x="15" y="7" width="345" height="45"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="45" id="UDP-bc-k9w"/>
@@ -122,7 +139,7 @@
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="bJX-w9-Rn7" secondAttribute="trailing" constant="15" id="7ue-jU-Nqi"/>
                                 <constraint firstAttribute="bottom" secondItem="bJX-w9-Rn7" secondAttribute="bottom" constant="16" id="p7d-nT-qWM"/>
@@ -133,6 +150,7 @@
                     </subviews>
                 </stackView>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="dQk-D1-Gqq"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="cZP-Si-jAo" firstAttribute="top" secondItem="Nbi-6M-xkB" secondAttribute="bottom" id="2g6-27-Ims"/>
@@ -148,12 +166,15 @@
                 <constraint firstItem="dQk-D1-Gqq" firstAttribute="trailing" secondItem="cZP-Si-jAo" secondAttribute="trailing" id="uvq-Q0-AfE"/>
                 <constraint firstItem="Nbi-6M-xkB" firstAttribute="baseline" secondItem="MA2-jc-1Y0" secondAttribute="baseline" id="y4L-F0-oWH"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="dQk-D1-Gqq"/>
             <point key="canvasLocation" x="32.799999999999997" y="114.69265367316342"/>
         </view>
     </objects>
     <resources>
         <image name="DBWhitePattern" width="320" height="70"/>
         <image name="back" width="19" height="14"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

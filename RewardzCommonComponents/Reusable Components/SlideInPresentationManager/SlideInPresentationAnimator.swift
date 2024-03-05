@@ -12,7 +12,7 @@ public final class SlideInPresentationAnimator: NSObject {
   let direction: SlideInPresentationDirection
   let isPresentation: Bool
   
-  init(direction: SlideInPresentationDirection, isPresentation: Bool) {
+  public init(direction: SlideInPresentationDirection, isPresentation: Bool) {
     self.direction = direction
     self.isPresentation = isPresentation
     super.init()

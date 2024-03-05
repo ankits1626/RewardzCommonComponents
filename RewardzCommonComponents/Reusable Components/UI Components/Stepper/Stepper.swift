@@ -41,6 +41,11 @@ public protocol StepperDelegate {
     private var incrementButton = UIButton(frame: CGRect.zero)
     private var decrementButton = UIButton(frame: CGRect.zero)
     public  var counterTxt  = UITextView(frame: CGRect.zero)
+    @IBInspectable public var isQuantityFieldEnabled : Bool = true
+    @IBInspectable public var isBorderEnabled : Bool = true
+    
+    public var didUpdateStepperValue : ((_ updatedvalue: Int)->Void)?
+    public var disableIncrementCounter : Bool = false
     
     public override var isEnabled: Bool{
         didSet {
@@ -56,13 +61,18 @@ public protocol StepperDelegate {
     
     private func insertControlSubViews() {
         decrementButton.addTarget(self, action: #selector(decrement), for: .touchUpInside)
-        
         incrementButton.addTarget(self, action: #selector(increment), for: .touchUpInside)
         counterTxt.textAlignment = .center
-        
-        self.addSubview(decrementButton)
-        self.addSubview(incrementButton)
-        self.addSubview(counterTxt)
+    }
+    
+    func addButtonToSubView() {
+        if isQuantityFieldEnabled {
+            self.addSubview(decrementButton)
+            self.addSubview(incrementButton)
+            self.addSubview(counterTxt)
+        }else{
+            self.addSubview(counterTxt)
+        }
     }
     
     func setupStepperControl() {
@@ -92,17 +102,22 @@ public protocol StepperDelegate {
         self.incrementButton.frame = rightButtonFrame
         self.counterTxt.frame = counterLabelFrame
         counterTxt.isScrollEnabled = false
-        counterTxt.isUserInteractionEnabled = false
-//        counterTxt.contentOffset = CGPoint(x: 0, y: -5)
-        counterTxt.layer.borderWidth = borderWidth
-        counterTxt.layer.borderColor = borderColor.cgColor
-        self.layer.borderWidth = borderWidth
-        self.layer.cornerRadius = cornerRadius
-        self.layer.borderColor = borderColor.cgColor
+        counterTxt.isUserInteractionEnabled = true
+        addButtonToSubView()
+        if isQuantityFieldEnabled && isBorderEnabled{
+//            counterTxt.contentOffset = CGPoint(x: 0, y: -5)
+            self.layer.borderWidth = borderWidth
+            counterTxt.layer.borderWidth = borderWidth
+            counterTxt.layer.borderColor = borderColor.cgColor
+        }
+        self.incrementButton.roundCorners(corners: [.topRight,.bottomRight,.topLeft, .bottomLeft], radius: 8.0)
+        self.decrementButton.roundCorners(corners: [.topRight,.bottomRight,.topLeft, .bottomLeft], radius: 8.0)
         self.clipsToBounds = true
         counterTxt.backgroundColor = middleColor
         counterTxt.textColor = textColor
         counterTxt.keyboardType = .numberPad
+//        decrementButton.backgroundColor = UIColor(red: 245, green: 248, blue: 255)
+//        decrementButton.setTitleColor(UIColor(red: 171, green: 173, blue: 192), for: .normal)
         decrementButton.backgroundColor = decrementIndicatorColor
         incrementButton.backgroundColor = incrementIndicatorColor
         decrementButton.setTitle("-", for: UIControl.State.normal)
@@ -112,15 +127,17 @@ public protocol StepperDelegate {
     }
     
     @objc func increment() {
-        if self.isEnabled == true{
+        if self.isEnabled == true && !disableIncrementCounter{
             if let maxVal = self.maxVal?.intValue {
                 let compReading = reading + delta
                 if compReading <= maxVal{
                     reading = compReading
+                    didUpdateStepperValue?(reading)
                     self.delegate?.stepperDidChanged(sender: self)
                 }
             }else{
                 reading = reading + delta
+                didUpdateStepperValue?(reading)
                 self.delegate?.stepperDidChanged(sender: self)
             }
         }
@@ -132,10 +149,12 @@ public protocol StepperDelegate {
                 let compReading = reading - delta
                 if compReading >= minVal{
                     reading = compReading
+                    didUpdateStepperValue?(reading)
                     self.delegate?.stepperDidChanged(sender: self)
                 }
             } else {
                 reading = reading - delta
+                didUpdateStepperValue?(reading)
                 self.delegate?.stepperDidChanged(sender: self)
             }
         }
@@ -149,6 +168,7 @@ extension Stepper: UITextFieldDelegate {
         }else{
             reading = checkMaxLimitForStepper(enteredLimit: Int(self.counterTxt.text)!)
         }
+        didUpdateStepperValue?(reading)
         self.delegate?.stepperDidChanged(sender: self)
     }
     

@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="SF-Pro-Text-Medium.otf">
-            <string>SFProText-Medium</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BubbleOptionCollectionViewCell" customModule="Cerrapoints_SG" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BubbleOptionCollectionViewCell" customModule="RewardzCommonComponents" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="119" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -26,35 +22,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="119" height="50"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIh-U5-cij">
-                                <rect key="frame" x="20" y="5" width="79" height="40"/>
-                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="11"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="14" y="12" width="91" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.6705882352941176" green="0.67843137254901964" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
-                            <constraint firstItem="pIh-U5-cij" firstAttribute="leading" secondItem="BYl-eA-AJB" secondAttribute="leading" constant="20" id="De0-57-7SB"/>
-                            <constraint firstAttribute="trailing" secondItem="pIh-U5-cij" secondAttribute="trailing" constant="20" id="Dq6-1v-mzz"/>
-                            <constraint firstAttribute="bottom" secondItem="pIh-U5-cij" secondAttribute="bottom" constant="5" id="SGY-BN-Bka"/>
-                            <constraint firstItem="pIh-U5-cij" firstAttribute="top" secondItem="BYl-eA-AJB" secondAttribute="top" constant="5" id="v3i-KG-yBs"/>
+                            <constraint firstItem="pIh-U5-cij" firstAttribute="leading" secondItem="BYl-eA-AJB" secondAttribute="leading" constant="14" id="De0-57-7SB"/>
+                            <constraint firstAttribute="trailing" secondItem="pIh-U5-cij" secondAttribute="trailing" constant="14" id="Dq6-1v-mzz"/>
+                            <constraint firstAttribute="bottom" secondItem="pIh-U5-cij" secondAttribute="bottom" constant="12" id="SGY-BN-Bka"/>
+                            <constraint firstItem="pIh-U5-cij" firstAttribute="top" secondItem="BYl-eA-AJB" secondAttribute="top" constant="12" id="v3i-KG-yBs"/>
                         </constraints>
                     </view>
                 </subviews>
             </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstItem="BYl-eA-AJB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2Wa-JE-29C"/>
                 <constraint firstAttribute="trailing" secondItem="BYl-eA-AJB" secondAttribute="trailing" id="8hr-nn-gVk"/>
                 <constraint firstAttribute="bottom" secondItem="BYl-eA-AJB" secondAttribute="bottom" id="py1-x3-cRU"/>
                 <constraint firstItem="BYl-eA-AJB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vSU-wQ-cNU"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="119" height="50"/>
             <connections>
                 <outlet property="selectionIndicator" destination="BYl-eA-AJB" id="aFy-Br-QUp"/>
                 <outlet property="titleLabel" destination="pIh-U5-cij" id="KNF-FC-xH6"/>
             </connections>
-            <point key="canvasLocation" x="187.68115942028987" y="128.57142857142856"/>
+            <point key="canvasLocation" x="187.68115942028987" y="127.90178571428571"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

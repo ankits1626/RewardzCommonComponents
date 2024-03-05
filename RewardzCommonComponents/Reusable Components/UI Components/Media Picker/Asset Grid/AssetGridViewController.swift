@@ -113,11 +113,39 @@ public struct MediaPickerPresentationModel {
     }
 }
 
-public class AssetGridViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+public struct CameraPickerPresentationModel {
+    var localMediaManager : LocalMediaManager
+    var selectedAssets : [LocalSelectedMediaItem]?
+    var assetSelectionCompletion : ((_ assets : [LocalSelectedMediaItem]?) -> Void)?
+    var maximumItemSelectionAllowed = 10
+    weak var presentingViewController : UIViewController?
+    weak var themeManager: CFFThemeManagerProtocol?
+    var identifier : String
+    public var mediaType : PHAssetMediaType
+    public var asset: PHAsset?
+    
+    public init (
+        localMediaManager: LocalMediaManager,
+        selectedAssets: [LocalSelectedMediaItem]?,
+        assetSelectionCompletion:((_ assets : [LocalSelectedMediaItem]?) -> Void)?, maximumItemSelectionAllowed : Int, presentingViewController: UIViewController?, themeManager: CFFThemeManagerProtocol?, _identifier : String, _mediaType : PHAssetMediaType, _asset : PHAsset){
+        self.localMediaManager = localMediaManager
+        self.selectedAssets = selectedAssets
+        self.assetSelectionCompletion = assetSelectionCompletion
+        self.maximumItemSelectionAllowed = maximumItemSelectionAllowed
+        self.presentingViewController = presentingViewController
+        self.themeManager = themeManager
+        self.identifier = _identifier
+        self.mediaType = _mediaType
+        self.asset = _asset
+    }
+}
+
+public class AssetGridViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, PHPhotoLibraryChangeObserver {
     @IBOutlet weak var navigationColor: UIImageView!
     @IBOutlet private weak var titleLabel: UILabel!
     var fetchResult: PHFetchResult<PHAsset>!
     var assetCollection: PHAssetCollection!
+    @IBOutlet weak var addImageBtn: UIButton!
     var assetSelectionCompletion : ((_ assets : [LocalSelectedMediaItem]?) -> Void)?
     @IBOutlet var uploadButton : UIButton!
     @IBOutlet var collectionView: UICollectionView!
@@ -142,17 +170,54 @@ public class AssetGridViewController: UIViewController, UICollectionViewDataSour
         presentationModel.presentingViewController?.present(navVC, animated: true, completion: nil)
     }
     
+    public static func presentCameraPickerStack(presentationModel : CameraPickerPresentationModel){
+        let assetGridVC = AssetGridViewController(nibName: "AssetGridViewController", bundle: Bundle(for: AssetGridViewController.self))
+        assetGridVC.localMediaManager = presentationModel.localMediaManager
+        assetGridVC.assetSelectionCompletion = presentationModel.assetSelectionCompletion
+        assetGridVC.maximumItemSelectionAllowed = presentationModel.maximumItemSelectionAllowed
+        if let assets = presentationModel.selectedAssets {
+            for items in assets {
+                assetGridVC.selectedAssets.append(LocalSelectedMediaItem(identifier: items.identifier, asset: items.asset, mediaType: items.mediaType))
+            }
+        }
+        assetGridVC.selectedAssets.append(LocalSelectedMediaItem(identifier: presentationModel.identifier, asset: presentationModel.asset, mediaType: presentationModel.mediaType))
+        let cropperVc = CFFImageCropperViewController(nibName: "CFFImageCropperViewController", bundle: Bundle(for: CFFImageCropperViewController.self))
+        cropperVc.localMediaManager = assetGridVC.localMediaManager
+        cropperVc.selectedAssets = assetGridVC.selectedAssets
+        cropperVc.assetSelectionCompletion = assetGridVC.assetSelectionCompletion
+        cropperVc.themeManager = presentationModel.themeManager
+        let navVC = UINavigationController(rootViewController: assetGridVC)
+        navVC.setNavigationBarHidden(true, animated: false)
+        navVC.modalPresentationStyle = .fullScreen
+        assetGridVC.themeManager = presentationModel.themeManager
+        presentationModel.presentingViewController?.present(cropperVc, animated: true, completion: nil)
+    }
+    
     // MARK: UIViewController / Lifecycle
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        
+        PHPhotoLibrary.shared().register(self)
+        if #available(iOS 14, *) {
+            let status = PHPhotoLibrary.authorizationStatus(for: .readWrite)
+            hideAddMoreButton(for: status)
+        } else {}
         setupAfterViewDidLoad()
     }
     
+    deinit {
+        PHPhotoLibrary.shared().unregisterChangeObserver(self)
+    }
+    
     private func setupAfterViewDidLoad(){
+        self.setupCollectionView()
         uploadButton.setTitleColor(.black, for: .normal)
+        addImageBtn.setTitle(" ", for: .normal)
         self.navigationColor.image = UIImage(named: "")
         setupUploadButton()
+        titleLabel.text = "ADD PHOTOS".localized
+        uploadButton.setTitle("SELECT".localized, for: .normal)
         if let unwrappedThemeManager = themeManager{
             titleLabel.font = unwrappedThemeManager.getHeaderFont()
         }
@@ -161,6 +226,23 @@ public class AssetGridViewController: UIViewController, UICollectionViewDataSour
     private func setup(){
         checkPermissions {
             self.setupCollectionView()
+        }
+    }
+    
+    func hideAddMoreButton(for status: PHAuthorizationStatus) {
+        switch status {
+        case .limited:
+            self.addImageBtn.isHidden = false
+        case .notDetermined:
+            self.addImageBtn.isHidden = true
+        case .restricted:
+            self.addImageBtn.isHidden = true
+        case .denied:
+            self.addImageBtn.isHidden = true
+        case .authorized:
+            self.addImageBtn.isHidden = true
+        @unknown default:
+            self.addImageBtn.isHidden = true
         }
     }
     
@@ -182,6 +264,13 @@ public class AssetGridViewController: UIViewController, UICollectionViewDataSour
             fallthrough
         @unknown default:
             showUserAlertToProvideAccessToPhotos()
+        }
+    }
+    
+    public func photoLibraryDidChange(_ changeInstance: PHChange) {
+        DispatchQueue.main.sync {
+            self.setupFetchresult()
+            self.collectionView.reloadData()
         }
     }
     
@@ -234,16 +323,25 @@ public class AssetGridViewController: UIViewController, UICollectionViewDataSour
     
     private func setupFetchresult(){
         //PHPhotoLibrary.shared().register(self)
-        if fetchResult == nil {
+        //if fetchResult == nil {
             let allPhotosOptions = PHFetchOptions()
             allPhotosOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
+            allPhotosOptions.includeAssetSourceTypes = .typeUserLibrary
             fetchResult = PHAsset.fetchAssets(with: PHAssetMediaType.image, options: allPhotosOptions)
-        }
+       // }
     }
     
     private func setupCollectionView(){
         collectionView.register(UINib(nibName: "GridViewCell", bundle: Bundle(for: GridViewCell.self)), forCellWithReuseIdentifier: "GridViewCell")
         collectionView.reloadData()
+    }
+    
+    @IBAction func addImageBtn(_ sender: Any) {
+        if #available(iOS 14, *) {
+            PHPhotoLibrary.shared().presentLimitedLibraryPicker(from: self)
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     @IBAction func backButtonTapped(_ sender: AnyObject) {
@@ -369,11 +467,13 @@ public class AssetGridViewController: UIViewController, UICollectionViewDataSour
         // Request an image for the asset from the PHCachingImageManager.
         cell.representedAssetIdentifier = asset.localIdentifier
         cell.playButton.isHidden = asset.mediaType != .video
-        localMediaManager.fetchImageForAsset(asset: asset, size: thumbnailSize) { (assetIdentifier, fetchedImage) in
+        
+        self.localMediaManager.fetchImageForAsset(asset: asset, size: self.thumbnailSize) { (assetIdentifier, fetchedImage) in
             if cell.representedAssetIdentifier == assetIdentifier && fetchedImage != nil {
                 cell.thumbnailImage = fetchedImage
             }
         }
+        
         cell.selectedIndicatorView.backgroundColor = UIColor(red: 0, green: 82/255.0, blue: 147/255.0, alpha: 0.8)
         
         return cell
@@ -400,7 +500,8 @@ public class AssetGridViewController: UIViewController, UICollectionViewDataSour
             if selectedAssets.count < maximumItemSelectionAllowed{
                 selectedAssets.append(LocalSelectedMediaItem(identifier: asset.localIdentifier, asset: asset, mediaType: asset.mediaType))
             }else{
-                ErrorDisplayer.showError(errorMsg: "Cannot select more than 10 images") { (_) in
+                let pluralizedImage = maximumItemSelectionAllowed == 1 ? "image" : "images"
+                ErrorDisplayer.showError(errorMsg: "Cannot select more than \(maximumItemSelectionAllowed) \(pluralizedImage)".localized) { (_) in
                 }
             }
             

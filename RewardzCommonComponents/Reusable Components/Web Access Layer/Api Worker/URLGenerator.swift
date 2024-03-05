@@ -16,7 +16,7 @@ public class ParameterizedURLBuilder {
     public func getURL(endpoint: String, parameters: [String:String]?) -> URL? {
 
         if let  baseURLString = baseURLProvider.baseURLString(){
-            var components = URLComponents(string: baseURLString + endpoint)!
+            var components = URLComponents(string: baseURLString + endpoint)
             var queryItems = [URLQueryItem]()
             let baseParams: [String: String] = [:]
             for (key, value) in baseParams {
@@ -30,16 +30,16 @@ public class ParameterizedURLBuilder {
                 }
             }
             if queryItems.count > 0 {
-                components.queryItems = queryItems
+                components?.queryItems = queryItems
             }
-            return components.url
+            return components?.url
         }
         return nil
     }
 
     public func getURLWithMultipleSameQueryKeys(endpoint: String, parameters: [String:[String]]?) -> URL? {
         if let  baseURLString = baseURLProvider.baseURLString(){
-            var components = URLComponents(string: baseURLString + endpoint)!
+            var components = URLComponents(string: baseURLString + endpoint)
             var queryItems = [URLQueryItem]()
             let baseParams: [String: String] = [:]
             for (key, value) in baseParams {
@@ -55,9 +55,9 @@ public class ParameterizedURLBuilder {
                 }
             }
             if queryItems.count > 0 {
-                components.queryItems = queryItems
+                components?.queryItems = queryItems
             }
-            return components.url
+            return components?.url
         }
         return nil
     }

@@ -24,7 +24,7 @@ public class HorizontalScrollingOptionCell: UICollectionViewCell {
         frame.size.width = ceil(size.width)
         frame.size.height = ceil(size.height) - 5.0
         layoutAttributes.frame = frame
-        self.layer.cornerRadius = (frame.size.height)/2.0
+        self.layer.cornerRadius = 8
         return layoutAttributes
     }
 }

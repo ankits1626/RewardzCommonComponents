@@ -21,12 +21,29 @@ public extension UIFont{
         return UIFont.systemFont(ofSize: 12, weight: .regular)
     }
     
+    static var Highlighter6 : UIFont{
+        return UIFont.systemFont(ofSize: 9, weight: .bold)
+    }
+    
     static var Highlighter1 : UIFont{
         return UIFont.systemFont(ofSize: 10, weight: .bold)
     }
     
+    static var Highlighter5 : UIFont{
+        return UIFont.systemFont(ofSize: 12, weight: .bold)
+    }
+    
     static var Highlighter2 : UIFont{
         return UIFont.systemFont(ofSize: 13, weight: .bold)
+    }
+    
+    static var Highlighter3 : UIFont{
+        return UIFont.systemFont(ofSize: 14, weight: .bold)
+    }
+    
+    
+    static var Highlighter4 : UIFont{
+        return UIFont.systemFont(ofSize: 16, weight: .bold)
     }
     
     static var Caption1 : UIFont{
@@ -35,6 +52,10 @@ public extension UIFont{
     
     static var Caption2 : UIFont{
         return UIFont.systemFont(ofSize: 14, weight: .regular)
+    }
+    
+    static var Caption3 : UIFont{
+        return UIFont.systemFont(ofSize: 13, weight: .regular)
     }
     
     static var Body2 : UIFont{
@@ -52,9 +73,37 @@ public extension UIFont{
     static var SemiBold12 : UIFont{
         return UIFont.systemFont(ofSize: 12, weight: .semibold)
     }
+    
+    static var Medium11 : UIFont{
+        return UIFont.systemFont(ofSize: 11, weight: .medium)
+    }
+    
+    static var FloatingButton : UIFont{
+        return UIFont.systemFont(ofSize: 12, weight: .medium)
+    }
 }
 
 public extension UIColor{
+    
+    func lighter(by percentage: CGFloat = 30.0) -> UIColor? {
+        return self.adjust(by: abs(percentage) )
+    }
+    
+    func darker(by percentage: CGFloat = 30.0) -> UIColor? {
+        return self.adjust(by: -1 * abs(percentage) )
+    }
+    
+    func adjust(by percentage: CGFloat = 30.0) -> UIColor? {
+        var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0
+        if self.getRed(&red, green: &green, blue: &blue, alpha: &alpha) {
+            return UIColor(red: min(red + percentage/100, 1.0),
+                           green: min(green + percentage/100, 1.0),
+                           blue: min(blue + percentage/100, 1.0),
+                           alpha: alpha)
+        } else {
+            return nil
+        }
+    }
     
     static func getControlColor()-> UIColor{
         return RCCThemeDetailProvider.shared.coordinator.getBackgroundColor()
@@ -73,7 +122,7 @@ public extension UIColor{
     }
     
     static var optionContainerBackGroundColor:  UIColor {
-        return UIColor(red: 241/255.0, green: 251/255.0, blue: 255/255.0, alpha: 0.55)
+        return UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 0.55)
     }
     
     static func getTitleTextColor() -> UIColor {
@@ -93,7 +142,7 @@ public extension UIColor{
     }
     
     static func grayBackGroundColor() -> UIColor{
-        return UIColor(red: 237/255.0, green: 237/255.0, blue: 237/255.0, alpha: 1.0)
+        return UIColor(red: 245/255.0, green: 248/255.0, blue: 255/255.0, alpha: 1.0)
     }
     
     static var stepperActiveColor : UIColor{
@@ -106,6 +155,10 @@ public extension UIColor{
     
     static var stepperInactiveColor : UIColor{
         return UIColor(red: 171/255.0, green: 171/255.0, blue: 171/255.0, alpha: 1.0)
+    }
+    
+    static var lightGreyColor : UIColor{
+        return UIColor(red: 171/255.0, green: 173/255.0, blue: 192/255.0, alpha: 1.0)
     }
     
     static var getBackgroundDarkGreyColor : UIColor{
@@ -165,11 +218,11 @@ public extension UIColor{
     }
     
     static var progressTrackLightColor:  UIColor {
-        return UIColor(red: 234/255.0, green: 239/255.0, blue: 242/255.0, alpha: 1.0)
+        return UIColor(red: 237/255.0, green: 240/255.0, blue: 255/255.0, alpha: 1.0)
     }
     
     static var progressTrackMaxColor:  UIColor {
-        return UIColor(red: 156/255.0, green: 176/255.0, blue: 188/255.0, alpha: 1.0)
+        return RCCThemeDetailProvider.shared.coordinator.getBackgroundColor()
     }
     
     static var urlColor : UIColor {
@@ -185,7 +238,7 @@ public extension UIColor{
     }
     
     static let selectedOrangeColor = UIColor(red: 243.0/255.0, green: 91/255.0, blue: 45/255.0, alpha: 1.0)
-    static let unSelectedGrayColor = UIColor(red: 222.0/255.0, green: 222/255.0, blue: 222/255.0, alpha: 1.0)
+    static let unSelectedGrayColor = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1.0)
     static let unSelectedTextColor = UIColor(red: 66/255.0, green: 66/255.0, blue: 66/255.0, alpha: 1.0)
     
     static func getBackgroundGreyColor() -> UIColor{
@@ -215,6 +268,42 @@ public extension UIColor{
     static func getHeaderColor() -> UIColor{
         return .white
     }
+    
+    static var gray245 : UIColor{
+        return UIColor(red: 245/255.0, green: 245/255.0, blue: 245/255.0, alpha: 1.0)
+    }
+    
+    static var pinToPostCellBorderColor : UIColor {
+        return .red
+    }
+    
+    static func getConfirmationStackColor() -> UIColor{
+        return UIColor(red: 228/255.0, green: 228/255.0, blue: 228/255.0, alpha: 1.0)
+    }
+    
+    static var gray1 : UIColor {
+        return UIColor(red: 161.0/255, green: 161.0/255, blue: 161.0/255, alpha: 1)
+    }
+    
+    static var gray2 : UIColor {
+        return UIColor(red: 151.0/255, green: 151.0/255, blue: 151.0/255, alpha: 1)
+    }
+    
+    static var gray176 : UIColor {
+        return UIColor(red: 176/255, green: 176/255, blue: 176/255, alpha: 1)
+    }
+    
+    static var black35 : UIColor {
+        return UIColor(red: 35/255, green: 35/255, blue: 35/255, alpha: 1)
+    }
+    
+    static var black44 : UIColor {
+        return UIColor(red: 44/255, green: 44/255, blue: 44/255, alpha: 1)
+    }
+    static var stepperMiddleColor : UIColor{
+        return UIColor(red: 245/255.0, green: 245/255.0, blue: 245/255.0, alpha: 1.0)
+    }
+    
 }
 
 public struct AppliedCornerRadius {
@@ -222,6 +311,6 @@ public struct AppliedCornerRadius {
 }
 
 public struct BorderWidths {
-    public static let standardBorderWidth : CGFloat = 1.0
+    public static let standardBorderWidth : CGFloat = 0.5
     public static let votedOptionBorderWidth : CGFloat = 1.5
 }

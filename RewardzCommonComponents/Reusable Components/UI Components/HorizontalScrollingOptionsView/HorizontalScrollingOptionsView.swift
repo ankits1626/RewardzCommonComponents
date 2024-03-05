@@ -18,27 +18,31 @@ public protocol HorizontalScrollingOptionsDatasource {
 
 @IBDesignable public class HorizontalScrollingOptions: UIView, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     @IBInspectable public var selectedBubbleColor  = UIColor.selectedOrangeColor
+    @IBInspectable public var selectedBubbleBorderColor : UIColor?
     @IBInspectable public var unSelectedBubbleColor  = UIColor.unSelectedGrayColor
     @IBInspectable public var selectedBubbleTextColor  = UIColor.white
     @IBInspectable public var unSelectedBubbleTextColor  = UIColor.unSelectedTextColor
+    @IBInspectable public var unSelectedBubbleBorderColor : UIColor?
+    var organisationColor : String = ""
+    public var isFromPoll = false
     public var inferSizeForFixedNumberOfItems : Int?
     fileprivate var delegate : HorizontalScrollingOptionsDelegate?
-    fileprivate var dataSource : HorizontalScrollingOptionsDatasource?
-    private var optionCollection : UICollectionView!
+    var dataSource : HorizontalScrollingOptionsDatasource?
+    public var optionCollection : UICollectionView!
     private var selectedIndex : Int = 0{
         didSet{
             if let previousCell = optionCollection.cellForItem(at: IndexPath(item: oldValue, section: 0)) as? HorizontalScrollingOptionCell{
-                    previousCell.backgroundColor = unSelectedBubbleColor
-                previousCell.titleLBL?.textColor = unSelectedBubbleTextColor
+                previousCell.backgroundColor = .white
+                previousCell.titleLBL?.textColor = .lightGray
                 }
             if let currentCell = optionCollection.cellForItem(at: IndexPath(item: selectedIndex, section: 0)) as? HorizontalScrollingOptionCell{
-                currentCell.backgroundColor = selectedBubbleColor
-                currentCell.titleLBL?.textColor = selectedBubbleTextColor
+                currentCell.backgroundColor = UIColor.getControlColor()
+                currentCell.titleLBL?.textColor = .white
             }
             optionCollection.scrollToItem(at: IndexPath(item: selectedIndex, section: 0), at: UICollectionView.ScrollPosition.centeredHorizontally, animated: true)
         }
     }
-    
+        
     public func loadData(_ selectedIndex :  Int = 0) {
         optionCollection.reloadData()
         self.selectedIndex = selectedIndex
@@ -57,7 +61,7 @@ public protocol HorizontalScrollingOptionsDatasource {
         layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
         if let unwrappedItems = inferSizeForFixedNumberOfItems,
         unwrappedItems > 0{
-            layout.itemSize = CGSize(width: UIScreen.main.bounds.width / CGFloat(unwrappedItems), height:26.7)
+            layout.itemSize = CGSize(width: UIScreen.main.bounds.width / CGFloat(unwrappedItems), height:40.0)
         }else{
             layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
             layout.itemSize = UICollectionViewFlowLayout.automaticSize
@@ -67,7 +71,12 @@ public protocol HorizontalScrollingOptionsDatasource {
         optionCollection.register(UINib(nibName: "HorizontalScrollingOptionCell", bundle: Bundle(for: HorizontalScrollingOptionCell.self)), forCellWithReuseIdentifier: "HorizontalScrollingOptionCell")
         optionCollection.dataSource = self
         optionCollection.delegate = self
-        optionCollection.backgroundColor = UIColor.clear
+//        if isFromPoll {
+//            optionCollection.backgroundColor = .clear
+//        }else {
+//            optionCollection.backgroundColor = #colorLiteral(red: 0.9434584975, green: 0.9545181394, blue: 1, alpha: 1)
+//        }
+        optionCollection.backgroundColor = #colorLiteral(red: 0.9434584975, green: 0.9545181394, blue: 1, alpha: 1)
         optionCollection.showsHorizontalScrollIndicator = false
         optionCollection.reloadData()
     }
@@ -98,7 +107,14 @@ public protocol HorizontalScrollingOptionsDatasource {
             layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
             if let unwrappedItems = inferSizeForFixedNumberOfItems,
             unwrappedItems > 0{
-                layout.itemSize = CGSize(width: (UIScreen.main.bounds.width - 10) / CGFloat(unwrappedItems), height:26.7)
+                if isFromPoll {
+                    optionCollection.backgroundColor = .clear
+                    layout.itemSize = CGSize(width: CGFloat(unwrappedItems) + 10, height:40.0)
+                }else {
+                    layout.itemSize = CGSize(width: (UIScreen.main.bounds.width - 32.0) / CGFloat(unwrappedItems), height:40.0)
+                }
+                
+                //layout.itemSize = CGSize(width: (UIScreen.main.bounds.width - 10) / CGFloat(unwrappedItems), height:40.0)
             }else{
                 layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
                 layout.itemSize = UICollectionViewFlowLayout.automaticSize
@@ -118,8 +134,12 @@ public protocol HorizontalScrollingOptionsDatasource {
                                                             for: indexPath) as? HorizontalScrollingOptionCell
             else { fatalError("unexpected cell in collection view") }
         dataSource?.configureItemCell(cell, index: indexPath.row)
-        cell.titleLBL?.textColor = selectedIndex == indexPath.item ? selectedBubbleTextColor : unSelectedBubbleTextColor
-        cell.backgroundColor = selectedIndex == indexPath.item ? selectedBubbleColor : unSelectedBubbleColor
+        cell.titleLBL?.textColor = selectedIndex == indexPath.item ? .white : .lightGray
+        cell.backgroundColor = selectedIndex == indexPath.item ? UIColor.getControlColor() : .white
+        
+        if let unwrappedUnselectedBorderColor = unSelectedBubbleBorderColor{
+            cell.borderedControl(borderColor: unwrappedUnselectedBorderColor, borderWidth: 1.0)
+        }
         return cell
     }
     

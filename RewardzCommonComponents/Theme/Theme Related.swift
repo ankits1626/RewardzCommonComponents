@@ -81,6 +81,10 @@ public extension UIFont{
     static var FloatingButton : UIFont{
         return UIFont.systemFont(ofSize: 12, weight: .medium)
     }
+    
+    static var MetricFont: UIFont {
+        return UIFont.systemFont(ofSize: 43, weight: .regular)
+    }
 }
 
 public extension UIColor{

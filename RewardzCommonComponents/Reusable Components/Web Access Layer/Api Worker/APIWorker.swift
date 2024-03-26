@@ -142,15 +142,15 @@ public class CommonAPICall<P: DataParserProtocol> : CommonAPIProtocol {
     }
     
     func checkifSSLPinningRequired() -> Bool {
-        if let devServer = apiRequestProvider.apiRequest?.url?.absoluteString.contains("skordev.com"),
-            devServer == true{
-            return false
-        }
-        
-        if let userAgent =  apiRequestProvider.apiRequest?.allHTTPHeaderFields?.keys.contains("User-Agent"),
-           userAgent == true{
-            return true
-        }
+//        if let devServer = apiRequestProvider.apiRequest?.url?.absoluteString.contains("skordev.com"),
+//            devServer == true{
+//            return false
+//        }
+//        
+//        if let userAgent =  apiRequestProvider.apiRequest?.allHTTPHeaderFields?.keys.contains("User-Agent"),
+//           userAgent == true{
+//            return true
+//        }
         
         return false
     }

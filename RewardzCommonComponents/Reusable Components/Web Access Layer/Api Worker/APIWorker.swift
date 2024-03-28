@@ -32,7 +32,7 @@ let UNAUTHORIZED = 401
  }*/
 
 typealias ApiCallCompletionHandler<T> = (APICallResult<T>) -> Void
-public let REQUEST_TIME_OUT = 40
+public let REQUEST_TIME_OUT = 60
 
 public protocol BaseURLProviderProtocol {
     func baseURLString() -> String?

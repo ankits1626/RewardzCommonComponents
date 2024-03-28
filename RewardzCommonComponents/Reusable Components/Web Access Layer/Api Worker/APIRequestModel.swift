@@ -15,7 +15,7 @@ public protocol APIRequestBuilderProtocol {
     func apiRequestWithnobodydictHttpParamsAggregatedHttpParams( url: URL?, method : HTTPMethod , httpBodyDict : Data) -> URLRequest?
     func apiRequestWithMultiPartFormHeader( url: URL?, method : HTTPMethod , httpBodyString : String?) -> URLRequest?
     func apiRequestWithHttpParamsAggregatedHttpParamsForInspireMe( url: URL?, method : HTTPMethod , httpBodyDict : NSDictionary?) -> URLRequest?
-    func apiRequestWithSubscriptionInAuthorizationHeader( url: URL?, method : HTTPMethod , httpBodyDict : NSDictionary?) -> URLRequest?
+    func apiRequestWithSubscriptionInAuthorizationHeader( url: URL?, method : HTTPMethod , httpBodyDict : NSDictionary?,opmKey : String) -> URLRequest?
 }
 
 public class APIRequestBuilder : APIRequestBuilderProtocol {
@@ -104,12 +104,12 @@ public class APIRequestBuilder : APIRequestBuilderProtocol {
         }
     }
     
-    public func apiRequestWithSubscriptionInAuthorizationHeader( url: URL?, method : HTTPMethod , httpBodyDict : NSDictionary?) -> URLRequest?{
+    public func apiRequestWithSubscriptionInAuthorizationHeader( url: URL?, method : HTTPMethod , httpBodyDict : NSDictionary?, opmKey: String) -> URLRequest? {
         if let unwrappedURL = url{
             var apiRequest = URLRequest(url: unwrappedURL, cachePolicy: NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData, timeoutInterval: TimeInterval(REQUEST_TIME_OUT))
             apiRequest.httpMethod = method.rawValue
             apiRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
-            apiRequest.addValue("799d4ac2b74e4fb799af1da6bcea2d0a", forHTTPHeaderField: "Ocp-Apim-Subscription-Key")
+            apiRequest.addValue(opmKey, forHTTPHeaderField: "Ocp-Apim-Subscription-Key")
             apiRequest.addValue("keep-alive", forHTTPHeaderField: "Connection")
             
             if let unwrappedHttpBody = httpBodyDict{
